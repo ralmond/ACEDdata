@@ -1,0 +1,48 @@
+---
+title: "Data Files"
+---
+
+# Data
+
+Note that the field `SubjID` is common to all data fields, and can be used to join tables.
+
+## High Level Data Files
+
+[Pretest and Posttest](data/prepost.csv)
+
+[Bayes net scores](data/bnscores.csv)
+
+## Item-level Data
+
+[ACED Observables/Item Scores](data/allitems.csv)
+
+[Pretest A Scored](data/PretestAScored.csv)
+
+[Pretest B Scored](data/PretestBScored.csv)
+
+[Posttest A Scored](data/PosttestAScored.csv)
+
+[Posttest B Scored](data/PosttestBScored.csv)
+
+## Raw Responses from the Data file.
+
+Note:  First line gives the key.
+
+[Pretest A raw](data/PretestAraw.csv)
+
+[Pretest B raw](data/PretestBraw.csv)
+
+[Posttest A raw](data/PosttestAraw.csv)
+
+[Posttest B raw](data/PosttestBraw.csv)
+
+# Metadata
+
+[List of competencies](data/competencies.csv) -- Has both long and short names.
+
+[Evidence-model level Q-matrix](data/QEM.csv)
+
+[Item-level Q-Matrix](data/Qmatrix.csv)
+
+[Task Names (for ACED tasks)](data/taskNames.csv)
+

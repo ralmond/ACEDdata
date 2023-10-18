@@ -1,0 +1,15 @@
+---
+title: "ACED Data Repository"
+---
+
+* [ACED history](history.qmd)
+
+* [Data Dictionary](DataDict.qmd)
+
+* [Data Index](DataFiles.qmd)
+
+* [Bayes Net Model](ACEDbn.qmd)
+
+* [Helpful Scripts](scripts.qmd)
+
+* [References](bib.qmd)

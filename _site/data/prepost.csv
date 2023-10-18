@@ -1,0 +1,291 @@
+"SubjID","AltID","Classroom","Gender","Race","Level_Code","pre_scaled","post_scaled","gain_scaled","Form_Order","PreACorr","PostBCorr","PreBCorr","PostACorr","PreScore","PostScore","Gain","preacorr_adj","postbcorr_adj","prebcorr_adj","postacorr_adj","Zpreacorr_adj","Zpostbcorr_adj","Zprebcorr_adj","Zpostacorr_adj","scale_prea","scale_preb","scale_posta","scale_postb","Flagged","Last_Row","Gain_again","Cond_code","Sequencing","Feedback"
+"S052","s01-17","c01","Female","8","Academic",44,78,34,1,6,18,NA,NA,6,18,12,6,17,NA,NA,-0.58,1.99,NA,NA,44,NA,NA,78,FALSE,34,12,"adaptive_acc","Adaptive","Accuracy"
+"S053","s01-03","c01","Female","2","Academic",45,39,-6,2,NA,NA,7,4,7,4,-3,NA,NA,6,4,NA,NA,-0.49,-1.59,NA,45,39,NA,FALSE,62,-3,"adaptive_full","Adaptive","Full"
+"S054","s01-08","c01","Female","7","Academic",70,69,-1,1,16,16,NA,NA,16,16,0,15,14,NA,NA,1.97,1.25,NA,NA,70,NA,NA,69,FALSE,NA,0,"linear_full","Linear","Full"
+"S055","s01-01","c01","Male","7","Academic",48,53,5,2,NA,NA,7,9,7,9,2,NA,NA,7,9,NA,NA,-0.19,-0.23,NA,48,53,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S056","s01-12","c01","Male","8","Academic",41,51,10,1,5,9,NA,NA,5,9,4,5,8,NA,NA,-0.86,-0.25,NA,NA,41,NA,NA,51,FALSE,62,4,"adaptive_full","Adaptive","Full"
+"S057","s01-09","c01","Male","7","Academic",48,67,19,2,NA,NA,7,15,7,15,8,NA,NA,7,14,NA,NA,-0.19,1.12,NA,48,67,NA,FALSE,NA,8,"linear_full","Linear","Full"
+"S058","s01-02","c01","Female","4","Academic",56,54,-2,1,10,9,NA,NA,10,9,-1,10,9,NA,NA,0.55,0,NA,NA,56,NA,NA,54,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S059","s01-13","c01","Female","6","Academic",45,53,8,2,NA,NA,7,10,7,10,3,NA,NA,6,9,NA,NA,-0.49,-0.23,NA,45,53,NA,FALSE,57,3,"adaptive_full","Adaptive","Full"
+"S060","s01-10","c01","Female","7","Academic",50,51,1,1,8,8,NA,NA,8,8,0,8,8,NA,NA,-0.01,-0.25,NA,NA,50,NA,NA,51,FALSE,NA,0,"linear_full","Linear","Full"
+"S061","s01-04","c01","Female","3","Academic",60,50,-10,2,NA,NA,11,8,11,8,-3,NA,NA,11,8,NA,NA,1.01,-0.5,NA,60,50,NA,FALSE,62,-3,"adaptive_acc","Adaptive","Accuracy"
+"S062","s01-07","c01","Male","3","Academic",47,54,7,1,8,10,NA,NA,8,10,2,7,9,NA,NA,-0.29,0,NA,NA,47,NA,NA,54,FALSE,61,2,"adaptive_full","Adaptive","Full"
+"S063","s01-05","c01","Male","7","Academic",50,54,4,1,8,10,NA,NA,8,10,2,8,9,NA,NA,-0.01,0,NA,NA,50,NA,NA,54,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S064","s01-14","c01","Female","3","Academic",69,73,4,2,NA,NA,14,16,14,16,2,NA,NA,14,16,NA,NA,1.91,1.66,NA,69,73,NA,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S065","s01-15","c01","Female","2","Academic",47,66,19,1,7,13,NA,NA,7,13,6,7,13,NA,NA,-0.29,1,NA,NA,47,NA,NA,66,FALSE,NA,6,"linear_full","Linear","Full"
+"S066","s01-06","c01","Male","6","Academic",39,53,14,2,NA,NA,4,9,4,9,5,NA,NA,4,9,NA,NA,-1.09,-0.23,NA,39,53,NA,FALSE,62,5,"adaptive_acc","Adaptive","Accuracy"
+"S067","s01-11","c01","Male","3","Academic",50,48,-2,1,9,7,NA,NA,9,7,-2,8,7,NA,NA,-0.01,-0.49,NA,NA,50,NA,NA,48,FALSE,60,-2,"adaptive_full","Adaptive","Full"
+"S068","s01-16","c01","Female","6","Academic",54,50,-4,2,NA,NA,9,8,9,8,-1,NA,NA,9,8,NA,NA,0.41,-0.5,NA,54,50,NA,FALSE,NA,-1,"linear_full","Linear","Full"
+"S074","s02-03","c02","Male","6","Academic",61,60,-1,1,12,12,NA,NA,12,12,0,12,11,NA,NA,1.12,0.5,NA,NA,61,NA,NA,60,FALSE,62,0,"adaptive_acc","Adaptive","Accuracy"
+"S075","s02-02","c02","Female","2","Academic",45,61,16,2,NA,NA,7,13,7,13,6,NA,NA,6,12,NA,NA,-0.49,0.58,NA,45,61,NA,FALSE,62,6,"adaptive_full","Adaptive","Full"
+"S076","s02-14","c02","Female","7","Academic",53,51,-2,1,9,8,NA,NA,9,8,-1,9,8,NA,NA,0.27,-0.25,NA,NA,53,NA,NA,51,FALSE,NA,-1,"linear_full","Linear","Full"
+"S077","s02-16","c02","Male","2","Academic",70,75,5,1,16,17,NA,NA,16,17,1,15,16,NA,NA,1.97,1.74,NA,NA,70,NA,NA,75,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S078","s02-10","c02","Male","6","Academic",53,54,1,1,10,9,NA,NA,10,9,-1,9,9,NA,NA,0.27,0,NA,NA,53,NA,NA,54,FALSE,62,-1,"adaptive_full","Adaptive","Full"
+"S079","s02-19","c02","Male","7","Academic",72,56,-16,2,NA,NA,15,11,15,11,-4,NA,NA,15,10,NA,NA,2.21,0.04,NA,72,56,NA,FALSE,NA,-4,"linear_full","Linear","Full"
+"S080","s02-09","c02","Male","7","Academic",45,47,2,2,NA,NA,6,7,6,7,1,NA,NA,6,7,NA,NA,-0.49,-0.78,NA,45,47,NA,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S081","s02-15","c02","Female","7","Academic",61,54,-7,1,12,10,NA,NA,12,10,-2,12,9,NA,NA,1.12,0,NA,NA,61,NA,NA,54,FALSE,62,-2,"adaptive_full","Adaptive","Full"
+"S082","s02-05","c02","Male","7","Academic",57,39,-18,2,NA,NA,10,4,10,4,-6,NA,NA,10,4,NA,NA,0.71,-1.59,NA,57,39,NA,TRUE,NA,-6,"linear_full","Linear","Full"
+"S083","s02-06","c02","Male","7","Academic",63,41,-22,2,NA,NA,12,6,12,6,-6,NA,NA,12,5,NA,NA,1.31,-1.32,NA,63,41,NA,TRUE,62,-6,"adaptive_acc","Adaptive","Accuracy"
+"S084","s02-13","c02","Male","7","Academic",56,48,-8,1,11,7,NA,NA,11,7,-4,10,7,NA,NA,0.55,-0.49,NA,NA,56,NA,NA,48,FALSE,62,-4,"adaptive_full","Adaptive","Full"
+"S085","s02-12","c02","Male","6","Academic",51,56,5,2,NA,NA,8,10,8,10,2,NA,NA,8,10,NA,NA,0.11,0.04,NA,51,56,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S086","s02-07","c02","Male","7","Academic",63,67,4,2,NA,NA,12,14,12,14,2,NA,NA,12,14,NA,NA,1.31,1.12,NA,63,67,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S087","s02-08","c02","Male","7","Academic",53,51,-2,1,10,8,NA,NA,10,8,-2,9,8,NA,NA,0.27,-0.25,NA,NA,53,NA,NA,51,FALSE,62,-2,"adaptive_full","Adaptive","Full"
+"S088","s02-04","c02","Male","7","Academic",48,58,10,2,NA,NA,8,11,8,11,3,NA,NA,7,11,NA,NA,-0.19,0.31,NA,48,58,NA,FALSE,NA,3,"linear_full","Linear","Full"
+"S089","s02-17","c02","Male","7","Academic",42,61,19,2,NA,NA,5,12,5,12,7,NA,NA,5,12,NA,NA,-0.79,0.58,NA,42,61,NA,FALSE,49,7,"adaptive_acc","Adaptive","Accuracy"
+"S090","s02-18","c02","Male","7","Academic",56,51,-5,1,10,9,NA,NA,10,9,-1,10,8,NA,NA,0.55,-0.25,NA,NA,56,NA,NA,51,FALSE,62,-1,"adaptive_full","Adaptive","Full"
+"S091","s02-01","c02","Male","4","Academic",57,67,10,2,NA,NA,11,14,11,14,3,NA,NA,10,14,NA,NA,0.71,1.12,NA,57,67,NA,FALSE,NA,3,"linear_full","Linear","Full"
+"S097","s03-18","c03","Female","2","Academic",61,57,-4,1,12,10,NA,NA,12,10,-2,12,10,NA,NA,1.12,0.25,NA,NA,61,NA,NA,57,FALSE,62,-2,"adaptive_acc","Adaptive","Accuracy"
+"S098","s03-07","c03","Female","2","Academic",54,64,10,2,NA,NA,9,13,9,13,4,NA,NA,9,13,NA,NA,0.41,0.85,NA,54,64,NA,FALSE,62,4,"adaptive_full","Adaptive","Full"
+"S099","s03-03","c03","Female","3","Academic",41,51,10,1,5,9,NA,NA,5,9,4,5,8,NA,NA,-0.86,-0.25,NA,NA,41,NA,NA,51,FALSE,NA,4,"linear_full","Linear","Full"
+"S100","s03-08","c03","Female","7","Academic",63,58,-5,2,NA,NA,12,11,12,11,-1,NA,NA,12,11,NA,NA,1.31,0.31,NA,63,58,NA,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S101","s03-02","c03","Female","2","Academic",56,48,-8,1,11,7,NA,NA,11,7,-4,10,7,NA,NA,0.55,-0.49,NA,NA,56,NA,NA,48,FALSE,62,-4,"adaptive_full","Adaptive","Full"
+"S102","s03-06","c03","Female","7","Academic",63,67,4,2,NA,NA,12,15,12,15,3,NA,NA,12,14,NA,NA,1.31,1.12,NA,63,67,NA,FALSE,NA,3,"linear_full","Linear","Full"
+"S103","s03-10","c03","Female","6","Academic",61,78,17,1,13,18,NA,NA,13,18,5,12,17,NA,NA,1.12,1.99,NA,NA,61,NA,NA,78,FALSE,50,5,"adaptive_acc","Adaptive","Accuracy"
+"S104","s03-16","c03","Female","7","Academic",42,53,11,2,NA,NA,5,9,5,9,4,NA,NA,5,9,NA,NA,-0.79,-0.23,NA,42,53,NA,FALSE,62,4,"adaptive_full","Adaptive","Full"
+"S105","s03-15","c03","Female","7","Academic",50,54,4,1,8,10,NA,NA,8,10,2,8,9,NA,NA,-0.01,0,NA,NA,50,NA,NA,54,FALSE,NA,2,"linear_full","Linear","Full"
+"S106","s03-09","c03","Female","8","Academic",57,73,16,2,NA,NA,10,16,10,16,6,NA,NA,10,16,NA,NA,0.71,1.66,NA,57,73,NA,FALSE,55,6,"adaptive_acc","Adaptive","Accuracy"
+"S107","s03-12","c03","Male","7","Academic",47,45,-2,1,8,6,NA,NA,8,6,-2,7,6,NA,NA,-0.29,-0.74,NA,NA,47,NA,NA,45,FALSE,57,-2,"adaptive_full","Adaptive","Full"
+"S108","s03-17","c03","Female","6","Academic",57,73,16,2,NA,NA,10,16,10,16,6,NA,NA,10,16,NA,NA,0.71,1.66,NA,57,73,NA,FALSE,NA,6,"linear_full","Linear","Full"
+"S109","s03-13","c03","Male","6","Academic",50,54,4,1,8,9,NA,NA,8,9,1,8,9,NA,NA,-0.01,0,NA,NA,50,NA,NA,54,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S110","s03-11","c03","Male","6","Academic",63,76,13,2,NA,NA,12,17,12,17,5,NA,NA,12,17,NA,NA,1.31,1.93,NA,63,76,NA,FALSE,61,5,"adaptive_full","Adaptive","Full"
+"S111","s03-04","c03","Male","5","Academic",56,54,-2,1,10,9,NA,NA,10,9,-1,10,9,NA,NA,0.55,0,NA,NA,56,NA,NA,54,FALSE,NA,-1,"linear_full","Linear","Full"
+"S112","s03-14","c03","Male","3","Academic",54,61,7,2,NA,NA,9,13,9,13,4,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,36,4,"adaptive_acc","Adaptive","Accuracy"
+"S113","s03-01","c03","Female","6","Academic",44,63,19,1,6,13,NA,NA,6,13,7,6,12,NA,NA,-0.58,0.75,NA,NA,44,NA,NA,63,FALSE,62,7,"adaptive_full","Adaptive","Full"
+"S114","s03-05","c03","Female","7","Academic",66,70,4,2,NA,NA,13,15,13,15,2,NA,NA,13,15,NA,NA,1.61,1.39,NA,66,70,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S119","s04-17","c04","Female","2","Honors",58,63,5,1,12,12,NA,NA,12,12,0,11,12,NA,NA,0.84,0.75,NA,NA,58,NA,NA,63,FALSE,62,0,"adaptive_acc","Adaptive","Accuracy"
+"S120","s04-03","c04","Female","3","Honors",51,70,19,2,NA,NA,9,16,9,16,7,NA,NA,8,15,NA,NA,0.11,1.39,NA,51,70,NA,FALSE,62,7,"adaptive_full","Adaptive","Full"
+"S121","s04-12","c04","Female","2","Honors",70,81,11,1,15,19,NA,NA,15,19,4,15,18,NA,NA,1.97,2.24,NA,NA,70,NA,NA,81,FALSE,NA,4,"linear_full","Linear","Full"
+"S122","s04-05","c04","Female","7","Honors",75,58,-17,2,NA,NA,16,12,16,12,-4,NA,NA,16,11,NA,NA,2.51,0.31,NA,75,58,NA,FALSE,62,-4,"adaptive_acc","Adaptive","Accuracy"
+"S123","s04-13","c04","Female","6","Honors",56,72,16,1,10,16,NA,NA,10,16,6,10,15,NA,NA,0.55,1.49,NA,NA,56,NA,NA,72,FALSE,62,6,"adaptive_full","Adaptive","Full"
+"S124","s04-06","c04","Male","6","Honors",57,70,13,2,NA,NA,12,15,12,15,3,NA,NA,10,15,NA,NA,0.71,1.39,NA,57,70,NA,FALSE,NA,3,"linear_full","Linear","Full"
+"S125","s04-10","c04","Female","7","Honors",50,60,10,1,8,11,NA,NA,8,11,3,8,11,NA,NA,-0.01,0.5,NA,NA,50,NA,NA,60,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S126","s04-08","c04","Female","7","Honors",45,47,2,2,NA,NA,7,7,7,7,0,NA,NA,6,7,NA,NA,-0.49,-0.78,NA,45,47,NA,FALSE,62,0,"adaptive_full","Adaptive","Full"
+"S127","s04-07","c04","Female","7","Honors",64,60,-4,1,13,11,NA,NA,13,11,-2,13,11,NA,NA,1.4,0.5,NA,NA,64,NA,NA,60,FALSE,NA,-2,"linear_full","Linear","Full"
+"S128","s04-02","c04","Male","2","Honors",54,67,13,2,NA,NA,10,14,10,14,4,NA,NA,9,14,NA,NA,0.41,1.12,NA,54,67,NA,FALSE,62,4,"adaptive_acc","Adaptive","Accuracy"
+"S129","s04-01","c04","Male","2","Honors",78,84,6,1,19,20,NA,NA,19,20,1,18,19,NA,NA,2.82,2.49,NA,NA,78,NA,NA,84,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S130","s04-14","c04","Male","6","Honors",45,67,22,2,NA,NA,6,14,6,14,8,NA,NA,6,14,NA,NA,-0.49,1.12,NA,45,67,NA,FALSE,NA,8,"linear_full","Linear","Full"
+"S131","s04-16","c04","Male","7","Honors",58,75,17,1,12,18,NA,NA,12,18,6,11,16,NA,NA,0.84,1.74,NA,NA,58,NA,NA,75,FALSE,62,6,"adaptive_acc","Adaptive","Accuracy"
+"S132","s04-11","c04","Male","7","Honors",57,61,4,2,NA,NA,11,13,11,13,2,NA,NA,10,12,NA,NA,0.71,0.58,NA,57,61,NA,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S133","s04-18","c04","Male","7","Honors",50,54,4,1,8,10,NA,NA,8,10,2,8,9,NA,NA,-0.01,0,NA,NA,50,NA,NA,54,FALSE,NA,2,"linear_full","Linear","Full"
+"S134","s04-09","c04","Male","6","Honors",60,67,7,2,NA,NA,12,15,12,15,3,NA,NA,11,14,NA,NA,1.01,1.12,NA,60,67,NA,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S135","s04-15","c04","Female","3","Honors",56,60,4,1,10,11,NA,NA,10,11,1,10,11,NA,NA,0.55,0.5,NA,NA,56,NA,NA,60,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S136","s04-04","c04","Female","7","Honors",60,64,4,2,NA,NA,11,13,11,13,2,NA,NA,11,13,NA,NA,1.01,0.85,NA,60,64,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S140","s05-11","c05","Female","6","Honors",39,48,9,1,4,8,NA,NA,4,8,4,4,7,NA,NA,-1.14,-0.49,NA,NA,39,NA,NA,48,FALSE,32,4,"adaptive_acc","Adaptive","Accuracy"
+"S141","s05-07","c05","Female","3","Honors",57,53,-4,2,NA,NA,10,9,10,9,-1,NA,NA,10,9,NA,NA,0.71,-0.23,NA,57,53,NA,FALSE,62,-1,"adaptive_full","Adaptive","Full"
+"S142","s05-06","c05","Female","7","Honors",50,57,7,1,8,10,NA,NA,8,10,2,8,10,NA,NA,-0.01,0.25,NA,NA,50,NA,NA,57,FALSE,NA,2,"linear_full","Linear","Full"
+"S143","s05-03","c05","Female","7","Honors",63,67,4,2,NA,NA,12,15,12,15,3,NA,NA,12,14,NA,NA,1.31,1.12,NA,63,67,NA,FALSE,61,3,"adaptive_acc","Adaptive","Accuracy"
+"S144","s05-10","c05","Female","7","Honors",64,69,5,1,14,16,NA,NA,14,16,2,13,14,NA,NA,1.4,1.25,NA,NA,64,NA,NA,69,FALSE,48,2,"adaptive_full","Adaptive","Full"
+"S145","s05-08","c05","Female","7","Honors",45,47,2,2,NA,NA,6,7,6,7,1,NA,NA,6,7,NA,NA,-0.49,-0.78,NA,45,47,NA,FALSE,NA,1,"linear_full","Linear","Full"
+"S146","s05-05","c05","Female","7","Honors",56,57,1,1,10,11,NA,NA,10,11,1,10,10,NA,NA,0.55,0.25,NA,NA,56,NA,NA,57,FALSE,43,1,"adaptive_acc","Adaptive","Accuracy"
+"S147","s05-13","c05","Male","7","Honors",66,64,-2,2,NA,NA,13,13,13,13,0,NA,NA,13,13,NA,NA,1.61,0.85,NA,66,64,NA,FALSE,62,0,"adaptive_full","Adaptive","Full"
+"S148","s05-09","c05","Female","8","Honors",50,66,16,1,8,13,NA,NA,8,13,5,8,13,NA,NA,-0.01,1,NA,NA,50,NA,NA,66,FALSE,NA,5,"linear_full","Linear","Full"
+"S149","s05-14","c05","Female","7","Honors",60,70,10,2,NA,NA,12,16,12,16,4,NA,NA,11,15,NA,NA,1.01,1.39,NA,60,70,NA,FALSE,62,4,"adaptive_acc","Adaptive","Accuracy"
+"S150","s05-16","c05","Male","7","Honors",53,72,19,1,9,16,NA,NA,9,16,7,9,15,NA,NA,0.27,1.49,NA,NA,53,NA,NA,72,FALSE,62,7,"adaptive_full","Adaptive","Full"
+"S151","s05-12","c05","Female","2","Honors",57,70,13,2,NA,NA,10,15,10,15,5,NA,NA,10,15,NA,NA,0.71,1.39,NA,57,70,NA,FALSE,NA,5,"linear_full","Linear","Full"
+"S152","s05-04","c05","Female","3","Honors",73,60,-13,1,17,11,NA,NA,17,11,-6,16,11,NA,NA,2.25,0.5,NA,NA,73,NA,NA,60,FALSE,52,-6,"adaptive_acc","Adaptive","Accuracy"
+"S153","s05-17","c05","Male","7","Honors",48,70,22,2,NA,NA,7,16,7,16,9,NA,NA,7,15,NA,NA,-0.19,1.39,NA,48,70,NA,FALSE,62,9,"adaptive_full","Adaptive","Full"
+"S154","s05-01","c05","Male","7","Honors",56,72,16,1,10,15,NA,NA,10,15,5,10,15,NA,NA,0.55,1.49,NA,NA,56,NA,NA,72,FALSE,NA,5,"linear_full","Linear","Full"
+"S155","s05-15","c05","Male","6","Honors",45,58,13,2,NA,NA,6,12,6,12,6,NA,NA,6,11,NA,NA,-0.49,0.31,NA,45,58,NA,FALSE,59,6,"adaptive_acc","Adaptive","Accuracy"
+"S156","s05-02","c05","Male","7","Honors",67,72,5,1,14,16,NA,NA,14,16,2,14,15,NA,NA,1.68,1.49,NA,NA,67,NA,NA,72,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S157","s06-07","c06","Female","8","Academic",47,54,7,1,7,11,NA,NA,7,11,4,7,9,NA,NA,-0.29,0,NA,NA,47,NA,NA,54,FALSE,62,4,"adaptive_acc","Adaptive","Accuracy"
+"S158","s06-13","c06","Female","8","Academic",57,67,10,2,NA,NA,11,14,11,14,3,NA,NA,10,14,NA,NA,0.71,1.12,NA,57,67,NA,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S159","s06-02","c06","Female","7","Academic",47,48,1,1,7,9,NA,NA,7,9,2,7,7,NA,NA,-0.29,-0.49,NA,NA,47,NA,NA,48,FALSE,NA,2,"linear_full","Linear","Full"
+"S160","s06-01","c06","Male","7","Academic",45,53,8,2,NA,NA,7,10,7,10,3,NA,NA,6,9,NA,NA,-0.49,-0.23,NA,45,53,NA,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S161","s06-11","c06","Female","7","Academic",44,42,-2,1,6,5,NA,NA,6,5,-1,6,5,NA,NA,-0.58,-0.99,NA,NA,44,NA,NA,42,FALSE,62,-1,"adaptive_full","Adaptive","Full"
+"S162","s06-15","c06","Female","3","Academic",48,58,10,2,NA,NA,8,11,8,11,3,NA,NA,7,11,NA,NA,-0.19,0.31,NA,48,58,NA,FALSE,NA,3,"linear_full","Linear","Full"
+"S163","s06-08","c06","Male","7","Academic",44,66,22,1,8,13,NA,NA,8,13,5,6,13,NA,NA,-0.58,1,NA,NA,44,NA,NA,66,FALSE,62,5,"adaptive_acc","Adaptive","Accuracy"
+"S164","s06-06","c06","Female","6","Academic",51,50,-1,2,NA,NA,9,9,9,9,0,NA,NA,8,8,NA,NA,0.11,-0.5,NA,51,50,NA,FALSE,62,0,"adaptive_full","Adaptive","Full"
+"S165","s06-03","c06","Female","2","Academic",44,60,16,1,7,12,NA,NA,7,12,5,6,11,NA,NA,-0.58,0.5,NA,NA,44,NA,NA,60,FALSE,NA,5,"linear_full","Linear","Full"
+"S166","s06-04","c06","Female","5","Academic",36,58,22,2,NA,NA,5,11,5,11,6,NA,NA,3,11,NA,NA,-1.39,0.31,NA,36,58,NA,FALSE,62,6,"adaptive_acc","Adaptive","Accuracy"
+"S167","s06-10","c06","Female","6","Academic",41,57,16,1,5,10,NA,NA,5,10,5,5,10,NA,NA,-0.86,0.25,NA,NA,41,NA,NA,57,FALSE,62,5,"adaptive_full","Adaptive","Full"
+"S168","s06-12","c06","Female","7","Academic",33,50,17,2,NA,NA,4,8,4,8,4,NA,NA,2,8,NA,NA,-1.69,-0.5,NA,33,50,NA,FALSE,NA,4,"linear_full","Linear","Full"
+"S169","s06-05","c06","Female","2","Academic",36,47,11,2,NA,NA,3,8,3,8,5,NA,NA,3,7,NA,NA,-1.39,-0.78,NA,36,47,NA,FALSE,62,5,"adaptive_acc","Adaptive","Accuracy"
+"S170","s06-09","c06","Male","2","Academic",51,53,2,2,NA,NA,8,9,8,9,1,NA,NA,8,9,NA,NA,0.11,-0.23,NA,51,53,NA,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S171","s06-14","c06","Male","7","Academic",61,54,-7,1,13,9,NA,NA,13,9,-4,12,9,NA,NA,1.12,0,NA,NA,61,NA,NA,54,FALSE,NA,-4,"linear_full","Linear","Full"
+"S177","s07-09","c07","Male","6","Part 1",36,45,9,1,3,6,NA,NA,3,6,3,3,6,NA,NA,-1.42,-0.74,NA,NA,36,NA,NA,45,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S178","s07-06","c07","Male","6","Part 1",51,53,2,2,NA,NA,8,9,8,9,1,NA,NA,8,9,NA,NA,0.11,-0.23,NA,51,53,NA,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S179","s07-01","c07","Male","4","Part 1",44,45,1,1,6,6,NA,NA,6,6,0,6,6,NA,NA,-0.58,-0.74,NA,NA,44,NA,NA,45,FALSE,NA,0,"linear_full","Linear","Full"
+"S180","s07-11","c07","Male","3","Part 1",48,50,2,2,NA,NA,7,8,7,8,1,NA,NA,7,8,NA,NA,-0.19,-0.5,NA,48,50,NA,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S181","s07-08","c07","Male","7","Part 1",53,48,-5,1,10,7,NA,NA,10,7,-3,9,7,NA,NA,0.27,-0.49,NA,NA,53,NA,NA,48,FALSE,62,-3,"adaptive_full","Adaptive","Full"
+"S182","s07-02","c07","Female","7","Part 1",54,56,2,2,NA,NA,11,10,11,10,-1,NA,NA,9,10,NA,NA,0.41,0.04,NA,54,56,NA,FALSE,NA,-1,"linear_full","Linear","Full"
+"S183","s07-03","c07","Female","7","Part 1",47,60,13,1,7,11,NA,NA,7,11,4,7,11,NA,NA,-0.29,0.5,NA,NA,47,NA,NA,60,FALSE,62,4,"adaptive_acc","Adaptive","Accuracy"
+"S184","s07-05","c07","Male","3","Part 1",42,47,5,2,NA,NA,6,9,6,9,3,NA,NA,5,7,NA,NA,-0.79,-0.78,NA,42,47,NA,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S186","s07-07","c07","Male","1","Part 1",48,41,-7,2,NA,NA,7,5,7,5,-2,NA,NA,7,5,NA,NA,-0.19,-1.32,NA,48,41,NA,FALSE,62,-2,"adaptive_acc","Adaptive","Accuracy"
+"S187","s07-04","c07","Male","7","Part 1",NA,NA,NA,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,TRUE,62,NA,"adaptive_full","Adaptive","Full"
+"S188","s07-10","c07","Female","3","Part 1",NA,NA,NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,TRUE,NA,NA,"linear_full","Linear","Full"
+"S189","s07-12","c07","Male","7","Part 1",41,39,-2,1,5,5,NA,NA,5,5,0,5,4,NA,NA,-0.86,-1.24,NA,NA,41,NA,NA,39,FALSE,61,0,"adaptive_acc","Adaptive","Accuracy"
+"S194","s08-04","c08","Female","3","Part 1",41,51,10,1,5,8,NA,NA,5,8,3,5,8,NA,NA,-0.86,-0.25,NA,NA,41,NA,NA,51,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S195","s08-05","c08","Female","3","Part 1",51,44,-7,2,NA,NA,8,6,8,6,-2,NA,NA,8,6,NA,NA,0.11,-1.05,NA,51,44,NA,FALSE,62,-2,"adaptive_full","Adaptive","Full"
+"S196","s08-11","c08","Female","7","Part 1",36,45,9,1,3,6,NA,NA,3,6,3,3,6,NA,NA,-1.42,-0.74,NA,NA,36,NA,NA,45,FALSE,NA,3,"linear_full","Linear","Full"
+"S197","s08-03","c08","Female","6","Part 1",36,44,8,2,NA,NA,3,6,3,6,3,NA,NA,3,6,NA,NA,-1.39,-1.05,NA,36,44,NA,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S198","s08-02","c08","Male","7","Part 1",44,48,4,1,6,9,NA,NA,6,9,3,6,7,NA,NA,-0.58,-0.49,NA,NA,44,NA,NA,48,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S199","s08-07","c08","Male","3","Part 1",48,47,-1,2,NA,NA,8,7,8,7,-1,NA,NA,7,7,NA,NA,-0.19,-0.78,NA,48,47,NA,FALSE,NA,-1,"linear_full","Linear","Full"
+"S200","s08-10","c08","Male","2","Part 1",44,45,1,1,6,7,NA,NA,6,7,1,6,6,NA,NA,-0.58,-0.74,NA,NA,44,NA,NA,45,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S201","s08-01","c08","Male","7","Part 1",36,41,5,2,NA,NA,3,5,3,5,2,NA,NA,3,5,NA,NA,-1.39,-1.32,NA,36,41,NA,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S202","s08-06","c08","Female","3","Part 1",39,42,3,1,4,5,NA,NA,4,5,1,4,5,NA,NA,-1.14,-0.99,NA,NA,39,NA,NA,42,FALSE,NA,1,"linear_full","Linear","Full"
+"S203","s08-09","c08","Male","3","Part 1",33,30,-3,2,NA,NA,3,2,3,2,-1,NA,NA,2,1,NA,NA,-1.69,-2.4,NA,33,30,NA,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S204","s08-08","c08","Male","3","Part 1",53,57,4,1,9,11,NA,NA,9,11,2,9,10,NA,NA,0.27,0.25,NA,NA,53,NA,NA,57,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S208","s09-01","c09","Female","2","Academic",47,45,-2,1,7,6,NA,NA,7,6,-1,7,6,NA,NA,-0.29,-0.74,NA,NA,47,NA,NA,45,FALSE,28,-1,"adaptive_acc","Adaptive","Accuracy"
+"S209","s09-02","c09","Female","8","Academic",48,58,10,2,NA,NA,8,11,8,11,3,NA,NA,7,11,NA,NA,-0.19,0.31,NA,48,58,NA,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S210","s09-09","c09","Female","7","Academic",50,57,7,1,8,10,NA,NA,8,10,2,8,10,NA,NA,-0.01,0.25,NA,NA,50,NA,NA,57,FALSE,NA,2,"linear_full","Linear","Full"
+"S211","s09-12","c09","Female","6","Academic",42,44,2,2,NA,NA,5,7,5,7,2,NA,NA,5,6,NA,NA,-0.79,-1.05,NA,42,44,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S212","s09-08","c09","Female","5","Academic",58,57,-1,1,11,11,NA,NA,11,11,0,11,10,NA,NA,0.84,0.25,NA,NA,58,NA,NA,57,FALSE,62,0,"adaptive_full","Adaptive","Full"
+"S213","s09-16","c09","Female","6","Academic",45,53,8,2,NA,NA,6,10,6,10,4,NA,NA,6,9,NA,NA,-0.49,-0.23,NA,45,53,NA,FALSE,NA,4,"linear_full","Linear","Full"
+"S214","s09-04","c09","Male","5","Academic",50,57,7,1,8,11,NA,NA,8,11,3,8,10,NA,NA,-0.01,0.25,NA,NA,50,NA,NA,57,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S215","s09-14","c09","Male","7","Academic",69,67,-2,2,NA,NA,15,15,15,15,0,NA,NA,14,14,NA,NA,1.91,1.12,NA,69,67,NA,FALSE,62,0,"adaptive_full","Adaptive","Full"
+"S216","s09-03","c09","Male","7","Academic",64,78,14,1,13,17,NA,NA,13,17,4,13,17,NA,NA,1.4,1.99,NA,NA,64,NA,NA,78,FALSE,NA,4,"linear_full","Linear","Full"
+"S217","s09-06","c09","Female","6","Academic",51,56,5,2,NA,NA,9,11,9,11,2,NA,NA,8,10,NA,NA,0.11,0.04,NA,51,56,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S218","s09-05","c09","Male","7","Academic",61,69,8,1,12,15,NA,NA,12,15,3,12,14,NA,NA,1.12,1.25,NA,NA,61,NA,NA,69,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S219","s09-15","c09","Male","7","Academic",66,73,7,2,NA,NA,14,16,14,16,2,NA,NA,13,16,NA,NA,1.61,1.66,NA,66,73,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S220","s09-10","c09","Male","7","Academic",64,69,5,1,14,14,NA,NA,14,14,0,13,14,NA,NA,1.4,1.25,NA,NA,64,NA,NA,69,FALSE,62,0,"adaptive_acc","Adaptive","Accuracy"
+"S221","s09-13","c09","Male","5","Academic",60,67,7,2,NA,NA,11,14,11,14,3,NA,NA,11,14,NA,NA,1.01,1.12,NA,60,67,NA,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S222","s09-11","c09","Male","6","Academic",41,36,-5,1,5,4,NA,NA,5,4,-1,5,3,NA,NA,-0.86,-1.49,NA,NA,41,NA,NA,36,FALSE,NA,-1,"linear_full","Linear","Full"
+"S223","s09-07","c09","Female","7","Academic",54,61,7,2,NA,NA,10,12,10,12,2,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S228","s10-12","c10","Male","7","Academic",47,51,4,1,7,8,NA,NA,7,8,1,7,8,NA,NA,-0.29,-0.25,NA,NA,47,NA,NA,51,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S229","s10-14","c10","Female","8","Academic",54,61,7,2,NA,NA,9,12,9,12,3,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S230","s10-02","c10","Female","7","Academic",44,63,19,1,6,14,NA,NA,6,14,8,6,12,NA,NA,-0.58,0.75,NA,NA,44,NA,NA,63,FALSE,NA,8,"linear_full","Linear","Full"
+"S231","s10-10","c10","Female","6","Academic",57,76,19,2,NA,NA,10,17,10,17,7,NA,NA,10,17,NA,NA,0.71,1.93,NA,57,76,NA,FALSE,62,7,"adaptive_acc","Adaptive","Accuracy"
+"S232","s10-03","c10","Female","7","Academic",44,72,28,1,6,15,NA,NA,6,15,9,6,15,NA,NA,-0.58,1.49,NA,NA,44,NA,NA,72,FALSE,62,9,"adaptive_full","Adaptive","Full"
+"S233","s10-04","c10","Female","6","Academic",57,61,4,2,NA,NA,10,12,10,12,2,NA,NA,10,12,NA,NA,0.71,0.58,NA,57,61,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S234","s10-09","c10","Male","7","Academic",50,45,-5,1,8,7,NA,NA,8,7,-1,8,6,NA,NA,-0.01,-0.74,NA,NA,50,NA,NA,45,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S235","s10-06","c10","Female","7","Academic",54,61,7,2,NA,NA,9,12,9,12,3,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,62,3,"adaptive_full","Adaptive","Full"
+"S236","s10-05","c10","Female","7","Academic",58,45,-13,1,11,7,NA,NA,11,7,-4,11,6,NA,NA,0.84,-0.74,NA,NA,58,NA,NA,45,FALSE,NA,-4,"linear_full","Linear","Full"
+"S237","s10-16","c10","Male","3","Academic",42,64,22,2,NA,NA,6,14,6,14,8,NA,NA,5,13,NA,NA,-0.79,0.85,NA,42,64,NA,FALSE,49,8,"adaptive_acc","Adaptive","Accuracy"
+"S238","s10-13","c10","Female","2","Academic",47,60,13,1,9,11,NA,NA,9,11,2,7,11,NA,NA,-0.29,0.5,NA,NA,47,NA,NA,60,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S239","s10-08","c10","Male","7","Academic",54,56,2,2,NA,NA,9,10,9,10,1,NA,NA,9,10,NA,NA,0.41,0.04,NA,54,56,NA,FALSE,NA,1,"linear_full","Linear","Full"
+"S240","s10-07","c10","Female","6","Academic",50,60,10,1,9,11,NA,NA,9,11,2,8,11,NA,NA,-0.01,0.5,NA,NA,50,NA,NA,60,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S241","s10-01","c10","Female","8","Academic",27,53,26,2,NA,NA,0,9,0,9,9,NA,NA,0,9,NA,NA,-2.29,-0.23,NA,27,53,NA,FALSE,62,9,"adaptive_full","Adaptive","Full"
+"S242","s10-15","c10","Female","6","Academic",44,54,10,1,6,9,NA,NA,6,9,3,6,9,NA,NA,-0.58,0,NA,NA,44,NA,NA,54,FALSE,NA,3,"linear_full","Linear","Full"
+"S243","s10-11","c10","Female","7","Academic",60,64,4,2,NA,NA,11,13,11,13,2,NA,NA,11,13,NA,NA,1.01,0.85,NA,60,64,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S249","s11-04","c11","Male","7","Academic",41,54,13,1,5,9,NA,NA,5,9,4,5,9,NA,NA,-0.86,0,NA,NA,41,NA,NA,54,FALSE,62,4,"adaptive_acc","Adaptive","Accuracy"
+"S250","s11-13","c11","Female","7","Academic",57,53,-4,2,NA,NA,10,9,10,9,-1,NA,NA,10,9,NA,NA,0.71,-0.23,NA,57,53,NA,FALSE,62,-1,"adaptive_full","Adaptive","Full"
+"S251","s11-12","c11","Male","7","Academic",41,51,10,1,6,8,NA,NA,6,8,2,5,8,NA,NA,-0.86,-0.25,NA,NA,41,NA,NA,51,FALSE,NA,2,"linear_full","Linear","Full"
+"S252","s11-07","c11","Female","7","Academic",51,47,-4,2,NA,NA,8,7,8,7,-1,NA,NA,8,7,NA,NA,0.11,-0.78,NA,51,47,NA,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S253","s11-05","c11","Male","3","Academic",53,63,10,1,10,12,NA,NA,10,12,2,9,12,NA,NA,0.27,0.75,NA,NA,53,NA,NA,63,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S254","s11-09","c11","Male","1","Academic",69,73,4,2,NA,NA,14,17,14,17,3,NA,NA,14,16,NA,NA,1.91,1.66,NA,69,73,NA,FALSE,NA,3,"linear_full","Linear","Full"
+"S255","s11-08","c11","Female","6","Academic",50,60,10,1,8,11,NA,NA,8,11,3,8,11,NA,NA,-0.01,0.5,NA,NA,50,NA,NA,60,FALSE,62,3,"adaptive_acc","Adaptive","Accuracy"
+"S256","s11-15","c11","Female","8","Academic",36,36,0,2,NA,NA,4,4,4,4,0,NA,NA,3,3,NA,NA,-1.39,-1.86,NA,36,36,NA,FALSE,62,0,"adaptive_full","Adaptive","Full"
+"S257","s11-02","c11","Female","7","Academic",61,57,-4,1,12,11,NA,NA,12,11,-1,12,10,NA,NA,1.12,0.25,NA,NA,61,NA,NA,57,FALSE,NA,-1,"linear_full","Linear","Full"
+"S258","s11-03","c11","Female","7","Academic",54,56,2,2,NA,NA,10,10,10,10,0,NA,NA,9,10,NA,NA,0.41,0.04,NA,54,56,NA,FALSE,62,0,"adaptive_acc","Adaptive","Accuracy"
+"S259","s11-14","c11","Male","2","Academic",61,78,17,1,12,19,NA,NA,12,19,7,12,17,NA,NA,1.12,1.99,NA,NA,61,NA,NA,78,FALSE,62,7,"adaptive_full","Adaptive","Full"
+"S260","s11-01","c11","Female","7","Academic",57,64,7,2,NA,NA,12,13,12,13,1,NA,NA,10,13,NA,NA,0.71,0.85,NA,57,64,NA,FALSE,NA,1,"linear_full","Linear","Full"
+"S261","s11-10","c11","Female","7","Academic",53,45,-8,1,9,6,NA,NA,9,6,-3,9,6,NA,NA,0.27,-0.74,NA,NA,53,NA,NA,45,FALSE,62,-3,"adaptive_acc","Adaptive","Accuracy"
+"S262","s11-11","c11","Female","7","Academic",51,56,5,2,NA,NA,9,10,9,10,1,NA,NA,8,10,NA,NA,0.11,0.04,NA,51,56,NA,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S263","s11-06","c11","Male","2","Academic",58,54,-4,1,11,9,NA,NA,11,9,-2,11,9,NA,NA,0.84,0,NA,NA,58,NA,NA,54,FALSE,NA,-2,"linear_full","Linear","Full"
+"S269","s12-13","c12","Male","6","ELL",36,39,3,1,3,4,NA,NA,3,4,1,3,4,NA,NA,-1.42,-1.24,NA,NA,36,NA,NA,39,FALSE,38,1,"adaptive_acc","Adaptive","Accuracy"
+"S270","s12-12","c12","Female","6","ELL",27,39,12,2,NA,NA,0,4,0,4,4,NA,NA,0,4,NA,NA,-2.29,-1.59,NA,27,39,NA,FALSE,34,4,"adaptive_full","Adaptive","Full"
+"S271","s12-16","c12","Female","6","ELL",33,36,3,1,2,3,NA,NA,2,3,1,2,3,NA,NA,-1.71,-1.49,NA,NA,33,NA,NA,36,FALSE,NA,1,"linear_full","Linear","Full"
+"S272","s12-05","c12","Male","6","ELL",30,44,14,2,NA,NA,1,7,1,7,6,NA,NA,1,6,NA,NA,-1.99,-1.05,NA,30,44,NA,FALSE,30,6,"adaptive_acc","Adaptive","Accuracy"
+"S273","s12-03","c12","Male","6","ELL",33,39,6,1,2,4,NA,NA,2,4,2,2,4,NA,NA,-1.71,-1.24,NA,NA,33,NA,NA,39,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S274","s12-06","c12","Female","6","ELL",36,39,3,2,NA,NA,3,5,3,5,2,NA,NA,3,4,NA,NA,-1.39,-1.59,NA,36,39,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S275","s12-09","c12","Male","4","ELL",27,33,6,1,0,2,NA,NA,0,2,2,0,2,NA,NA,-2.27,-1.74,NA,NA,27,NA,NA,33,FALSE,38,2,"adaptive_acc","Adaptive","Accuracy"
+"S276","s12-08","c12","Female","6","ELL",36,41,5,2,NA,NA,3,5,3,5,2,NA,NA,3,5,NA,NA,-1.39,-1.32,NA,36,41,NA,FALSE,29,2,"adaptive_full","Adaptive","Full"
+"S277","s12-17","c12","Female","6","ELL",39,51,12,1,4,9,NA,NA,4,9,5,4,8,NA,NA,-1.14,-0.25,NA,NA,39,NA,NA,51,FALSE,NA,5,"linear_full","Linear","Full"
+"S278","s12-14","c12","Female","2","ELL",48,44,-4,2,NA,NA,8,7,8,7,-1,NA,NA,7,6,NA,NA,-0.19,-1.05,NA,48,44,NA,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S279","s12-15","c12","Male","6","ELL",27,42,15,1,0,6,NA,NA,0,6,6,0,5,NA,NA,-2.27,-0.99,NA,NA,27,NA,NA,42,FALSE,20,6,"adaptive_full","Adaptive","Full"
+"S280","s12-10","c12","Male","6","ELL",30,47,17,2,NA,NA,1,7,1,7,6,NA,NA,1,7,NA,NA,-1.99,-0.78,NA,30,47,NA,FALSE,NA,6,"linear_full","Linear","Full"
+"S281","s12-07","c12","Female","4","ELL",33,42,9,1,2,7,NA,NA,2,7,5,2,5,NA,NA,-1.71,-0.99,NA,NA,33,NA,NA,42,FALSE,39,5,"adaptive_acc","Adaptive","Accuracy"
+"S282","s12-11","c12","Male","6","ELL",33,39,6,2,NA,NA,2,4,2,4,2,NA,NA,2,4,NA,NA,-1.69,-1.59,NA,33,39,NA,FALSE,30,2,"adaptive_full","Adaptive","Full"
+"S283","s12-02","c12","Female","6","ELL",41,48,7,1,5,8,NA,NA,5,8,3,5,7,NA,NA,-0.86,-0.49,NA,NA,41,NA,NA,48,FALSE,NA,3,"linear_full","Linear","Full"
+"S284","s12-01","c12","Male","4","ELL",36,39,3,2,NA,NA,3,4,3,4,1,NA,NA,3,4,NA,NA,-1.39,-1.59,NA,36,39,NA,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S285","s12-04","c12","Male","2","ELL",50,45,-5,1,9,6,NA,NA,9,6,-3,8,6,NA,NA,-0.01,-0.74,NA,NA,50,NA,NA,45,FALSE,62,-3,"adaptive_full","Adaptive","Full"
+"S291","s13-06","c13","Female",NA,"Part 2",47,33,-14,1,7,2,NA,NA,7,2,-5,7,2,NA,NA,-0.29,-1.74,NA,NA,47,NA,NA,33,FALSE,62,-5,"adaptive_acc","Adaptive","Accuracy"
+"S292","s13-09","c13","Male","6","Part 2",39,47,8,2,NA,NA,4,8,4,8,4,NA,NA,4,7,NA,NA,-1.09,-0.78,NA,39,47,NA,FALSE,62,4,"adaptive_full","Adaptive","Full"
+"S293","s13-18","c13","Male","6","Regular",41,39,-2,1,6,4,NA,NA,6,4,-2,5,4,NA,NA,-0.86,-1.24,NA,NA,41,NA,NA,39,FALSE,NA,-2,"linear_full","Linear","Full"
+"S294","s13-13","c13","Male","6","Regular",57,50,-7,2,NA,NA,10,9,10,9,-1,NA,NA,10,8,NA,NA,0.71,-0.5,NA,57,50,NA,FALSE,62,-1,"adaptive_acc","Adaptive","Accuracy"
+"S295","s13-14","c13","Male","6","Regular",41,51,10,1,6,8,NA,NA,6,8,2,5,8,NA,NA,-0.86,-0.25,NA,NA,41,NA,NA,51,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S296","s13-08","c13","Male","3","Regular",48,39,-9,2,NA,NA,7,4,7,4,-3,NA,NA,7,4,NA,NA,-0.19,-1.59,NA,48,39,NA,FALSE,NA,-3,"linear_full","Linear","Full"
+"S297","s13-07","c13","Female","3","Regular",44,51,7,1,6,8,NA,NA,6,8,2,6,8,NA,NA,-0.58,-0.25,NA,NA,44,NA,NA,51,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S298","s13-01","c13","Female","3","Regular",48,50,2,2,NA,NA,7,9,7,9,2,NA,NA,7,8,NA,NA,-0.19,-0.5,NA,48,50,NA,FALSE,40,2,"adaptive_full","Adaptive","Full"
+"S299","s13-03","c13","Male","3","Regular",47,33,-14,1,8,2,NA,NA,8,2,-6,7,2,NA,NA,-0.29,-1.74,NA,NA,47,NA,NA,33,FALSE,NA,-6,"linear_full","Linear","Full"
+"S300","s13-17","c13","Female","3","Regular",54,41,-13,2,NA,NA,9,5,9,5,-4,NA,NA,9,5,NA,NA,0.41,-1.32,NA,54,41,NA,FALSE,62,-4,"adaptive_acc","Adaptive","Accuracy"
+"S301","s13-11","c13","Male","3","Regular",53,48,-5,1,9,7,NA,NA,9,7,-2,9,7,NA,NA,0.27,-0.49,NA,NA,53,NA,NA,48,FALSE,61,-2,"adaptive_full","Adaptive","Full"
+"S302","s13-04","c13","Female","5","Regular",45,50,5,2,NA,NA,7,8,7,8,1,NA,NA,6,8,NA,NA,-0.49,-0.5,NA,45,50,NA,FALSE,NA,1,"linear_full","Linear","Full"
+"S303","s13-15","c13","Female","3","Regular",44,57,13,1,6,12,NA,NA,6,12,6,6,10,NA,NA,-0.58,0.25,NA,NA,44,NA,NA,57,FALSE,45,6,"adaptive_acc","Adaptive","Accuracy"
+"S304","s13-10","c13","Male","3","Regular",39,58,19,2,NA,NA,4,11,4,11,7,NA,NA,4,11,NA,NA,-1.09,0.31,NA,39,58,NA,FALSE,30,7,"adaptive_full","Adaptive","Full"
+"S305","s13-12","c13","Female","6","Regular",53,60,7,1,10,11,NA,NA,10,11,1,9,11,NA,NA,0.27,0.5,NA,NA,53,NA,NA,60,FALSE,NA,1,"linear_full","Linear","Full"
+"S306","s13-16","c13","Male","8","Regular",54,53,-1,2,NA,NA,9,10,9,10,1,NA,NA,9,9,NA,NA,0.41,-0.23,NA,54,53,NA,FALSE,44,1,"adaptive_acc","Adaptive","Accuracy"
+"S307","s13-05","c13","Female","3","Part 2",44,57,13,1,6,12,NA,NA,6,12,6,6,10,NA,NA,-0.58,0.25,NA,NA,44,NA,NA,57,FALSE,61,6,"adaptive_full","Adaptive","Full"
+"S308","s13-02","c13","Male","6","Part 2",42,36,-6,2,NA,NA,6,5,6,5,-1,NA,NA,5,3,NA,NA,-0.79,-1.86,NA,42,36,NA,FALSE,NA,-1,"linear_full","Linear","Full"
+"S315","s14-06","c14","Female","7","Part 2",53,36,-17,1,10,4,NA,NA,10,4,-6,9,3,NA,NA,0.27,-1.49,NA,NA,53,NA,NA,36,FALSE,62,-6,"adaptive_acc","Adaptive","Accuracy"
+"S316","s14-01","c14","Female","1","Regular",45,61,16,2,NA,NA,6,12,6,12,6,NA,NA,6,12,NA,NA,-0.49,0.58,NA,45,61,NA,FALSE,20,6,"adaptive_full","Adaptive","Full"
+"S317","s14-03","c14","Female","7","Regular",47,60,13,1,7,11,NA,NA,7,11,4,7,11,NA,NA,-0.29,0.5,NA,NA,47,NA,NA,60,FALSE,NA,4,"linear_full","Linear","Full"
+"S318","s14-04","c14","Female","7","Regular",45,53,8,2,NA,NA,7,9,7,9,2,NA,NA,6,9,NA,NA,-0.49,-0.23,NA,45,53,NA,FALSE,62,2,"adaptive_acc","Adaptive","Accuracy"
+"S319","s14-02","c14","Male","7","Regular",44,45,1,1,6,7,NA,NA,6,7,1,6,6,NA,NA,-0.58,-0.74,NA,NA,44,NA,NA,45,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S320","s14-05","c14","Female","2","Regular",51,56,5,2,NA,NA,8,10,8,10,2,NA,NA,8,10,NA,NA,0.11,0.04,NA,51,56,NA,FALSE,NA,2,"linear_full","Linear","Full"
+"S323","s15-06","c15","Male","7","Academic",53,69,16,1,9,15,NA,NA,9,15,6,9,14,NA,NA,0.27,1.25,NA,NA,53,NA,NA,69,FALSE,62,6,"adaptive_acc","Adaptive","Accuracy"
+"S324","s15-02","c15","Male","8","Academic",48,50,2,2,NA,NA,7,8,7,8,1,NA,NA,7,8,NA,NA,-0.19,-0.5,NA,48,50,NA,FALSE,62,1,"adaptive_full","Adaptive","Full"
+"S325","s15-03","c15","Male","7","Academic",56,72,16,1,11,15,NA,NA,11,15,4,10,15,NA,NA,0.55,1.49,NA,NA,56,NA,NA,72,FALSE,NA,4,"linear_full","Linear","Full"
+"S326","s15-12","c15","Male","6","Academic",57,67,10,2,NA,NA,11,14,11,14,3,NA,NA,10,14,NA,NA,0.71,1.12,NA,57,67,NA,FALSE,24,3,"adaptive_acc","Adaptive","Accuracy"
+"S327","s15-05","c15","Female","6","Academic",36,48,12,1,4,7,NA,NA,4,7,3,3,7,NA,NA,-1.42,-0.49,NA,NA,36,NA,NA,48,FALSE,56,3,"adaptive_full","Adaptive","Full"
+"S328","s15-04","c15","Female","3","Academic",60,50,-10,2,NA,NA,11,9,11,9,-2,NA,NA,11,8,NA,NA,1.01,-0.5,NA,60,50,NA,FALSE,NA,-2,"linear_full","Linear","Full"
+"S329","s15-11","c15","Male","7","Academic",47,33,-14,1,7,2,NA,NA,7,2,-5,7,2,NA,NA,-0.29,-1.74,NA,NA,47,NA,NA,33,FALSE,62,-5,"adaptive_acc","Adaptive","Accuracy"
+"S330","s15-16","c15","Male","6","Academic",54,61,7,2,NA,NA,10,12,10,12,2,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S331","s15-10","c15","Male","6","Academic",53,42,-11,1,9,6,NA,NA,9,6,-3,9,5,NA,NA,0.27,-0.99,NA,NA,53,NA,NA,42,FALSE,NA,-3,"linear_full","Linear","Full"
+"S332","s15-09","c15","Female","7","Academic",54,67,13,2,NA,NA,10,15,10,15,5,NA,NA,9,14,NA,NA,0.41,1.12,NA,54,67,NA,FALSE,62,5,"adaptive_acc","Adaptive","Accuracy"
+"S333","s15-08","c15","Female","7","Academic",67,75,8,1,14,17,NA,NA,14,17,3,14,16,NA,NA,1.68,1.74,NA,NA,67,NA,NA,75,FALSE,59,3,"adaptive_full","Adaptive","Full"
+"S334","s15-01","c15","Female","7","Academic",45,64,19,2,NA,NA,7,13,7,13,6,NA,NA,6,13,NA,NA,-0.49,0.85,NA,45,64,NA,FALSE,NA,6,"linear_full","Linear","Full"
+"S335","s15-14","c15","Male","2","Academic",61,66,5,1,12,13,NA,NA,12,13,1,12,13,NA,NA,1.12,1,NA,NA,61,NA,NA,66,FALSE,62,1,"adaptive_acc","Adaptive","Accuracy"
+"S336","s15-07","c15","Male","2","Part 2",39,47,8,2,NA,NA,5,7,5,7,2,NA,NA,4,7,NA,NA,-1.09,-0.78,NA,39,47,NA,FALSE,62,2,"adaptive_full","Adaptive","Full"
+"S337","s15-15","c15","Male","6","Part 2",44,51,7,1,6,8,NA,NA,6,8,2,6,8,NA,NA,-0.58,-0.25,NA,NA,44,NA,NA,51,FALSE,NA,2,"linear_full","Linear","Full"
+"S338","s15-13","c15","Female","6","Academic",51,58,7,2,NA,NA,8,11,8,11,3,NA,NA,8,11,NA,NA,0.11,0.31,NA,51,58,NA,FALSE,58,3,"adaptive_acc","Adaptive","Accuracy"
+"S069","#NULL!","c01","Male","7","Academic",50,63,13,1,8,12,NA,NA,8,12,4,8,12,NA,NA,-0.01,0.75,NA,NA,50,NA,NA,63,FALSE,NA,4,"control",NA,NA
+"S070","#NULL!","c01","Female","2","Academic",42,56,14,2,NA,NA,5,11,5,11,6,NA,NA,5,10,NA,NA,-0.79,0.04,NA,42,56,NA,FALSE,NA,6,"control",NA,NA
+"S071","#NULL!","c01","Female","7","Academic",64,60,-4,1,14,13,NA,NA,14,13,-1,13,11,NA,NA,1.4,0.5,NA,NA,64,NA,NA,60,FALSE,NA,-1,"control",NA,NA
+"S072","#NULL!","c01","Female","7","Academic",51,61,10,2,NA,NA,9,12,9,12,3,NA,NA,8,12,NA,NA,0.11,0.58,NA,51,61,NA,FALSE,NA,3,"control",NA,NA
+"S073","#NULL!","c01","Male","3","Academic",42,56,14,2,NA,NA,5,10,5,10,5,NA,NA,5,10,NA,NA,-0.79,0.04,NA,42,56,NA,FALSE,NA,5,"control",NA,NA
+"S092","#NULL!","c02","Female","6","Academic",51,61,10,2,NA,NA,8,12,8,12,4,NA,NA,8,12,NA,NA,0.11,0.58,NA,51,61,NA,FALSE,NA,4,"control",NA,NA
+"S093","#NULL!","c02","Male","7","Academic",53,48,-5,1,9,8,NA,NA,9,8,-1,9,7,NA,NA,0.27,-0.49,NA,NA,53,NA,NA,48,FALSE,NA,-1,"control",NA,NA
+"S094","#NULL!","c02","Male","7","Academic",50,51,1,1,9,8,NA,NA,9,8,-1,8,8,NA,NA,-0.01,-0.25,NA,NA,50,NA,NA,51,FALSE,NA,-1,"control",NA,NA
+"S095","#NULL!","c02","Male","8","Academic",47,60,13,1,7,11,NA,NA,7,11,4,7,11,NA,NA,-0.29,0.5,NA,NA,47,NA,NA,60,FALSE,NA,4,"control",NA,NA
+"S096","#NULL!","c02","Male","7","Academic",67,72,5,1,14,15,NA,NA,14,15,1,14,15,NA,NA,1.68,1.49,NA,NA,67,NA,NA,72,FALSE,NA,1,"control",NA,NA
+"S115","#NULL!","c03","Female","8","Academic",69,58,-11,2,NA,NA,14,11,14,11,-3,NA,NA,14,11,NA,NA,1.91,0.31,NA,69,58,NA,FALSE,NA,-3,"control",NA,NA
+"S116","#NULL!","c03","Male","5","Academic",54,56,2,2,NA,NA,9,11,9,11,2,NA,NA,9,10,NA,NA,0.41,0.04,NA,54,56,NA,FALSE,NA,2,"control",NA,NA
+"S117","#NULL!","c03","Male","6","Academic",45,56,11,2,NA,NA,6,11,6,11,5,NA,NA,6,10,NA,NA,-0.49,0.04,NA,45,56,NA,FALSE,NA,5,"control",NA,NA
+"S118","#NULL!","c03","Male","6","Academic",50,51,1,1,9,9,NA,NA,9,9,0,8,8,NA,NA,-0.01,-0.25,NA,NA,50,NA,NA,51,FALSE,NA,0,"control",NA,NA
+"S137","#NULL!","c04","Male","7","Honors",67,78,11,1,14,18,NA,NA,14,18,4,14,17,NA,NA,1.68,1.99,NA,NA,67,NA,NA,78,FALSE,NA,4,"control",NA,NA
+"S138","#NULL!","c04","Male","8","Honors",51,53,2,2,NA,NA,8,9,8,9,1,NA,NA,8,9,NA,NA,0.11,-0.23,NA,51,53,NA,FALSE,NA,1,"control",NA,NA
+"S139","#NULL!","c04","Male","8","Honors",61,72,11,1,13,15,NA,NA,13,15,2,12,15,NA,NA,1.12,1.49,NA,NA,61,NA,NA,72,FALSE,NA,2,"control",NA,NA
+"S172","#NULL!","c06","Male","2","Academic",64,42,-22,1,13,5,NA,NA,13,5,-8,13,5,NA,NA,1.4,-0.99,NA,NA,64,NA,NA,42,TRUE,NA,-8,"control",NA,NA
+"S173","#NULL!","c06","Female","6","Academic",42,41,-1,2,NA,NA,5,6,5,6,1,NA,NA,5,5,NA,NA,-0.79,-1.32,NA,42,41,NA,FALSE,NA,1,"control",NA,NA
+"S174","#NULL!","c06","Male","7","Academic",50,51,1,1,8,9,NA,NA,8,9,1,8,8,NA,NA,-0.01,-0.25,NA,NA,50,NA,NA,51,FALSE,NA,1,"control",NA,NA
+"S175","#NULL!","c06","Male","7","Academic",50,48,-2,1,9,8,NA,NA,9,8,-1,8,7,NA,NA,-0.01,-0.49,NA,NA,50,NA,NA,48,FALSE,NA,-1,"control",NA,NA
+"S176","#NULL!","c06","Male","7","Academic",54,41,-13,2,NA,NA,9,6,9,6,-3,NA,NA,9,5,NA,NA,0.41,-1.32,NA,54,41,NA,FALSE,NA,-3,"control",NA,NA
+"S190","#NULL!","c07","Male","3","Part 1",44,45,1,2,6,6,NA,NA,6,6,0,6,6,NA,NA,-0.58,-0.74,NA,NA,44,NA,NA,45,FALSE,NA,0,"control",NA,NA
+"S191","#NULL!","c07","Male","3","Part 1",54,44,-10,1,NA,NA,9,6,9,6,-3,NA,NA,9,6,NA,NA,0.41,-1.05,NA,54,44,NA,FALSE,NA,-3,"control",NA,NA
+"S192","#NULL!","c07","Male","7","Part 1",44,36,-8,2,6,3,NA,NA,6,3,-3,6,3,NA,NA,-0.58,-1.49,NA,NA,44,NA,NA,36,FALSE,NA,-3,"control",NA,NA
+"S193","#NULL!","c07","Male","3","Part 1",54,61,7,1,NA,NA,10,13,10,13,3,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,NA,3,"control",NA,NA
+"S205","#NULL!","c08","Female","7","Part 1",56,45,-11,1,10,6,NA,NA,10,6,-4,10,6,NA,NA,0.55,-0.74,NA,NA,56,NA,NA,45,FALSE,NA,-4,"control",NA,NA
+"S206","#NULL!","c08","Female","3","Part 1",51,53,2,2,NA,NA,9,9,9,9,0,NA,NA,8,9,NA,NA,0.11,-0.23,NA,51,53,NA,FALSE,NA,0,"control",NA,NA
+"S207","#NULL!","c08","Female","3","Part 1",61,45,-16,1,12,6,NA,NA,12,6,-6,12,6,NA,NA,1.12,-0.74,NA,NA,61,NA,NA,45,FALSE,NA,-6,"control",NA,NA
+"S224","#NULL!","c09","Male","8","Academic",47,54,7,1,7,9,NA,NA,7,9,2,7,9,NA,NA,-0.29,0,NA,NA,47,NA,NA,54,FALSE,NA,2,"control",NA,NA
+"S225","#NULL!","c09","Male","6","Academic",36,56,20,2,NA,NA,3,10,3,10,7,NA,NA,3,10,NA,NA,-1.39,0.04,NA,36,56,NA,FALSE,NA,7,"control",NA,NA
+"S226","#NULL!","c09","Male","7","Academic",64,66,2,1,13,13,NA,NA,13,13,0,13,13,NA,NA,1.4,1,NA,NA,64,NA,NA,66,FALSE,NA,0,"control",NA,NA
+"S227","#NULL!","c09","Female","5","Academic",42,53,11,2,NA,NA,6,10,6,10,4,NA,NA,5,9,NA,NA,-0.79,-0.23,NA,42,53,NA,FALSE,NA,4,"control",NA,NA
+"S244","#NULL!","c10","Female","7","Academic",70,57,-13,1,15,11,NA,NA,15,11,-4,15,10,NA,NA,1.97,0.25,NA,NA,70,NA,NA,57,FALSE,NA,-4,"control",NA,NA
+"S245","#NULL!","c10","Female","8","Academic",72,78,6,2,NA,NA,15,18,15,18,3,NA,NA,15,18,NA,NA,2.21,2.2,NA,72,78,NA,FALSE,NA,3,"control",NA,NA
+"S246","#NULL!","c10","Female","7","Academic",41,45,4,1,5,7,NA,NA,5,7,2,5,6,NA,NA,-0.86,-0.74,NA,NA,41,NA,NA,45,FALSE,NA,2,"control",NA,NA
+"S247","#NULL!","c10","Male","3","Academic",45,41,-4,2,NA,NA,6,5,6,5,-1,NA,NA,6,5,NA,NA,-0.49,-1.32,NA,45,41,NA,FALSE,NA,-1,"control",NA,NA
+"S248","#NULL!","c10","Female","6","Academic",47,48,1,1,7,7,NA,NA,7,7,0,7,7,NA,NA,-0.29,-0.49,NA,NA,47,NA,NA,48,FALSE,NA,0,"control",NA,NA
+"S264","#NULL!","c11","Female","7","Academic",58,54,-4,1,11,9,NA,NA,11,9,-2,11,9,NA,NA,0.84,0,NA,NA,58,NA,NA,54,FALSE,NA,-2,"control",NA,NA
+"S265","#NULL!","c11","Female","7","Academic",54,61,7,2,NA,NA,9,12,9,12,3,NA,NA,9,12,NA,NA,0.41,0.58,NA,54,61,NA,FALSE,NA,3,"control",NA,NA
+"S266","#NULL!","c11","Male","7","Academic",50,51,1,1,9,9,NA,NA,9,9,0,8,8,NA,NA,-0.01,-0.25,NA,NA,50,NA,NA,51,FALSE,NA,0,"control",NA,NA
+"S267","#NULL!","c11","Male","7","Academic",63,76,13,2,NA,NA,12,17,12,17,5,NA,NA,12,17,NA,NA,1.31,1.93,NA,63,76,NA,FALSE,NA,5,"control",NA,NA
+"S268","#NULL!","c11","Male","7","Academic",58,72,14,1,11,15,NA,NA,11,15,4,11,15,NA,NA,0.84,1.49,NA,NA,58,NA,NA,72,FALSE,NA,4,"control",NA,NA
+"S286","#NULL!","c12","Male","6","ELL",27,27,0,2,0,1,NA,NA,0,1,1,0,0,NA,NA,-2.27,-2.23,NA,NA,27,NA,NA,27,FALSE,NA,1,"control",NA,NA
+"S287","#NULL!","c12","Female","6","ELL",30,36,6,1,NA,NA,1,3,1,3,2,NA,NA,1,3,NA,NA,-1.99,-1.86,NA,30,36,NA,FALSE,NA,2,"control",NA,NA
+"S288","#NULL!","c12","Male",NA,"ELL",27,45,18,2,0,6,NA,NA,0,6,6,0,6,NA,NA,-2.27,-0.74,NA,NA,27,NA,NA,45,FALSE,NA,6,"control",NA,NA
+"S289","#NULL!","c12","Male","6","ELL",33,50,17,1,NA,NA,3,8,3,8,5,NA,NA,2,8,NA,NA,-1.69,-0.5,NA,33,50,NA,FALSE,NA,5,"control",NA,NA
+"S290","#NULL!","c12","Male","8","ELL",33,39,6,2,2,6,NA,NA,2,6,4,2,4,NA,NA,-1.71,-1.24,NA,NA,33,NA,NA,39,FALSE,NA,4,"control",NA,NA
+"S309","#NULL!","c13","Female",NA,"Regular",41,36,-5,1,5,4,NA,NA,5,4,-1,5,3,NA,NA,-0.86,-1.49,NA,NA,41,NA,NA,36,FALSE,NA,-1,"control",NA,NA
+"S310","#NULL!","c13","Male","7","Regular",45,36,-9,2,NA,NA,7,3,7,3,-4,NA,NA,6,3,NA,NA,-0.49,-1.86,NA,45,36,NA,FALSE,NA,-4,"control",NA,NA
+"S311","#NULL!","c13","Male","3","Regular",41,33,-8,1,6,2,NA,NA,6,2,-4,5,2,NA,NA,-0.86,-1.74,NA,NA,41,NA,NA,33,FALSE,NA,-4,"control",NA,NA
+"S312","#NULL!","c13","Male","3","Regular",36,47,11,2,NA,NA,4,7,4,7,3,NA,NA,3,7,NA,NA,-1.39,-0.78,NA,36,47,NA,FALSE,NA,3,"control",NA,NA
+"S313","#NULL!","c13","Female","8","Regular",44,36,-8,1,6,3,NA,NA,6,3,-3,6,3,NA,NA,-0.58,-1.49,NA,NA,44,NA,NA,36,FALSE,NA,-3,"control",NA,NA
+"S314","#NULL!","c13","Male","3","Regular",41,51,10,1,5,8,NA,NA,5,8,3,5,8,NA,NA,-0.86,-0.25,NA,NA,41,NA,NA,51,FALSE,NA,3,"control",NA,NA
+"S321","#NULL!","c14","Female","4","Regular",33,33,0,1,2,2,NA,NA,2,2,0,2,2,NA,NA,-1.71,-1.74,NA,NA,33,NA,NA,33,FALSE,NA,0,"control",NA,NA
+"S322","#NULL!","c14","Male","8","Regular",42,50,8,2,NA,NA,5,8,5,8,3,NA,NA,5,8,NA,NA,-0.79,-0.5,NA,42,50,NA,FALSE,NA,3,"control",NA,NA
+"S339","#NULL!","c15","Female","3","Part 2",27,27,0,1,1,0,NA,NA,1,0,-1,0,0,NA,NA,-2.27,-2.23,NA,NA,27,NA,NA,27,FALSE,NA,-1,"control",NA,NA
+"S340","#NULL!","c15","Male","7","Academic",48,58,10,2,NA,NA,7,11,7,11,4,NA,NA,7,11,NA,NA,-0.19,0.31,NA,48,58,NA,FALSE,NA,4,"control",NA,NA
+"S341","#NULL!","c15","Female","7","Academic",53,57,4,1,9,10,NA,NA,9,10,1,9,10,NA,NA,0.27,0.25,NA,NA,53,NA,NA,57,FALSE,NA,1,"control",NA,NA
+"S342","#NULL!","c15","Male","6","Academic",48,44,-4,2,NA,NA,8,6,8,6,-2,NA,NA,7,6,NA,NA,-0.19,-1.05,NA,48,44,NA,FALSE,NA,-2,"control",NA,NA

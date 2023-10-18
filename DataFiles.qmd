@@ -36,6 +36,12 @@ Note:  First line gives the key.
 
 [Posttest B raw](data/PosttestBraw.csv)
 
+## Split Half Reliabilities
+
+[Form A](data/formA.csv)
+
+[Form B](data/formB.csv)
+
 # Metadata
 
 [List of competencies](data/competencies.csv) -- Has both long and short names.

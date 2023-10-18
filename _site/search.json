@@ -11,7 +11,7 @@
     "href": "DataFiles.html",
     "title": "Data Files",
     "section": "",
-    "text": "Note that the field SubjID is common to all data fields, and can be used to join tables.\n\n\nPretest and Posttest\nBayes net scores\n\n\n\nACED Observables/Item Scores\nPretest A Scored\nPretest B Scored\nPosttest A Scored\nPosttest B Scored\n\n\n\nNote: First line gives the key.\nPretest A raw\nPretest B raw\nPosttest A raw\nPosttest B raw"
+    "text": "Note that the field SubjID is common to all data fields, and can be used to join tables.\n\n\nPretest and Posttest\nBayes net scores\n\n\n\nACED Observables/Item Scores\nPretest A Scored\nPretest B Scored\nPosttest A Scored\nPosttest B Scored\n\n\n\nNote: First line gives the key.\nPretest A raw\nPretest B raw\nPosttest A raw\nPosttest B raw\n\n\n\nForm A\nForm B"
   },
   {
     "objectID": "DataFiles.html#high-level-data-files",
@@ -33,6 +33,13 @@
     "title": "Data Files",
     "section": "",
     "text": "Note: First line gives the key.\nPretest A raw\nPretest B raw\nPosttest A raw\nPosttest B raw"
+  },
+  {
+    "objectID": "DataFiles.html#split-half-reliabilities",
+    "href": "DataFiles.html#split-half-reliabilities",
+    "title": "Data Files",
+    "section": "",
+    "text": "Form A\nForm B"
   },
   {
     "objectID": "index.html",

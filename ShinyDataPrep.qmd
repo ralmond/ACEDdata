@@ -1,0 +1,120 @@
+---
+title: "RShinyCleaning"
+---
+
+Will use `dplyr` to pull data together into a big file, then pull off subsets for `shinyItemAnalysis`.
+
+```{r}
+library(dplyr)
+```
+
+
+
+# ACED Items
+
+```{r}
+allitems <- read.csv("data/allitems.csv")
+bnscores <- read.csv("data/bnscores.csv")
+demographics <- read.csv("data/prepost.csv")
+demographics |> inner_join(allitems,join_by(SubjID)) |>
+  inner_join(bnscores,join_by(SubjID)) ->
+  acedall
+acedall                             
+```
+
+
+## Data -- items only
+
+```{r}
+select(acedall,starts_with("t")) |>
+  write.csv("data/shinyACED/acedItems.csv")
+```
+
+Key -- not needed
+
+## Group -- Condition/Race/Gender/Level
+
+```{r}
+select(acedall,Condition) |> 
+  write.csv("data/shinyACED/condition.csv",
+            row.names=FALSE)
+```
+
+```{r}
+select(acedall,Classroom) |> 
+  write.csv("data/shinyACED/classroom.csv",
+            row.names=FALSE)
+```
+
+```{r}
+select(acedall,Race) |> 
+  write.csv("data/shinyACED/race.csv",
+            row.names=FALSE)
+```
+
+```{r}
+select(acedall,Level_Code) |> 
+  write.csv("data/shinyACED/track.csv",
+            row.names=FALSE)
+```
+
+
+## Criterion -- Pretest, posttest
+
+```{r}
+select(acedall,pre_scaled) |> 
+  write.csv("data/shinyACED/pretest.csv",
+            row.names=FALSE)
+```
+
+```{r}
+select(acedall,post_scaled) |> 
+  write.csv("data/shinyACED/posttest.csv",
+            row.names=FALSE)
+```
+
+
+## Observed Score -- number right EAP
+
+```{r}
+select(acedall,Correct) |> 
+  write.csv("data/shinyACED/correct.csv",
+            row.names=FALSE)
+```
+
+The best "Score" from ACED is the EAP (expected value) for the Solve Geometric Problems node.
+
+```{r}
+select(acedall,EAP.sgp) |> 
+  write.csv("data/shinyACED/aced_sgp.csv",
+            row.names=FALSE)
+```
+
+
+# Pretest and Posttest
+
+```{r}
+pretestA <- read.csv("data/PretestAraw.csv")
+pretestA |> filter(ItemID!="Key") |>
+  select(!ItemID) |>
+  write.csv("data/shinyACED/PretestAraw.csv",
+            row.names=FALSE)
+pretestA |> filter(ItemID=="Key") |>
+  select(!ItemID) |>
+  write.csv("data/shinyACED/Akey.csv")
+```
+
+```{r}
+pretestB <- read.csv("data/PretestBraw.csv")
+pretestB |> filter(ItemID!="Key") |>
+  select(!ItemID) |>
+  write.csv("data/shinyACED/PretestBraw.csv",
+            row.names=FALSE)
+pretestB |> filter(ItemID=="Key") |>
+  select(!ItemID) |>
+  write.csv("data/shinyACED/Bkey.csv")
+```
+
+
+
+# Equating pretest and posttest

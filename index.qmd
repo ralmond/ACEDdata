@@ -4,12 +4,16 @@ title: "ACED Data Repository"
 
 * [ACED history](history.qmd)
 
-* [Data Dictionary](DataDict.qmd)
+* [Code Book](ACEDcodebook.qmd)
 
 * [Data Index](DataFiles.qmd)
 
 * [Bayes Net Model](ACEDbn.qmd)
 
-* [Helpful Scripts](scripts.qmd)
+* Helpful Scripts
+
+[Data Prep for use with Shiny Item Analysis](ShinyDataPrep.qmd)
+
+[Kappa and Lambda calculations](kappaLambda.qmd)
 
 * [References](bib.qmd)

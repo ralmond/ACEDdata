@@ -1,0 +1,44 @@
+---
+title: "Agreement"
+---
+
+## Load the data and list the skill names.
+
+```{r}
+library(CPTtools)
+load("data/ACED.RData")
+ACED.skillNames
+```
+## Calculate cross-tabs using split havles data
+
+```{r}
+ctabs <- 
+  lapply(ACED.skillNames$short,function (skill) {
+    table(ACED.splitHalves$A[[paste0("MAP.",skill)]],
+          ACED.splitHalves$B[[paste0("MAP.",skill)]])
+  })
+```
+
+Calculate the statistics
+
+```{r}
+kappa <- sapply(ctabs,fcKappa)
+lambda <- sapply(ctabs,gkLambda)
+kltab <- data.frame(skill=ACED.skillNames$long,
+                    kappa=round(kappa,3),
+                    lambda=round(lambda,3))
+kltab[-c(4,11),]
+```
+
+## Lets try to paste this all together.
+
+```{r} 
+alltabs <- do.call(rbind,ctabs)
+dfklt <- data.frame(skill=NA_character_,kappa=NA_real_,
+                    lambda=NA_real_,B=alltabs)
+dfklt$skill[(1:nrow(ACED.skillNames))*3-2] <- ACED.skillNames$long
+dfklt$kappa[(1:nrow(ACED.skillNames))*3-2] <- round(kappa,3)
+dfklt$lambda[(1:nrow(ACED.skillNames))*3-2] <- round(lambda,3)
+rownames(dfklt) <- NULL
+dfklt
+```

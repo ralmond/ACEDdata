@@ -1,0 +1,349 @@
+<!DOCTYPE html><html><head><title>R: Data from ACED field trial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ACED.scores</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data from ACED field trial</h2>
+
+<h3>Description</h3>
+
+<p>ACED (Adaptive Content with Evidence-Based Diagnosis; Shute, Hansen
+and Almond, 2008) is a Bayes net based assessment system which
+featured:  (a) adaptive item selection and (b) extended feedback for
+incorrect items.  This data contains both item level and
+pretest/posttest data from a field trial of the ACED system.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("ACED")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>ACED contains 3 primary <code>data.frame</code> objects and some supplementary data.
+</p>
+<p>All of the data tables have two variables which can serve as keys.  <code>SubjID</code> and <code>AltID</code>.  
+Either can be used as a primary key in joins.  Note that the first two digits of the <code>AltID</code> 
+gives the session (i.e., class) that the student was in.  Note also that students in 
+the control group have only pretest and posttest data; hence they do not appear in 
+<code>ACED.items</code>, <code>ACED.scores</code> or <code>ACED.splitHalves</code>.
+</p>
+<p><code>ACED.scores</code> is data frame with 230 observations on 74
+variables.  These are mostly high-level scores from the Bayesian
+network.  
+</p>
+
+<dl>
+<dt><code>Cond_code</code></dt><dd><p>a factor giving the experimental
+condition for this student, the levels are 
+&ldquo;adaptive_acc&rdquo;, &ldquo;adaptive_full&rdquo;, &ldquo;linear_full&rdquo;, and
+&ldquo;control&rdquo;.  Note that there are no control students in this data set.</p>
+</dd>
+<dt><code>Sequencing</code></dt><dd><p>a factor describing whether the sequence of items
+was  <code>Linear</code> or <code>Adaptive</code></p>
+</dd>
+<dt><code>Feedback</code></dt><dd><p>a factor describing whether the feedback for
+incorrect items was <code>Extended</code> or <code>AccuracyOnly</code></p>
+</dd>
+<dt><code>All_Items</code></dt><dd><p>a numeric vector giving the number of items
+in ACED</p>
+</dd>
+<dt><code>Correct</code></dt><dd><p>a numeric vector giving the number of items
+the student got correct</p>
+</dd>
+<dt><code>Incorr</code></dt><dd><p>a numeric vector giving the number of items the
+student got incorrect</p>
+</dd>
+<dt><code>Remain</code></dt><dd><p>a numeric vector giving the number of items not
+reached or skipped</p>
+</dd>
+<dt><code>ElapTime</code></dt><dd><p>a difftime vector giving the total time spent
+on ACED (in seconds)</p>
+</dd>
+</dl>
+<p>The next group of columns give &ldquo;scores&rdquo; for each of the nodes in
+the Bayesian network.  Each node has four scores, and the columns are
+names <code>p</code><em>node</em><em>ScoreType</em> where <em>node</em> is
+replaced by one of the short codes in <code>ACED.allSkills</code>.
+</p>
+<dl>
+<dt><code>p</code><em>node</em><code>H</code></dt><dd><p>a numeric vector giving the probability
+<em>node</em> is in the high state</p>
+</dd>
+<dt><code>p</code><em>node</em><code>M</code></dt><dd><p>a numeric vector giving the probability
+<em>node</em> is in the medium state</p>
+</dd>
+<dt><code>p</code><em>node</em><code>L</code></dt><dd><p>a numeric vector giving the probability
+<em>node</em> is in the low state</p>
+</dd>
+<dt><code>EAP</code><em>node</em></dt><dd><p>the expected a posteriori value of <em>node</em>
+assuming an equal interval scale, where <code>L=0</code>, <code>M=1</code> and
+<code>H=2</code></p>
+</dd> 
+<dt><code>MAP</code><em>node</em></dt><dd><p>a factor vector giving maximum a
+posteriori value of <em>node</em>, i.e.,
+<code>which.max(p</code><em>node</em><code>H, p</code><em>node</em><code>M, p</code><em>node</em><code>L)</code>.</p>
+</dd>
+</dl>
+
+<p><code>ACED.skillNames</code> a list with two components, <code>long</code> and <code>short</code> giving
+the long (spelled out in CamelCase) and short names for the skills is a character vector giving the abbreviations
+used for the node/skill/attributes names.  
+</p>
+<p><code>ACED.items</code> is data frame with 230 observations on 73
+variables.  These are mostly item-level scores from the field trial. 
+The first two columns are <code>SubjID</code> and <code>AltID</code>.  The remaining columns
+correspond to ACED internal tasks, and are coded 1 for correct, 0 for incorrect, and 
+<code>NA</code> for not reached.
+</p>
+<p><code>ACED.taskNames</code> is essentially the row names from <code>ACED.items</code>.
+The naming scheme for the tasks reflect the skills measured by the task.  
+The response variable names 
+all start with <code>t</code> (for task) followed by the name of one or more 
+skills tapped by the task (if there is more than one, then the first one is
+&ldquo;primary&rdquo;.)  This is followed by a numeric code, 1, 2 or 3,
+giving the difficulty (easy, medium or hard) and a letter (a, b or
+c) used to indicate alternate tasks following the same task model.
+</p>
+<p><code>ACED.prePost</code> is data frame with 290 observations on 32
+variables giving the results of the pretest and posttest.
+</p>
+
+<dl>
+<dt><code>SubjID</code></dt><dd><p>ID assigned by study team, &ldquo;S&rdquo; followed by 3 digits.  Primary key.</p>
+</dd>
+<dt><code>AltID</code></dt><dd><p>ID assigned by the ACED software vendor.  Pattern is &ldquo;sXX-YY&rdquo;, 
+where <em>XX</em> is the session and <em>YY</em> is a student with the session.</p>
+</dd>
+<dt><code>Classroom</code></dt><dd><p>A factor correpsonding to the student's class.</p>
+</dd>
+<dt><code>Gender</code></dt><dd><p>A factor giving the student's gender (I'm not sure if this is
+self-report or administrative records.)</p>
+</dd>
+<dt><code>Race</code></dt><dd><p>A factor giving the student's self-reported race.  The codebook  
+is lost.</p>
+</dd>  
+<dt><code> Level_Code </code></dt><dd><p>a factor variable describing the academic
+track of the student with levels <code>Honors</code>, <code>Academic</code>,
+<code>Regular</code>, <code>Part 1</code>, <code>Part 2</code> and <code>ELL</code>.  The
+codes <code>Part 1</code> and <code>Part 2</code> refer to special education
+students in Part 1 (mainstream classroom) or Part 2 (sequestered).</p>
+</dd>
+<dt><code> pre_scaled </code></dt><dd><p> scale score (after equating) on pretest </p>
+</dd>
+<dt><code> post_scaled </code></dt><dd><p> scale score (after equating) on posttest  </p>
+</dd>
+<dt><code> gain_scaled </code></dt><dd> <p><code>post_scaled - pre_scaled </code></p>
+</dd>
+<dt><code> Form_Order </code></dt><dd><p>a factor variables describing whether
+(<code>AB</code>) Form A was the pretest and Form B was the posttest or
+(<code>BA</code>) vise versa.</p>
+</dd>
+<dt><code> PreACorr </code></dt><dd><p>number of correct items on Form A for students who
+took Form A as a pretest  </p>
+</dd>
+<dt><code> PostBCorr </code></dt><dd><p>number of correct items on Form B for students who
+took Form B as a posttest </p>
+</dd>
+<dt><code> PreBCorr </code></dt><dd><p>number of correct items on Form B for students who
+took Form B as a pretest </p>
+</dd>
+<dt><code> PostACorr </code></dt><dd><p>number of correct items on Form A for students who
+took Form A as a posttest </p>
+</dd>
+<dt><code> PreScore </code></dt><dd><p> a numeric vector with either the non-missing
+value from <code>PreACorr</code> and <code>PreBCorr</code> </p>
+</dd> 
+<dt><code> PostScore </code></dt><dd><p>a numeric vector with either the non-missing
+value from <code>PostACorr</code> and <code>PostBCorr</code>  </p>
+</dd>
+<dt><code> Gain </code></dt><dd> <p><code>PostScore - PreScore</code> </p>
+</dd>
+<dt><code> preacorr_adj </code></dt><dd> <p><code>PreACorr</code> adjusted to put forms A
+and B on the same scale </p>
+</dd>
+<dt><code> postbcorr_adj </code></dt><dd> <p><code>PostBCorr</code> adjusted to put forms A
+and B on the same scale </p>
+</dd>
+<dt><code> prebcorr_adj </code></dt><dd><p><code>PreBCorr</code> adjusted to put forms A
+and B on the same scale  </p>
+</dd>
+<dt><code> postacorr_adj </code></dt><dd><p><code>PostACorr</code> adjusted to put forms A
+and B on the same scale  </p>
+</dd>
+<dt><code> Zpreacorr_adj </code></dt><dd><p> standardized version of <code>preacorr_adj</code> </p>
+</dd>
+<dt><code> Zpostbcorr_adj </code></dt><dd><p> standardized version of <code>postbcorr_adj</code>  </p>
+</dd>
+<dt><code> Zprebcorr_adj </code></dt><dd><p> standardized version of <code>prebcorr_adj</code> </p>
+</dd>
+<dt><code> Zpostacorr_adj </code></dt><dd><p> standardized version of <code>postacorr_adj</code> </p>
+</dd>
+<dt><code> scale_prea </code></dt><dd><p> score on Form A for students who
+took Form A as a pretest scaled to range 0-100 </p>
+</dd>
+<dt><code> scale_preb </code></dt><dd><p> score on Form B for students who
+took Form B as a pretest scaled to range 0-100 </p>
+</dd>
+<dt><code> pre_scaled </code></dt><dd><p> scale score on pretest (whichever form)  </p>
+</dd>
+<dt><code> scale_posta </code></dt><dd><p> score on Form A for students who
+took Form A as a posttest scaled to range 0-100 </p>
+</dd>
+<dt><code> scale_postb </code></dt><dd><p> score on Form B for students who
+took Form B as a posttest scaled to range 0-100 </p>
+</dd>
+<dt><code> Flagged </code></dt><dd><p> a logical variable (codebook lost) </p>
+</dd>
+<dt><code>Cond</code></dt><dd><p>a factor describing the experimental condition
+with levels <code>Adaptive/Accuracy</code>, <code>Adaptive/Extended</code>,
+<code>Linear/Extended</code> and <code>Control</code>.  Note that controls are included in this data set.</p>
+</dd> 
+<dt><code>Sequencing</code></dt><dd><p>a factor describing whether the sequence of items
+was  <code>Linear</code> or <code>Adaptive</code></p>
+</dd>
+<dt><code>Feedback</code></dt><dd><p>a factor describing whether the feedback for
+incorrect items was <code>Extended</code> or <code>AccuracyOnly</code></p>
+</dd>
+</dl>
+  
+<p><code>ACED.Qmatrix</code> is a logical matrix whose rows correspond to skills (long names)
+and whose columns correspond to tasks which is true if the skill is required for solving 
+the task (according to the expert).
+</p>
+<p><code>ACED.QEM</code> is a reduced Q-matrix containing the 15 <em>evidence models</em> 
+(unique rows in the $Q$-matrix).  The entries are character values with &quot;0&quot; indicating skill not needed, &quot;+&quot;   
+indicating skill is needed and &quot;++&quot; indicating skill is primary.  The <code>Tasks</code> column lists
+the tasks corresponding to this evidence model (1, 2 and 3 again represent difficulty level, and the
+letters indicating variants).  The <code>Anchor</code> column is used to identify subscales for scale identification.
+</p>
+<p><code>ACED.splithalves</code> is a list of two datasets labeled &ldquo;A&rdquo; and &ldquo;B&rdquo;.  Both 
+have the same structure as <code>ACED.scores</code> (less the datas giving study condition).  These were created
+by splitting the 62 items into 2 subforms with 31 items each.  For the most part, each item was paired with
+an variant which differed only by the last letter.  The scores are the results of Bayes net scoring with
+half of the items.
+</p>
+<p><code>ACED.pretest</code> and <code>ACED.posttest</code> are raw data from the external pretest and posttest given 
+before and after the study.  Each is a list with four components:
+</p>
+
+<dl>
+<dt><code>Araw</code></dt><dd><p>Unscored responses for students who took that form as pre(post)test.  The first
+row is the key.</p>
+</dd>
+<dt><code>Ascored</code></dt><dd><p>The scored responses for the <code>Araw</code> students; correct is 1, incorrect is 0.</p>
+</dd>
+<dt><code>Braw</code></dt><dd><p>Unscored responses for students who took that form as pre(post)test.  The first
+row is the key.</p>
+</dd>
+<dt><code>Bscored</code></dt><dd><p>The scored responses for the <code>Araw</code> students; correct is 1, incorrect is 0.</p>
+</dd>
+</dl>
+ 
+<p>Because of the counterbalancing each student should appear in either Form A or Form B in the pretest 
+and in the other group in the posttest.  Note that the A and B forms here have no relationship with the A and B   
+forms in <code>ACED.splithalves</code>.
+</p>
+
+
+<h3>Details</h3>
+
+<p>ACED is a Bayesian network based Assessment for Learning learning
+system, thus it served as both a assessment and a tutoring system.  It
+had two novel features which could be turned on and off, elaborated
+feedback (turned off, it provided accuracy only feedback) and adaptive
+sequencing of items (turned off, it scheduled items in a fixed linear
+sequence).  
+</p>
+<p>It was originally built to cover all algebraic sequences (arithmetic,
+geometric and other recursive), but only the branch of the system
+using geometric sequences was tested.  Shute, Hansen and Almond (2008)
+describe the field trial.  Students from a local middle school (who
+studied arithmetic, but not geometric sequences as part of their
+algebra curriculum) were recruited for the study.  The students were
+randomized into one of four groups:
+</p>
+
+<dl>
+<dt><code>Adaptive/Accuracy</code></dt><dd><p>Adaptive sequencing was used, but
+students only received correct/incorrect feedback.</p>
+</dd>
+<dt><code>Adaptive/Extended</code></dt><dd><p>Adaptive sequencing was used, but
+students received extended feedback for incorrect items.</p>
+</dd>
+<dt><code>Linear/Extended</code></dt><dd><p>The fixed linear sequencing was used, but
+students received extended feedback for incorrect items.</p>
+</dd>
+<dt><code>Control</code></dt><dd><p>The students did independent study and did not
+use ACED.</p>
+</dd>
+</dl>
+
+<p>Because students in the control group were not exposed to the ACED
+task, neither the Bayes net level scores nor the item level scores are
+available for those groups, and those students are excluded from
+<code>ACED.scores</code> and <code>ACED.items</code>.  The students are in the
+same order in all of the data sets, with the 60 control students
+tacked onto the end of the <code>ACED.prePost</code> data set.
+</p>
+<p>All of the students (including the control students) were given a
+25-item pretest and a 25-item posttest with items similar to the ones
+used in ACED.  The design was counterbalanced, with half of the
+students receiving Form A as the pretest and Form B as the posttest
+and the other half the other way around, to allow the two forms to be
+equated using the pretest data.  The details are buried in
+<code>ACED.prePost</code>.
+</p>
+<p>Note that some irregularities were observed with the English Language
+Learner (<code>ACED.prePost$Level_code=="ELL"</code>) students.  Their
+teachers were allowed to translated words for the students, but in
+many cases actually wound up giving instruction as part of the
+translation.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Shute, V. J., Hansen, E. G., &amp; Almond, R. G. (2008). You can't fatten
+a hog by weighing it&mdash;Or can you? Evaluating an assessment for learning
+system called ACED. <em>International Journal of Artificial
+Intelligence and Education</em>, <b>18</b>(4), 289-316. 
+</p>
+<p>Thanks to Val Shute for permission to use the data.
+</p>
+<p>ACED development and data collection was sponsored by National Science
+Foundation Grant No. 0313202.  
+</p>
+
+
+<h3>References</h3>
+
+<p>A more detailed description, including a Q-matrix can be found at the
+ECD Wiki:  <a href="http://ecd.ralmond.net/ecdwiki/ACED/ACED">http://ecd.ralmond.net/ecdwiki/ACED/ACED</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ACED)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -42,6 +42,45 @@ Note:  First line gives the key.
 
 [Form B](data/formB.csv)
 
+# Data Formatted for Shiny Item Analysis
+
+## Pretest/Posttest files
+
+[Form A Selections](data/shinyACED/PretestAraw.csv)
+[Form A Key](data/shinyACED/Akey.csv)
+
+[Form B Selections](data/shinyACED/PretestBraw.csv)
+[Form B Key](data/shinyACED/Bkey.csv)
+
+## Internal Bayes net data
+
+### Items
+
+[Items (Shiny Item Analysis Format)](data/shinyACED/acedItems.csv)
+
+### Validity Criteria
+
+[Scaled Pretest](data/shinyACED/pretest.csv)
+
+[Scaled Posttest](data/shinyACED/posttest.csv)
+
+### Internal Scores
+
+[Expected Value of SGP](data/shinyACED/aced_sgp.csv)  This is the overall Bayes net score running from -1 to 1
+
+[Number Correct](data/shinyACED/correct.csv)  Number of internal items correct.
+
+### Groups (for DIF studies)
+
+[Classroom](data/shinyACED/classroom.csv)  Which classroom was the student from.
+
+[Condition](data/shinyACED/condition.csv)  Study Condition
+
+[Race](data/shinyACED/race.csv)  Coding is not available.
+
+[Academic Level](data/shinyACED/track.csv)  Academic level of classroom.
+
+
 # Metadata
 
 [List of competencies](data/competencies.csv) -- Has both long and short names.

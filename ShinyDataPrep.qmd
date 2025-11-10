@@ -13,13 +13,13 @@ library(dplyr)
 # ACED Items
 
 ```{r}
-allitems <- read.csv("data/allitems.csv")
+allitems <- read.csv("data/allItems.csv")
 bnscores <- read.csv("data/bnscores.csv")
 demographics <- read.csv("data/prepost.csv")
 demographics |> inner_join(allitems,join_by(SubjID)) |>
   inner_join(bnscores,join_by(SubjID)) ->
   acedall
-acedall                             
+## acedall                             # Only useful in interactive mode.
 ```
 
 

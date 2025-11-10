@@ -1,4 +1,9 @@
-# ACED Big Daddy 4 Codebook
+---
+title:  ACED Big Daddy 4 Codebook
+editor: 
+  markdown: 
+    wrap: 72
+---
 
 Shute, Hansen and Almond (2008; also Shute, Hansen & Almond, 2007)
 describe an Assessment *for* Learning system called ACED (Adaptive
@@ -10,6 +15,15 @@ assessment administrator: (1) an adaptive sequencing tool which would
 select items according to their estimated difficulty and (2) an
 informative feedback tool which provides in depth explanations for
 problems the student answers incorrectly.
+
+[^1]: ACED is the brainchild of Dr. Valerie Shute, now at FSU (the ACED
+    work was done while she was at ETS). It was supported by a large
+    cast including: Aurora Graf, Eric Hansen, Jody Underwood, Larry
+    Casey, Steve Landau, Peggy Redman, Waverly Van Winkle, Juan-Diego
+    Zapata-Rivera and Russell Almond (also now at FSU). ACED development
+    and data collection was sponsored by National Science Foundation
+    Grant No. 0313202. More information about ACED is available at the
+    ECD Wiki: <http://ecd.ralmond.net/ecdwiki/ACED/ACED>.
 
 Shute, Hansen and Almond (2008) describe a short field trial of ACED
 using the portion of ACED relating to geometric sequences. There were a
@@ -60,7 +74,7 @@ were randomly assigned to one of four groups:
 
 **SubjID --** Subject ID, unique to each individual in the study.
 
-**Sess \--** Session identifier, note that the first two digits
+**Sess --** Session identifier, note that the first two digits
 identifies the classroom, the second the student. Student numbers in the
 90s represent control students.
 
@@ -154,7 +168,7 @@ variable in the model.)
 
 The items used internally to ACED are all scored dichotomously. They are
 given names according to the following pattern:
-**t***\[Skill1\]\[Skill2\]\[\...\]\[Difficulty=1,2,
+**t***\[Skill1\]\[Skill2\]\[...\]\[Difficulty=1,2,
 or3\]\[Variant=a,b,c,...\]***.***\[Verstion=1\].*
 
 Thus, tVerbalRuleExtendModelGeometric2a.1, uses the Verbal Rule, Extend,
@@ -198,7 +212,7 @@ These are data that were gathered by Val Shute & others as part of
 National Science Foundation Grant No. 0313202. The data collection and
 analysis are described in:
 
-Shute, V. J., Hansen, E. G., & Almond, R. G. (2008). You Can\'t Fatten A
+Shute, V. J., Hansen, E. G., & Almond, R. G. (2008). You Can't Fatten A
 Hog by Weighing It - Or Can You? Evaluating an Assessment for Learning
 System Called ACED. *International Journal of Artificial Intelligence in
 Education*, *18*(4), 289-316. Retrieved from
@@ -211,12 +225,3 @@ Learning*. ETS. Retrieved from
 
 More detail, including the complete Bayesian network model used to score
 ACED can be found at <https://ecd.ralmond.net/ecdwiki/ACED/ACED>.
-
-[^1]: ACED is the brainchild of Dr. Valerie Shute, now at FSU (the ACED
-    work was done while she was at ETS). It was supported by a large
-    cast including: Aurora Graf, Eric Hansen, Jody Underwood, Larry
-    Casey, Steve Landau, Peggy Redman, Waverly Van Winkle, Juan-Diego
-    Zapata-Rivera and Russell Almond (also now at FSU). ACED development
-    and data collection was sponsored by National Science Foundation
-    Grant No. 0313202. More information about ACED is available at the
-    ECD Wiki: <http://ecd.ralmond.net/ecdwiki/ACED/ACED>.

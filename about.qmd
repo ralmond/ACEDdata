@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+This site is a data repository for data about the ACED project.
 
-```{r}
-1 + 1
-```
+It is still a bit of a work in progress.

@@ -58,6 +58,30 @@ Note:  First line gives the key.
 
 [Items (Shiny Item Analysis Format)](data/shinyACED/acedItems.csv)
 
+### Item Subsets
+
+[Solve Geometric Problems](data/shinyACED/sgpItems.csv). These might be better called distinguish series.
+
+[Common Ratio](data/shinyACED/crItems.csv)
+
+[Example](data/shinyACED/egItems.csv)
+
+[Extend](data/shinyACED/extItems.csv)
+
+[Explicit Rule](data/shinyACED/expItems.csv)
+
+[Model](data/shinyACED/modItems.csv)
+
+[Visual](data/shinyACED/picItems.csv)
+
+[Recursive Rule](data/shinyACED/rrItems.csv)
+
+[Verbal Rule](data/shinyACED/vrItems.csv)
+
+[Table](data/shinyACED/tabItems.csv)
+
+
+
 ### Validity Criteria
 
 [Scaled Pretest](data/shinyACED/pretest.csv)

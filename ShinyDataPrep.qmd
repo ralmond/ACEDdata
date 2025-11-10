@@ -30,6 +30,61 @@ select(acedall,starts_with("t")) |>
   write.csv("data/shinyACED/acedItems.csv")
 ```
 
+### Item Subsets
+
+63 items is too many for Wright Map, so break
+into subscales.
+
+```{r}
+select(acedall,contains("Solve")) |>
+  write.csv("data/shinyACED/sgpItems.csv")
+```
+
+```{r}
+select(acedall,contains("Ratio")) |>
+  write.csv("data/shinyACED/crItems.csv")
+```
+
+```{r}
+select(acedall,contains("Example")) |>
+  write.csv("data/shinyACED/egItems.csv")
+```
+
+```{r}
+select(acedall,contains("Explicit")) |>
+  write.csv("data/shinyACED/expItems.csv")
+```
+
+```{r}
+select(acedall,contains("Extend")) |>
+  write.csv("data/shinyACED/extItems.csv")
+```
+
+```{r}
+select(acedall,contains("Model")) |>
+  write.csv("data/shinyACED/modItems.csv")
+```
+
+```{r}
+select(acedall,contains("Recursive")) |>
+  write.csv("data/shinyACED/rrItems.csv")
+```
+
+```{r}
+select(acedall,contains("Table")) |>
+  write.csv("data/shinyACED/tabItems.csv")
+```
+```{r}
+select(acedall,contains("Verbal")) |>
+  write.csv("data/shinyACED/vrItems.csv")
+```
+```{r}
+select(acedall,contains("Visual")) |>
+  write.csv("data/shinyACED/picItems.csv")
+```
+
+
+
 Key -- not needed
 
 ## Group -- Condition/Race/Gender/Level

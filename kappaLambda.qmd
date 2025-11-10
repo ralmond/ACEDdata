@@ -4,8 +4,10 @@ title: "Agreement"
 
 ## Load the data and list the skill names.
 
+
 ```{r}
-library(CPTtools)
+#library(CPTtools)
+source("klfuns.R")
 load("data/ACED.RData")
 ACED.skillNames
 ```

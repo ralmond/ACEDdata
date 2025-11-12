@@ -173,8 +173,9 @@ or3\]\[Variant=a,b,c,...\]***.***\[Verstion=1\].*
 
 Thus, tVerbalRuleExtendModelGeometric2a.1, uses the Verbal Rule, Extend,
 and Model Skills. It is medium difficulty (2), and is the first variant
-with that configuration. A complete Q-matrix is given at
-<https://ecd.ralmond.net/ecdwiki/ACED/ACED/>[.]()
+with that configuration. A complete Q-matrix is given at [Sheet Q of
+this
+sheet.](https://docs.google.com/spreadsheets/d/1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ/)
 
 ## Pretest and Posttest (EN through FL)
 
@@ -216,12 +217,12 @@ Shute, V. J., Hansen, E. G., & Almond, R. G. (2008). You Can't Fatten A
 Hog by Weighing It - Or Can You? Evaluating an Assessment for Learning
 System Called ACED. *International Journal of Artificial Intelligence in
 Education*, *18*(4), 289-316. Retrieved from
-<http://www.ijaied.org/iaied/ijaied/abstract/Vol_18/Shute08.html>
+<https://www.ijaied.org/iaied/ijaied/abstract/Vol_18/Shute08.html>
 
 Shute, V. J., Hansen, E. G., & Almond, R. G. (2007). *An Assessment for
 Learning System Called ACED: The Impact of Feedback and Adaptivity on
 Learning*. ETS. Retrieved from
-<http://www.ets.org/research/researcher/RR-07-26.html>
+<https://www.ets.org/research/researcher/RR-07-26.html>
 
 More detail, including the complete Bayesian network model used to score
-ACED can be found at <https://ecd.ralmond.net/ecdwiki/ACED/ACED>.
+ACED can be found at <BayesNets.qmd>

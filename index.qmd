@@ -8,7 +8,7 @@ title: "ACED Data Repository"
 
 * [Data Index](DataFiles.qmd)
 
-* [Bayes Net Model](ACEDbn.qmd)
+* [Bayes Net Model](BayesNet.qmd)
 
 * Helpful Scripts
 

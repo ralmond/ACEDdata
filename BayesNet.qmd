@@ -1,0 +1,28 @@
+---
+title: "ACED Bayes net Models"
+---
+
+The `Peanut` format represents a Bayes net using a series of spreadsheets (sheets in the links).
+
+
+* **Nets** This is a list of the networks:  the centeral competency models and the evidence models.
+
+Note that variable names are scoped within nets, so that `isCorrect` in `item1` is different from `isCorrect` in `item2`.
+
+* **Nodes** This lists information about the nodes, the labels for the states, and numeric values mapped to the states.  Note that in the current format there is one line per state of the variable.
+
+* **Q** This shows the relationship between the observable nodes in the evidence model and the competency nodes in the competency model.  It additionally has columns for parameters and the combination rule and link function used in the model.  Note that there is one row (less one for the lowest possible state) per state of each variable.
+
+* **Omega** Similar to the **Q** table except this is showing correlations among competencies.  Note that all are assumed to use the compensatory model and normal link, so there are some simplifications.
+
+* **Statistics** This is a list of the statistics (of the posterior competency model) which should be included on a score report.
+
+[Full ACED Model](https://docs.google.com/spreadsheets/d/1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ/)
+
+This is the full ACED model.
+Note that the "Easy", "Medium" and "Hard" evidence models should be used with the 1, 2 and 3 versions of the tasks.
+
+[Mini ACED Model](https://docs.google.com/spreadsheets/d/1t4ZPfeNmSFXm4ejQPjdGri8_U8VkEsR9mwKwE1AM0p4/)
+
+This is a subset of the ACED model designed to be easier to use with the student version of Netica.
+

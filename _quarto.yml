@@ -2,8 +2,10 @@ project:
   type: website
 
 website:
-  title: "ACEDdata"
+  title: "ACED data"
   navbar:
+    logo: img/ACEDlogo.png
+    title: false
     left:
       - href: index.qmd
         text: Home
@@ -11,6 +13,8 @@ website:
         text: Data
       - href: ACEDcodebook.qmd
         text: "Code Book"
+      - href: BayesNet.qmd
+        text: "Bayes Nets"
       - about.qmd
 
 format:

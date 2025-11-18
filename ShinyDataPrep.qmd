@@ -19,7 +19,7 @@ demographics <- read.csv("data/prepost.csv")
 demographics |> inner_join(allitems,join_by(SubjID)) |>
   inner_join(bnscores,join_by(SubjID)) ->
   acedall
-## acedall                             # Only useful in interactive mode.
+acedall                             # Only useful in interactive mode.
 ```
 
 
@@ -27,7 +27,7 @@ demographics |> inner_join(allitems,join_by(SubjID)) |>
 
 ```{r}
 select(acedall,starts_with("t")) |>
-  write.csv("data/shinyACED/acedItems.csv")
+  write.csv("data/shinyACED/acedItems.csv",row.names=FALSE)
 ```
 
 ### Item Subsets
@@ -37,13 +37,25 @@ into subscales.
 
 ```{r}
 select(acedall,contains("Solve")) |>
-  write.csv("data/shinyACED/sgpItems.csv")
+  write.csv("data/shinyACED/sgpItems.csv",row.names=FALSE)
 ```
 
 ```{r}
 select(acedall,contains("Ratio")) |>
-  write.csv("data/shinyACED/crItems.csv")
+  write.csv("data/shinyACED/crItems.csv",row.names=FALSE)
 ```
+
+```{r}
+select(acedall,matches("Solve|Ratio")) |>
+  write.csv("data/shinyACED/sgpcrItems.csv",row.names=FALSE)
+```
+
+```{r}
+select(acedall,contains("Ratio")) |>
+  write.csv("data/shinyACED/crItems.csv",row.names=FALSE)
+```
+
+
 
 ```{r}
 select(acedall,contains("Example")) |>
@@ -89,6 +101,8 @@ Key -- not needed
 
 ## Group -- Condition/Race/Gender/Level
 
+
+
 ```{r}
 select(acedall,Condition) |> 
   write.csv("data/shinyACED/condition.csv",
@@ -96,8 +110,9 @@ select(acedall,Condition) |>
 ```
 
 ```{r}
-select(acedall,Classroom) |> 
-  write.csv("data/shinyACED/classroom.csv",
+mutate(acedall,Gender1=as.integer(Gender=="Female")) |>
+  select(Gender1) |> 
+  write.csv("data/shinyACED/gender.csv",
             row.names=FALSE)
 ```
 

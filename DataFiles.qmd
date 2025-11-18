@@ -64,6 +64,8 @@ Note:  First line gives the key.
 
 [Common Ratio](data/shinyACED/crItems.csv)
 
+[Both of the above scales together](data/shinyACED/sgpcrItems.csv)
+
 [Example](data/shinyACED/egItems.csv)
 
 [Extend](data/shinyACED/extItems.csv)
@@ -104,6 +106,23 @@ Note:  First line gives the key.
 
 [Academic Level](data/shinyACED/track.csv)  Academic level of classroom.
 
+Redone to be in Shiny's prefered 0,1 format
+
+[Gender](data/shinyACED/gender.csv)
+
+[Feedback](data/shinyACED/feedback.csv) Full feedback 1 versus accuracy only 1
+
+[Sequencing](data/shinyACED/sequencing.csv) Adaptive 1 versus linear 0
+
+[Race Focal Group 2](data/shinyACED/racef2.csv) Group 2 versus 7
+
+[Race Focal Group 3](data/shinyACED/racef3.csv) Group 3 versus 7
+
+[Race Focal Group 6](data/shinyACED/racef6.csv) Group 6 versus 7
+
+[ELL](data/shinyACED/ell.csv) English language learners versus regular ed.
+
+[Special Ed](data/shinyACED/specialed.csv) Special versus regular ed.
 
 # Metadata
 

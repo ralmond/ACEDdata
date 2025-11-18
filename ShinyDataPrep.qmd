@@ -19,11 +19,13 @@ demographics <- read.csv("data/prepost.csv")
 demographics |> inner_join(allitems,join_by(SubjID)) |>
   inner_join(bnscores,join_by(SubjID)) ->
   acedall
-acedall                             # Only useful in interactive mode.
+#acedall                             # Only useful in interactive mode.
 ```
 
 
 ## Data -- items only
+
+The `write.csv` by default puts row names/numbers as the first column, but ShinyItemAnalysis does not want them, so need to use the `row.names=FALSE` switch.
 
 ```{r}
 select(acedall,starts_with("t")) |>
@@ -59,40 +61,40 @@ select(acedall,contains("Ratio")) |>
 
 ```{r}
 select(acedall,contains("Example")) |>
-  write.csv("data/shinyACED/egItems.csv")
+  write.csv("data/shinyACED/egItems.csv",row.names=FALSE)
 ```
 
 ```{r}
 select(acedall,contains("Explicit")) |>
-  write.csv("data/shinyACED/expItems.csv")
+  write.csv("data/shinyACED/expItems.csv",row.names=FALSE)
 ```
 
 ```{r}
 select(acedall,contains("Extend")) |>
-  write.csv("data/shinyACED/extItems.csv")
+  write.csv("data/shinyACED/extItems.csv",row.names=FALSE)
 ```
 
 ```{r}
 select(acedall,contains("Model")) |>
-  write.csv("data/shinyACED/modItems.csv")
+  write.csv("data/shinyACED/modItems.csv",row.names=FALSE)
 ```
 
 ```{r}
 select(acedall,contains("Recursive")) |>
-  write.csv("data/shinyACED/rrItems.csv")
+  write.csv("data/shinyACED/rrItems.csv",row.names=FALSE)
 ```
 
 ```{r}
 select(acedall,contains("Table")) |>
-  write.csv("data/shinyACED/tabItems.csv")
+  write.csv("data/shinyACED/tabItems.csv",row.names=FALSE)
 ```
 ```{r}
 select(acedall,contains("Verbal")) |>
-  write.csv("data/shinyACED/vrItems.csv")
+  write.csv("data/shinyACED/vrItems.csv",row.names=FALSE)
 ```
 ```{r}
 select(acedall,contains("Visual")) |>
-  write.csv("data/shinyACED/picItems.csv")
+  write.csv("data/shinyACED/picItems.csv",row.names=FALSE)
 ```
 
 
@@ -101,13 +103,9 @@ Key -- not needed
 
 ## Group -- Condition/Race/Gender/Level
 
+ShinyItemAnalysis only accepts 0,1
 
-
-```{r}
-select(acedall,Condition) |> 
-  write.csv("data/shinyACED/condition.csv",
-            row.names=FALSE)
-```
+For gender, we just need to map factor variable onto 0,1.
 
 ```{r}
 mutate(acedall,Gender1=as.integer(Gender=="Female")) |>
@@ -116,15 +114,72 @@ mutate(acedall,Gender1=as.integer(Gender=="Female")) |>
             row.names=FALSE)
 ```
 
+
+Study condition has three levels, related to sequencing and feedback,
+we can use those binary variables.
 ```{r}
-select(acedall,Race) |> 
-  write.csv("data/shinyACED/race.csv",
-            row.names=FALSE)
+table(acedall$Condition)
+table(acedall$Sequencing.x)
+table(acedall$Feedback.x)
 ```
 
 ```{r}
-select(acedall,Level_Code) |> 
-  write.csv("data/shinyACED/track.csv",
+mutate(acedall,Sequencing=as.integer(Sequencing.x=="Adaptive")) |>
+  select(Sequencing) |> 
+  write.csv("data/shinyACED/sequencing.csv",
+            row.names=FALSE)
+mutate(acedall,Feedback=as.integer(Feedback.x=="Full")) |>
+  select(Feedback) |> 
+  write.csv("data/shinyACED/feedback.csv",
+            row.names=FALSE)
+```
+
+Race is a bit more complex, as there are 8 groups.
+
+```{r}
+table(acedall$Race)
+```
+Group 7 has the biggest number, so lets call that reference.  Groups 2, 3 and 6 are big enough to be interesting.  The `dplyr::case_match` function allows us to do this.
+
+```{r}
+mutate(acedall,focal2=case_match(Race,
+                           7 ~ 0,
+                           2 ~ 1)) |>
+  select(focal2) |>  
+  write.csv("data/shinyACED/racef2.csv",
+            row.names=FALSE)
+mutate(acedall,focal3=case_match(Race,
+                           7 ~ 0,
+                           3 ~ 1)) |>
+  select(focal3) |>
+  write.csv("data/shinyACED/racef3.csv",
+            row.names=FALSE)
+mutate(acedall,focal6=case_match(Race,
+                           7 ~ 0,
+                           6 ~ 1)) |>
+  select(focal6) |>  
+  write.csv("data/shinyACED/racef6.csv",
+            row.names=FALSE)
+```
+
+Level code has to do with the classroom type
+```{r}
+table(acedall$Level_Code)
+```
+Some interesting contrasts here are the regular (Honors, Academic and Regular) versus ELL and Special Ed (Parts 1 and 2).  ELL had some irregularities in administration, so it is worth looking at separately.
+
+```{r}
+mutate(acedall,ELL=case_match(Level_Code,
+                        c("Honors", "Accademic", "Regular") ~ 0,
+                        "ELL" ~1)) |>
+  select(ELL) |>
+  write.csv("data/shinyACED/ell.csv",
+            row.names=FALSE)
+mutate(acedall,SpecialEd=case_match(Level_Code,
+                        c("Honors", "Accademic", "Regular") ~ 0,
+                        c("Part 1","Part 2") ~1)) |>
+  select(SpecialEd) |>
+  write.csv("data/shinyACED/specialed.csv",
             row.names=FALSE)
 ```
 

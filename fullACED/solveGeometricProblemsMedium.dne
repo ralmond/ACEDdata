@@ -1,0 +1,53 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet solveGeometricProblems_24 {
+autoupdate = FALSE;
+title = "solve Geometric ProblemsMedium";
+whenchanged = 1773323076;
+user U1 {
+	Truename = "solveGeometricProblemsMedium";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/solveGeometricProblemsMedium.dne";
+	};
+
+param X_DistinguishTypes_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "DistinguishTypes";
+	whenchanged = 1769473884;
+	};
+
+node isCorrect {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (X_DistinguishTypes_1);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.8381572,   0.1618428,    // High             
+		   0.5,         0.5,          // Medium           
+		   0.1618428,   0.8381572);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323076;
+	user U1 {
+		Truename = "isCorrect";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (isCorrect);};
+NodeSet Evidence {Nodes = (isCorrect);};
+NodeSet onodes {Nodes = (isCorrect);};
+};

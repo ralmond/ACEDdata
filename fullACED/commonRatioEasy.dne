@@ -1,0 +1,53 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet commonRatioEasy {
+autoupdate = FALSE;
+title = "common Ratio Easy";
+whenchanged = 1773323075;
+user U1 {
+	Truename = "commonRatioEasy";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/commonRatioEasy.dne";
+	};
+
+param X_CommonRatio_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "CommonRatio";
+	whenchanged = 1769473883;
+	};
+
+node isCorrect {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (X_CommonRatio_1);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.9659269,   0.0340731,    // High        
+		   0.8455347,   0.1544653,    // Medium      
+		   0.5138515,   0.4861485);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323075;
+	user U1 {
+		Truename = "isCorrect";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (isCorrect);};
+NodeSet Evidence {Nodes = (isCorrect);};
+NodeSet onodes {Nodes = (isCorrect);};
+};

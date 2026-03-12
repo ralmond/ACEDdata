@@ -1,0 +1,96 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet verbalRuleExtendModelG_36 {
+autoupdate = FALSE;
+title = "verbal Rule Extend Model Geometric Medium";
+whenchanged = 1773323077;
+user U1 {
+	Truename = "verbalRuleExtendModelGeometricMedium";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/verbalRuleExtendModelGeometricMedium.dne";
+	};
+
+param X_VerbalRulesGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "VerbalRulesGeometric";
+	whenchanged = 1769473885;
+	};
+
+param X_ExtendGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ExtendGeometric";
+	whenchanged = 1769473885;
+	};
+
+param X_ModelGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ModelGeometric";
+	whenchanged = 1769473885;
+	};
+
+node isCorrect {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	parents = (X_ExtendGeometric_1, X_ModelGeometric_1, X_VerbalRulesGeometric_1);
+	probs = 
+		// Yes          No            // ExtendGeometric ModelGeometric VerbalRulesGeometric 
+		  (0.9345388,   0.06546115,   // High            High           High                 
+		   0.8204203,   0.1795797,    // High            High           Medium               
+		   0.5938247,   0.4061753,    // High            High           Low                  
+		   0.869778,    0.130222,     // High            Medium         High                 
+		   0.6812667,   0.3187333,    // High            Medium         Medium               
+		   0.4061753,   0.5938247,    // High            Medium         Low                  
+		   0.7575692,   0.2424308,    // High            Low            High                 
+		   0.5,         0.5,          // High            Low            Medium               
+		   0.2424308,   0.7575692,    // High            Low            Low                  
+		   0.869778,    0.130222,     // Medium          High           High                 
+		   0.6812667,   0.3187333,    // Medium          High           Medium               
+		   0.4061753,   0.5938247,    // Medium          High           Low                  
+		   0.7575692,   0.2424308,    // Medium          Medium         High                 
+		   0.5,         0.5,          // Medium          Medium         Medium               
+		   0.2424308,   0.7575692,    // Medium          Medium         Low                  
+		   0.5938247,   0.4061753,    // Medium          Low            High                 
+		   0.3187333,   0.6812667,    // Medium          Low            Medium               
+		   0.130222,    0.869778,     // Medium          Low            Low                  
+		   0.7575692,   0.2424308,    // Low             High           High                 
+		   0.5,         0.5,          // Low             High           Medium               
+		   0.2424308,   0.7575692,    // Low             High           Low                  
+		   0.5938247,   0.4061753,    // Low             Medium         High                 
+		   0.3187333,   0.6812667,    // Low             Medium         Medium               
+		   0.130222,    0.869778,     // Low             Medium         Low                  
+		   0.4061753,   0.5938247,    // Low             Low            High                 
+		   0.1795797,   0.8204203,    // Low             Low            Medium               
+		   0.06546115,  0.9345388);   // Low             Low            Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323077;
+	user U1 {
+		Truename = "isCorrect";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, ModelGeometric = -0.22314355131421, \n\
+			VerbalRulesGeometric = 0.182321556793955)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (isCorrect);};
+NodeSet Evidence {Nodes = (isCorrect);};
+NodeSet onodes {Nodes = (isCorrect);};
+};

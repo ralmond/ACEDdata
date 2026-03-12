@@ -1,0 +1,96 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet modelExtendTableGeomet_17 {
+autoupdate = FALSE;
+title = "modelExtend Table  Geometric Hard";
+whenchanged = 1773323076;
+user U1 {
+	Truename = "modelExtendTableGeometricHard";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/modelExtendTableGeometricHard.dne";
+	};
+
+param X_ModelGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ModelGeometric";
+	whenchanged = 1769473884;
+	};
+
+param X_ExtendGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ExtendGeometric";
+	whenchanged = 1769473884;
+	};
+
+param X_TableGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "TableGeometric";
+	whenchanged = 1769473884;
+	};
+
+node isCorrect {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (X_ExtendGeometric_1, X_TableGeometric_1, X_ModelGeometric_1);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.7228407,   0.2771593,    // High            High           High           
+		   0.4549222,   0.5450778,    // High            High           Medium         
+		   0.2107849,   0.7892151,    // High            High           Low            
+		   0.5495858,   0.4504142,    // High            Medium         High           
+		   0.2808194,   0.7191806,    // High            Medium         Medium         
+		   0.1110758,   0.8889242,    // High            Medium         Low            
+		   0.3634083,   0.6365917,    // High            Low            High           
+		   0.1544653,   0.8455347,    // High            Low            Medium         
+		   0.05523192,  0.9447681,    // High            Low            Low            
+		   0.5495858,   0.4504142,    // Medium          High           High           
+		   0.2808194,   0.7191806,    // Medium          High           Medium         
+		   0.1110758,   0.8889242,    // Medium          High           Low            
+		   0.3634083,   0.6365917,    // Medium          Medium         High           
+		   0.1544653,   0.8455347,    // Medium          Medium         Medium         
+		   0.05523192,  0.9447681,    // Medium          Medium         Low            
+		   0.2107849,   0.7892151,    // Medium          Low            High           
+		   0.07873942,  0.9212606,    // Medium          Low            Medium         
+		   0.02662296,  0.973377,     // Medium          Low            Low            
+		   0.3634083,   0.6365917,    // Low             High           High           
+		   0.1544653,   0.8455347,    // Low             High           Medium         
+		   0.05523192,  0.9447681,    // Low             High           Low            
+		   0.2107849,   0.7892151,    // Low             Medium         High           
+		   0.07873942,  0.9212606,    // Low             Medium         Medium         
+		   0.02662296,  0.973377,     // Low             Medium         Low            
+		   0.1110758,   0.8889242,    // Low             Low            High           
+		   0.03844963,  0.9615504,    // Low             Low            Medium         
+		   0.01263466,  0.9873654);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323076;
+	user U1 {
+		Truename = "isCorrect";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (isCorrect);};
+NodeSet Evidence {Nodes = (isCorrect);};
+NodeSet onodes {Nodes = (isCorrect);};
+};

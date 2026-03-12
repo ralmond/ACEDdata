@@ -1,0 +1,2921 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:45:02 PM UTC.
+
+bnet ACEDmotif {
+autoupdate = FALSE;
+title = "Geometric Competentices";
+comment = "The Geometric Evidence models";
+whenchanged = 1773323102;
+user U1 {
+	Truename = "ACEDmotif";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/ACEDmotif.dne";
+	};
+
+node SolveSequenceProblems {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = ();
+	probs = 
+		// High         Medium       Low          
+		  (0.3333333,   0.3333333,   0.3333333);
+	numcases = 10;
+	title = "Solve Sequence Problems";
+	comment = "Combination of all sequence types Problem Skills";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "SolveSequenceProblems";
+		rules = "c(SolveSequenceProblems = \"Compensatory\")";
+		link = "c(SolveSequenceProblems = \"normalLink\")";
+		betas = "c(SolveSequenceProblems = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "structure(numeric(0), names = character(0))";
+		priorWeight = "c(SolveSequenceProblems = 10)";
+		};
+	};
+
+node SolveGeometricProblems {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // SolveSequenceProblems 
+		  (0.8500558,   0.1211046,   0.02883966,   // High                  
+		   0.5276137,   0.296389,    0.1759973,    // Medium                
+		   0.1845588,   0.3008142,   0.514627);    // Low                   ;
+	numcases = 10;
+	title = "Solve Geometric Problems";
+	comment = "Combination of all Geometric Problem Skills";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "SolveGeometricProblems";
+		rules = "c(SolveGeometricProblems = \"Compensatory\")";
+		link = "c(SolveGeometricProblems = \"normalLink\")";
+		betas = "c(SolveGeometricProblems = -0.5)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveSequenceProblems = 0)";
+		priorWeight = "c(SolveGeometricProblems = 10)";
+		};
+	};
+
+node DistinguishTypes {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // SolveSequenceProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                  
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                
+		   0.08103742,  0.2147094,   0.7042531);   // Low                   ;
+	numcases = 10;
+	title = "Distinguish Sequence Types";
+	comment = "Identify Arithmetic, Geometric and Other Recursive Sequences";
+	whenchanged = 1773323072;
+	user U1 {
+		Truename = "DistinguishTypes";
+		rules = "c(DistinguishTypes = \"Compensatory\")";
+		link = "c(DistinguishTypes = \"normalLink\")";
+		betas = "c(DistinguishTypes = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveSequenceProblems = 0)";
+		priorWeight = "c(DistinguishTypes = 10)";
+		};
+	};
+
+node CommonRatio {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.3215649,   0.3331669,   0.3452682,    // High                   
+		   0.0762542,   0.2083313,   0.7154145,    // Medium                 
+		   0.008239568, 0.05394717,  0.9378133);   // Low                    ;
+	numcases = 10;
+	title = "Common Ratio";
+	comment = "Solve problems involving finding the common ratio";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "CommonRatio";
+		rules = "c(CommonRatio = \"Compensatory\")";
+		link = "c(CommonRatio = \"normalLink\")";
+		betas = "c(CommonRatio = 1)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(CommonRatio = 10)";
+		};
+	};
+
+node ExamplesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.514627,    0.3008142,   0.1845588,    // High                   
+		   0.1759973,   0.296389,    0.5276137,    // Medium                 
+		   0.02883966,  0.1211046,   0.8500558);   // Low                    ;
+	numcases = 10;
+	title = "Examples of Geometric Sequeces";
+	comment = "Solve problems involving examples of Geometric sequences";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ExamplesGeometric";
+		rules = "c(ExamplesGeometric = \"Compensatory\")";
+		link = "c(ExamplesGeometric = \"normalLink\")";
+		betas = "c(ExamplesGeometric = 0.5)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(ExamplesGeometric = 10)";
+		};
+	};
+
+node ExtendGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Extending Geometric Sequeces";
+	comment = "Solve problems involving extending Geometric sequences";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ExtendGeometric";
+		rules = "c(ExtendGeometric = \"Compensatory\")";
+		link = "c(ExtendGeometric = \"normalLink\")";
+		betas = "c(ExtendGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(ExtendGeometric = 10)";
+		};
+	};
+
+node TableGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Table Geometric";
+	comment = "Solve problems involving Geometric sequences in tabular form";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "TableGeometric";
+		rules = "c(TableGeometric = \"Compensatory\")";
+		link = "c(TableGeometric = \"normalLink\")";
+		betas = "c(TableGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(TableGeometric = 10)";
+		};
+	};
+
+node ModelGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.8500558,   0.1211046,   0.02883966,   // High                   
+		   0.5276137,   0.296389,    0.1759973,    // Medium                 
+		   0.1845588,   0.3008142,   0.514627);    // Low                    ;
+	numcases = 10;
+	title = "Model Geometric";
+	comment = "Solve problems involving extending Geometric sequences in tabular form with models";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ModelGeometric";
+		rules = "c(ModelGeometric = \"Compensatory\")";
+		link = "c(ModelGeometric = \"normalLink\")";
+		betas = "c(ModelGeometric = -0.5)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(ModelGeometric = 10)";
+		};
+	};
+
+node VisualGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Visual Geometric";
+	comment = "Solve problems involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "VisualGeometric";
+		rules = "c(VisualGeometric = \"Compensatory\")";
+		link = "c(VisualGeometric = \"normalLink\")";
+		betas = "c(VisualGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(VisualGeometric = 10)";
+		};
+	};
+
+node InduceRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Induce Rules Geometric";
+	comment = "Induce rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "InduceRulesGeometric";
+		rules = "c(InduceRulesGeometric = \"Compensatory\")";
+		link = "c(InduceRulesGeometric = \"normalLink\")";
+		betas = "c(InduceRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(InduceRulesGeometric = 10)";
+		};
+	};
+
+node tSolveGeoProblems1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (DistinguishTypes);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.9659269,   0.0340731,    // High             
+		   0.8455347,   0.1544653,    // Medium           
+		   0.5138515,   0.4861485);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tSolveGeoProblems1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tSolveGeoProblems1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (DistinguishTypes);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.9659269,   0.0340731,    // High             
+		   0.8455347,   0.1544653,    // Medium           
+		   0.5138515,   0.4861485);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tSolveGeoProblems1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tSolveGeoProblems2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (DistinguishTypes);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.8381572,   0.1618428,    // High             
+		   0.5,         0.5,          // Medium           
+		   0.1618428,   0.8381572);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tSolveGeoProblems2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tSolveGeoProblems2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (DistinguishTypes);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.8381572,   0.1618428,    // High             
+		   0.5,         0.5,          // Medium           
+		   0.1618428,   0.8381572);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tSolveGeoProblems2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tSolveGeoProblems3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (DistinguishTypes);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.4861485,   0.5138515,    // High             
+		   0.1544653,   0.8455347,    // Medium           
+		   0.0340731,   0.9659269);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tSolveGeoProblems3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tSolveGeoProblems3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (DistinguishTypes);
+	parents = (DistinguishTypes);
+	probs = 
+		// Yes          No            // DistinguishTypes 
+		  (0.4861485,   0.5138515,    // High             
+		   0.1544653,   0.8455347,    // Medium           
+		   0.0340731,   0.9659269);   // Low              ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tSolveGeoProblems3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(DistinguishTypes = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tCommonRatio1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (CommonRatio);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.9659269,   0.0340731,    // High        
+		   0.8455347,   0.1544653,    // Medium      
+		   0.5138515,   0.4861485);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tCommonRatio1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tCommonRatio1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (CommonRatio);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.9659269,   0.0340731,    // High        
+		   0.8455347,   0.1544653,    // Medium      
+		   0.5138515,   0.4861485);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tCommonRatio1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tCommonRatio2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (CommonRatio);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.8381572,   0.1618428,    // High        
+		   0.5,         0.5,          // Medium      
+		   0.1618428,   0.8381572);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tCommonRatio2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tCommonRatio2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (CommonRatio);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.8381572,   0.1618428,    // High        
+		   0.5,         0.5,          // Medium      
+		   0.1618428,   0.8381572);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tCommonRatio2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tCommonRatio3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (CommonRatio);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.4861485,   0.5138515,    // High        
+		   0.1544653,   0.8455347,    // Medium      
+		   0.0340731,   0.9659269);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tCommonRatio3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tCommonRatio3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (CommonRatio);
+	parents = (CommonRatio);
+	probs = 
+		// Yes          No            // CommonRatio 
+		  (0.4861485,   0.5138515,    // High        
+		   0.1544653,   0.8455347,    // Medium      
+		   0.0340731,   0.9659269);   // Low         ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tCommonRatio3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(CommonRatio = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tExamplesGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExamplesGeometric);
+	parents = (ExamplesGeometric);
+	probs = 
+		// Yes          No            // ExamplesGeometric 
+		  (0.9659269,   0.0340731,    // High              
+		   0.8455347,   0.1544653,    // Medium            
+		   0.5138515,   0.4861485);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExamplesGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExamplesGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tExamplesGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExamplesGeometric);
+	parents = (ExamplesGeometric);
+	probs = 
+		// Yes          No            // ExamplesGeometric 
+		  (0.9659269,   0.0340731,    // High              
+		   0.8455347,   0.1544653,    // Medium            
+		   0.5138515,   0.4861485);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExamplesGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExamplesGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tExamplesGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExamplesGeometric);
+	parents = (ExamplesGeometric);
+	probs = 
+		// Yes          No            // ExamplesGeometric 
+		  (0.8381572,   0.1618428,    // High              
+		   0.5,         0.5,          // Medium            
+		   0.1618428,   0.8381572);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExamplesGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExamplesGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tExamplesGeo2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExamplesGeometric);
+	parents = (ExamplesGeometric);
+	probs = 
+		// Yes          No            // ExamplesGeometric 
+		  (0.8381572,   0.1618428,    // High              
+		   0.5,         0.5,          // Medium            
+		   0.1618428,   0.8381572);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExamplesGeo2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExamplesGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tExamplesGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExamplesGeometric);
+	parents = (ExamplesGeometric);
+	probs = 
+		// Yes          No            // ExamplesGeometric 
+		  (0.4861485,   0.5138515,    // High              
+		   0.1544653,   0.8455347,    // Medium            
+		   0.0340731,   0.9659269);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExamplesGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExamplesGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tExamplesGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExamplesGeometric);
+	parents = (ExamplesGeometric);
+	probs = 
+		// Yes          No            // ExamplesGeometric 
+		  (0.4861485,   0.5138515,    // High              
+		   0.1544653,   0.8455347,    // Medium            
+		   0.0340731,   0.9659269);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExamplesGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExamplesGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tExtGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric);
+	parents = (ExtendGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric 
+		  (0.9659269,   0.0340731,    // High            
+		   0.8455347,   0.1544653,    // Medium          
+		   0.5138515,   0.4861485);   // Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExtGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tExtGeo1c {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric);
+	parents = (ExtendGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric 
+		  (0.9659269,   0.0340731,    // High            
+		   0.8455347,   0.1544653,    // Medium          
+		   0.5138515,   0.4861485);   // Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExtGeo1c";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tExtGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric);
+	parents = (ExtendGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric 
+		  (0.8381572,   0.1618428,    // High            
+		   0.5,         0.5,          // Medium          
+		   0.1618428,   0.8381572);   // Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExtGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tExtGeo2c {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric);
+	parents = (ExtendGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric 
+		  (0.8381572,   0.1618428,    // High            
+		   0.5,         0.5,          // Medium          
+		   0.1618428,   0.8381572);   // Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tExtGeo2c";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tExtGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric);
+	parents = (ExtendGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric 
+		  (0.4861485,   0.5138515,    // High            
+		   0.1544653,   0.8455347,    // Medium          
+		   0.0340731,   0.9659269);   // Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tExtGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tExtGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric);
+	parents = (ExtendGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric 
+		  (0.4861485,   0.5138515,    // High            
+		   0.1544653,   0.8455347,    // Medium          
+		   0.0340731,   0.9659269);   // Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tExtGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tModExtTableGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.9873654,   0.01263466,   // High            High           High           
+		   0.9615504,   0.03844963,   // High            High           Medium         
+		   0.8889242,   0.1110758,    // High            High           Low            
+		   0.973377,    0.02662296,   // High            Medium         High           
+		   0.9212606,   0.07873942,   // High            Medium         Medium         
+		   0.7892151,   0.2107849,    // High            Medium         Low            
+		   0.9447681,   0.05523192,   // High            Low            High           
+		   0.8455347,   0.1544653,    // High            Low            Medium         
+		   0.6365917,   0.3634083,    // High            Low            Low            
+		   0.973377,    0.02662296,   // Medium          High           High           
+		   0.9212606,   0.07873942,   // Medium          High           Medium         
+		   0.7892151,   0.2107849,    // Medium          High           Low            
+		   0.9447681,   0.05523192,   // Medium          Medium         High           
+		   0.8455347,   0.1544653,    // Medium          Medium         Medium         
+		   0.6365917,   0.3634083,    // Medium          Medium         Low            
+		   0.8889242,   0.1110758,    // Medium          Low            High           
+		   0.7191806,   0.2808194,    // Medium          Low            Medium         
+		   0.4504142,   0.5495858,    // Medium          Low            Low            
+		   0.9447681,   0.05523192,   // Low             High           High           
+		   0.8455347,   0.1544653,    // Low             High           Medium         
+		   0.6365917,   0.3634083,    // Low             High           Low            
+		   0.8889242,   0.1110758,    // Low             Medium         High           
+		   0.7191806,   0.2808194,    // Low             Medium         Medium         
+		   0.4504142,   0.5495858,    // Low             Medium         Low            
+		   0.7892151,   0.2107849,    // Low             Low            High           
+		   0.5450778,   0.4549222,    // Low             Low            Medium         
+		   0.2771593,   0.7228407);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tModExtTableGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tModExtTableGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.9873654,   0.01263466,   // High            High           High           
+		   0.9615504,   0.03844963,   // High            High           Medium         
+		   0.8889242,   0.1110758,    // High            High           Low            
+		   0.973377,    0.02662296,   // High            Medium         High           
+		   0.9212606,   0.07873942,   // High            Medium         Medium         
+		   0.7892151,   0.2107849,    // High            Medium         Low            
+		   0.9447681,   0.05523192,   // High            Low            High           
+		   0.8455347,   0.1544653,    // High            Low            Medium         
+		   0.6365917,   0.3634083,    // High            Low            Low            
+		   0.973377,    0.02662296,   // Medium          High           High           
+		   0.9212606,   0.07873942,   // Medium          High           Medium         
+		   0.7892151,   0.2107849,    // Medium          High           Low            
+		   0.9447681,   0.05523192,   // Medium          Medium         High           
+		   0.8455347,   0.1544653,    // Medium          Medium         Medium         
+		   0.6365917,   0.3634083,    // Medium          Medium         Low            
+		   0.8889242,   0.1110758,    // Medium          Low            High           
+		   0.7191806,   0.2808194,    // Medium          Low            Medium         
+		   0.4504142,   0.5495858,    // Medium          Low            Low            
+		   0.9447681,   0.05523192,   // Low             High           High           
+		   0.8455347,   0.1544653,    // Low             High           Medium         
+		   0.6365917,   0.3634083,    // Low             High           Low            
+		   0.8889242,   0.1110758,    // Low             Medium         High           
+		   0.7191806,   0.2808194,    // Low             Medium         Medium         
+		   0.4504142,   0.5495858,    // Low             Medium         Low            
+		   0.7892151,   0.2107849,    // Low             Low            High           
+		   0.5450778,   0.4549222,    // Low             Low            Medium         
+		   0.2771593,   0.7228407);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tModExtTableGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tModExtTableGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.9345388,   0.06546115,   // High            High           High           
+		   0.8204203,   0.1795797,    // High            High           Medium         
+		   0.5938247,   0.4061753,    // High            High           Low            
+		   0.869778,    0.130222,     // High            Medium         High           
+		   0.6812667,   0.3187333,    // High            Medium         Medium         
+		   0.4061753,   0.5938247,    // High            Medium         Low            
+		   0.7575692,   0.2424308,    // High            Low            High           
+		   0.5,         0.5,          // High            Low            Medium         
+		   0.2424308,   0.7575692,    // High            Low            Low            
+		   0.869778,    0.130222,     // Medium          High           High           
+		   0.6812667,   0.3187333,    // Medium          High           Medium         
+		   0.4061753,   0.5938247,    // Medium          High           Low            
+		   0.7575692,   0.2424308,    // Medium          Medium         High           
+		   0.5,         0.5,          // Medium          Medium         Medium         
+		   0.2424308,   0.7575692,    // Medium          Medium         Low            
+		   0.5938247,   0.4061753,    // Medium          Low            High           
+		   0.3187333,   0.6812667,    // Medium          Low            Medium         
+		   0.130222,    0.869778,     // Medium          Low            Low            
+		   0.7575692,   0.2424308,    // Low             High           High           
+		   0.5,         0.5,          // Low             High           Medium         
+		   0.2424308,   0.7575692,    // Low             High           Low            
+		   0.5938247,   0.4061753,    // Low             Medium         High           
+		   0.3187333,   0.6812667,    // Low             Medium         Medium         
+		   0.130222,    0.869778,     // Low             Medium         Low            
+		   0.4061753,   0.5938247,    // Low             Low            High           
+		   0.1795797,   0.8204203,    // Low             Low            Medium         
+		   0.06546115,  0.9345388);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tModExtTableGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tModExtTableGeo2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.9345388,   0.06546115,   // High            High           High           
+		   0.8204203,   0.1795797,    // High            High           Medium         
+		   0.5938247,   0.4061753,    // High            High           Low            
+		   0.869778,    0.130222,     // High            Medium         High           
+		   0.6812667,   0.3187333,    // High            Medium         Medium         
+		   0.4061753,   0.5938247,    // High            Medium         Low            
+		   0.7575692,   0.2424308,    // High            Low            High           
+		   0.5,         0.5,          // High            Low            Medium         
+		   0.2424308,   0.7575692,    // High            Low            Low            
+		   0.869778,    0.130222,     // Medium          High           High           
+		   0.6812667,   0.3187333,    // Medium          High           Medium         
+		   0.4061753,   0.5938247,    // Medium          High           Low            
+		   0.7575692,   0.2424308,    // Medium          Medium         High           
+		   0.5,         0.5,          // Medium          Medium         Medium         
+		   0.2424308,   0.7575692,    // Medium          Medium         Low            
+		   0.5938247,   0.4061753,    // Medium          Low            High           
+		   0.3187333,   0.6812667,    // Medium          Low            Medium         
+		   0.130222,    0.869778,     // Medium          Low            Low            
+		   0.7575692,   0.2424308,    // Low             High           High           
+		   0.5,         0.5,          // Low             High           Medium         
+		   0.2424308,   0.7575692,    // Low             High           Low            
+		   0.5938247,   0.4061753,    // Low             Medium         High           
+		   0.3187333,   0.6812667,    // Low             Medium         Medium         
+		   0.130222,    0.869778,     // Low             Medium         Low            
+		   0.4061753,   0.5938247,    // Low             Low            High           
+		   0.1795797,   0.8204203,    // Low             Low            Medium         
+		   0.06546115,  0.9345388);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tModExtTableGeo2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tModExtTableGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.7228407,   0.2771593,    // High            High           High           
+		   0.4549222,   0.5450778,    // High            High           Medium         
+		   0.2107849,   0.7892151,    // High            High           Low            
+		   0.5495858,   0.4504142,    // High            Medium         High           
+		   0.2808194,   0.7191806,    // High            Medium         Medium         
+		   0.1110758,   0.8889242,    // High            Medium         Low            
+		   0.3634083,   0.6365917,    // High            Low            High           
+		   0.1544653,   0.8455347,    // High            Low            Medium         
+		   0.05523192,  0.9447681,    // High            Low            Low            
+		   0.5495858,   0.4504142,    // Medium          High           High           
+		   0.2808194,   0.7191806,    // Medium          High           Medium         
+		   0.1110758,   0.8889242,    // Medium          High           Low            
+		   0.3634083,   0.6365917,    // Medium          Medium         High           
+		   0.1544653,   0.8455347,    // Medium          Medium         Medium         
+		   0.05523192,  0.9447681,    // Medium          Medium         Low            
+		   0.2107849,   0.7892151,    // Medium          Low            High           
+		   0.07873942,  0.9212606,    // Medium          Low            Medium         
+		   0.02662296,  0.973377,     // Medium          Low            Low            
+		   0.3634083,   0.6365917,    // Low             High           High           
+		   0.1544653,   0.8455347,    // Low             High           Medium         
+		   0.05523192,  0.9447681,    // Low             High           Low            
+		   0.2107849,   0.7892151,    // Low             Medium         High           
+		   0.07873942,  0.9212606,    // Low             Medium         Medium         
+		   0.02662296,  0.973377,     // Low             Medium         Low            
+		   0.1110758,   0.8889242,    // Low             Low            High           
+		   0.03844963,  0.9615504,    // Low             Low            Medium         
+		   0.01263466,  0.9873654);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tModExtTableGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tModExtTableGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric 
+		  (0.7228407,   0.2771593,    // High            High           High           
+		   0.4549222,   0.5450778,    // High            High           Medium         
+		   0.2107849,   0.7892151,    // High            High           Low            
+		   0.5495858,   0.4504142,    // High            Medium         High           
+		   0.2808194,   0.7191806,    // High            Medium         Medium         
+		   0.1110758,   0.8889242,    // High            Medium         Low            
+		   0.3634083,   0.6365917,    // High            Low            High           
+		   0.1544653,   0.8455347,    // High            Low            Medium         
+		   0.05523192,  0.9447681,    // High            Low            Low            
+		   0.5495858,   0.4504142,    // Medium          High           High           
+		   0.2808194,   0.7191806,    // Medium          High           Medium         
+		   0.1110758,   0.8889242,    // Medium          High           Low            
+		   0.3634083,   0.6365917,    // Medium          Medium         High           
+		   0.1544653,   0.8455347,    // Medium          Medium         Medium         
+		   0.05523192,  0.9447681,    // Medium          Medium         Low            
+		   0.2107849,   0.7892151,    // Medium          Low            High           
+		   0.07873942,  0.9212606,    // Medium          Low            Medium         
+		   0.02662296,  0.973377,     // Medium          Low            Low            
+		   0.3634083,   0.6365917,    // Low             High           High           
+		   0.1544653,   0.8455347,    // Low             High           Medium         
+		   0.05523192,  0.9447681,    // Low             High           Low            
+		   0.2107849,   0.7892151,    // Low             Medium         High           
+		   0.07873942,  0.9212606,    // Low             Medium         Medium         
+		   0.02662296,  0.973377,     // Low             Medium         Low            
+		   0.1110758,   0.8889242,    // Low             Low            High           
+		   0.03844963,  0.9615504,    // Low             Low            Medium         
+		   0.01263466,  0.9873654);   // Low             Low            Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tModExtTableGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = 0.182321556793955)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tTableExtGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric);
+	parents = (ExtendGeometric, TableGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric 
+		  (0.9824637,   0.01753635,   // High            High           
+		   0.9327873,   0.0672127,    // High            Medium         
+		   0.774665,    0.225335,     // High            Low            
+		   0.9567056,   0.0432944,    // Medium          High           
+		   0.8455347,   0.1544653,    // Medium          Medium         
+		   0.5755489,   0.4244511,    // Medium          Low            
+		   0.8970767,   0.1029233,    // Low             High           
+		   0.6834528,   0.3165472,    // Low             Medium         
+		   0.3484664,   0.6515337);   // Low             Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tTableExtGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = 0.182321556793955\n)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tTableExtGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric);
+	parents = (ExtendGeometric, TableGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric 
+		  (0.9824637,   0.01753635,   // High            High           
+		   0.9327873,   0.0672127,    // High            Medium         
+		   0.774665,    0.225335,     // High            Low            
+		   0.9567056,   0.0432944,    // Medium          High           
+		   0.8455347,   0.1544653,    // Medium          Medium         
+		   0.5755489,   0.4244511,    // Medium          Low            
+		   0.8970767,   0.1029233,    // Low             High           
+		   0.6834528,   0.3165472,    // Low             Medium         
+		   0.3484664,   0.6515337);   // Low             Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tTableExtGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = 0.182321556793955\n)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tTableExtGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric);
+	parents = (ExtendGeometric, TableGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric 
+		  (0.9109904,   0.08900966,   // High            High           
+		   0.7171392,   0.2828608,    // High            Medium         
+		   0.385763,    0.614237,     // High            Low            
+		   0.8014644,   0.1985356,    // Medium          High           
+		   0.5,         0.5,          // Medium          Medium         
+		   0.1985356,   0.8014644,    // Medium          Low            
+		   0.614237,    0.385763,     // Low             High           
+		   0.2828608,   0.7171392,    // Low             Medium         
+		   0.08900966,  0.9109904);   // Low             Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tTableExtGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = 0.182321556793955\n)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tTableExtGeo2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric);
+	parents = (ExtendGeometric, TableGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric 
+		  (0.9109904,   0.08900966,   // High            High           
+		   0.7171392,   0.2828608,    // High            Medium         
+		   0.385763,    0.614237,     // High            Low            
+		   0.8014644,   0.1985356,    // Medium          High           
+		   0.5,         0.5,          // Medium          Medium         
+		   0.1985356,   0.8014644,    // Medium          Low            
+		   0.614237,    0.385763,     // Low             High           
+		   0.2828608,   0.7171392,    // Low             Medium         
+		   0.08900966,  0.9109904);   // Low             Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tTableExtGeo2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = 0.182321556793955\n)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tTableExtGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric);
+	parents = (ExtendGeometric, TableGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric 
+		  (0.6515337,   0.3484664,    // High            High           
+		   0.3165472,   0.6834528,    // High            Medium         
+		   0.1029233,   0.8970767,    // High            Low            
+		   0.4244511,   0.5755489,    // Medium          High           
+		   0.1544653,   0.8455347,    // Medium          Medium         
+		   0.0432944,   0.9567056,    // Medium          Low            
+		   0.225335,    0.774665,     // Low             High           
+		   0.0672127,   0.9327873,    // Low             Medium         
+		   0.01753635,  0.9824637);   // Low             Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tTableExtGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = 0.182321556793955\n)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tTableExtGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric);
+	parents = (ExtendGeometric, TableGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric 
+		  (0.6515337,   0.3484664,    // High            High           
+		   0.3165472,   0.6834528,    // High            Medium         
+		   0.1029233,   0.8970767,    // High            Low            
+		   0.4244511,   0.5755489,    // Medium          High           
+		   0.1544653,   0.8455347,    // Medium          Medium         
+		   0.0432944,   0.9567056,    // Medium          Low            
+		   0.225335,    0.774665,     // Low             High           
+		   0.0672127,   0.9327873,    // Low             Medium         
+		   0.01753635,  0.9824637);   // Low             Low            ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tTableExtGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = 0.182321556793955\n)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node VerbalRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (InduceRulesGeometric);
+	probs = 
+		// High         Medium       Low           // InduceRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                 
+		   0.3333333,   0.3333333,   0.3333333,    // Medium               
+		   0.08103742,  0.2147094,   0.7042531);   // Low                  ;
+	numcases = 10;
+	title = "Verbal Rules Geometric";
+	comment = "Verbal rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "VerbalRulesGeometric";
+		rules = "c(VerbalRulesGeometric = \"Compensatory\")";
+		link = "c(VerbalRulesGeometric = \"normalLink\")";
+		betas = "c(VerbalRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(InduceRulesGeometric = 0)";
+		priorWeight = "c(VerbalRulesGeometric = 10)";
+		};
+	};
+
+node tVerbRuleExtModGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	parents = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric ModelGeometric VerbalRulesGeometric 
+		  (0.9873654,   0.01263466,   // High            High           High                 
+		   0.9615504,   0.03844963,   // High            High           Medium               
+		   0.8889242,   0.1110758,    // High            High           Low                  
+		   0.973377,    0.02662296,   // High            Medium         High                 
+		   0.9212606,   0.07873942,   // High            Medium         Medium               
+		   0.7892151,   0.2107849,    // High            Medium         Low                  
+		   0.9447681,   0.05523192,   // High            Low            High                 
+		   0.8455347,   0.1544653,    // High            Low            Medium               
+		   0.6365917,   0.3634083,    // High            Low            Low                  
+		   0.973377,    0.02662296,   // Medium          High           High                 
+		   0.9212606,   0.07873942,   // Medium          High           Medium               
+		   0.7892151,   0.2107849,    // Medium          High           Low                  
+		   0.9447681,   0.05523192,   // Medium          Medium         High                 
+		   0.8455347,   0.1544653,    // Medium          Medium         Medium               
+		   0.6365917,   0.3634083,    // Medium          Medium         Low                  
+		   0.8889242,   0.1110758,    // Medium          Low            High                 
+		   0.7191806,   0.2808194,    // Medium          Low            Medium               
+		   0.4504142,   0.5495858,    // Medium          Low            Low                  
+		   0.9447681,   0.05523192,   // Low             High           High                 
+		   0.8455347,   0.1544653,    // Low             High           Medium               
+		   0.6365917,   0.3634083,    // Low             High           Low                  
+		   0.8889242,   0.1110758,    // Low             Medium         High                 
+		   0.7191806,   0.2808194,    // Low             Medium         Medium               
+		   0.4504142,   0.5495858,    // Low             Medium         Low                  
+		   0.7892151,   0.2107849,    // Low             Low            High                 
+		   0.5450778,   0.4549222,    // Low             Low            Medium               
+		   0.2771593,   0.7228407);   // Low             Low            Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVerbRuleExtModGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, ModelGeometric = -0.22314355131421, \n\
+			VerbalRulesGeometric = 0.182321556793955)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tVerbRuleExtModGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	parents = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric ModelGeometric VerbalRulesGeometric 
+		  (0.9873654,   0.01263466,   // High            High           High                 
+		   0.9615504,   0.03844963,   // High            High           Medium               
+		   0.8889242,   0.1110758,    // High            High           Low                  
+		   0.973377,    0.02662296,   // High            Medium         High                 
+		   0.9212606,   0.07873942,   // High            Medium         Medium               
+		   0.7892151,   0.2107849,    // High            Medium         Low                  
+		   0.9447681,   0.05523192,   // High            Low            High                 
+		   0.8455347,   0.1544653,    // High            Low            Medium               
+		   0.6365917,   0.3634083,    // High            Low            Low                  
+		   0.973377,    0.02662296,   // Medium          High           High                 
+		   0.9212606,   0.07873942,   // Medium          High           Medium               
+		   0.7892151,   0.2107849,    // Medium          High           Low                  
+		   0.9447681,   0.05523192,   // Medium          Medium         High                 
+		   0.8455347,   0.1544653,    // Medium          Medium         Medium               
+		   0.6365917,   0.3634083,    // Medium          Medium         Low                  
+		   0.8889242,   0.1110758,    // Medium          Low            High                 
+		   0.7191806,   0.2808194,    // Medium          Low            Medium               
+		   0.4504142,   0.5495858,    // Medium          Low            Low                  
+		   0.9447681,   0.05523192,   // Low             High           High                 
+		   0.8455347,   0.1544653,    // Low             High           Medium               
+		   0.6365917,   0.3634083,    // Low             High           Low                  
+		   0.8889242,   0.1110758,    // Low             Medium         High                 
+		   0.7191806,   0.2808194,    // Low             Medium         Medium               
+		   0.4504142,   0.5495858,    // Low             Medium         Low                  
+		   0.7892151,   0.2107849,    // Low             Low            High                 
+		   0.5450778,   0.4549222,    // Low             Low            Medium               
+		   0.2771593,   0.7228407);   // Low             Low            Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVerbRuleExtModGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, ModelGeometric = -0.22314355131421, \n\
+			VerbalRulesGeometric = 0.182321556793955)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tVerbRuleExtModGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	parents = (ExtendGeometric, ModelGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric ModelGeometric VerbalRulesGeometric 
+		  (0.9345388,   0.06546115,   // High            High           High                 
+		   0.8204203,   0.1795797,    // High            High           Medium               
+		   0.5938247,   0.4061753,    // High            High           Low                  
+		   0.869778,    0.130222,     // High            Medium         High                 
+		   0.6812667,   0.3187333,    // High            Medium         Medium               
+		   0.4061753,   0.5938247,    // High            Medium         Low                  
+		   0.7575692,   0.2424308,    // High            Low            High                 
+		   0.5,         0.5,          // High            Low            Medium               
+		   0.2424308,   0.7575692,    // High            Low            Low                  
+		   0.869778,    0.130222,     // Medium          High           High                 
+		   0.6812667,   0.3187333,    // Medium          High           Medium               
+		   0.4061753,   0.5938247,    // Medium          High           Low                  
+		   0.7575692,   0.2424308,    // Medium          Medium         High                 
+		   0.5,         0.5,          // Medium          Medium         Medium               
+		   0.2424308,   0.7575692,    // Medium          Medium         Low                  
+		   0.5938247,   0.4061753,    // Medium          Low            High                 
+		   0.3187333,   0.6812667,    // Medium          Low            Medium               
+		   0.130222,    0.869778,     // Medium          Low            Low                  
+		   0.7575692,   0.2424308,    // Low             High           High                 
+		   0.5,         0.5,          // Low             High           Medium               
+		   0.2424308,   0.7575692,    // Low             High           Low                  
+		   0.5938247,   0.4061753,    // Low             Medium         High                 
+		   0.3187333,   0.6812667,    // Low             Medium         Medium               
+		   0.130222,    0.869778,     // Low             Medium         Low                  
+		   0.4061753,   0.5938247,    // Low             Low            High                 
+		   0.1795797,   0.8204203,    // Low             Low            Medium               
+		   0.06546115,  0.9345388);   // Low             Low            Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVerbRuleExtModGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, ModelGeometric = -0.22314355131421, \n\
+			VerbalRulesGeometric = 0.182321556793955)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric);
+	parents = (ExtendGeometric, VisualGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric 
+		  (0.9824637,   0.01753635,   // High            High            
+		   0.9327873,   0.0672127,    // High            Medium          
+		   0.774665,    0.225335,     // High            Low             
+		   0.9567056,   0.0432944,    // Medium          High            
+		   0.8455347,   0.1544653,    // Medium          Medium          
+		   0.5755489,   0.4244511,    // Medium          Low             
+		   0.8970767,   0.1029233,    // Low             High            
+		   0.6834528,   0.3165472,    // Low             Medium          
+		   0.3484664,   0.6515337);   // Low             Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExtGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955\n)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric);
+	parents = (ExtendGeometric, VisualGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric 
+		  (0.9824637,   0.01753635,   // High            High            
+		   0.9327873,   0.0672127,    // High            Medium          
+		   0.774665,    0.225335,     // High            Low             
+		   0.9567056,   0.0432944,    // Medium          High            
+		   0.8455347,   0.1544653,    // Medium          Medium          
+		   0.5755489,   0.4244511,    // Medium          Low             
+		   0.8970767,   0.1029233,    // Low             High            
+		   0.6834528,   0.3165472,    // Low             Medium          
+		   0.3484664,   0.6515337);   // Low             Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExtGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955\n)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtGeo1c {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric);
+	parents = (ExtendGeometric, VisualGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric 
+		  (0.9824637,   0.01753635,   // High            High            
+		   0.9327873,   0.0672127,    // High            Medium          
+		   0.774665,    0.225335,     // High            Low             
+		   0.9567056,   0.0432944,    // Medium          High            
+		   0.8455347,   0.1544653,    // Medium          Medium          
+		   0.5755489,   0.4244511,    // Medium          Low             
+		   0.8970767,   0.1029233,    // Low             High            
+		   0.6834528,   0.3165472,    // Low             Medium          
+		   0.3484664,   0.6515337);   // Low             Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExtGeo1c";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955\n)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric);
+	parents = (ExtendGeometric, VisualGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric 
+		  (0.9109904,   0.08900966,   // High            High            
+		   0.7171392,   0.2828608,    // High            Medium          
+		   0.385763,    0.614237,     // High            Low             
+		   0.8014644,   0.1985356,    // Medium          High            
+		   0.5,         0.5,          // Medium          Medium          
+		   0.1985356,   0.8014644,    // Medium          Low             
+		   0.614237,    0.385763,     // Low             High            
+		   0.2828608,   0.7171392,    // Low             Medium          
+		   0.08900966,  0.9109904);   // Low             Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExtGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955\n)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric);
+	parents = (ExtendGeometric, VisualGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric 
+		  (0.6515337,   0.3484664,    // High            High            
+		   0.3165472,   0.6834528,    // High            Medium          
+		   0.1029233,   0.8970767,    // High            Low             
+		   0.4244511,   0.5755489,    // Medium          High            
+		   0.1544653,   0.8455347,    // Medium          Medium          
+		   0.0432944,   0.9567056,    // Medium          Low             
+		   0.225335,    0.774665,     // Low             High            
+		   0.0672127,   0.9327873,    // Low             Medium          
+		   0.01753635,  0.9824637);   // Low             Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExtGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955\n)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtTableModVerbRul_39 {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, TableGeometric, ModelGeometric, VisualGeometric, VerbalRulesGeometric);
+	parents = (ExtendGeometric, TableGeometric, ModelGeometric, VisualGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric TableGeometric ModelGeometric VisualGeometric VerbalRulesGeometric 
+		  (0.9621706,   0.03782939,   // High            High           High           High            High                 
+		   0.9338705,   0.06612951,   // High            High           High           High            Medium               
+		   0.886888,    0.113112,     // High            High           High           High            Low                  
+		   0.9132145,   0.0867855,    // High            High           High           Medium          High                 
+		   0.8538533,   0.1461467,    // High            High           High           Medium          Medium               
+		   0.7643658,   0.2356342,    // High            High           High           Medium          Low                  
+		   0.8132028,   0.1867972,    // High            High           High           Low             High                 
+		   0.7073554,   0.2926446,    // High            High           High           Low             Medium               
+		   0.5730219,   0.4269781,    // High            High           High           Low             Low                  
+		   0.9338705,   0.06612951,   // High            High           Medium         High            High                 
+		   0.886888,    0.113112,     // High            High           Medium         High            Medium               
+		   0.8132028,   0.1867972,    // High            High           Medium         High            Low                  
+		   0.8538533,   0.1461467,    // High            High           Medium         Medium          High                 
+		   0.7643658,   0.2356342,    // High            High           Medium         Medium          Medium               
+		   0.642994,    0.357006,     // High            High           Medium         Medium          Low                  
+		   0.7073554,   0.2926446,    // High            High           Medium         Low             High                 
+		   0.5730219,   0.4269781,    // High            High           Medium         Low             Medium               
+		   0.4269781,   0.5730219,    // High            High           Medium         Low             Low                  
+		   0.886888,    0.113112,     // High            High           Low            High            High                 
+		   0.8132028,   0.1867972,    // High            High           Low            High            Medium               
+		   0.7073554,   0.2926446,    // High            High           Low            High            Low                  
+		   0.7643658,   0.2356342,    // High            High           Low            Medium          High                 
+		   0.642994,    0.357006,     // High            High           Low            Medium          Medium               
+		   0.5,         0.5,          // High            High           Low            Medium          Low                  
+		   0.5730219,   0.4269781,    // High            High           Low            Low             High                 
+		   0.4269781,   0.5730219,    // High            High           Low            Low             Medium               
+		   0.2926446,   0.7073554,    // High            High           Low            Low             Low                  
+		   0.9338705,   0.06612951,   // High            Medium         High           High            High                 
+		   0.886888,    0.113112,     // High            Medium         High           High            Medium               
+		   0.8132028,   0.1867972,    // High            Medium         High           High            Low                  
+		   0.8538533,   0.1461467,    // High            Medium         High           Medium          High                 
+		   0.7643658,   0.2356342,    // High            Medium         High           Medium          Medium               
+		   0.642994,    0.357006,     // High            Medium         High           Medium          Low                  
+		   0.7073554,   0.2926446,    // High            Medium         High           Low             High                 
+		   0.5730219,   0.4269781,    // High            Medium         High           Low             Medium               
+		   0.4269781,   0.5730219,    // High            Medium         High           Low             Low                  
+		   0.886888,    0.113112,     // High            Medium         Medium         High            High                 
+		   0.8132028,   0.1867972,    // High            Medium         Medium         High            Medium               
+		   0.7073554,   0.2926446,    // High            Medium         Medium         High            Low                  
+		   0.7643658,   0.2356342,    // High            Medium         Medium         Medium          High                 
+		   0.642994,    0.357006,     // High            Medium         Medium         Medium          Medium               
+		   0.5,         0.5,          // High            Medium         Medium         Medium          Low                  
+		   0.5730219,   0.4269781,    // High            Medium         Medium         Low             High                 
+		   0.4269781,   0.5730219,    // High            Medium         Medium         Low             Medium               
+		   0.2926446,   0.7073554,    // High            Medium         Medium         Low             Low                  
+		   0.8132028,   0.1867972,    // High            Medium         Low            High            High                 
+		   0.7073554,   0.2926446,    // High            Medium         Low            High            Medium               
+		   0.5730219,   0.4269781,    // High            Medium         Low            High            Low                  
+		   0.642994,    0.357006,     // High            Medium         Low            Medium          High                 
+		   0.5,         0.5,          // High            Medium         Low            Medium          Medium               
+		   0.357006,    0.642994,     // High            Medium         Low            Medium          Low                  
+		   0.4269781,   0.5730219,    // High            Medium         Low            Low             High                 
+		   0.2926446,   0.7073554,    // High            Medium         Low            Low             Medium               
+		   0.1867972,   0.8132028,    // High            Medium         Low            Low             Low                  
+		   0.886888,    0.113112,     // High            Low            High           High            High                 
+		   0.8132028,   0.1867972,    // High            Low            High           High            Medium               
+		   0.7073554,   0.2926446,    // High            Low            High           High            Low                  
+		   0.7643658,   0.2356342,    // High            Low            High           Medium          High                 
+		   0.642994,    0.357006,     // High            Low            High           Medium          Medium               
+		   0.5,         0.5,          // High            Low            High           Medium          Low                  
+		   0.5730219,   0.4269781,    // High            Low            High           Low             High                 
+		   0.4269781,   0.5730219,    // High            Low            High           Low             Medium               
+		   0.2926446,   0.7073554,    // High            Low            High           Low             Low                  
+		   0.8132028,   0.1867972,    // High            Low            Medium         High            High                 
+		   0.7073554,   0.2926446,    // High            Low            Medium         High            Medium               
+		   0.5730219,   0.4269781,    // High            Low            Medium         High            Low                  
+		   0.642994,    0.357006,     // High            Low            Medium         Medium          High                 
+		   0.5,         0.5,          // High            Low            Medium         Medium          Medium               
+		   0.357006,    0.642994,     // High            Low            Medium         Medium          Low                  
+		   0.4269781,   0.5730219,    // High            Low            Medium         Low             High                 
+		   0.2926446,   0.7073554,    // High            Low            Medium         Low             Medium               
+		   0.1867972,   0.8132028,    // High            Low            Medium         Low             Low                  
+		   0.7073554,   0.2926446,    // High            Low            Low            High            High                 
+		   0.5730219,   0.4269781,    // High            Low            Low            High            Medium               
+		   0.4269781,   0.5730219,    // High            Low            Low            High            Low                  
+		   0.5,         0.5,          // High            Low            Low            Medium          High                 
+		   0.357006,    0.642994,     // High            Low            Low            Medium          Medium               
+		   0.2356342,   0.7643658,    // High            Low            Low            Medium          Low                  
+		   0.2926446,   0.7073554,    // High            Low            Low            Low             High                 
+		   0.1867972,   0.8132028,    // High            Low            Low            Low             Medium               
+		   0.113112,    0.886888,     // High            Low            Low            Low             Low                  
+		   0.9338705,   0.06612951,   // Medium          High           High           High            High                 
+		   0.886888,    0.113112,     // Medium          High           High           High            Medium               
+		   0.8132028,   0.1867972,    // Medium          High           High           High            Low                  
+		   0.8538533,   0.1461467,    // Medium          High           High           Medium          High                 
+		   0.7643658,   0.2356342,    // Medium          High           High           Medium          Medium               
+		   0.642994,    0.357006,     // Medium          High           High           Medium          Low                  
+		   0.7073554,   0.2926446,    // Medium          High           High           Low             High                 
+		   0.5730219,   0.4269781,    // Medium          High           High           Low             Medium               
+		   0.4269781,   0.5730219,    // Medium          High           High           Low             Low                  
+		   0.886888,    0.113112,     // Medium          High           Medium         High            High                 
+		   0.8132028,   0.1867972,    // Medium          High           Medium         High            Medium               
+		   0.7073554,   0.2926446,    // Medium          High           Medium         High            Low                  
+		   0.7643658,   0.2356342,    // Medium          High           Medium         Medium          High                 
+		   0.642994,    0.357006,     // Medium          High           Medium         Medium          Medium               
+		   0.5,         0.5,          // Medium          High           Medium         Medium          Low                  
+		   0.5730219,   0.4269781,    // Medium          High           Medium         Low             High                 
+		   0.4269781,   0.5730219,    // Medium          High           Medium         Low             Medium               
+		   0.2926446,   0.7073554,    // Medium          High           Medium         Low             Low                  
+		   0.8132028,   0.1867972,    // Medium          High           Low            High            High                 
+		   0.7073554,   0.2926446,    // Medium          High           Low            High            Medium               
+		   0.5730219,   0.4269781,    // Medium          High           Low            High            Low                  
+		   0.642994,    0.357006,     // Medium          High           Low            Medium          High                 
+		   0.5,         0.5,          // Medium          High           Low            Medium          Medium               
+		   0.357006,    0.642994,     // Medium          High           Low            Medium          Low                  
+		   0.4269781,   0.5730219,    // Medium          High           Low            Low             High                 
+		   0.2926446,   0.7073554,    // Medium          High           Low            Low             Medium               
+		   0.1867972,   0.8132028,    // Medium          High           Low            Low             Low                  
+		   0.886888,    0.113112,     // Medium          Medium         High           High            High                 
+		   0.8132028,   0.1867972,    // Medium          Medium         High           High            Medium               
+		   0.7073554,   0.2926446,    // Medium          Medium         High           High            Low                  
+		   0.7643658,   0.2356342,    // Medium          Medium         High           Medium          High                 
+		   0.642994,    0.357006,     // Medium          Medium         High           Medium          Medium               
+		   0.5,         0.5,          // Medium          Medium         High           Medium          Low                  
+		   0.5730219,   0.4269781,    // Medium          Medium         High           Low             High                 
+		   0.4269781,   0.5730219,    // Medium          Medium         High           Low             Medium               
+		   0.2926446,   0.7073554,    // Medium          Medium         High           Low             Low                  
+		   0.8132028,   0.1867972,    // Medium          Medium         Medium         High            High                 
+		   0.7073554,   0.2926446,    // Medium          Medium         Medium         High            Medium               
+		   0.5730219,   0.4269781,    // Medium          Medium         Medium         High            Low                  
+		   0.642994,    0.357006,     // Medium          Medium         Medium         Medium          High                 
+		   0.5,         0.5,          // Medium          Medium         Medium         Medium          Medium               
+		   0.357006,    0.642994,     // Medium          Medium         Medium         Medium          Low                  
+		   0.4269781,   0.5730219,    // Medium          Medium         Medium         Low             High                 
+		   0.2926446,   0.7073554,    // Medium          Medium         Medium         Low             Medium               
+		   0.1867972,   0.8132028,    // Medium          Medium         Medium         Low             Low                  
+		   0.7073554,   0.2926446,    // Medium          Medium         Low            High            High                 
+		   0.5730219,   0.4269781,    // Medium          Medium         Low            High            Medium               
+		   0.4269781,   0.5730219,    // Medium          Medium         Low            High            Low                  
+		   0.5,         0.5,          // Medium          Medium         Low            Medium          High                 
+		   0.357006,    0.642994,     // Medium          Medium         Low            Medium          Medium               
+		   0.2356342,   0.7643658,    // Medium          Medium         Low            Medium          Low                  
+		   0.2926446,   0.7073554,    // Medium          Medium         Low            Low             High                 
+		   0.1867972,   0.8132028,    // Medium          Medium         Low            Low             Medium               
+		   0.113112,    0.886888,     // Medium          Medium         Low            Low             Low                  
+		   0.8132028,   0.1867972,    // Medium          Low            High           High            High                 
+		   0.7073554,   0.2926446,    // Medium          Low            High           High            Medium               
+		   0.5730219,   0.4269781,    // Medium          Low            High           High            Low                  
+		   0.642994,    0.357006,     // Medium          Low            High           Medium          High                 
+		   0.5,         0.5,          // Medium          Low            High           Medium          Medium               
+		   0.357006,    0.642994,     // Medium          Low            High           Medium          Low                  
+		   0.4269781,   0.5730219,    // Medium          Low            High           Low             High                 
+		   0.2926446,   0.7073554,    // Medium          Low            High           Low             Medium               
+		   0.1867972,   0.8132028,    // Medium          Low            High           Low             Low                  
+		   0.7073554,   0.2926446,    // Medium          Low            Medium         High            High                 
+		   0.5730219,   0.4269781,    // Medium          Low            Medium         High            Medium               
+		   0.4269781,   0.5730219,    // Medium          Low            Medium         High            Low                  
+		   0.5,         0.5,          // Medium          Low            Medium         Medium          High                 
+		   0.357006,    0.642994,     // Medium          Low            Medium         Medium          Medium               
+		   0.2356342,   0.7643658,    // Medium          Low            Medium         Medium          Low                  
+		   0.2926446,   0.7073554,    // Medium          Low            Medium         Low             High                 
+		   0.1867972,   0.8132028,    // Medium          Low            Medium         Low             Medium               
+		   0.113112,    0.886888,     // Medium          Low            Medium         Low             Low                  
+		   0.5730219,   0.4269781,    // Medium          Low            Low            High            High                 
+		   0.4269781,   0.5730219,    // Medium          Low            Low            High            Medium               
+		   0.2926446,   0.7073554,    // Medium          Low            Low            High            Low                  
+		   0.357006,    0.642994,     // Medium          Low            Low            Medium          High                 
+		   0.2356342,   0.7643658,    // Medium          Low            Low            Medium          Medium               
+		   0.1461467,   0.8538533,    // Medium          Low            Low            Medium          Low                  
+		   0.1867972,   0.8132028,    // Medium          Low            Low            Low             High                 
+		   0.113112,    0.886888,     // Medium          Low            Low            Low             Medium               
+		   0.06612951,  0.9338705,    // Medium          Low            Low            Low             Low                  
+		   0.886888,    0.113112,     // Low             High           High           High            High                 
+		   0.8132028,   0.1867972,    // Low             High           High           High            Medium               
+		   0.7073554,   0.2926446,    // Low             High           High           High            Low                  
+		   0.7643658,   0.2356342,    // Low             High           High           Medium          High                 
+		   0.642994,    0.357006,     // Low             High           High           Medium          Medium               
+		   0.5,         0.5,          // Low             High           High           Medium          Low                  
+		   0.5730219,   0.4269781,    // Low             High           High           Low             High                 
+		   0.4269781,   0.5730219,    // Low             High           High           Low             Medium               
+		   0.2926446,   0.7073554,    // Low             High           High           Low             Low                  
+		   0.8132028,   0.1867972,    // Low             High           Medium         High            High                 
+		   0.7073554,   0.2926446,    // Low             High           Medium         High            Medium               
+		   0.5730219,   0.4269781,    // Low             High           Medium         High            Low                  
+		   0.642994,    0.357006,     // Low             High           Medium         Medium          High                 
+		   0.5,         0.5,          // Low             High           Medium         Medium          Medium               
+		   0.357006,    0.642994,     // Low             High           Medium         Medium          Low                  
+		   0.4269781,   0.5730219,    // Low             High           Medium         Low             High                 
+		   0.2926446,   0.7073554,    // Low             High           Medium         Low             Medium               
+		   0.1867972,   0.8132028,    // Low             High           Medium         Low             Low                  
+		   0.7073554,   0.2926446,    // Low             High           Low            High            High                 
+		   0.5730219,   0.4269781,    // Low             High           Low            High            Medium               
+		   0.4269781,   0.5730219,    // Low             High           Low            High            Low                  
+		   0.5,         0.5,          // Low             High           Low            Medium          High                 
+		   0.357006,    0.642994,     // Low             High           Low            Medium          Medium               
+		   0.2356342,   0.7643658,    // Low             High           Low            Medium          Low                  
+		   0.2926446,   0.7073554,    // Low             High           Low            Low             High                 
+		   0.1867972,   0.8132028,    // Low             High           Low            Low             Medium               
+		   0.113112,    0.886888,     // Low             High           Low            Low             Low                  
+		   0.8132028,   0.1867972,    // Low             Medium         High           High            High                 
+		   0.7073554,   0.2926446,    // Low             Medium         High           High            Medium               
+		   0.5730219,   0.4269781,    // Low             Medium         High           High            Low                  
+		   0.642994,    0.357006,     // Low             Medium         High           Medium          High                 
+		   0.5,         0.5,          // Low             Medium         High           Medium          Medium               
+		   0.357006,    0.642994,     // Low             Medium         High           Medium          Low                  
+		   0.4269781,   0.5730219,    // Low             Medium         High           Low             High                 
+		   0.2926446,   0.7073554,    // Low             Medium         High           Low             Medium               
+		   0.1867972,   0.8132028,    // Low             Medium         High           Low             Low                  
+		   0.7073554,   0.2926446,    // Low             Medium         Medium         High            High                 
+		   0.5730219,   0.4269781,    // Low             Medium         Medium         High            Medium               
+		   0.4269781,   0.5730219,    // Low             Medium         Medium         High            Low                  
+		   0.5,         0.5,          // Low             Medium         Medium         Medium          High                 
+		   0.357006,    0.642994,     // Low             Medium         Medium         Medium          Medium               
+		   0.2356342,   0.7643658,    // Low             Medium         Medium         Medium          Low                  
+		   0.2926446,   0.7073554,    // Low             Medium         Medium         Low             High                 
+		   0.1867972,   0.8132028,    // Low             Medium         Medium         Low             Medium               
+		   0.113112,    0.886888,     // Low             Medium         Medium         Low             Low                  
+		   0.5730219,   0.4269781,    // Low             Medium         Low            High            High                 
+		   0.4269781,   0.5730219,    // Low             Medium         Low            High            Medium               
+		   0.2926446,   0.7073554,    // Low             Medium         Low            High            Low                  
+		   0.357006,    0.642994,     // Low             Medium         Low            Medium          High                 
+		   0.2356342,   0.7643658,    // Low             Medium         Low            Medium          Medium               
+		   0.1461467,   0.8538533,    // Low             Medium         Low            Medium          Low                  
+		   0.1867972,   0.8132028,    // Low             Medium         Low            Low             High                 
+		   0.113112,    0.886888,     // Low             Medium         Low            Low             Medium               
+		   0.06612951,  0.9338705,    // Low             Medium         Low            Low             Low                  
+		   0.7073554,   0.2926446,    // Low             Low            High           High            High                 
+		   0.5730219,   0.4269781,    // Low             Low            High           High            Medium               
+		   0.4269781,   0.5730219,    // Low             Low            High           High            Low                  
+		   0.5,         0.5,          // Low             Low            High           Medium          High                 
+		   0.357006,    0.642994,     // Low             Low            High           Medium          Medium               
+		   0.2356342,   0.7643658,    // Low             Low            High           Medium          Low                  
+		   0.2926446,   0.7073554,    // Low             Low            High           Low             High                 
+		   0.1867972,   0.8132028,    // Low             Low            High           Low             Medium               
+		   0.113112,    0.886888,     // Low             Low            High           Low             Low                  
+		   0.5730219,   0.4269781,    // Low             Low            Medium         High            High                 
+		   0.4269781,   0.5730219,    // Low             Low            Medium         High            Medium               
+		   0.2926446,   0.7073554,    // Low             Low            Medium         High            Low                  
+		   0.357006,    0.642994,     // Low             Low            Medium         Medium          High                 
+		   0.2356342,   0.7643658,    // Low             Low            Medium         Medium          Medium               
+		   0.1461467,   0.8538533,    // Low             Low            Medium         Medium          Low                  
+		   0.1867972,   0.8132028,    // Low             Low            Medium         Low             High                 
+		   0.113112,    0.886888,     // Low             Low            Medium         Low             Medium               
+		   0.06612951,  0.9338705,    // Low             Low            Medium         Low             Low                  
+		   0.4269781,   0.5730219,    // Low             Low            Low            High            High                 
+		   0.2926446,   0.7073554,    // Low             Low            Low            High            Medium               
+		   0.1867972,   0.8132028,    // Low             Low            Low            High            Low                  
+		   0.2356342,   0.7643658,    // Low             Low            Low            Medium          High                 
+		   0.1461467,   0.8538533,    // Low             Low            Low            Medium          Medium               
+		   0.0867855,   0.9132145,    // Low             Low            Low            Medium          Low                  
+		   0.113112,    0.886888,     // Low             Low            Low            Low             High                 
+		   0.06612951,  0.9338705,    // Low             Low            Low            Low             Medium               
+		   0.03782939,  0.9621706);   // Low             Low            Low            Low             Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExtTableModVerbRul_39";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, TableGeometric = -0.22314355131421, \n\
+			ModelGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955, \n\
+			VerbalRulesGeometric = -0.22314355131421)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExtVerbRuleModGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric, VerbalRulesGeometric);
+	parents = (ExtendGeometric, VisualGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric VerbalRulesGeometric 
+		  (0.9345388,   0.06546115,   // High            High            High                 
+		   0.869778,    0.130222,     // High            High            Medium               
+		   0.7575692,   0.2424308,    // High            High            Low                  
+		   0.8204203,   0.1795797,    // High            Medium          High                 
+		   0.6812667,   0.3187333,    // High            Medium          Medium               
+		   0.5,         0.5,          // High            Medium          Low                  
+		   0.5938247,   0.4061753,    // High            Low             High                 
+		   0.4061753,   0.5938247,    // High            Low             Medium               
+		   0.2424308,   0.7575692,    // High            Low             Low                  
+		   0.869778,    0.130222,     // Medium          High            High                 
+		   0.7575692,   0.2424308,    // Medium          High            Medium               
+		   0.5938247,   0.4061753,    // Medium          High            Low                  
+		   0.6812667,   0.3187333,    // Medium          Medium          High                 
+		   0.5,         0.5,          // Medium          Medium          Medium               
+		   0.3187333,   0.6812667,    // Medium          Medium          Low                  
+		   0.4061753,   0.5938247,    // Medium          Low             High                 
+		   0.2424308,   0.7575692,    // Medium          Low             Medium               
+		   0.130222,    0.869778,     // Medium          Low             Low                  
+		   0.7575692,   0.2424308,    // Low             High            High                 
+		   0.5938247,   0.4061753,    // Low             High            Medium               
+		   0.4061753,   0.5938247,    // Low             High            Low                  
+		   0.5,         0.5,          // Low             Medium          High                 
+		   0.3187333,   0.6812667,    // Low             Medium          Medium               
+		   0.1795797,   0.8204203,    // Low             Medium          Low                  
+		   0.2424308,   0.7575692,    // Low             Low             High                 
+		   0.130222,    0.869778,     // Low             Low             Medium               
+		   0.06546115,  0.9345388);   // Low             Low             Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323098;
+	user U1 {
+		Truename = "tVisExtVerbRuleModGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955, \n\
+			VerbalRulesGeometric = -0.22314355131421)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node AlgebraRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (InduceRulesGeometric);
+	probs = 
+		// High         Medium       Low           // InduceRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                 
+		   0.3333333,   0.3333333,   0.3333333,    // Medium               
+		   0.08103742,  0.2147094,   0.7042531);   // Low                  ;
+	numcases = 10;
+	title = "Algebraic Rules Geometric";
+	comment = "Induce algebraic rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "AlgebraRulesGeometric";
+		rules = "c(AlgebraRulesGeometric = \"Compensatory\")";
+		link = "c(AlgebraRulesGeometric = \"normalLink\")";
+		betas = "c(AlgebraRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(InduceRulesGeometric = 0)";
+		priorWeight = "c(AlgebraRulesGeometric = 10)";
+		};
+	};
+
+node ExplicitGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (AlgebraRulesGeometric);
+	probs = 
+		// High         Medium       Low           // AlgebraRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                  
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                
+		   0.08103742,  0.2147094,   0.7042531);   // Low                   ;
+	numcases = 10;
+	title = "Explicit Geometric";
+	comment = "Solve problems involving explicit rules for Geometric sequences.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ExplicitGeometric";
+		rules = "c(ExplicitGeometric = \"Compensatory\")";
+		link = "c(ExplicitGeometric = \"normalLink\")";
+		betas = "c(ExplicitGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(AlgebraRulesGeometric = 0)";
+		priorWeight = "c(ExplicitGeometric = 10)";
+		};
+	};
+
+node tVerbRuleExplModGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ModelGeometric, ExplicitGeometric, VerbalRulesGeometric);
+	parents = (ModelGeometric, ExplicitGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ModelGeometric ExplicitGeometric VerbalRulesGeometric 
+		  (0.9345388,   0.06546115,   // High           High              High                 
+		   0.8204203,   0.1795797,    // High           High              Medium               
+		   0.5938247,   0.4061753,    // High           High              Low                  
+		   0.869778,    0.130222,     // High           Medium            High                 
+		   0.6812667,   0.3187333,    // High           Medium            Medium               
+		   0.4061753,   0.5938247,    // High           Medium            Low                  
+		   0.7575692,   0.2424308,    // High           Low               High                 
+		   0.5,         0.5,          // High           Low               Medium               
+		   0.2424308,   0.7575692,    // High           Low               Low                  
+		   0.869778,    0.130222,     // Medium         High              High                 
+		   0.6812667,   0.3187333,    // Medium         High              Medium               
+		   0.4061753,   0.5938247,    // Medium         High              Low                  
+		   0.7575692,   0.2424308,    // Medium         Medium            High                 
+		   0.5,         0.5,          // Medium         Medium            Medium               
+		   0.2424308,   0.7575692,    // Medium         Medium            Low                  
+		   0.5938247,   0.4061753,    // Medium         Low               High                 
+		   0.3187333,   0.6812667,    // Medium         Low               Medium               
+		   0.130222,    0.869778,     // Medium         Low               Low                  
+		   0.7575692,   0.2424308,    // Low            High              High                 
+		   0.5,         0.5,          // Low            High              Medium               
+		   0.2424308,   0.7575692,    // Low            High              Low                  
+		   0.5938247,   0.4061753,    // Low            Medium            High                 
+		   0.3187333,   0.6812667,    // Low            Medium            Medium               
+		   0.130222,    0.869778,     // Low            Medium            Low                  
+		   0.4061753,   0.5938247,    // Low            Low               High                 
+		   0.1795797,   0.8204203,    // Low            Low               Medium               
+		   0.06546115,  0.9345388);   // Low            Low               Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVerbRuleExplModGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ModelGeometric = -0.22314355131421, ExplicitGeometric = -0.22314355131421, \n\
+			VerbalRulesGeometric = 0.182321556793955)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tVerbRuleExplModGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ModelGeometric, ExplicitGeometric, VerbalRulesGeometric);
+	parents = (ModelGeometric, ExplicitGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ModelGeometric ExplicitGeometric VerbalRulesGeometric 
+		  (0.7228407,   0.2771593,    // High           High              High                 
+		   0.4549222,   0.5450778,    // High           High              Medium               
+		   0.2107849,   0.7892151,    // High           High              Low                  
+		   0.5495858,   0.4504142,    // High           Medium            High                 
+		   0.2808194,   0.7191806,    // High           Medium            Medium               
+		   0.1110758,   0.8889242,    // High           Medium            Low                  
+		   0.3634083,   0.6365917,    // High           Low               High                 
+		   0.1544653,   0.8455347,    // High           Low               Medium               
+		   0.05523192,  0.9447681,    // High           Low               Low                  
+		   0.5495858,   0.4504142,    // Medium         High              High                 
+		   0.2808194,   0.7191806,    // Medium         High              Medium               
+		   0.1110758,   0.8889242,    // Medium         High              Low                  
+		   0.3634083,   0.6365917,    // Medium         Medium            High                 
+		   0.1544653,   0.8455347,    // Medium         Medium            Medium               
+		   0.05523192,  0.9447681,    // Medium         Medium            Low                  
+		   0.2107849,   0.7892151,    // Medium         Low               High                 
+		   0.07873942,  0.9212606,    // Medium         Low               Medium               
+		   0.02662296,  0.973377,     // Medium         Low               Low                  
+		   0.3634083,   0.6365917,    // Low            High              High                 
+		   0.1544653,   0.8455347,    // Low            High              Medium               
+		   0.05523192,  0.9447681,    // Low            High              Low                  
+		   0.2107849,   0.7892151,    // Low            Medium            High                 
+		   0.07873942,  0.9212606,    // Low            Medium            Medium               
+		   0.02662296,  0.973377,     // Low            Medium            Low                  
+		   0.1110758,   0.8889242,    // Low            Low               High                 
+		   0.03844963,  0.9615504,    // Low            Low               Medium               
+		   0.01263466,  0.9873654);   // Low            Low               Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVerbRuleExplModGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ModelGeometric = -0.22314355131421, ExplicitGeometric = -0.22314355131421, \n\
+			VerbalRulesGeometric = 0.182321556793955)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tVerbRuleModGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ModelGeometric, VerbalRulesGeometric);
+	parents = (ModelGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ModelGeometric VerbalRulesGeometric 
+		  (0.6515337,   0.3484664,    // High           High                 
+		   0.3165472,   0.6834528,    // High           Medium               
+		   0.1029233,   0.8970767,    // High           Low                  
+		   0.4244511,   0.5755489,    // Medium         High                 
+		   0.1544653,   0.8455347,    // Medium         Medium               
+		   0.0432944,   0.9567056,    // Medium         Low                  
+		   0.225335,    0.774665,     // Low            High                 
+		   0.0672127,   0.9327873,    // Low            Medium               
+		   0.01753635,  0.9824637);   // Low            Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVerbRuleModGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ModelGeometric = -0.22314355131421, VerbalRulesGeometric = 0.182321556793955\n)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExplVerbRuleModGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ModelGeometric, ExplicitGeometric, VisualGeometric, VerbalRulesGeometric);
+	parents = (ModelGeometric, ExplicitGeometric, VisualGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ModelGeometric ExplicitGeometric VisualGeometric VerbalRulesGeometric 
+		  (0.7790681,   0.2209319,    // High           High              High            High                 
+		   0.6462079,   0.3537921,    // High           High              High            Medium               
+		   0.4861485,   0.5138515,    // High           High              High            Low                  
+		   0.567951,    0.432049,     // High           High              Medium          High                 
+		   0.4050815,   0.5949185,    // High           High              Medium          Medium               
+		   0.2607319,   0.7392681,    // High           High              Medium          Low                  
+		   0.3288807,   0.6711193,    // High           High              Low             High                 
+		   0.2024448,   0.7975552,    // High           High              Low             Medium               
+		   0.1162,      0.8838,       // High           High              Low             Low                  
+		   0.6462079,   0.3537921,    // High           Medium            High            High                 
+		   0.4861485,   0.5138515,    // High           Medium            High            Medium               
+		   0.3288807,   0.6711193,    // High           Medium            High            Low                  
+		   0.4050815,   0.5949185,    // High           Medium            Medium          High                 
+		   0.2607319,   0.7392681,    // High           Medium            Medium          Medium               
+		   0.1544653,   0.8455347,    // High           Medium            Medium          Low                  
+		   0.2024448,   0.7975552,    // High           Medium            Low             High                 
+		   0.1162,      0.8838,       // High           Medium            Low             Medium               
+		   0.06375987,  0.9362401,    // High           Medium            Low             Low                  
+		   0.4861485,   0.5138515,    // High           Low               High            High                 
+		   0.3288807,   0.6711193,    // High           Low               High            Medium               
+		   0.2024448,   0.7975552,    // High           Low               High            Low                  
+		   0.2607319,   0.7392681,    // High           Low               Medium          High                 
+		   0.1544653,   0.8455347,    // High           Low               Medium          Medium               
+		   0.08644526,  0.9135547,    // High           Low               Medium          Low                  
+		   0.1162,      0.8838,       // High           Low               Low             High                 
+		   0.06375987,  0.9362401,    // High           Low               Low             Medium               
+		   0.0340731,   0.9659269,    // High           Low               Low             Low                  
+		   0.6462079,   0.3537921,    // Medium         High              High            High                 
+		   0.4861485,   0.5138515,    // Medium         High              High            Medium               
+		   0.3288807,   0.6711193,    // Medium         High              High            Low                  
+		   0.4050815,   0.5949185,    // Medium         High              Medium          High                 
+		   0.2607319,   0.7392681,    // Medium         High              Medium          Medium               
+		   0.1544653,   0.8455347,    // Medium         High              Medium          Low                  
+		   0.2024448,   0.7975552,    // Medium         High              Low             High                 
+		   0.1162,      0.8838,       // Medium         High              Low             Medium               
+		   0.06375987,  0.9362401,    // Medium         High              Low             Low                  
+		   0.4861485,   0.5138515,    // Medium         Medium            High            High                 
+		   0.3288807,   0.6711193,    // Medium         Medium            High            Medium               
+		   0.2024448,   0.7975552,    // Medium         Medium            High            Low                  
+		   0.2607319,   0.7392681,    // Medium         Medium            Medium          High                 
+		   0.1544653,   0.8455347,    // Medium         Medium            Medium          Medium               
+		   0.08644526,  0.9135547,    // Medium         Medium            Medium          Low                  
+		   0.1162,      0.8838,       // Medium         Medium            Low             High                 
+		   0.06375987,  0.9362401,    // Medium         Medium            Low             Medium               
+		   0.0340731,   0.9659269,    // Medium         Medium            Low             Low                  
+		   0.3288807,   0.6711193,    // Medium         Low               High            High                 
+		   0.2024448,   0.7975552,    // Medium         Low               High            Medium               
+		   0.1162,      0.8838,       // Medium         Low               High            Low                  
+		   0.1544653,   0.8455347,    // Medium         Low               Medium          High                 
+		   0.08644526,  0.9135547,    // Medium         Low               Medium          Medium               
+		   0.04672322,  0.9532768,    // Medium         Low               Medium          Low                  
+		   0.06375987,  0.9362401,    // Medium         Low               Low             High                 
+		   0.0340731,   0.9659269,    // Medium         Low               Low             Medium               
+		   0.01794366,  0.9820563,    // Medium         Low               Low             Low                  
+		   0.4861485,   0.5138515,    // Low            High              High            High                 
+		   0.3288807,   0.6711193,    // Low            High              High            Medium               
+		   0.2024448,   0.7975552,    // Low            High              High            Low                  
+		   0.2607319,   0.7392681,    // Low            High              Medium          High                 
+		   0.1544653,   0.8455347,    // Low            High              Medium          Medium               
+		   0.08644526,  0.9135547,    // Low            High              Medium          Low                  
+		   0.1162,      0.8838,       // Low            High              Low             High                 
+		   0.06375987,  0.9362401,    // Low            High              Low             Medium               
+		   0.0340731,   0.9659269,    // Low            High              Low             Low                  
+		   0.3288807,   0.6711193,    // Low            Medium            High            High                 
+		   0.2024448,   0.7975552,    // Low            Medium            High            Medium               
+		   0.1162,      0.8838,       // Low            Medium            High            Low                  
+		   0.1544653,   0.8455347,    // Low            Medium            Medium          High                 
+		   0.08644526,  0.9135547,    // Low            Medium            Medium          Medium               
+		   0.04672322,  0.9532768,    // Low            Medium            Medium          Low                  
+		   0.06375987,  0.9362401,    // Low            Medium            Low             High                 
+		   0.0340731,   0.9659269,    // Low            Medium            Low             Medium               
+		   0.01794366,  0.9820563,    // Low            Medium            Low             Low                  
+		   0.2024448,   0.7975552,    // Low            Low               High            High                 
+		   0.1162,      0.8838,       // Low            Low               High            Medium               
+		   0.06375987,  0.9362401,    // Low            Low               High            Low                  
+		   0.08644526,  0.9135547,    // Low            Low               Medium          High                 
+		   0.04672322,  0.9532768,    // Low            Low               Medium          Medium               
+		   0.02475899,  0.975241,     // Low            Low               Medium          Low                  
+		   0.0340731,   0.9659269,    // Low            Low               Low             High                 
+		   0.01794366,  0.9820563,    // Low            Low               Low             Medium               
+		   0.009375422, 0.9906246);   // Low            Low               Low             Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExplVerbRuleModGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ModelGeometric = -0.22314355131421, ExplicitGeometric = -0.22314355131421, \n\
+			VisualGeometric = 0.182321556793955, VerbalRulesGeometric = -0.22314355131421\n\
+			)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tVisExplVerbRuleModGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ModelGeometric, ExplicitGeometric, VisualGeometric, VerbalRulesGeometric);
+	parents = (ModelGeometric, ExplicitGeometric, VisualGeometric, VerbalRulesGeometric);
+	probs = 
+		// Yes          No            // ModelGeometric ExplicitGeometric VisualGeometric VerbalRulesGeometric 
+		  (0.7790681,   0.2209319,    // High           High              High            High                 
+		   0.6462079,   0.3537921,    // High           High              High            Medium               
+		   0.4861485,   0.5138515,    // High           High              High            Low                  
+		   0.567951,    0.432049,     // High           High              Medium          High                 
+		   0.4050815,   0.5949185,    // High           High              Medium          Medium               
+		   0.2607319,   0.7392681,    // High           High              Medium          Low                  
+		   0.3288807,   0.6711193,    // High           High              Low             High                 
+		   0.2024448,   0.7975552,    // High           High              Low             Medium               
+		   0.1162,      0.8838,       // High           High              Low             Low                  
+		   0.6462079,   0.3537921,    // High           Medium            High            High                 
+		   0.4861485,   0.5138515,    // High           Medium            High            Medium               
+		   0.3288807,   0.6711193,    // High           Medium            High            Low                  
+		   0.4050815,   0.5949185,    // High           Medium            Medium          High                 
+		   0.2607319,   0.7392681,    // High           Medium            Medium          Medium               
+		   0.1544653,   0.8455347,    // High           Medium            Medium          Low                  
+		   0.2024448,   0.7975552,    // High           Medium            Low             High                 
+		   0.1162,      0.8838,       // High           Medium            Low             Medium               
+		   0.06375987,  0.9362401,    // High           Medium            Low             Low                  
+		   0.4861485,   0.5138515,    // High           Low               High            High                 
+		   0.3288807,   0.6711193,    // High           Low               High            Medium               
+		   0.2024448,   0.7975552,    // High           Low               High            Low                  
+		   0.2607319,   0.7392681,    // High           Low               Medium          High                 
+		   0.1544653,   0.8455347,    // High           Low               Medium          Medium               
+		   0.08644526,  0.9135547,    // High           Low               Medium          Low                  
+		   0.1162,      0.8838,       // High           Low               Low             High                 
+		   0.06375987,  0.9362401,    // High           Low               Low             Medium               
+		   0.0340731,   0.9659269,    // High           Low               Low             Low                  
+		   0.6462079,   0.3537921,    // Medium         High              High            High                 
+		   0.4861485,   0.5138515,    // Medium         High              High            Medium               
+		   0.3288807,   0.6711193,    // Medium         High              High            Low                  
+		   0.4050815,   0.5949185,    // Medium         High              Medium          High                 
+		   0.2607319,   0.7392681,    // Medium         High              Medium          Medium               
+		   0.1544653,   0.8455347,    // Medium         High              Medium          Low                  
+		   0.2024448,   0.7975552,    // Medium         High              Low             High                 
+		   0.1162,      0.8838,       // Medium         High              Low             Medium               
+		   0.06375987,  0.9362401,    // Medium         High              Low             Low                  
+		   0.4861485,   0.5138515,    // Medium         Medium            High            High                 
+		   0.3288807,   0.6711193,    // Medium         Medium            High            Medium               
+		   0.2024448,   0.7975552,    // Medium         Medium            High            Low                  
+		   0.2607319,   0.7392681,    // Medium         Medium            Medium          High                 
+		   0.1544653,   0.8455347,    // Medium         Medium            Medium          Medium               
+		   0.08644526,  0.9135547,    // Medium         Medium            Medium          Low                  
+		   0.1162,      0.8838,       // Medium         Medium            Low             High                 
+		   0.06375987,  0.9362401,    // Medium         Medium            Low             Medium               
+		   0.0340731,   0.9659269,    // Medium         Medium            Low             Low                  
+		   0.3288807,   0.6711193,    // Medium         Low               High            High                 
+		   0.2024448,   0.7975552,    // Medium         Low               High            Medium               
+		   0.1162,      0.8838,       // Medium         Low               High            Low                  
+		   0.1544653,   0.8455347,    // Medium         Low               Medium          High                 
+		   0.08644526,  0.9135547,    // Medium         Low               Medium          Medium               
+		   0.04672322,  0.9532768,    // Medium         Low               Medium          Low                  
+		   0.06375987,  0.9362401,    // Medium         Low               Low             High                 
+		   0.0340731,   0.9659269,    // Medium         Low               Low             Medium               
+		   0.01794366,  0.9820563,    // Medium         Low               Low             Low                  
+		   0.4861485,   0.5138515,    // Low            High              High            High                 
+		   0.3288807,   0.6711193,    // Low            High              High            Medium               
+		   0.2024448,   0.7975552,    // Low            High              High            Low                  
+		   0.2607319,   0.7392681,    // Low            High              Medium          High                 
+		   0.1544653,   0.8455347,    // Low            High              Medium          Medium               
+		   0.08644526,  0.9135547,    // Low            High              Medium          Low                  
+		   0.1162,      0.8838,       // Low            High              Low             High                 
+		   0.06375987,  0.9362401,    // Low            High              Low             Medium               
+		   0.0340731,   0.9659269,    // Low            High              Low             Low                  
+		   0.3288807,   0.6711193,    // Low            Medium            High            High                 
+		   0.2024448,   0.7975552,    // Low            Medium            High            Medium               
+		   0.1162,      0.8838,       // Low            Medium            High            Low                  
+		   0.1544653,   0.8455347,    // Low            Medium            Medium          High                 
+		   0.08644526,  0.9135547,    // Low            Medium            Medium          Medium               
+		   0.04672322,  0.9532768,    // Low            Medium            Medium          Low                  
+		   0.06375987,  0.9362401,    // Low            Medium            Low             High                 
+		   0.0340731,   0.9659269,    // Low            Medium            Low             Medium               
+		   0.01794366,  0.9820563,    // Low            Medium            Low             Low                  
+		   0.2024448,   0.7975552,    // Low            Low               High            High                 
+		   0.1162,      0.8838,       // Low            Low               High            Medium               
+		   0.06375987,  0.9362401,    // Low            Low               High            Low                  
+		   0.08644526,  0.9135547,    // Low            Low               Medium          High                 
+		   0.04672322,  0.9532768,    // Low            Low               Medium          Medium               
+		   0.02475899,  0.975241,     // Low            Low               Medium          Low                  
+		   0.0340731,   0.9659269,    // Low            Low               Low             High                 
+		   0.01794366,  0.9820563,    // Low            Low               Low             Medium               
+		   0.009375422, 0.9906246);   // Low            Low               Low             Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tVisExplVerbRuleModGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ModelGeometric = -0.22314355131421, ExplicitGeometric = -0.22314355131421, \n\
+			VisualGeometric = 0.182321556793955, VerbalRulesGeometric = -0.22314355131421\n\
+			)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node RecursiveRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (AlgebraRulesGeometric);
+	probs = 
+		// High         Medium       Low           // AlgebraRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                  
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                
+		   0.08103742,  0.2147094,   0.7042531);   // Low                   ;
+	numcases = 10;
+	title = "Recursive Rules Geometric";
+	comment = "Induce recursive rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "RecursiveRulesGeometric";
+		rules = "c(RecursiveRulesGeometric = \"Compensatory\")";
+		link = "c(RecursiveRulesGeometric = \"normalLink\")";
+		betas = "c(RecursiveRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(AlgebraRulesGeometric = 0)";
+		priorWeight = "c(RecursiveRulesGeometric = 10)";
+		};
+	};
+
+node tExplGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExplicitGeometric);
+	parents = (ExplicitGeometric);
+	probs = 
+		// Yes          No            // ExplicitGeometric 
+		  (0.9659269,   0.0340731,    // High              
+		   0.8455347,   0.1544653,    // Medium            
+		   0.5138515,   0.4861485);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExplGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExplicitGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tExplGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExplicitGeometric);
+	parents = (ExplicitGeometric);
+	probs = 
+		// Yes          No            // ExplicitGeometric 
+		  (0.9659269,   0.0340731,    // High              
+		   0.8455347,   0.1544653,    // Medium            
+		   0.5138515,   0.4861485);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExplGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExplicitGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tExplGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExplicitGeometric);
+	parents = (ExplicitGeometric);
+	probs = 
+		// Yes          No            // ExplicitGeometric 
+		  (0.8381572,   0.1618428,    // High              
+		   0.5,         0.5,          // Medium            
+		   0.1618428,   0.8381572);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExplGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExplicitGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tExplGeo2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExplicitGeometric);
+	parents = (ExplicitGeometric);
+	probs = 
+		// Yes          No            // ExplicitGeometric 
+		  (0.8381572,   0.1618428,    // High              
+		   0.5,         0.5,          // Medium            
+		   0.1618428,   0.8381572);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExplGeo2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExplicitGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tExplGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExplicitGeometric);
+	parents = (ExplicitGeometric);
+	probs = 
+		// Yes          No            // ExplicitGeometric 
+		  (0.4861485,   0.5138515,    // High              
+		   0.1544653,   0.8455347,    // Medium            
+		   0.0340731,   0.9659269);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExplGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExplicitGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tExplGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExplicitGeometric);
+	parents = (ExplicitGeometric);
+	probs = 
+		// Yes          No            // ExplicitGeometric 
+		  (0.4861485,   0.5138515,    // High              
+		   0.1544653,   0.8455347,    // Medium            
+		   0.0340731,   0.9659269);   // Low               ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323096;
+	user U1 {
+		Truename = "tExplGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExplicitGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tRecursiveRuleGeo1a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (RecursiveRulesGeometric);
+	parents = (RecursiveRulesGeometric);
+	probs = 
+		// Yes          No            // RecursiveRulesGeometric 
+		  (0.9659269,   0.0340731,    // High                    
+		   0.8455347,   0.1544653,    // Medium                  
+		   0.5138515,   0.4861485);   // Low                     ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tRecursiveRuleGeo1a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(RecursiveRulesGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tRecursiveRuleGeo1b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (RecursiveRulesGeometric);
+	parents = (RecursiveRulesGeometric);
+	probs = 
+		// Yes          No            // RecursiveRulesGeometric 
+		  (0.9659269,   0.0340731,    // High                    
+		   0.8455347,   0.1544653,    // Medium                  
+		   0.5138515,   0.4861485);   // Low                     ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tRecursiveRuleGeo1b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(RecursiveRulesGeometric = 0)";
+		betas = "-1";
+		priorWeight = "10";
+		};
+	};
+
+node tRecursiveRuleGeo2a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (RecursiveRulesGeometric);
+	parents = (RecursiveRulesGeometric);
+	probs = 
+		// Yes          No            // RecursiveRulesGeometric 
+		  (0.8381572,   0.1618428,    // High                    
+		   0.5,         0.5,          // Medium                  
+		   0.1618428,   0.8381572);   // Low                     ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tRecursiveRuleGeo2a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(RecursiveRulesGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tRecursiveRuleGeo2b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (RecursiveRulesGeometric);
+	parents = (RecursiveRulesGeometric);
+	probs = 
+		// Yes          No            // RecursiveRulesGeometric 
+		  (0.8381572,   0.1618428,    // High                    
+		   0.5,         0.5,          // Medium                  
+		   0.1618428,   0.8381572);   // Low                     ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tRecursiveRuleGeo2b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(RecursiveRulesGeometric = 0)";
+		betas = "0";
+		priorWeight = "10";
+		};
+	};
+
+node tRecursiveRuleGeo3a {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (RecursiveRulesGeometric);
+	parents = (RecursiveRulesGeometric);
+	probs = 
+		// Yes          No            // RecursiveRulesGeometric 
+		  (0.4861485,   0.5138515,    // High                    
+		   0.1544653,   0.8455347,    // Medium                  
+		   0.0340731,   0.9659269);   // Low                     ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tRecursiveRuleGeo3a";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(RecursiveRulesGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+
+node tRecursiveRuleGeo3b {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (RecursiveRulesGeometric);
+	parents = (RecursiveRulesGeometric);
+	probs = 
+		// Yes          No            // RecursiveRulesGeometric 
+		  (0.4861485,   0.5138515,    // High                    
+		   0.1544653,   0.8455347,    // Medium                  
+		   0.0340731,   0.9659269);   // Low                     ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323097;
+	user U1 {
+		Truename = "tRecursiveRuleGeo3b";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(RecursiveRulesGeometric = 0)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (SolveSequenceProblems, SolveGeometricProblems, DistinguishTypes, CommonRatio, ExamplesGeometric, ExtendGeometric, TableGeometric, ModelGeometric, VisualGeometric, InduceRulesGeometric, AlgebraRulesGeometric, VerbalRulesGeometric, ExplicitGeometric, RecursiveRulesGeometric, tCommonRatio1a, tCommonRatio1b, tCommonRatio2a, tCommonRatio2b, tCommonRatio3a, tCommonRatio3b, tExamplesGeo1a, tExamplesGeo1b, tExamplesGeo2a, tExamplesGeo2b, tExamplesGeo3a, tExamplesGeo3b, tExplGeo1a, tExplGeo1b, tExplGeo2a, tExplGeo2b, tExplGeo3a, tExplGeo3b, tExtGeo1a, tExtGeo1c, tExtGeo2a, tExtGeo2c, tExtGeo3a, tExtGeo3b, tModExtTableGeo1a, tModExtTableGeo1b, tModExtTableGeo2a, tModExtTableGeo2b, tModExtTableGeo3a, tModExtTableGeo3b, tRecursiveRuleGeo1a, tRecursiveRuleGeo1b, tRecursiveRuleGeo2a, tRecursiveRuleGeo2b, tRecursiveRuleGeo3a, tRecursiveRuleGeo3b, tSolveGeoProblems1a, tSolveGeoProblems1b, tSolveGeoProblems2a, tSolveGeoProblems2b, tSolveGeoProblems3a, tSolveGeoProblems3b, tTableExtGeo1a, tTableExtGeo1b, tTableExtGeo2a, tTableExtGeo2b, tTableExtGeo3a, tTableExtGeo3b, tVerbRuleExplModGeo2a, tVerbRuleExplModGeo3a, tVerbRuleExtModGeo1a, tVerbRuleExtModGeo1b, tVerbRuleExtModGeo2a, tVerbRuleModGeo3a, tVisExplVerbRuleModGeo3a, tVisExplVerbRuleModGeo3b, tVisExtGeo1a, tVisExtGeo1b, tVisExtGeo1c, tVisExtGeo2a, tVisExtGeo3a, tVisExtTableModVerbRul_39, tVisExtVerbRuleModGeo2a);};
+NodeSet Proficiencies {Nodes = (SolveSequenceProblems, SolveGeometricProblems, DistinguishTypes, CommonRatio, ExamplesGeometric, ExtendGeometric, TableGeometric, ModelGeometric, VisualGeometric, InduceRulesGeometric, AlgebraRulesGeometric, VerbalRulesGeometric, ExplicitGeometric, RecursiveRulesGeometric);};
+NodeSet Highlevel {Nodes = (SolveSequenceProblems, SolveGeometricProblems);};
+NodeSet Lowlevel {Nodes = (DistinguishTypes, CommonRatio, ExamplesGeometric, ExtendGeometric, TableGeometric, ModelGeometric, VisualGeometric, InduceRulesGeometric, AlgebraRulesGeometric, VerbalRulesGeometric, ExplicitGeometric, RecursiveRulesGeometric);};
+NodeSet Spoke_commonRatioEasy {Nodes = (tCommonRatio1a, tCommonRatio1b);};
+NodeSet Evidence {Nodes = (tCommonRatio1a, tCommonRatio1b, tCommonRatio2a, tCommonRatio2b, tCommonRatio3a, tCommonRatio3b, tExamplesGeo1a, tExamplesGeo1b, tExamplesGeo2a, tExamplesGeo2b, tExamplesGeo3a, tExamplesGeo3b, tExplGeo1a, tExplGeo1b, tExplGeo2a, tExplGeo2b, tExplGeo3a, tExplGeo3b, tExtGeo1a, tExtGeo1c, tExtGeo2a, tExtGeo2c, tExtGeo3a, tExtGeo3b, tModExtTableGeo1a, tModExtTableGeo1b, tModExtTableGeo2a, tModExtTableGeo2b, tModExtTableGeo3a, tModExtTableGeo3b, tRecursiveRuleGeo1a, tRecursiveRuleGeo1b, tRecursiveRuleGeo2a, tRecursiveRuleGeo2b, tRecursiveRuleGeo3a, tRecursiveRuleGeo3b, tSolveGeoProblems1a, tSolveGeoProblems1b, tSolveGeoProblems2a, tSolveGeoProblems2b, tSolveGeoProblems3a, tSolveGeoProblems3b, tTableExtGeo1a, tTableExtGeo1b, tTableExtGeo2a, tTableExtGeo2b, tTableExtGeo3a, tTableExtGeo3b, tVerbRuleExplModGeo2a, tVerbRuleExplModGeo3a, tVerbRuleExtModGeo1a, tVerbRuleExtModGeo1b, tVerbRuleExtModGeo2a, tVerbRuleModGeo3a, tVisExplVerbRuleModGeo3a, tVisExplVerbRuleModGeo3b, tVisExtGeo1a, tVisExtGeo1b, tVisExtGeo1c, tVisExtGeo2a, tVisExtGeo3a, tVisExtTableModVerbRul_39, tVisExtVerbRuleModGeo2a);};
+NodeSet onodes {Nodes = (tCommonRatio1a, tCommonRatio1b, tCommonRatio2a, tCommonRatio2b, tCommonRatio3a, tCommonRatio3b, tExamplesGeo1a, tExamplesGeo1b, tExamplesGeo2a, tExamplesGeo2b, tExamplesGeo3a, tExamplesGeo3b, tExplGeo1a, tExplGeo1b, tExplGeo2a, tExplGeo2b, tExplGeo3a, tExplGeo3b, tExtGeo1a, tExtGeo1c, tExtGeo2a, tExtGeo2c, tExtGeo3a, tExtGeo3b, tModExtTableGeo1a, tModExtTableGeo1b, tModExtTableGeo2a, tModExtTableGeo2b, tModExtTableGeo3a, tModExtTableGeo3b, tRecursiveRuleGeo1a, tRecursiveRuleGeo1b, tRecursiveRuleGeo2a, tRecursiveRuleGeo2b, tRecursiveRuleGeo3a, tRecursiveRuleGeo3b, tSolveGeoProblems1a, tSolveGeoProblems1b, tSolveGeoProblems2a, tSolveGeoProblems2b, tSolveGeoProblems3a, tSolveGeoProblems3b, tTableExtGeo1a, tTableExtGeo1b, tTableExtGeo2a, tTableExtGeo2b, tTableExtGeo3a, tTableExtGeo3b, tVerbRuleExplModGeo2a, tVerbRuleExplModGeo3a, tVerbRuleExtModGeo1a, tVerbRuleExtModGeo1b, tVerbRuleExtModGeo2a, tVerbRuleModGeo3a, tVisExplVerbRuleModGeo3a, tVisExplVerbRuleModGeo3b, tVisExtGeo1a, tVisExtGeo1b, tVisExtGeo1c, tVisExtGeo2a, tVisExtGeo3a, tVisExtTableModVerbRul_39, tVisExtVerbRuleModGeo2a);};
+NodeSet Spoke_commonRatioMedium {Nodes = (tCommonRatio2a, tCommonRatio2b);};
+NodeSet Spoke_commonRatioHard {Nodes = (tCommonRatio3a, tCommonRatio3b);};
+NodeSet Spoke_examplesGeometri_6 {Nodes = (tExamplesGeo1a, tExamplesGeo1b);};
+NodeSet Spoke_examplesGeometri_13 {Nodes = (tExamplesGeo2a, tExamplesGeo2b);};
+NodeSet Spoke_examplesGeometri_87 {Nodes = (tExamplesGeo3a, tExamplesGeo3b);};
+NodeSet Spoke_explicitGeometri_6 {Nodes = (tExplGeo1a, tExplGeo1b);};
+NodeSet Spoke_explicitGeometri_13 {Nodes = (tExplGeo2a, tExplGeo2b);};
+NodeSet Spoke_explicitGeometri_87 {Nodes = (tExplGeo3a, tExplGeo3b);};
+NodeSet Spoke_extendGeometricEasy {Nodes = (tExtGeo1a, tExtGeo1c);};
+NodeSet Spoke_extendGeometricM_9 {Nodes = (tExtGeo2a, tExtGeo2c);};
+NodeSet Spoke_extendGeometricHard {Nodes = (tExtGeo3a, tExtGeo3b);};
+NodeSet Spoke_modelExtendTable_10 {Nodes = (tModExtTableGeo1a, tModExtTableGeo1b);};
+NodeSet Spoke_modelExtendTable_8 {Nodes = (tModExtTableGeo2a, tModExtTableGeo2b);};
+NodeSet Spoke_modelExtendTable_9 {Nodes = (tModExtTableGeo3a, tModExtTableGeo3b);};
+NodeSet Spoke_recursiveRuleGeo_99 {Nodes = (tRecursiveRuleGeo1a, tRecursiveRuleGeo1b);};
+NodeSet Spoke_recursiveRuleGeo_6 {Nodes = (tRecursiveRuleGeo2a, tRecursiveRuleGeo2b);};
+NodeSet Spoke_recursiveRuleGeo_56 {Nodes = (tRecursiveRuleGeo3a, tRecursiveRuleGeo3b);};
+NodeSet Spoke_solveGeometricPr_55 {Nodes = (tSolveGeoProblems1a, tSolveGeoProblems1b);};
+NodeSet Spoke_solveGeometricPr_53 {Nodes = (tSolveGeoProblems2a, tSolveGeoProblems2b);};
+NodeSet Spoke_solveGeometricPr_64 {Nodes = (tSolveGeoProblems3a, tSolveGeoProblems3b);};
+NodeSet Spoke_tableExtendGeome_37 {Nodes = (tTableExtGeo1a, tTableExtGeo1b);};
+NodeSet Spoke_tableExtendGeome_9 {Nodes = (tTableExtGeo2a, tTableExtGeo2b);};
+NodeSet Spoke_tableExtendGeome_18 {Nodes = (tTableExtGeo3a, tTableExtGeo3b);};
+NodeSet Spoke_verbalRuleExplic_9 {Nodes = (tVerbRuleExplModGeo2a);};
+NodeSet Spoke_verbalRuleExplic_10 {Nodes = (tVerbRuleExplModGeo3a);};
+NodeSet Spoke_verbalRuleExtend_70 {Nodes = (tVerbRuleExtModGeo1a, tVerbRuleExtModGeo1b);};
+NodeSet Spoke_verbalRuleExtend_68 {Nodes = (tVerbRuleExtModGeo2a);};
+NodeSet Spoke_verbalRuleModelG_67 {Nodes = (tVerbRuleModGeo3a);};
+NodeSet Spoke_visualExplicitVe_14 {Nodes = (tVisExplVerbRuleModGeo3a, tVisExplVerbRuleModGeo3b);};
+NodeSet Spoke_visualExtendGeom_46 {Nodes = (tVisExtGeo1a, tVisExtGeo1b, tVisExtGeo1c);};
+NodeSet Spoke_visualExtendGeom_73 {Nodes = (tVisExtGeo2a);};
+NodeSet Spoke_visualExtendGeom_27 {Nodes = (tVisExtGeo3a);};
+NodeSet Spoke_visualExtendTabl_8 {Nodes = (tVisExtTableModVerbRul_39);};
+NodeSet Spoke_visualExtendVerb_9 {Nodes = (tVisExtVerbRuleModGeo2a);};
+};

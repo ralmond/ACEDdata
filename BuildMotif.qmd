@@ -1,0 +1,218 @@
+---
+title: "BuildingMotif"
+---
+
+## Load Tables
+
+We need the licensed version of Netica for this exercise.
+
+```{r}
+#| echo: true
+#| include: false
+#| context: setup
+library(PNetica)
+library(Peanut)
+sess <- RNetica::NeticaSession(LicenseKey=Sys.getenv("NETICA_LICENSE_KEY")) # Add the license key here
+RNetica::startSession(sess)
+```
+
+Link to the google sheet with the model.
+
+```{r}
+#| echo: true
+#| include: false
+#| context: setup
+library(googlesheets4)
+googlesheets4::gs4_deauth()
+sheetID <- "1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ"
+```
+
+And download the sheets.
+
+```{r Downloads}
+netman <- read_sheet(sheetID,"Nets")
+nodeman <- read_sheet(sheetID,"Nodes")
+omega <- read_sheet(sheetID,"Omega")
+QQ <- read_sheet(sheetID,"Q")
+stats <- read_sheet(sheetID,"Statistics")
+```
+
+## Build Networks
+
+Build the warehouses.
+
+```{r Warehouses}
+Nethouse <- PNetica::BNWarehouse(manifest=netman,session=sess,
+                                 address=file.path("fullACED"),
+                                 key="Name")
+Nodehouse <- PNetica::NNWarehouse(manifest=nodeman,
+                                  key=c("Model","NodeName"),
+                                  session=sess)
+```
+
+Process the Omega matrix and build the competency model.  Note, `read_sheet()` returns a tibble, and `Omega2Pnet()` requires a data frame.
+
+```{r ProcessOmega}
+CM <- WarehouseSupply(Nethouse,"GeometricOnly")
+CM <- Omega2Pnet(as.data.frame(omega),CM,Nodehouse,override=TRUE)
+```
+
+Process the Q-matrix and build evidence models.  Again, need to convert tibble to data frame.
+
+```{r ProcessQmatrix}
+Qmat2Pnet(as.data.frame(QQ),Nethouse,Nodehouse,override=TRUE)
+```
+Write out the networks.
+```{r}
+for (name in netman$Name) {
+  if (nchar(name)>0L) {
+    net <- WarehouseSave(Nethouse,name)
+  }
+}
+```
+
+## Now build Motif
+
+Get names of items.
+
+```{r}
+items <- read.csv("data/allItems.csv")
+itemnames <- names(items)[-(1:3)]
+```
+
+Need to create mapping from items to evidence models.  Also, need to shorten item names for Netica.
+
+```{r}
+emnames <- itemnames
+subs <- c("^tC"="c","^tE"="e","^tM"="m","^tR"="r","^tS"="s",
+          "^tT"="t","^tV"="v","1[a-f]$"="Easy","2[a-f]$"="Medium",
+          "3[a-f]$"="Hard")
+for (i in 1:length(subs)) {
+  emnames <- sub(names(subs)[i],subs[i],emnames)
+}
+nodenames <- itemnames
+subs1 <- c("Geometric"="Geo","Verbal"="Verb","Explicit"="Expl",
+           "Visual"="Vis","Extend"="Ext","Model"="Mod")
+for (i in 1:length(subs1)) {
+  nodenames <- sub(names(subs1)[i],subs1[i],nodenames)
+}
+nodenames <- as.IDname(nodenames)
+correspondence <- data.frame(itemnames,nodenames,emnames)
+correspondence
+```
+
+Create an EM for each item and add it to a copy of the competency model.  Rename the `isCorrect` to be the nodename.
+
+```{r}
+if (exists("ACEDmotif") && 
+    !is.null(WarehouseFetch(Nethouse,"ACEDmotif"))) {
+  WarehouseFree(Nethouse,"ACEDmotif")
+}
+ACEDmotif <- WarehouseCopy(Nethouse,CM,"ACEDmotif")
+for (iem in 1:nrow(correspondence)) {
+  em <- WarehouseFetch(Nethouse,correspondence[iem,"emnames"])
+  obs <- PnetAdjoin(ACEDmotif,em)
+  PnodeName(obs[[1]]) <- correspondence[iem,"nodenames"]
+}
+names(PnetPnodes(ACEDmotif))
+```
+
+```{r}
+PnetPathname(ACEDmotif) <- "fullACED/ACEDmotif.dne"
+WarehouseSave(Nethouse,ACEDmotif)
+```
+
+
+```{r}
+PnetCompile(ACEDmotif)
+RNetica::JunctionTreeReport(ACEDmotif)
+```
+## Change data into a case file
+
+```{r}
+onodes <- RNetica::NetworkNodesInSet(ACEDmotif,"onodes")
+names(onodes)
+```
+
+```{r}
+allitemsCas <- "fullACED/allItems.cas"
+if (file.exists(allitemsCas)) file.remove(allitemsCas)
+for (irow in 1:nrow(items)) {
+  for (jnode in 1:nrow(correspondence)) {
+    node <- onodes[[correspondence[jnode,"nodenames"]]]
+    value <- items[irow,correspondence[jnode,"itemnames"]]
+   # print(paste(irow,node,value))
+    if (!is.na(value)) {
+      PnodeEvidence(node) <- ifelse(value>0,"Yes","No")
+    } else {
+      PnodeEvidence(node) <- NULL
+    }
+  }
+  WriteFindings(onodes,allitemsCas)
+  if ((irow%%10) == 0) print(paste("Row ",irow))
+}
+```
+
+## Build Statistics
+
+```{r}
+stats <- as.data.frame(stats)
+statlist <- lapply(1:nrow(stats), \(i) {
+  Statistic(stats[i,"Fun"],stats[i,"Node"],stats[i,"Name"])
+})
+names(statlist) <- stats$Name
+```
+
+
+
+  
+
+
+## Scoring Timing Tests
+
+```{r}
+fstream <- CaseFileStream(allitemsCas,session=sess)
+system.time({
+fstream <- ReadFindings(onodes,fstream,"FIRST")
+outstats <- lapply(statlist,\(st) calcStat(st,ACEDmotif)) |>
+  flattenStats()
+while(!is.na(getCaseStreamPos(fstream))) {
+ fstream <- ReadFindings(onodes,fstream,"NEXT")
+ outstats <- rbind(outstats, {
+   lapply(statlist,\(st) calcStat(st,ACEDmotif)) |>
+     flattenStats()
+   })
+}
+}) -> score_time
+score_time
+
+```
+
+
+## Parameter Learning Tests
+
+```{r}
+if (exists("ACEDmotif") && 
+    !is.null(WarehouseFetch(Nethouse,"ACEDmotif"))) {
+  WarehouseFree(Nethouse,"ACEDmotif")
+}
+ACEDmotif <- ReadNetworks("fullACED/ACEDmotif.dne",session=sess)
+PnetCompile(ACEDmotif)
+system.time(
+  fit <- GEMfit(ACEDmotif,allitemsCas,tol=.01)
+) -> fit.time
+fit
+fit.time
+```
+
+## Write out results
+
+```{r}
+profnodes <- RNetica::NetworkNodesInSet(ACEDmotif,"Proficiencies")
+obsnodes <- RNetica::NetworkNodesInSet(ACEDmotif,"Evidence")
+outOmega <- Pnet2Omega(ACEDmotif,profnodes)
+outQ <- Pnet2Qmat(obsnodes,profnodes)
+write.csv(outOmega,"outOmega.csv")
+write.csv(outQ,"outQ.csv")
+```
+

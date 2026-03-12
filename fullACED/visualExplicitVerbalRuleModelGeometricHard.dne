@@ -1,0 +1,160 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet visualExplicitVerbalRu_33 {
+autoupdate = FALSE;
+title = "visual Explicit Verbal Rule Model Geometric Hard";
+whenchanged = 1773323077;
+user U1 {
+	Truename = "visualExplicitVerbalRuleModelGeometricHard";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/visualExplicitVerbalRuleModelGeometricHard.dne";
+	};
+
+param X_VisualGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "VisualGeometric";
+	whenchanged = 1769539006;
+	};
+
+param X_ModelGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ModelGeometric";
+	whenchanged = 1769539006;
+	};
+
+param X_ExplicitGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ExplicitGeometric";
+	whenchanged = 1769539006;
+	};
+
+param X_VerbalRulesGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "VerbalRulesGeometric";
+	whenchanged = 1769539006;
+	};
+
+node isCorrect {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ModelGeometric, ExplicitGeometric, VisualGeometric, VerbalRulesGeometric);
+	parents = (X_ModelGeometric_1, X_ExplicitGeometric_1, X_VisualGeometric_1, X_VerbalRulesGeometric_1);
+	probs = 
+		// Yes          No            // ModelGeometric ExplicitGeometric VisualGeometric VerbalRulesGeometric 
+		  (0.7790681,   0.2209319,    // High           High              High            High                 
+		   0.6462079,   0.3537921,    // High           High              High            Medium               
+		   0.4861485,   0.5138515,    // High           High              High            Low                  
+		   0.567951,    0.432049,     // High           High              Medium          High                 
+		   0.4050815,   0.5949185,    // High           High              Medium          Medium               
+		   0.2607319,   0.7392681,    // High           High              Medium          Low                  
+		   0.3288807,   0.6711193,    // High           High              Low             High                 
+		   0.2024448,   0.7975552,    // High           High              Low             Medium               
+		   0.1162,      0.8838,       // High           High              Low             Low                  
+		   0.6462079,   0.3537921,    // High           Medium            High            High                 
+		   0.4861485,   0.5138515,    // High           Medium            High            Medium               
+		   0.3288807,   0.6711193,    // High           Medium            High            Low                  
+		   0.4050815,   0.5949185,    // High           Medium            Medium          High                 
+		   0.2607319,   0.7392681,    // High           Medium            Medium          Medium               
+		   0.1544653,   0.8455347,    // High           Medium            Medium          Low                  
+		   0.2024448,   0.7975552,    // High           Medium            Low             High                 
+		   0.1162,      0.8838,       // High           Medium            Low             Medium               
+		   0.06375987,  0.9362401,    // High           Medium            Low             Low                  
+		   0.4861485,   0.5138515,    // High           Low               High            High                 
+		   0.3288807,   0.6711193,    // High           Low               High            Medium               
+		   0.2024448,   0.7975552,    // High           Low               High            Low                  
+		   0.2607319,   0.7392681,    // High           Low               Medium          High                 
+		   0.1544653,   0.8455347,    // High           Low               Medium          Medium               
+		   0.08644526,  0.9135547,    // High           Low               Medium          Low                  
+		   0.1162,      0.8838,       // High           Low               Low             High                 
+		   0.06375987,  0.9362401,    // High           Low               Low             Medium               
+		   0.0340731,   0.9659269,    // High           Low               Low             Low                  
+		   0.6462079,   0.3537921,    // Medium         High              High            High                 
+		   0.4861485,   0.5138515,    // Medium         High              High            Medium               
+		   0.3288807,   0.6711193,    // Medium         High              High            Low                  
+		   0.4050815,   0.5949185,    // Medium         High              Medium          High                 
+		   0.2607319,   0.7392681,    // Medium         High              Medium          Medium               
+		   0.1544653,   0.8455347,    // Medium         High              Medium          Low                  
+		   0.2024448,   0.7975552,    // Medium         High              Low             High                 
+		   0.1162,      0.8838,       // Medium         High              Low             Medium               
+		   0.06375987,  0.9362401,    // Medium         High              Low             Low                  
+		   0.4861485,   0.5138515,    // Medium         Medium            High            High                 
+		   0.3288807,   0.6711193,    // Medium         Medium            High            Medium               
+		   0.2024448,   0.7975552,    // Medium         Medium            High            Low                  
+		   0.2607319,   0.7392681,    // Medium         Medium            Medium          High                 
+		   0.1544653,   0.8455347,    // Medium         Medium            Medium          Medium               
+		   0.08644526,  0.9135547,    // Medium         Medium            Medium          Low                  
+		   0.1162,      0.8838,       // Medium         Medium            Low             High                 
+		   0.06375987,  0.9362401,    // Medium         Medium            Low             Medium               
+		   0.0340731,   0.9659269,    // Medium         Medium            Low             Low                  
+		   0.3288807,   0.6711193,    // Medium         Low               High            High                 
+		   0.2024448,   0.7975552,    // Medium         Low               High            Medium               
+		   0.1162,      0.8838,       // Medium         Low               High            Low                  
+		   0.1544653,   0.8455347,    // Medium         Low               Medium          High                 
+		   0.08644526,  0.9135547,    // Medium         Low               Medium          Medium               
+		   0.04672322,  0.9532768,    // Medium         Low               Medium          Low                  
+		   0.06375987,  0.9362401,    // Medium         Low               Low             High                 
+		   0.0340731,   0.9659269,    // Medium         Low               Low             Medium               
+		   0.01794366,  0.9820563,    // Medium         Low               Low             Low                  
+		   0.4861485,   0.5138515,    // Low            High              High            High                 
+		   0.3288807,   0.6711193,    // Low            High              High            Medium               
+		   0.2024448,   0.7975552,    // Low            High              High            Low                  
+		   0.2607319,   0.7392681,    // Low            High              Medium          High                 
+		   0.1544653,   0.8455347,    // Low            High              Medium          Medium               
+		   0.08644526,  0.9135547,    // Low            High              Medium          Low                  
+		   0.1162,      0.8838,       // Low            High              Low             High                 
+		   0.06375987,  0.9362401,    // Low            High              Low             Medium               
+		   0.0340731,   0.9659269,    // Low            High              Low             Low                  
+		   0.3288807,   0.6711193,    // Low            Medium            High            High                 
+		   0.2024448,   0.7975552,    // Low            Medium            High            Medium               
+		   0.1162,      0.8838,       // Low            Medium            High            Low                  
+		   0.1544653,   0.8455347,    // Low            Medium            Medium          High                 
+		   0.08644526,  0.9135547,    // Low            Medium            Medium          Medium               
+		   0.04672322,  0.9532768,    // Low            Medium            Medium          Low                  
+		   0.06375987,  0.9362401,    // Low            Medium            Low             High                 
+		   0.0340731,   0.9659269,    // Low            Medium            Low             Medium               
+		   0.01794366,  0.9820563,    // Low            Medium            Low             Low                  
+		   0.2024448,   0.7975552,    // Low            Low               High            High                 
+		   0.1162,      0.8838,       // Low            Low               High            Medium               
+		   0.06375987,  0.9362401,    // Low            Low               High            Low                  
+		   0.08644526,  0.9135547,    // Low            Low               Medium          High                 
+		   0.04672322,  0.9532768,    // Low            Low               Medium          Medium               
+		   0.02475899,  0.975241,     // Low            Low               Medium          Low                  
+		   0.0340731,   0.9659269,    // Low            Low               Low             High                 
+		   0.01794366,  0.9820563,    // Low            Low               Low             Medium               
+		   0.009375422, 0.9906246);   // Low            Low               Low             Low                  ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323077;
+	user U1 {
+		Truename = "isCorrect";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ModelGeometric = -0.22314355131421, ExplicitGeometric = -0.22314355131421, \n\
+			VisualGeometric = 0.182321556793955, VerbalRulesGeometric = -0.22314355131421\n\
+			)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (isCorrect);};
+NodeSet Evidence {Nodes = (isCorrect);};
+NodeSet onodes {Nodes = (isCorrect);};
+};

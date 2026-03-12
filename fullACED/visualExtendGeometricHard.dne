@@ -1,0 +1,68 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet visualExtendGeometricHard {
+autoupdate = FALSE;
+title = "visualExtend Geometric Hard";
+whenchanged = 1773323077;
+user U1 {
+	Truename = "visualExtendGeometricHard";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/visualExtendGeometricHard.dne";
+	};
+
+param X_VisualGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "VisualGeometric";
+	whenchanged = 1769473885;
+	};
+
+param X_ExtendGeometric_1 {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = DISCONNECTED;
+	title = "ExtendGeometric";
+	whenchanged = 1769473885;
+	};
+
+node isCorrect {
+	discrete = TRUE;
+	states = (Yes, No);
+	kind = NATURE;
+	chance = CHANCE;
+	inputs = (ExtendGeometric, VisualGeometric);
+	parents = (X_ExtendGeometric_1, X_VisualGeometric_1);
+	probs = 
+		// Yes          No            // ExtendGeometric VisualGeometric 
+		  (0.6515337,   0.3484664,    // High            High            
+		   0.3165472,   0.6834528,    // High            Medium          
+		   0.1029233,   0.8970767,    // High            Low             
+		   0.4244511,   0.5755489,    // Medium          High            
+		   0.1544653,   0.8455347,    // Medium          Medium          
+		   0.0432944,   0.9567056,    // Medium          Low             
+		   0.225335,    0.774665,     // Low             High            
+		   0.0672127,   0.9327873,    // Low             Medium          
+		   0.01753635,  0.9824637);   // Low             Low             ;
+	numcases = 10;
+	title = "Correctly Solved?";
+	comment = "Was the task correctly solved";
+	whenchanged = 1773323077;
+	user U1 {
+		Truename = "isCorrect";
+		link = "\"partialCredit\"";
+		rules = "\"Compensatory\"";
+		Q = "TRUE";
+		lnAlphas = "c(ExtendGeometric = -0.22314355131421, VisualGeometric = 0.182321556793955\n)";
+		betas = "1";
+		priorWeight = "10";
+		};
+	};
+NodeSet pnodes {Nodes = (isCorrect);};
+NodeSet Evidence {Nodes = (isCorrect);};
+NodeSet onodes {Nodes = (isCorrect);};
+};

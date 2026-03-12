@@ -1,0 +1,409 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+
+bnet GeometricOnly {
+autoupdate = FALSE;
+title = "Geometric Competentices";
+comment = "The Geometric Evidence models";
+whenchanged = 1773323072;
+user U1 {
+	Truename = "GeometricOnly";
+	Hub = "GeometricOnly";
+	Pathname = "fullACED/geometric.dne";
+	};
+
+node SolveSequenceProblems {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = ();
+	probs = 
+		// High         Medium       Low          
+		  (0.3333333,   0.3333333,   0.3333333);
+	numcases = 10;
+	title = "Solve Sequence Problems";
+	comment = "Combination of all sequence types Problem Skills";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "SolveSequenceProblems";
+		rules = "c(SolveSequenceProblems = \"Compensatory\")";
+		link = "c(SolveSequenceProblems = \"normalLink\")";
+		betas = "c(SolveSequenceProblems = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "structure(numeric(0), names = character(0))";
+		priorWeight = "c(SolveSequenceProblems = 10)";
+		};
+	};
+
+node SolveGeometricProblems {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // SolveSequenceProblems 
+		  (0.8500558,   0.1211046,   0.02883966,   // High                  
+		   0.5276137,   0.296389,    0.1759973,    // Medium                
+		   0.1845588,   0.3008142,   0.514627);    // Low                   ;
+	numcases = 10;
+	title = "Solve Geometric Problems";
+	comment = "Combination of all Geometric Problem Skills";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "SolveGeometricProblems";
+		rules = "c(SolveGeometricProblems = \"Compensatory\")";
+		link = "c(SolveGeometricProblems = \"normalLink\")";
+		betas = "c(SolveGeometricProblems = -0.5)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveSequenceProblems = 0)";
+		priorWeight = "c(SolveGeometricProblems = 10)";
+		};
+	};
+
+node DistinguishTypes {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // SolveSequenceProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                  
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                
+		   0.08103742,  0.2147094,   0.7042531);   // Low                   ;
+	numcases = 10;
+	title = "Distinguish Sequence Types";
+	comment = "Identify Arithmetic, Geometric and Other Recursive Sequences";
+	whenchanged = 1773323072;
+	user U1 {
+		Truename = "DistinguishTypes";
+		rules = "c(DistinguishTypes = \"Compensatory\")";
+		link = "c(DistinguishTypes = \"normalLink\")";
+		betas = "c(DistinguishTypes = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveSequenceProblems = 0)";
+		priorWeight = "c(DistinguishTypes = 10)";
+		};
+	};
+
+node CommonRatio {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.3215649,   0.3331669,   0.3452682,    // High                   
+		   0.0762542,   0.2083313,   0.7154145,    // Medium                 
+		   0.008239568, 0.05394717,  0.9378133);   // Low                    ;
+	numcases = 10;
+	title = "Common Ratio";
+	comment = "Solve problems involving finding the common ratio";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "CommonRatio";
+		rules = "c(CommonRatio = \"Compensatory\")";
+		link = "c(CommonRatio = \"normalLink\")";
+		betas = "c(CommonRatio = 1)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(CommonRatio = 10)";
+		};
+	};
+
+node ExamplesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.514627,    0.3008142,   0.1845588,    // High                   
+		   0.1759973,   0.296389,    0.5276137,    // Medium                 
+		   0.02883966,  0.1211046,   0.8500558);   // Low                    ;
+	numcases = 10;
+	title = "Examples of Geometric Sequeces";
+	comment = "Solve problems involving examples of Geometric sequences";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ExamplesGeometric";
+		rules = "c(ExamplesGeometric = \"Compensatory\")";
+		link = "c(ExamplesGeometric = \"normalLink\")";
+		betas = "c(ExamplesGeometric = 0.5)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(ExamplesGeometric = 10)";
+		};
+	};
+
+node ExtendGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Extending Geometric Sequeces";
+	comment = "Solve problems involving extending Geometric sequences";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ExtendGeometric";
+		rules = "c(ExtendGeometric = \"Compensatory\")";
+		link = "c(ExtendGeometric = \"normalLink\")";
+		betas = "c(ExtendGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(ExtendGeometric = 10)";
+		};
+	};
+
+node TableGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Table Geometric";
+	comment = "Solve problems involving Geometric sequences in tabular form";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "TableGeometric";
+		rules = "c(TableGeometric = \"Compensatory\")";
+		link = "c(TableGeometric = \"normalLink\")";
+		betas = "c(TableGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(TableGeometric = 10)";
+		};
+	};
+
+node ModelGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.8500558,   0.1211046,   0.02883966,   // High                   
+		   0.5276137,   0.296389,    0.1759973,    // Medium                 
+		   0.1845588,   0.3008142,   0.514627);    // Low                    ;
+	numcases = 10;
+	title = "Model Geometric";
+	comment = "Solve problems involving extending Geometric sequences in tabular form with models";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ModelGeometric";
+		rules = "c(ModelGeometric = \"Compensatory\")";
+		link = "c(ModelGeometric = \"normalLink\")";
+		betas = "c(ModelGeometric = -0.5)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(ModelGeometric = 10)";
+		};
+	};
+
+node VisualGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Visual Geometric";
+	comment = "Solve problems involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "VisualGeometric";
+		rules = "c(VisualGeometric = \"Compensatory\")";
+		link = "c(VisualGeometric = \"normalLink\")";
+		betas = "c(VisualGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(VisualGeometric = 10)";
+		};
+	};
+
+node InduceRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (SolveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // SolveGeometricProblems 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                   
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                 
+		   0.08103742,  0.2147094,   0.7042531);   // Low                    ;
+	numcases = 10;
+	title = "Induce Rules Geometric";
+	comment = "Induce rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "InduceRulesGeometric";
+		rules = "c(InduceRulesGeometric = \"Compensatory\")";
+		link = "c(InduceRulesGeometric = \"normalLink\")";
+		betas = "c(InduceRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(SolveGeometricProblems = 0)";
+		priorWeight = "c(InduceRulesGeometric = 10)";
+		};
+	};
+
+node AlgebraRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (InduceRulesGeometric);
+	probs = 
+		// High         Medium       Low           // InduceRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                 
+		   0.3333333,   0.3333333,   0.3333333,    // Medium               
+		   0.08103742,  0.2147094,   0.7042531);   // Low                  ;
+	numcases = 10;
+	title = "Algebraic Rules Geometric";
+	comment = "Induce algebraic rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "AlgebraRulesGeometric";
+		rules = "c(AlgebraRulesGeometric = \"Compensatory\")";
+		link = "c(AlgebraRulesGeometric = \"normalLink\")";
+		betas = "c(AlgebraRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(InduceRulesGeometric = 0)";
+		priorWeight = "c(AlgebraRulesGeometric = 10)";
+		};
+	};
+
+node VerbalRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (InduceRulesGeometric);
+	probs = 
+		// High         Medium       Low           // InduceRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                 
+		   0.3333333,   0.3333333,   0.3333333,    // Medium               
+		   0.08103742,  0.2147094,   0.7042531);   // Low                  ;
+	numcases = 10;
+	title = "Verbal Rules Geometric";
+	comment = "Verbal rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "VerbalRulesGeometric";
+		rules = "c(VerbalRulesGeometric = \"Compensatory\")";
+		link = "c(VerbalRulesGeometric = \"normalLink\")";
+		betas = "c(VerbalRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(InduceRulesGeometric = 0)";
+		priorWeight = "c(VerbalRulesGeometric = 10)";
+		};
+	};
+
+node ExplicitGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (AlgebraRulesGeometric);
+	probs = 
+		// High         Medium       Low           // AlgebraRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                  
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                
+		   0.08103742,  0.2147094,   0.7042531);   // Low                   ;
+	numcases = 10;
+	title = "Explicit Geometric";
+	comment = "Solve problems involving explicit rules for Geometric sequences.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "ExplicitGeometric";
+		rules = "c(ExplicitGeometric = \"Compensatory\")";
+		link = "c(ExplicitGeometric = \"normalLink\")";
+		betas = "c(ExplicitGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(AlgebraRulesGeometric = 0)";
+		priorWeight = "c(ExplicitGeometric = 10)";
+		};
+	};
+
+node RecursiveRulesGeometric {
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	levels = (0.9674, 0, -0.9674);
+	kind = NATURE;
+	chance = CHANCE;
+	parents = (AlgebraRulesGeometric);
+	probs = 
+		// High         Medium       Low           // AlgebraRulesGeometric 
+		  (0.7042531,   0.2147094,   0.08103742,   // High                  
+		   0.3333333,   0.3333333,   0.3333333,    // Medium                
+		   0.08103742,  0.2147094,   0.7042531);   // Low                   ;
+	numcases = 10;
+	title = "Recursive Rules Geometric";
+	comment = "Induce recursive rules involving Geometric sequences with visual representations.";
+	whenchanged = 1773323071;
+	user U1 {
+		Truename = "RecursiveRulesGeometric";
+		rules = "c(RecursiveRulesGeometric = \"Compensatory\")";
+		link = "c(RecursiveRulesGeometric = \"normalLink\")";
+		betas = "c(RecursiveRulesGeometric = 0)";
+		linkScale = "1";
+		Q = "TRUE";
+		lnAlphas = "c(AlgebraRulesGeometric = 0)";
+		priorWeight = "c(RecursiveRulesGeometric = 10)";
+		};
+	};
+NodeSet pnodes {Nodes = (SolveSequenceProblems, SolveGeometricProblems, CommonRatio, ExamplesGeometric, ExtendGeometric, TableGeometric, ModelGeometric, ExplicitGeometric, VisualGeometric, InduceRulesGeometric, RecursiveRulesGeometric, AlgebraRulesGeometric, VerbalRulesGeometric, DistinguishTypes);};
+NodeSet Proficiencies {Nodes = (SolveSequenceProblems, SolveGeometricProblems, CommonRatio, ExamplesGeometric, ExtendGeometric, TableGeometric, ModelGeometric, ExplicitGeometric, VisualGeometric, InduceRulesGeometric, RecursiveRulesGeometric, AlgebraRulesGeometric, VerbalRulesGeometric, DistinguishTypes);};
+NodeSet Highlevel {Nodes = (SolveSequenceProblems, SolveGeometricProblems);};
+NodeSet Lowlevel {Nodes = (CommonRatio, ExamplesGeometric, ExtendGeometric, TableGeometric, ModelGeometric, ExplicitGeometric, VisualGeometric, InduceRulesGeometric, RecursiveRulesGeometric, AlgebraRulesGeometric, VerbalRulesGeometric, DistinguishTypes);};
+};

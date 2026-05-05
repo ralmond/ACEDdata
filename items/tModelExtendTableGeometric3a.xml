@@ -1,0 +1,75 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stimulus TYPE="text">
+<Paragraph>
+  <Sentence>At a certain bakery chain, fresh baked goods are prepared every morning. The number of pounds of baked goods that the bakery chain sells per hour, starting with the hour the bakeries open, is shown in the chart below.
+  </Sentence>
+</Paragraph>
+<Blockquote><Emphasis>Pounds of Baked Goods sold per hour</Emphasis></Blockquote>
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Hour</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Pounds of Baked Goods</Emphasis></TD>
+	</TR>
+	<TR>
+  <TD>1</TD> 
+  <TD>384</TD> 
+  </TR>
+- <TR>
+  <TD>2</TD> 
+  <TD>192</TD> 
+  </TR>
+- <TR>
+  <TD>3</TD> 
+  <TD>96</TD> 
+  </TR>
+- <TR>
+  <TD>4</TD> 
+  <TD>48</TD> 
+  </TR>
+	
+		
+  </TABLE>
+</Stimulus>
+<Stem>
+  <Paragraph><Sentence>
+ Which equation best represents sales for the bakery chain, where <italics>n</italics> is the hour, <italics>a</italics><sub><italics>n</italics></sub> is the number of pounds of baked goods sold in the <italics>n</italics>th hour, and <italics>a</italics><sub><italics>n</italics>+1</sub> is the number of pounds of baked goods sold in the (<italics>n</italics>+1)th hour?  
+  </Sentence></Paragraph>
+
+</Stem>
+<Distractor_list>
+  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistA.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistB.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistC.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistD.gif" ALTTEXT="" /></Distractor>
+</Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>1</observable>
+        <feedback TYPE="Student">Correct, good job! </feedback>
+        <feedback TYPE="Teacher">The student answered correctly.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The equation you selected describes a situation where the number of pounds of baked goods sold decreases by a factor of 3 every hour. In the third hour, 96 pounds of baked goods are sold, and in the fourth hour, 48 pounds of baked goods are sold. Forty-eight is one-half of 96, not one-third of 96. </feedback>
+        <feedback TYPE="Teacher">The student selected an equation that assumes that number of pounds of baked goods sold decreases by a factor of 3 every hour.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The equation you selected describes a situation where the number of pounds of baked goods sold increases by a factor of 3 every hour. In the third hour, 96 pounds of baked goods are sold, and in the fourth hour, 48 pounds of baked goods are sold. So the number of pounds of baked goods sold is <italics>decreasing</italics>, not  <italics>increasing</italics>.</feedback>
+        <feedback TYPE="Teacher">The student selected an equation that assumes that the number of pounds of baked goods sold increases by a factor of 3 every hour.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The equation you selected describes a situation where the number of pounds of baked goods sold increases by a factor of 2 every hour. In the third hour, 96 pounds of baked goods are sold, and in the fourth hour, 48 pounds of baked goods are sold. So the number of pounds of baked goods sold is <italics>decreasing</italics>, not  <italics>increasing</italics>.</feedback>
+        <feedback TYPE="Teacher">The student selected an equation that assumes that the number of pounds of baked goods sold increases by a factor of 2 every hour.</feedback>
+    </response>
+  </key>	
+<Metadata>
+    <AeL ItemNode="tModelExtendTableGeometric3a" Difficulty="3">
+        <PMNode LINK="true">ModelGeometric</PMNode>
+        <PMNode>TableGeometric</PMNode>
+        <PMNode>ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

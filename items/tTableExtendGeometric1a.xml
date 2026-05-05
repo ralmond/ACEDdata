@@ -1,0 +1,93 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stimulus TYPE="text">
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Term Number</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Term Value</Emphasis></TD>
+	</TR>
+	<TR>
+
+		<TD>1</TD>
+		<TD>4</TD>
+	</TR>
+	<TR>
+		<TD>2</TD>
+		<TD>16</TD>
+		
+	</TR>
+	<TR>	<TD>3</TD>
+		<TD><Emphasis>A</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>4</TD>
+		<TD><Emphasis>B</Emphasis></TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+
+<Stem>
+  <Paragraph><Sentence>
+  The numbers in the table represent terms in a geometric sequence. Complete the table by filling in the values for A and B.
+
+
+    </Sentence></Paragraph>
+	
+</Stem>
+
+<input_collection>
+  <inputfield ID="1" type="limited" size="shortest">Enter the value for <Emphasis>A:</Emphasis></inputfield>
+  <inputfield ID="2" type="limited" size="shortest">Enter the value for <Emphasis>B:</Emphasis></inputfield>
+</input_collection>
+
+<key TYPE="Compound">
+    
+<response SCORE="1" EVIDENCEVAL="1">
+        <observable ID="1" TYPE="Math">64</observable>
+        <observable ID="2" TYPE="Math">256</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student correctly generated the next two terms in a geometric sequence, when the sequence was presented in tabular format.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">5</observable>
+        <observable ID="2" TYPE="Math">6</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have misread the question.</feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence, when the sequence was presented in tabular format. It is possible the student confused term number with term value.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">28</observable>
+        <observable ID="2" TYPE="Math">40</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first two terms in the sequence are from a geometric sequence, not from an arithmetic sequence. </feedback>
+        <feedback TYPE="Teacher">The student did not correctly generated the next two terms in a geometric sequence, when the sequence was presented in tabular format. It is possible the student confused the definition for a geometric sequence with the definition for an arithmetic sequence.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">64</observable>
+        <observable ID="2" TYPE="Math">1024</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have been multiplying adjacent terms, instead of multiplying each term by the common ratio, 4.</feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence, when the sequence was presented in tabular format. The student may have multiplied adjacent terms.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">20</observable>
+        <observable ID="2" TYPE="Math">36</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have been adding adjacent terms, instead of multiplying each term by the common ratio, 4.</feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence, when the sequence was presented in tabular format. The student may have added adjacent terms.</feedback>
+    </response>
+
+    <response SCORE="0" EVIDENCEVAL="0">
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect, but it is not clear why.</feedback>
+        <observable ANY="true"/>
+    </response>
+
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableExtendGeometric1a" Difficulty="1">
+        <PMNode LINK="true">TableGeometric</PMNode>
+        <PMNode>ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

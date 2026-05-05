@@ -1,0 +1,46 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+<Paragraph>
+<Sentence>Which of the following is not a geometric sequence?</Sentence>
+</Paragraph>	
+</Stem>
+<Distractor_list>
+  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistA.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistB.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistC.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistD.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC" >
+
+<response SCORE="1" EVIDENCEVAL="1">
+<observable>1</observable>
+	<feedback TYPE="Student">You're right! You've correctly selected the sequence that is not geometric.</feedback>
+        <feedback TYPE="Teacher">From among a set of options, the student was able to select the non-geometric sequence. The student was able to do this even though some of the sequences contain fractions.</feedback>
+</response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>2</observable>
+	<feedback TYPE="Student">Sorry, that's not right. The sequence <Inlineimg SRC="../ael/items/images/SolveGeo2aDistB.gif" ALTTEXT="" /><emphasis>...</emphasis> is geometric. Since each term is equal to one-half times the previous term, this is a geometric sequence with a common ratio of 1/2.</feedback>
+        <feedback TYPE="Teacher">The student was not able to select a non-geometric sequence from among a set of options. Some of these sequences include fractions; this may or may not be the source of the difficulty.</feedback>
+</response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>3</observable>
+	<feedback TYPE="Student">Sorry, that's not right. The sequence <Inlineimg SRC="../ael/items/images/SolveGeo2aDistC.gif" ALTTEXT="" /><emphasis>...</emphasis> is geometric. Since each term is equal to three times the previous term, this is a geometric sequence with a common ratio of 3.</feedback>
+        <feedback TYPE="Teacher">The student was not able to select a non-geometric sequence from among a set of options. Some of these sequences include fractions; this may or may not be the source of the difficulty.</feedback>
+</response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>4</observable>
+	<feedback TYPE="Student">Sorry, that's not right. The sequence <Inlineimg SRC="../ael/items/images/SolveGeo2aDistD.gif" ALTTEXT="" /><emphasis>...</emphasis> is geometric. Since each term is equal to two times the previous term, this is a geometric sequence with a common ratio of 2.</feedback>
+        <feedback TYPE="Teacher">The student was not able to select a non-geometric sequence from among a set of options. Some of these sequences include fractions; this may or may not be the source of the difficulty.</feedback>
+</response>
+
+</Key>
+<Metadata>
+<AeL ItemNode="tSolveGeometricProblems2b" Difficulty="2">
+	<PMNode LINK="true">solveGeometricProblems</PMNode>
+</AeL>
+</Metadata>
+</TestItem>

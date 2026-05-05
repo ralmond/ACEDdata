@@ -1,0 +1,79 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stimulus TYPE="text">
+<Paragraph>
+  <Sentence>Weekly attendance figures for a movie shown at a theater 
+are given in the chart below. The theater will start making a profit
+when weekly attendance goes above 4,000.
+
+  </Sentence>
+</Paragraph>
+<Blockquote><Emphasis>Weekly Attendance Figures</Emphasis></Blockquote>
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Week</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Attendance</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>1</TD>
+		<TD ALIGN="RIGHT">225</TD>
+	</TR>
+	<TR>
+		<TD>2</TD>
+		<TD ALIGN="RIGHT">450</TD>
+	</TR>
+	<TR>
+		<TD>3</TD>
+		<TD ALIGN="RIGHT">900</TD>
+	</TR>
+	
+	<TR>
+		<TD>4</TD>
+		<TD ALIGN="RIGHT">1,800</TD>
+	</TR>
+	
+  </TABLE>
+</Stimulus>
+<Stem>
+  <Paragraph><Sentence>
+ If this attendance pattern continues, during which week will attendance
+ first go above 4,000?
+  </Sentence></Paragraph>
+
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>5</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>6</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>7</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>8</Sentence></Paragraph></Distractor>
+</Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right. The attendance for week 5 does not go above 4,000.  </feedback>
+        <feedback TYPE="Teacher">The student may have made an arithmetic error in generating the next term for this geometric sequence, or may have an incomplete understanding of how to generate additional terms in a geometric sequence.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>2</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">The student's response is consistent with an understanding of how to generate successive terms in a geometric sequence.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Although you are correct that the weekly attendance is greater than 4,000 in week 7, this is not the <emphasis>first</emphasis> week in which this occurs.</feedback>
+        <feedback TYPE="Teacher">The student may have misinterpreted the question, and selected <emphasis>any</emphasis> week for which the attendance is greater than 4,000, rather than the first week for which the attendance is greater than 4,000. It is also possible that the student has an incomplete understanding of how to generate successive terms in a geometric sequence.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Although you are correct that the weekly attendance is greater than 4,000 in week 8, this is not the <emphasis>first</emphasis> week in which this occurs. </feedback>
+        <feedback TYPE="Teacher">The student may have misinterpreted the question, and selected <emphasis>any</emphasis> week for which the attendance is greater than 4,000, rather than the first week for which the attendance is greater than 4,000. It is also possible that the student has an incomplete understanding of how to generate successive terms in a geometric sequence..</feedback>
+    </response>
+  </key>	
+<Metadata>
+    <AeL ItemNode="tModelExtendTableGeometric1a" Difficulty="1">
+        <PMNode LINK="true">ModelGeometric</PMNode>
+        <PMNode>TableGeometric</PMNode>
+        <PMNode>ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

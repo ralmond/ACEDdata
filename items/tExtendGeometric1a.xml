@@ -1,0 +1,51 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Extend the following sequence by giving the 
+                             next two terms: </Sentence> 
+        </Paragraph>
+	<Paragraph><Sentence><Blockquote>
+	2, 6, 18, 54, 162, <emphasis>...</emphasis>
+	</Blockquote></Sentence></Paragraph>
+</Stem>
+<input_collection>
+	<inputfield   ID="1" type="inline" size="shortest">Enter your answers here: </inputfield>
+	<inputfield   ID="2" type="inline" size="shortest"> and </inputfield>
+</input_collection>
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">486</observable>
+		<observable ID="2" TYPE="math">1458</observable>    
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student correctly extended the sequence by finding the next two terms.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">166</observable>
+		<observable ID="2" TYPE="math">170</observable>    
+        <feedback TYPE="Student">Sorry, that's incorrect. It looks like you found the difference between the first two terms, and then used this difference to find the next two terms. This works for arithmetic sequences, but this is not an arithemetic sequence. It's a good idea to look at all the terms given in the question .</feedback>
+        <feedback TYPE="Teacher">The student looked at the difference between the first two terms, instead of looking at all the terms given in the question.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">486</observable>
+		<observable ID="2" ANY= "true"/>    
+        <feedback TYPE="Student">Sorry, that's incorrect. Although you computed the next term correctly, It looks like you may have made a mistake computing the term after that. Check your calculations.</feedback>
+        <feedback TYPE="Teacher">The student may have made a computation error.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">386</observable>
+		<observable ID="2" ANY= "true"/>    
+        <feedback TYPE="Student">Sorry, that's incorrect. It looks like you may have made a mistake computing the next term. Check your calculations.</feedback>
+        <feedback TYPE="Teacher">The student may have made a multiplication error.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExtendGeometric1a" Difficulty="1">
+        <PMNode LINK="true">ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

@@ -1,0 +1,66 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+     Let <italics>a</italics><sub>1</sub>, <italics>a</italics><sub>2</sub>, <italics>a</italics><sub>3</sub>, 
+     <emphasis>...</emphasis>, <italics>a</italics><sub><italics>n</italics></sub>, <emphasis>...</emphasis> be a sequence 
+     of integers. The first four terms of the sequence are given below.
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence><blockquote> -6, -24, -96, -384,<emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  <Paragraph>
+   <Sentence>
+     Select the correct rule for finding the (<italics>n</italics>+1)th term from the <italics>n</italics>th term.
+     </Sentence>
+   </Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2aDistA.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2aDistB.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2aDistC.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2aDistD.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2aDistE.gif" ALTTEXT="" /></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC" >
+  <response SCORE="1" EVIDENCEVAL="1">
+      <observable>2</observable>
+      <feedback TYPE="Student">Right! Good job. Starting with the second term, each term in the sequence is equal to four times the previous term.</feedback>
+      <feedback TYPE="Teacher">The student was able to select the correct recursive rule for generating successive terms in a decreasing geometric sequence with negative integer terms.</feedback>
+   </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>1</observable>
+      <feedback TYPE="Student">Sorry, that's incorrect. Try testing the equation you selected by substituting a few numbers. Suppose n = 1. Then a<sub>n</sub> = -6. So a<sub>n+1</sub> = -6 * -6 = 36. But a<sub>n+1</sub> = a<sub>2</sub> = -24. 36 is not equal to -24, so this cannot be the correct equation.</feedback>
+      <feedback TYPE="Teacher">The student was not able to select the correct recursive rule for generating successive terms in a decreasing geometric sequence with negative integer terms. The student may have confused the initial term with the common ratio.</feedback>
+   </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>3</observable>
+      <feedback TYPE="Student">Sorry, that's incorrect. Try testing the equation you selected by substituting a few numbers. Suppose n = 1. Then a<sub>n</sub> = -6. So a<sub>n+1</sub> = -(-6) / 6 = 1. But a<sub>n+1</sub> = a<sub>2</sub> = -24. 1 is not equal to -24, so this cannot be the correct equation.</feedback>
+      <feedback TYPE="Teacher">The student was not able to select the correct recursive rule for generating successive terms in a decreasing geometric sequence with negative integer terms.</feedback>
+   </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>4</observable>
+      <feedback TYPE="Student">Sorry, that's incorrect. Try testing the equation you selected by substituting a few numbers. Suppose n = 1. Then a<sub>n</sub> = -6, and  4<sup>n-1</sup> = 4<sup>0</sup> = 1. So a<sub>n+1</sub> = -6 * 1 = -6. But a<sub>n+1</sub> = a<sub>2</sub> = -24. -6 is not equal to -24, so this cannot be the correct equation.</feedback>
+      <feedback TYPE="Teacher">The student was not able to select the correct recursive rule for generating successive terms in a decreasing geometric sequence with negative integer terms. The student may have confused the recursive rule for a geometric sequence with an explicit rule for a geometric sequence.</feedback>
+   </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>5</observable>
+      <feedback TYPE="Student">Sorry, that's incorrect. Try testing the equation you selected by substituting a few numbers. Suppose n = 1. Then a<sub>n</sub> = -6. So a<sub>n+1</sub> = -4 * -6 = 24. But a<sub>n+1</sub> = a<sub>2</sub> = -24. 24 is not equal to -24, so this cannot be the correct equation.</feedback>
+      <feedback TYPE="Teacher">The student was not able to select the correct recursive rule for generating successive terms in a decreasing geometric sequence with negative integer terms. The student may have difficulty with multiplicative operations involving negative numbers.</feedback>
+   </response>
+
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tRecursiveRuleGeometric2a" Difficulty="2">
+	<PMNode LINK="true">RecursiveRuleGeometric</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

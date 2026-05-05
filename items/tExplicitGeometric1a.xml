@@ -1,0 +1,56 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    The first four terms of a geometric sequence are given below. 
+    Choose the algebraic expression that represents the <italics>n</italics>th term in this sequence.
+     </Sentence>
+   </Paragraph>
+
+   <Paragraph><Sentence><blockquote>4, 16, 64, 256,<emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric1aDistA.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric1aDistB.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric1aDistC.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric1aDistD.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric1aDistE.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC">
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. The expression you selected evaluates to 4(1) + 4 = 8. But the first term in the sequence is 4, not 8, so this expression can't describe this sequence.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+   </response>
+ <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable>
+        <feedback TYPE="Student">Although this expression works for the first term, it is not correct. Consider the case where n = 2. Then the expression you selected evaluates to 4(2) = 8. But the 2nd term in the sequence is 16, not 8. Therefore this expression does not describe this sequence. It is always a good idea to check the expression with several values of n.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+   </response>
+ <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. The expression you selected evaluates to 4sup1 + 4 = 8. But the first term in the sequence is 4, not 8, so this expression can't describe this sequence.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+   </response>
+ <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. The expression you selected evaluates to 3 * 4sup(1-1) = 3 * 4sup0 = 3 * 1 = 3. But the first term in the sequence is 4, not 3, so this expression can't describe this sequence.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+   </response>
+  <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>5</observable>
+        <feedback TYPE="Student">Right! You have identified the correct expression for the nth term.</feedback>
+        <feedback TYPE="Teacher">The student successfully identified the correct explicit formula for an increasing geometric sequence with integer terms.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitGeometric1a" Difficulty="1">
+	<PMNode LINK="true">ExplicitGeometric</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

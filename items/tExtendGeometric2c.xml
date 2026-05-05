@@ -1,0 +1,54 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Find the missing terms in the geometric sequence below:</Sentence></Paragraph>
+	<Paragraph><Sentence><Blockquote>2, __, 18, __, 162, <Emphasis> ... </Emphasis></Blockquote></Sentence></Paragraph>
+</Stem>
+<input_collection>
+	<inputfield  ID="1" type="inline" size="shortest">Enter your answer here: </inputfield>
+	<inputfield  ID="2" type="inline" size="shortest"> and </inputfield>
+	
+</input_collection>
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="Math">6</observable>
+		<observable ID="2" TYPE="Math">54</observable>    
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student correctly identified missing terms in a geometric sequence.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">6</observable>
+        <observable ID="2" ANY = "true"/>
+        <feedback TYPE="Student">Sorry, that's not quite right. You found the first missing term correctly, but you made an error finding the second missing term.</feedback>
+        <feedback TYPE="Teacher">The student found the first missing term correctly, but made an error finding the second missing term.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" ANY = "true"/>
+        <observable ID="2" TYPE = "Math">54</observable>
+        <feedback TYPE="Student">Sorry, that's not quite right. You found the second missing term correctly, but you made an error finding the first missing term.</feedback>
+        <feedback TYPE="Teacher">The student found the second missing term correctly, but made an error finding the first missing term.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">10</observable>
+        <observable ID="2" ANY = "true"/>
+        <feedback TYPE="Student">Sorry, that's incorrect. It looks like you may have tried to find a missing terms by taking the average of the terms on either side. This would work for an arithmetic sequence, but not a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may have tried to find a missing term by averaging the terms on either side.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" ANY = "true"/>
+        <observable ID="2" TYPE="Math">90</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. It looks like you may have tried to find a missing term by taking the average of the terms on either side. This would work for an arithmetic sequence, but not a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may have tried to find a missing term by averaging the terms on either side.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExtendGeometric2c" Difficulty="2">
+        <PMNode LINK="true">ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

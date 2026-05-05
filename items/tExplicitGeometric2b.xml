@@ -1,0 +1,41 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    The first four terms of a geometric sequence are given below. 
+    Choose the algebraic expression that represents the <italics>n</italics>th term in this sequence.
+     </Sentence>
+   </Paragraph>
+
+   <Paragraph><Sentence><blockquote>27, 81, 243, 729, <emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric2bDistA.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric2bDistB.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric2bDistC.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric2bDistD.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="../ael/items/images/ExplicitGeometric2bDistE.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC">
+  <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>3</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable ANY="true"/> 
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitGeometric2b" Difficulty="2">
+	<PMNode LINK="true">ExplicitGeometric</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

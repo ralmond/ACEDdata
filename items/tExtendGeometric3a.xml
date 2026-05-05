@@ -1,0 +1,56 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>If 3 is the first term, what is the 10th term in the following sequence?
+</Sentence></Paragraph>
+<Paragraph><Sentence><Blockquote>
+3, 9, 27, 81, 243, <Emphasis>...</Emphasis>
+</Blockquote></Sentence></Paragraph>
+</Stem>
+<input_collection>
+	<inputfield type="inline" size="shortest">Enter your answer here:</inputfield>
+	
+</input_collection>
+<key TYPE="Math">
+    <response SCORE="1" EVIDENCEVAL="1">
+        <observable>59049</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student correctly found the 10th term of a geometric sequence.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable>729</observable>
+        <feedback TYPE="Student">That's incorrect, but you are close. You correctly identified the rule for generating successive terms in the sequence, but you found the next term, instead of the 10th term.</feedback>
+        <feedback TYPE="Teacher">The student found the next term of a geometric sequence, instead of the 10th term.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable>19683</observable>
+        <feedback TYPE="Student">That's incorrect, but you are close. You correctly identified the rule for generating successive terms in the sequence, but you found the 9th term, instead of the 10th term.</feedback>
+        <feedback TYPE="Teacher">The student found the 9th term of a geometric sequence, instead of the 10th term.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable>177147</observable>
+        <feedback TYPE="Student">That's incorrect, but you are close. You correctly identified the rule for generating successive terms in the sequence, but you found the 11th term, instead of the 10th term.</feedback>
+        <feedback TYPE="Teacher">The student found the 11th term of a geometric sequence, instead of the 10th term.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable>249</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. It looks like you found the difference between the first two terms in the sequence, and added this value to the 5th term. But this is a geometric sequence, so you should multiply to find successive terms. Also, you are looking for the 10th term, rather than the next term.</feedback>
+        <feedback TYPE="Teacher">The student may have misidentified the sequence as arithmetic instead of geometric. Also, the student may have tried to generate the next term, instead of the 10th term.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable>273</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. It looks like you found the difference between the first two terms in the sequence, and added this value to generate successive terms. But this is a geometric sequence, so you should multiply to find successive terms.</feedback>
+        <feedback TYPE="Teacher">The student may have misidentified the sequence as arithmetic instead of geometric.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExtendGeometric3a" Difficulty="3">
+        <PMNode LINK="true">ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

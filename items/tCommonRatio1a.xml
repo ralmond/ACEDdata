@@ -1,0 +1,41 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Find the common ratio for the following geometric sequence:</Sentence></Paragraph>
+	<Paragraph><Sentence><Blockquote>1, 2, 4, 8, 16, <Emphasis>. . .</Emphasis></Blockquote></Sentence></Paragraph></Stem>
+<input_collection>
+	<inputfield type="inline" size="shortest">Enter your answer here: </inputfield>
+</input_collection>
+<key TYPE="math" >
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>2</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+
+
+<response  SCORE="1" EVIDENCEVAL="1">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Perhaps you calculated the second term minus the first term. But for this geometric sequence, the difference between successive terms is not the same. For example, 2 minus 1 is 1, but 4 minus 2 is 2. The ratio between successive terms is the same, however.</feedback>
+        <feedback TYPE="Teacher">The student probably confused the common ratio of a geometric sequence with the common difference of an arithemetic sequence.</feedback>
+    </response>
+
+<response  SCORE="1" EVIDENCEVAL="1">
+        <observable>8</observable>
+               <feedback TYPE="Student">Sorry, that's incorrect. Perhaps you calculated the fifth term minus the fourth term. But for this geometric sequence, the difference between successive terms is not the same. For example, 2 minus 1 is 1, but 4 minus 2 is 2. The ratio between successive terms is the same, however.</feedback>
+        <feedback TYPE="Teacher">The student probably confused the common ratio of a geometric sequence with the common difference of an arithemetic sequence.</feedback>
+    </response>
+
+
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect, but it is not clear why.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tCommonRatio1a" Difficulty="1">
+        <PMNode LINK="true">CommonRatio</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

@@ -1,0 +1,44 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+<Paragraph>
+<Sentence>Which of the following is not a geometric sequence?</Sentence>
+</Paragraph>	
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence> 2, 8, 32, 128, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>10, 13, 16, 19, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>5, 10, 20, 40, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 3, 6, 12, 24, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC" >
+<response SCORE="1" EVIDENCEVAL="1">
+<observable>2</observable>
+	<feedback TYPE="Student">That's correct! You have selected the sequence that is not geometric.</feedback>
+        <feedback TYPE="Teacher">From among a set of options, the student correctly identified which sequence was not geometric.</feedback>
+</response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>1</observable>
+	<feedback TYPE="Student">Sorry, that's incorrect. The sequence 2, 8, 32, 128, <emphasis>...</emphasis> is geometric. Each term is equal to the previous term times four, so this is a geometric sequence with a common ratio of 4.</feedback>
+        <feedback TYPE="Teacher">The student was not able to identify a non-geometric sequence from among a set of options.</feedback>
+</response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>3</observable>
+	<feedback TYPE="Student">Sorry, that's incorrect. The sequence 5, 10, 20, 40, <emphasis>...</emphasis> is geometric. Each term is equal to the previous term times two, so this is a geometric sequence with a common ratio of 2.</feedback>
+        <feedback TYPE="Teacher">The student was not able to identify a non-geometric sequence from among a set of options.</feedback>
+</response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>4</observable>
+	<feedback TYPE="Student">Sorry, that's incorrect. The sequence 3, 6, 12, 24, <emphasis>...</emphasis> is geometric. Each term is equal to the previous term times two, so this is a geometric sequence with a common ratio of 2.</feedback>
+        <feedback TYPE="Teacher">The student was not able to identify a non-geometric sequence from among a set of options.</feedback>
+</response>
+</Key>
+<Metadata>
+<AeL ItemNode="tSolveGeometricProblems1b" Difficulty="1">
+	<PMNode LINK="true">solveGeometricProblems</PMNode>
+</AeL>
+</Metadata>
+</TestItem>

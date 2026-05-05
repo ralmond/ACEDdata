@@ -1,0 +1,224 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Give the first 3 terms of a geometric sequence that satisfies the following:</Sentence> 
+        </Paragraph>
+        <Blockquote>
+	  <Paragraph><Sentence>1. The first term is a positive integer between 3 and 5, inclusive.</Sentence> 
+          </Paragraph>
+	  <Paragraph><Sentence>2. The common ratio is a positive integer between 2 and 4, inclusive.</Sentence> 
+          </Paragraph>
+        </Blockquote>
+        <Paragraph><Sentence>
+          <Emphasis>Note:</Emphasis> There is more than one correct answer. Any example 
+           you choose that meets the above requirements will be scored as correct.   
+        </Sentence></Paragraph>
+</Stem>
+<input_collection>
+	<inputfield  ID="1" type="inline" size="shortest">Enter your answers here:</inputfield>
+	<inputfield  ID="2" type="inline" size="shortest">,</inputfield>
+	<inputfield  ID="3" type="inline" size="shortest"> and </inputfield>
+</input_collection>
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">6</observable>
+		<observable ID="3" TYPE="math">12</observable>    
+        <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">9</observable>
+		<observable ID="3" TYPE="math">27</observable>    
+       <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">12</observable>
+		<observable ID="3" TYPE="math">48</observable>
+       <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">8</observable>
+		<observable ID="3" TYPE="math">16</observable>
+         <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">12</observable>
+		<observable ID="3" TYPE="math">36</observable>
+        <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">16</observable>
+		<observable ID="3" TYPE="math">64</observable>
+        <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">10</observable>
+		<observable ID="3" TYPE="math">20</observable>
+        <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">15</observable>
+		<observable ID="3" TYPE="math">45</observable>
+         <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">20</observable>
+		<observable ID="3" TYPE="math">80</observable>
+         <feedback TYPE="Student">Right! You correctly generated the first three terms of a geometric sequence that satisfies the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student correctly generated a geometric sequence that met the constraints defined in the question.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">5</observable>
+		<observable ID="3" TYPE="math">7</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 2 to each term instead of multiplying by 2. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">6</observable>
+		<observable ID="3" TYPE="math">9</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 3 to each term instead of multiplying by 3. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">7</observable>
+		<observable ID="3" TYPE="math">11</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 4 to each term instead of multiplying by 4. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">6</observable>
+		<observable ID="3" TYPE="math">8</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 2 to each term instead of multiplying by 2. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">7</observable>
+		<observable ID="3" TYPE="math">10</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 3 to each term instead of multiplying by 3. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">8</observable>
+		<observable ID="3" TYPE="math">12</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 4 to each term instead of multiplying by 4. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">7</observable>
+		<observable ID="3" TYPE="math">9</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 2 to each term instead of multiplying by 2. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">8</observable>
+		<observable ID="3" TYPE="math">11</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 3 to each term instead of multiplying by 3. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">9</observable>
+		<observable ID="3" TYPE="math">13</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first term is correct, but it looks like you added 4 to each term instead of multiplying by 4. The example you generated is still a sequence, but it is an arithmetic sequence rather than than a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student may not understand the distinction between arithmetic and geometric sequences.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">2</observable>
+		<observable ID="2" TYPE="math">6</observable>
+		<observable ID="3" TYPE="math">18</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 2 as its first term and 3 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">2</observable>
+		<observable ID="2" TYPE="math">8</observable>
+		<observable ID="3" TYPE="math">32</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 2 as its first term and 4 as its common ratio Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">2</observable>
+		<observable ID="2" TYPE="math">10</observable>
+		<observable ID="3" TYPE="math">50</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 2 as its first term and 5 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">9</observable>
+		<observable ID="3" TYPE="math">27</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 3 as its first term and 3 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">12</observable>
+		<observable ID="3" TYPE="math">48</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 3 as its first term and 4 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">3</observable>
+		<observable ID="2" TYPE="math">15</observable>
+		<observable ID="3" TYPE="math">75</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 3 as its first term and 5 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">12</observable>
+		<observable ID="3" TYPE="math">36</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 4 as its first term and 3 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">16</observable>
+		<observable ID="3" TYPE="math">64</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 2 as its first term and 5 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">4</observable>
+		<observable ID="2" TYPE="math">20</observable>
+		<observable ID="3" TYPE="math">100</observable>
+        <feedback TYPE="Student">You are very close, but your response is incorrect. You have given an example of a geometric sequence, but the sequence you specified has 2 as its first term and 5 as its common ratio. Perhaps you misread the question.</feedback>
+        <feedback TYPE="Teacher">The student generated an example of a geometric sequence, but it was not the correct sequence. It is possible the student simply misread the question.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, your answer did not meet the requirements specified in the question.</feedback>
+        <feedback TYPE="Teacher">The student did not give an example of a sequence that satisfied the constraints as defined in the question.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExamplesGeometric1a" Difficulty="1">
+        <PMNode LINK="true">ExamplesGeometric</PMNode>
+	
+    </AeL>
+</Metadata>
+
+</TestItem>

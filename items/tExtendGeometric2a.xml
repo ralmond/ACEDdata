@@ -1,0 +1,46 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    What is the ninth term of a geometric sequence if the third 
+    term is 36 and the fourth term is 72?
+     </Sentence>
+   </Paragraph>
+     </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>  144 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  108 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  4608   </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  2304  </Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<key TYPE="SSMC">
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>4</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">The student correctly determined the 9th term of a geometric sequence.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right.  The question is asking for the 9th term, not the 5th term.</feedback>
+        <feedback TYPE="Teacher">The student gave the next term in a geometric sequence, instead of the 9th term.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right. Perhaps you added the third and fourth terms, but this is not the correct rule to generate successive terms in the sequence. This is a geometric sequence, which means there is a common ratio between terms. For example, the sequence 2, 4, 8, 16, 32,... has a common ratio of two. To generate the next term in this sequence, you multiply the current term by two.</feedback>
+        <feedback TYPE="Teacher">The student added two terms of the sequence together.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>3</observable>
+        <feedback TYPE="Student">That's incorrect, but you are close! It looks like you found the 10th term, instead of the 9th term.</feedback>
+        <feedback TYPE="Teacher">Student gave the 10th term.</feedback>
+    </response>
+      </key>	
+<Metadata>
+   <AeL ItemNode="tExtendGeometric2a" Difficulty="2">
+	<PMNode LINK="true">ExtendGeometric</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

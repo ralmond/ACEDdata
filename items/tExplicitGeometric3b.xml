@@ -7,21 +7,21 @@
      </Sentence>
    </Paragraph>
 <Blockquote>
-  <Image SRC="../ael/items/images/ExplicitGeometric3bStem.gif" ALTTEXT="" />
+  <Image SRC="images/ExplicitGeometric3bStem.gif" ALTTEXT="" />
 </Blockquote>
 
   </Stem>
 
   <distractor_list>
-   <distractor> <Image SRC="../ael/items/images/ExplicitGeometric3bDistA.gif" ALTTEXT="" /> 
+   <distractor> <Image SRC="images/ExplicitGeometric3bDistA.gif" ALTTEXT="" /> 
      </distractor>
-   <distractor> <Image SRC="../ael/items/images/ExplicitGeometric3bDistB.gif" ALTTEXT="" /> 
+   <distractor> <Image SRC="images/ExplicitGeometric3bDistB.gif" ALTTEXT="" /> 
      </distractor>
-   <distractor> <Image SRC="../ael/items/images/ExplicitGeometric3bDistC.gif" ALTTEXT="" /> 
+   <distractor> <Image SRC="images/ExplicitGeometric3bDistC.gif" ALTTEXT="" /> 
      </distractor>
-   <distractor> <Image SRC="../ael/items/images/ExplicitGeometric3bDistD.gif" ALTTEXT="" /> 
+   <distractor> <Image SRC="images/ExplicitGeometric3bDistD.gif" ALTTEXT="" /> 
      </distractor>
-   <distractor> <Image SRC="../ael/items/images/ExplicitGeometric3bDistE.gif" ALTTEXT="" /> 
+   <distractor> <Image SRC="images/ExplicitGeometric3bDistE.gif" ALTTEXT="" /> 
      </distractor>
   </distractor_list>
 

@@ -17,11 +17,11 @@
   </Stem>
 
 <Distractor_list>
-  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2bDistA.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2bDistB.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2bDistC.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2bDistD.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/RecursiveRuleGeo2bDistE.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/RecursiveRuleGeo2bDistA.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/RecursiveRuleGeo2bDistB.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/RecursiveRuleGeo2bDistC.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/RecursiveRuleGeo2bDistD.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/RecursiveRuleGeo2bDistE.gif" ALTTEXT="" /></Distractor>
 </Distractor_list>
 
 <Key TYPE="SSMC" >

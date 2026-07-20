@@ -5,10 +5,10 @@
 </Paragraph>	
 </Stem>
 <Distractor_list>
-  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistA.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistB.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistC.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/SolveGeo2bDistD.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="images/SolveGeo2bDistA.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="images/SolveGeo2bDistB.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="images/SolveGeo2bDistC.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
+  <Distractor><Inlineimg SRC="images/SolveGeo2bDistD.gif" ALTTEXT="" /><emphasis>...</emphasis></Distractor>
 </Distractor_list>
 
 <Key TYPE="SSMC" >

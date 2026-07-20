@@ -211,7 +211,7 @@
     <response  SCORE="0" EVIDENCEVAL="0">
         <observable ANY="true"/>
         <feedback TYPE="Student">Sorry, your answer did not meet the requirements specified in the question.</feedback>
-        <feedback TYPE="Teacher">The student did not give an example of a sequence that satisfied the constraints as defined in the question.</feedba
+        <feedback TYPE="Teacher">The student did not give an example of a sequence that satisfied the constraints as defined in the question.</feedback>
     </response>
 </key>	
 <Metadata>

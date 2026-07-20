@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xform.xsl" type="text/xsl"?>
 <TestItem CLASS="FR" METHOD="keyinput">
 <Stimulus TYPE="text">
   <TABLE>

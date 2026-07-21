@@ -5,7 +5,7 @@ title: "ACED Bayes net Models"
 The `Peanut` format represents a Bayes net using a series of spreadsheets (sheets in the links).
 
 
-* **Nets** This is a list of the networks:  the centeral competency models and the evidence models.
+* **Nets** This is a list of the networks:  the central competency models and the evidence models.
 
 Note that variable names are scoped within nets, so that `isCorrect` in `item1` is different from `isCorrect` in `item2`.
 

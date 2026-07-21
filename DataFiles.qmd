@@ -134,3 +134,12 @@ Redone to be in Shiny's prefered 0,1 format
 
 [Task Names (for ACED tasks)](data/taskNames.csv)
 
+# R Package containing data
+
+The `ACED` package available on R-universe contains many of these data files.  It can be accessed as follows:
+
+```r
+install.packages("ACED",repos="https://ralmond.r-universe.dev")
+library(ACED)
+data(ACED)
+```

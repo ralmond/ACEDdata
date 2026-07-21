@@ -1,29 +1,31 @@
-\name{FullACED}
-\alias{FullACED}
-\alias{FullACED.netman}
-\alias{FullACED.nodeman}
-\alias{FullACED.omega}
-\alias{FullACED.QQ}
-\alias{FullACED.stats}
+\name{MiniACED}
+\alias{MiniACED}
+\alias{MiniACED.netman}
+\alias{MiniACED.nodeman}
+\alias{MiniACED.omega}
+\alias{MiniACED.QQ}
+\alias{MiniACED.stats}
 \docType{data}
-\title{The Full ACED Model using Expert Parmeters}
+\title{A Subset of the ACED Model using Expert Parmeters}
 \description{
+
+  This is a subset of the full ACED model using only 6 competencies and 30 items.
 
   These are the expert models in the \code{\link[Peanut:Peanut-package]{Peanut}} format.
   The data frames are:
   \describe{
-    \item{FullACED.netman}{A manifest of networks.}
-    \item{FullACED.nodeman}{A manifest of nodes.}
-    \item{FullACED.omega}{The omega-matrix describing the
+    \item{MiniACED.netman}{A manifest of networks.}
+    \item{MiniACED.nodeman}{A manifest of nodes.}
+    \item{MiniACED.omega}{The omega-matrix describing the
       competency model.}
-    \item{FullACED.QQ}{The Q-matrix describing the evidence
+    \item{MiniACED.QQ}{The Q-matrix describing the evidence
       models.}
-    \item{FullACED.stats}{A list of statistics to be reported.}
+    \item{MiniACED.stats}{A list of statistics to be reported.}
   }
 }
-\usage{data("FullACED")}
+\usage{data("MiniACED")}
 \format{
-  \code{FullACED.netman} is  data frame with 36 rows (models) on the following 5 variables.
+  \code{MiniACED.netman} is  data frame with 36 rows (models) on the following 5 variables.
   \describe{
     \item{\code{Name}}{A character scalar, name of the network.}
     \item{\code{Title}}{A character scalar, longer name of the network}
@@ -34,7 +36,7 @@
     \item{\code{Description}}{A character scalar, a description of the network.}
   }
 
-  \code{FullACED.nodeman} is  data frame with 112 rows (multiple
+  \code{MiniACED.nodeman} is  data frame with 112 rows (multiple
   rows per node) with the following fields:
   \describe{
     \item{\code{Model}}{A character scalar, name of the network.}
@@ -54,7 +56,7 @@
     \item{\code{LowerBound},\code{UpperBound}}{Not used.}
   }
 
-  \code{FullACED.omega} is a data frame with 14 rows corresponding
+  \code{MiniACED.omega} is a data frame with 14 rows corresponding
   to the competency variables and 34 columns with the following fields:
   \describe{
     \item{\code{Node}}{Name of the node.  Note, these are the possible
@@ -75,7 +77,7 @@
       to bias the learning algorithm towards the priors.}
   }
 
-  \code{FullACED.QQ} is a data frame with 35 rows corresponding to
+  \code{MiniACED.QQ} is a data frame with 35 rows corresponding to
   observable variables and 52 columns with the following fields:
   \describe{
     \item{\code{Model}}{Name of the model.}
@@ -94,7 +96,7 @@
     \item{\code{PriorWeight}}{The bias towards the prior parameters.}
   }
 
-  \code{FullACED.stats} is a data frame with 15 rows and 3 columns
+  \code{MiniACED.stats} is a data frame with 15 rows and 3 columns
   with the following fields:
   \describe{
     \item{\code{Name}}{A name for the statistic.}
@@ -106,18 +108,18 @@
 }
 \details{
 
-  \code{FullACED.netman} and \code{FullACED.nodeman} contain
+  \code{MiniACED.netman} and \code{MiniACED.nodeman} contain
   the instructions for building the nets and nodes.
 
-  \code{FullACED.omega} contains instructions for building the
+  \code{MiniACED.omega} contains instructions for building the
   competency model.
 
-  \code{FullACED.QQ} contains instructions for building the evidence
+  \code{MiniACED.QQ} contains instructions for building the evidence
   models.  Note that items whose names differ only by the last letter
   share the same evidence model, so there are fewer rows than
   items in the \code{\link{ACED}} data set.
 
-  \code{FullACED.stats} describes the statistics which are to be
+  \code{MiniACED.stats} describes the statistics which are to be
   reported.
 
 }
@@ -138,11 +140,11 @@
 \url{https://docs.google.com/spreadsheets/d/1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ/}
 
 }
-\seealso{
-  \code{\link{MiniACED}} for a model subset.
-  \code{\link{ACED}} for the response data.
-}
 \examples{
-data(FullACED)
+data(MiniACED)
+}
+\seealso{
+  \code{\link{FullACED}} for the full model.
+  \code{\link{ACED}} for the response data.
 }
 \keyword{datasets}

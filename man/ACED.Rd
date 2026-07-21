@@ -252,6 +252,10 @@
   A more detailed description, including a Q-matrix can be found at the
   ECD Wiki:  \url{http://ecd.ralmond.net/ecdwiki/ACED/ACED}.
 }
+\seealso{
+  \code{\link{FullACED}} for the full Bayes net model.
+  \code{\link{MiniACED}} for a subset of the Bayes net model.
+}
 \examples{
 data(ACED)
 }

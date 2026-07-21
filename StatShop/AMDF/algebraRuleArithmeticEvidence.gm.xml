@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<g:Hypergraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/gm
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/gm.xsd" 
+  xmlns:g = "http://pdra.ets.org/StatShop/gm" >
+  <LinkID>ecd://K12Math/Formative__Assessment/algebraRuleArithmeticEvidence/</LinkID>
+  <TaskID>ecd://K12Math/Formative__Assessment/algebraRuleArithmeticTask/</TaskID>
+  <Bounds  x="0" y="0" width="11" height="8.5" />
+  <DiscreteVariable varName="algebraRuleArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="2" y="3"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="isCorrect" nStates="2" role="Observable" isOrdered="true" externalName="isCorrect" > 
+    <Position  x="4.52569444444444" y="3"/>
+    <State isTrue="true">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <Distribution  type="Compensatory Distribution"> 
+    <Position  x="3.5" y="3"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleArithmetic" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="isCorrect" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterSet>
+      <ParameterValue parameterName="Task Difficulty">0.00</ParameterValue>
+      <ParameterValue parameterName="Degrees-of-Freedom">2</ParameterValue>
+      <VarParameterValue varName="algebraRuleArithmetic" parameterName="Relative Importance">0.4055</VarParameterValue>
+      <CovMatrix type="DIAGONAL">
+        <ParName>Task Difficulty</ParName>
+        <VarParName varName="algebraRuleArithmetic">Relative Importance</VarParName>
+        <CovMatrixRow>1.000000</CovMatrixRow>
+        <CovMatrixRow>0.020690</CovMatrixRow>
+      </CovMatrix>
+    </ParameterSet>
+  </Distribution>
+ 
+ 
+</g:Hypergraph>

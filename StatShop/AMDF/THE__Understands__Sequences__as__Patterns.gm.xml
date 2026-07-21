@@ -1,0 +1,3800 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<g:Hypergraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/gm
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/gm.xsd" 
+  xmlns:g = "http://pdra.ets.org/StatShop/gm" >
+  <StudentModelID>ecd://K12Math/Formative__Assessment/THE__Understands__Sequences__as__Patterns/</StudentModelID>
+  <Bounds  x="0" y="0" width="11" height="8.5" />
+  <DiscreteVariable varName="solveSequenceProblems" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="10.770694444444" y="6.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveGeometricProblems" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="10.75" y="4.625"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="tableGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="9.1506944444444" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="visualGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="9.5" y="2.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="induceRulesGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="10.75" y="2.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveArithmeticProblems" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="4.3131944444444" y="4.625"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="commonDifference" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="6.1073611111111" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="examplesArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="5.6126388888889" y="2.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="induceRulesOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="17.75" y="2.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="algebraRuleOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="16.25" y="1.375"/>
+    <State isTrue="true">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="induceRulesArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="4.2659722222222" y="2.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="sequences" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="14.25" y="7.625"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="reviewMaterial" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="19.969027777778" y="6.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="recognizeSequences" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="16.75" y="6.875"/>
+    <State isTrue="true">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="distinguishTypes" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="16.778194444444" y="5.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="functionTables" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="20" y="5.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="IOs" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="20" y="4.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="algebraRuleArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3" y="1.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="recursiveRuleArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="1.5340277777778" y="0.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="verbalRuleArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="5.5" y="1.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="algebraRuleGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="9.5" y="1.375"/>
+    <State isTrue="true">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="recursiveRuleGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="8" y="0.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="visualArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="2.9576388888889" y="2.875"/>
+    <State isTrue="true">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="extendGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="8.5" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="tableArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="2.4840277777778" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveOtherRecursiveProblems" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="17.75" y="4.625"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="examplesGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="12.150138888889" y="2.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="commonRatio" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="12.434027777778" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="recursiveRuleOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="14.555138888889" y="0.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="modelOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="19.691527777778" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="explicitArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="4.4268055555556" y="0.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="explicitOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="17.765972222222" y="0.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="tableOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="15.855138888889" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="verbalRuleOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="19.25" y="1.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="extendArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="1.9551388888889" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="examplesOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="19.298194444444" y="2.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveSequenceProblemsHigh" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="8.9365277777778" y="7.625"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveArithmeticProblemsHigh" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="2.25" y="5.375"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveGeometricProblemsHigh" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="9.1506944444444" y="5.125"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveOtherRecursiveHigh" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="15.75" y="5.25"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveOtherRecursiveMedium" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="18.25" y="5.25"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="verbalRuleGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="11.927361111111" y="1.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="extendOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="15.25" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="modelGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="13.020694444444" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="visualOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="16.324305555556" y="2.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="explicitGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="10.813194444444" y="0.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="modelArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="6.5306944444444" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="sequencesHigh" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="12.214027777778" y="8.125"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveSequenceProblemsMedium" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="11.553194444444" y="7.625"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveArithmeticProblemsMedium" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="5.4043055555556" y="5.375"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="sequencesMedium" nStates="2" role="SM" isOrdered="false" > 
+    <Position  x="15.849305555556" y="8.125"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="solveGeometricProblemsMedium" nStates="2" role="SM" isOrdered="true" > 
+    <Position  x="12.5" y="5.125"/>
+    <State isTrue="false">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="10.75" y="5.375"/>
+    <Conditions>
+      <VarRef  varName="solveSequenceProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveGeometricProblems" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.520000</TableCell>
+        <TableCell  state="Medium">0.376000</TableCell>
+        <TableCell  state="Low">0.104000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.096000</TableCell>
+        <TableCell  state="Medium">0.365000</TableCell>
+        <TableCell  state="Low">0.539000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.069000</TableCell>
+        <TableCell  state="Low">0.927000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.520000</TableCell>
+        <TableCell  state="Medium">0.376000</TableCell>
+        <TableCell  state="Low">0.104000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.096000</TableCell>
+        <TableCell  state="Medium">0.365000</TableCell>
+        <TableCell  state="Low">0.539000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.069000</TableCell>
+        <TableCell  state="Low">0.927000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="10.125" y="3.625"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="tableGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.713000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.071000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.326000</TableCell>
+        <TableCell  state="Medium">0.348000</TableCell>
+        <TableCell  state="Low">0.326000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.071000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.713000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.713000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.071000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.326000</TableCell>
+        <TableCell  state="Medium">0.348000</TableCell>
+        <TableCell  state="Low">0.326000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.071000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.713000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="10.5" y="3.125"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="visualGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.749000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.040000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.295000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.295000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.040000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.749000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.749000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.040000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.295000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.295000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.040000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.749000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="10.75" y="2.75"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="induceRulesGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="4.625" y="3.625"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="commonDifference" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="4.5" y="3.125"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="examplesArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.344000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.344000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="17.125" y="1.875"/>
+    <Conditions>
+      <VarRef  varName="induceRulesOtherRecursive" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="algebraRuleOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.158939</TableCell>
+        <TableCell  state="Medium">0.423237</TableCell>
+        <TableCell  state="Low">0.417825</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009299</TableCell>
+        <TableCell  state="Medium">0.116351</TableCell>
+        <TableCell  state="Low">0.874350</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000104</TableCell>
+        <TableCell  state="Medium">0.006073</TableCell>
+        <TableCell  state="Low">0.993823</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.158939</TableCell>
+        <TableCell  state="Medium">0.423237</TableCell>
+        <TableCell  state="Low">0.417825</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009299</TableCell>
+        <TableCell  state="Medium">0.116351</TableCell>
+        <TableCell  state="Low">0.874350</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000104</TableCell>
+        <TableCell  state="Medium">0.006073</TableCell>
+        <TableCell  state="Low">0.993823</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="4.25" y="2.75"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="induceRulesArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="18.625" y="7.125"/>
+    <Conditions>
+      <VarRef  varName="sequences" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="reviewMaterial" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.987000</TableCell>
+        <TableCell  state="Medium">0.012000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.878000</TableCell>
+        <TableCell  state="Medium">0.104000</TableCell>
+        <TableCell  state="Low">0.018000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.544000</TableCell>
+        <TableCell  state="Medium">0.309000</TableCell>
+        <TableCell  state="Low">0.147000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.987000</TableCell>
+        <TableCell  state="Medium">0.012000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.878000</TableCell>
+        <TableCell  state="Medium">0.104000</TableCell>
+        <TableCell  state="Low">0.018000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.544000</TableCell>
+        <TableCell  state="Medium">0.309000</TableCell>
+        <TableCell  state="Low">0.147000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="16.75" y="6.375"/>
+    <Conditions>
+      <VarRef  varName="recognizeSequences" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="distinguishTypes" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="recognizeSequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.999929</TableCell>
+        <TableCell  state="Medium">0.000071</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="recognizeSequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.001132</TableCell>
+        <TableCell  state="Medium">0.997737</TableCell>
+        <TableCell  state="Low">0.001131</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="recognizeSequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000000</TableCell>
+        <TableCell  state="Medium">0.000071</TableCell>
+        <TableCell  state="Low">0.999929</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="recognizeSequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.999929</TableCell>
+        <TableCell  state="Medium">0.000071</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="recognizeSequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.001132</TableCell>
+        <TableCell  state="Medium">0.997737</TableCell>
+        <TableCell  state="Low">0.001131</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="recognizeSequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000000</TableCell>
+        <TableCell  state="Medium">0.000071</TableCell>
+        <TableCell  state="Low">0.999929</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="20" y="6.375"/>
+    <Conditions>
+      <VarRef  varName="reviewMaterial" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="functionTables" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="reviewMaterial" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.861426</TableCell>
+        <TableCell  state="Medium">0.115268</TableCell>
+        <TableCell  state="Low">0.023306</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="reviewMaterial" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.528945</TableCell>
+        <TableCell  state="Medium">0.306443</TableCell>
+        <TableCell  state="Low">0.164612</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="reviewMaterial" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.173220</TableCell>
+        <TableCell  state="Medium">0.311442</TableCell>
+        <TableCell  state="Low">0.515338</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="reviewMaterial" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.861426</TableCell>
+        <TableCell  state="Medium">0.115268</TableCell>
+        <TableCell  state="Low">0.023306</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="reviewMaterial" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.528945</TableCell>
+        <TableCell  state="Medium">0.306443</TableCell>
+        <TableCell  state="Low">0.164612</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="reviewMaterial" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.173221</TableCell>
+        <TableCell  state="Medium">0.311442</TableCell>
+        <TableCell  state="Low">0.515338</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="20" y="5.375"/>
+    <Conditions>
+      <VarRef  varName="functionTables" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="IOs" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="functionTables" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.998421</TableCell>
+        <TableCell  state="Medium">0.001579</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="functionTables" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.768056</TableCell>
+        <TableCell  state="Medium">0.228567</TableCell>
+        <TableCell  state="Low">0.003376</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="functionTables" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.068514</TableCell>
+        <TableCell  state="Medium">0.619200</TableCell>
+        <TableCell  state="Low">0.312286</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="functionTables" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.998421</TableCell>
+        <TableCell  state="Medium">0.001579</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="functionTables" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.768057</TableCell>
+        <TableCell  state="Medium">0.228567</TableCell>
+        <TableCell  state="Low">0.003376</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="functionTables" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.068514</TableCell>
+        <TableCell  state="Medium">0.619201</TableCell>
+        <TableCell  state="Low">0.312286</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="2.625" y="0.875"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleArithmetic" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="recursiveRuleArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.926702</TableCell>
+        <TableCell  state="Medium">0.069367</TableCell>
+        <TableCell  state="Low">0.003931</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.538637</TableCell>
+        <TableCell  state="Medium">0.365125</TableCell>
+        <TableCell  state="Low">0.096238</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.104258</TableCell>
+        <TableCell  state="Medium">0.375259</TableCell>
+        <TableCell  state="Low">0.520484</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.926702</TableCell>
+        <TableCell  state="Medium">0.069367</TableCell>
+        <TableCell  state="Low">0.003931</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.538637</TableCell>
+        <TableCell  state="Medium">0.365125</TableCell>
+        <TableCell  state="Low">0.096238</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.104258</TableCell>
+        <TableCell  state="Medium">0.375259</TableCell>
+        <TableCell  state="Low">0.520484</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="7.375" y="5.375"/>
+    <Conditions>
+      <VarRef  varName="solveSequenceProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.904000</TableCell>
+        <TableCell  state="Medium">0.095000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.181000</TableCell>
+        <TableCell  state="Medium">0.675000</TableCell>
+        <TableCell  state="Low">0.144000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.904000</TableCell>
+        <TableCell  state="Medium">0.095000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.181000</TableCell>
+        <TableCell  state="Medium">0.675000</TableCell>
+        <TableCell  state="Low">0.144000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="12.875" y="7.125"/>
+    <Conditions>
+      <VarRef  varName="sequences" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveSequenceProblems" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.814000</TableCell>
+        <TableCell  state="Medium">0.176000</TableCell>
+        <TableCell  state="Low">0.010000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.236000</TableCell>
+        <TableCell  state="Medium">0.528000</TableCell>
+        <TableCell  state="Low">0.236000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.010000</TableCell>
+        <TableCell  state="Medium">0.176000</TableCell>
+        <TableCell  state="Low">0.814000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.814000</TableCell>
+        <TableCell  state="Medium">0.176000</TableCell>
+        <TableCell  state="Low">0.010000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.236000</TableCell>
+        <TableCell  state="Medium">0.528000</TableCell>
+        <TableCell  state="Low">0.236000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.010000</TableCell>
+        <TableCell  state="Medium">0.176000</TableCell>
+        <TableCell  state="Low">0.814000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="3.375" y="1.875"/>
+    <Conditions>
+      <VarRef  varName="induceRulesArithmetic" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="algebraRuleArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.258247</TableCell>
+        <TableCell  state="Medium">0.453171</TableCell>
+        <TableCell  state="Low">0.288582</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.022566</TableCell>
+        <TableCell  state="Medium">0.190122</TableCell>
+        <TableCell  state="Low">0.787312</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000392</TableCell>
+        <TableCell  state="Medium">0.015315</TableCell>
+        <TableCell  state="Low">0.984293</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.258247</TableCell>
+        <TableCell  state="Medium">0.453171</TableCell>
+        <TableCell  state="Low">0.288582</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.022566</TableCell>
+        <TableCell  state="Medium">0.190122</TableCell>
+        <TableCell  state="Low">0.787312</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000393</TableCell>
+        <TableCell  state="Medium">0.015315</TableCell>
+        <TableCell  state="Low">0.984293</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="4.875" y="1.875"/>
+    <Conditions>
+      <VarRef  varName="induceRulesArithmetic" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="verbalRuleArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.890887</TableCell>
+        <TableCell  state="Medium">0.108444</TableCell>
+        <TableCell  state="Low">0.000669</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.161538</TableCell>
+        <TableCell  state="Medium">0.676929</TableCell>
+        <TableCell  state="Low">0.161533</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000669</TableCell>
+        <TableCell  state="Medium">0.108448</TableCell>
+        <TableCell  state="Low">0.890883</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.890887</TableCell>
+        <TableCell  state="Medium">0.108444</TableCell>
+        <TableCell  state="Low">0.000669</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.161538</TableCell>
+        <TableCell  state="Medium">0.676929</TableCell>
+        <TableCell  state="Low">0.161533</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000669</TableCell>
+        <TableCell  state="Medium">0.108448</TableCell>
+        <TableCell  state="Low">0.890883</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="9.125" y="0.875"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleGeometric" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="recursiveRuleGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.964206</TableCell>
+        <TableCell  state="Medium">0.034479</TableCell>
+        <TableCell  state="Low">0.001315</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.672588</TableCell>
+        <TableCell  state="Medium">0.278283</TableCell>
+        <TableCell  state="Low">0.049129</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.182048</TableCell>
+        <TableCell  state="Medium">0.435369</TableCell>
+        <TableCell  state="Low">0.382584</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.964206</TableCell>
+        <TableCell  state="Medium">0.034479</TableCell>
+        <TableCell  state="Low">0.001315</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.672588</TableCell>
+        <TableCell  state="Medium">0.278283</TableCell>
+        <TableCell  state="Low">0.049129</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.182048</TableCell>
+        <TableCell  state="Medium">0.435369</TableCell>
+        <TableCell  state="Low">0.382584</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="4" y="3.125"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="visualArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.902000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.009000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.535000</TableCell>
+        <TableCell  state="Medium">0.343000</TableCell>
+        <TableCell  state="Low">0.122000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.131000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.518000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.902000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.009000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.535000</TableCell>
+        <TableCell  state="Medium">0.343000</TableCell>
+        <TableCell  state="Low">0.122000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.131000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.518000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="9.875" y="4.125"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="extendGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="15.125" y="7.125"/>
+    <Conditions>
+      <VarRef  varName="sequences" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="recognizeSequences" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.344000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.344000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="3.625" y="3.625"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="tableArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.713000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.071000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.326000</TableCell>
+        <TableCell  state="Medium">0.348000</TableCell>
+        <TableCell  state="Low">0.326000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.071000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.713000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.713000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.071000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.326000</TableCell>
+        <TableCell  state="Medium">0.348000</TableCell>
+        <TableCell  state="Low">0.326000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.071000</TableCell>
+        <TableCell  state="Medium">0.216000</TableCell>
+        <TableCell  state="Low">0.713000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="17.75" y="2.75"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="induceRulesOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="11" y="3.125"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="examplesGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.344000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.344000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="11.375" y="3.625"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="commonRatio" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="15.875" y="0.875"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleOtherRecursive" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="recursiveRuleOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.964206</TableCell>
+        <TableCell  state="Medium">0.034479</TableCell>
+        <TableCell  state="Low">0.001315</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.672588</TableCell>
+        <TableCell  state="Medium">0.278283</TableCell>
+        <TableCell  state="Low">0.049129</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.182048</TableCell>
+        <TableCell  state="Medium">0.435369</TableCell>
+        <TableCell  state="Low">0.382584</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.964206</TableCell>
+        <TableCell  state="Medium">0.034479</TableCell>
+        <TableCell  state="Low">0.001315</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.672588</TableCell>
+        <TableCell  state="Medium">0.278283</TableCell>
+        <TableCell  state="Low">0.049129</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.182048</TableCell>
+        <TableCell  state="Medium">0.435369</TableCell>
+        <TableCell  state="Low">0.382584</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="18.375" y="4.125"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="modelOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.281000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.309000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.037000</TableCell>
+        <TableCell  state="Medium">0.201000</TableCell>
+        <TableCell  state="Low">0.762000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.001000</TableCell>
+        <TableCell  state="Medium">0.026000</TableCell>
+        <TableCell  state="Low">0.973000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.281000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.309000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.037000</TableCell>
+        <TableCell  state="Medium">0.201000</TableCell>
+        <TableCell  state="Low">0.762000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.001000</TableCell>
+        <TableCell  state="Medium">0.026000</TableCell>
+        <TableCell  state="Low">0.973000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="3.375" y="0.875"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleArithmetic" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="explicitArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.520489</TableCell>
+        <TableCell  state="Medium">0.375256</TableCell>
+        <TableCell  state="Low">0.104255</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.096240</TableCell>
+        <TableCell  state="Medium">0.365128</TableCell>
+        <TableCell  state="Low">0.538632</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.003931</TableCell>
+        <TableCell  state="Medium">0.069369</TableCell>
+        <TableCell  state="Low">0.926700</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.520489</TableCell>
+        <TableCell  state="Medium">0.375256</TableCell>
+        <TableCell  state="Low">0.104255</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.096240</TableCell>
+        <TableCell  state="Medium">0.365128</TableCell>
+        <TableCell  state="Low">0.538632</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.003931</TableCell>
+        <TableCell  state="Medium">0.069369</TableCell>
+        <TableCell  state="Low">0.926700</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="16.625" y="0.875"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleOtherRecursive" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="explicitOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.258247</TableCell>
+        <TableCell  state="Medium">0.453171</TableCell>
+        <TableCell  state="Low">0.288582</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.022566</TableCell>
+        <TableCell  state="Medium">0.190122</TableCell>
+        <TableCell  state="Low">0.787312</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000392</TableCell>
+        <TableCell  state="Medium">0.015315</TableCell>
+        <TableCell  state="Low">0.984293</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.258247</TableCell>
+        <TableCell  state="Medium">0.453171</TableCell>
+        <TableCell  state="Low">0.288582</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.022566</TableCell>
+        <TableCell  state="Medium">0.190122</TableCell>
+        <TableCell  state="Low">0.787312</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000393</TableCell>
+        <TableCell  state="Medium">0.015315</TableCell>
+        <TableCell  state="Low">0.984293</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="17.125" y="3.625"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="tableOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.713149</TableCell>
+        <TableCell  state="Medium">0.215482</TableCell>
+        <TableCell  state="Low">0.071370</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.325806</TableCell>
+        <TableCell  state="Medium">0.348392</TableCell>
+        <TableCell  state="Low">0.325802</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.071371</TableCell>
+        <TableCell  state="Medium">0.215484</TableCell>
+        <TableCell  state="Low">0.713146</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.713149</TableCell>
+        <TableCell  state="Medium">0.215482</TableCell>
+        <TableCell  state="Low">0.071370</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.325806</TableCell>
+        <TableCell  state="Medium">0.348392</TableCell>
+        <TableCell  state="Low">0.325802</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.071371</TableCell>
+        <TableCell  state="Medium">0.215484</TableCell>
+        <TableCell  state="Low">0.713146</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="9.875" y="1.875"/>
+    <Conditions>
+      <VarRef  varName="induceRulesGeometric" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="algebraRuleGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.158939</TableCell>
+        <TableCell  state="Medium">0.423237</TableCell>
+        <TableCell  state="Low">0.417825</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009299</TableCell>
+        <TableCell  state="Medium">0.116351</TableCell>
+        <TableCell  state="Low">0.874350</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000104</TableCell>
+        <TableCell  state="Medium">0.006073</TableCell>
+        <TableCell  state="Low">0.993823</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.158939</TableCell>
+        <TableCell  state="Medium">0.423237</TableCell>
+        <TableCell  state="Low">0.417825</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009299</TableCell>
+        <TableCell  state="Medium">0.116351</TableCell>
+        <TableCell  state="Low">0.874350</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000104</TableCell>
+        <TableCell  state="Medium">0.006073</TableCell>
+        <TableCell  state="Low">0.993823</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="18.375" y="1.875"/>
+    <Conditions>
+      <VarRef  varName="induceRulesOtherRecursive" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="verbalRuleOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.890887</TableCell>
+        <TableCell  state="Medium">0.108444</TableCell>
+        <TableCell  state="Low">0.000669</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.161538</TableCell>
+        <TableCell  state="Medium">0.676929</TableCell>
+        <TableCell  state="Low">0.161533</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000669</TableCell>
+        <TableCell  state="Medium">0.108448</TableCell>
+        <TableCell  state="Low">0.890883</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.890887</TableCell>
+        <TableCell  state="Medium">0.108444</TableCell>
+        <TableCell  state="Low">0.000669</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.161538</TableCell>
+        <TableCell  state="Medium">0.676929</TableCell>
+        <TableCell  state="Low">0.161533</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000669</TableCell>
+        <TableCell  state="Medium">0.108448</TableCell>
+        <TableCell  state="Low">0.890883</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="3.375" y="4.125"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="extendArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567568</TableCell>
+        <TableCell  state="Medium">0.378378</TableCell>
+        <TableCell  state="Low">0.054054</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.378000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+        <TableCell  state="Sum">0.999000</TableCell>
+        <TableCell  state="Scale">0.999000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="18" y="3.125"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="examplesOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122122</TableCell>
+        <TableCell  state="Medium">0.343343</TableCell>
+        <TableCell  state="Low">0.534535</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.518000</TableCell>
+        <TableCell  state="Medium">0.351000</TableCell>
+        <TableCell  state="Low">0.131000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.122000</TableCell>
+        <TableCell  state="Medium">0.343000</TableCell>
+        <TableCell  state="Low">0.534000</TableCell>
+        <TableCell  state="Sum">0.999000</TableCell>
+        <TableCell  state="Scale">0.999000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.009000</TableCell>
+        <TableCell  state="Medium">0.089000</TableCell>
+        <TableCell  state="Low">0.902000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="9.25" y="7.25"/>
+    <Conditions>
+      <VarRef  varName="solveSequenceProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveSequenceProblemsHigh" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="2.875" y="5"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveArithmeticProblemsHigh" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="9.125" y="4.625"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveGeometricProblemsHigh" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="16.25" y="4.875"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveOtherRecursiveHigh" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="18.125" y="4.875"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveOtherRecursiveMedium" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="14.375" y="5.125"/>
+    <Conditions>
+      <VarRef  varName="solveSequenceProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.520000</TableCell>
+        <TableCell  state="Medium">0.376000</TableCell>
+        <TableCell  state="Low">0.104000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.096000</TableCell>
+        <TableCell  state="Medium">0.365000</TableCell>
+        <TableCell  state="Low">0.539000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.069000</TableCell>
+        <TableCell  state="Low">0.927000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.520000</TableCell>
+        <TableCell  state="Medium">0.376000</TableCell>
+        <TableCell  state="Low">0.104000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.096000</TableCell>
+        <TableCell  state="Medium">0.365000</TableCell>
+        <TableCell  state="Low">0.539000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.069000</TableCell>
+        <TableCell  state="Low">0.927000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="14.25" y="8.125"/>
+    <Conditions>
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="sequences" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+        </TableRowHeader>
+        <TableCell  state="High">0.200000</TableCell>
+        <TableCell  state="Medium">0.500000</TableCell>
+        <TableCell  state="Low">0.300000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+        </TableRowHeader>
+        <TableCell  state="High">0.200000</TableCell>
+        <TableCell  state="Medium">0.500000</TableCell>
+        <TableCell  state="Low">0.300000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="11.375" y="1.875"/>
+    <Conditions>
+      <VarRef  varName="induceRulesGeometric" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="verbalRuleGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.890887</TableCell>
+        <TableCell  state="Medium">0.108444</TableCell>
+        <TableCell  state="Low">0.000669</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.161538</TableCell>
+        <TableCell  state="Medium">0.676929</TableCell>
+        <TableCell  state="Low">0.161533</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000669</TableCell>
+        <TableCell  state="Medium">0.108448</TableCell>
+        <TableCell  state="Low">0.890883</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.890887</TableCell>
+        <TableCell  state="Medium">0.108444</TableCell>
+        <TableCell  state="Low">0.000669</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.161538</TableCell>
+        <TableCell  state="Medium">0.676929</TableCell>
+        <TableCell  state="Low">0.161533</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="induceRulesGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000669</TableCell>
+        <TableCell  state="Medium">0.108448</TableCell>
+        <TableCell  state="Low">0.890883</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="16.875" y="4.125"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="extendOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">1.000000</TableCell>
+        <TableCell  state="Medium">0.000000</TableCell>
+        <TableCell  state="Low">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.963000</TableCell>
+        <TableCell  state="Medium">0.036000</TableCell>
+        <TableCell  state="Low">0.001000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.567000</TableCell>
+        <TableCell  state="Medium">0.379000</TableCell>
+        <TableCell  state="Low">0.054000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="11.625" y="4.125"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="modelGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.281000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.309000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.037000</TableCell>
+        <TableCell  state="Medium">0.201000</TableCell>
+        <TableCell  state="Low">0.762000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.001000</TableCell>
+        <TableCell  state="Medium">0.026000</TableCell>
+        <TableCell  state="Low">0.973000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.281000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.309000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.037000</TableCell>
+        <TableCell  state="Medium">0.201000</TableCell>
+        <TableCell  state="Low">0.762000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.001000</TableCell>
+        <TableCell  state="Medium">0.026000</TableCell>
+        <TableCell  state="Low">0.973000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="17.5" y="3.125"/>
+    <Conditions>
+      <VarRef  varName="solveOtherRecursiveProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="visualOtherRecursive" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.749000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.040000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.295000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.295000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.040000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.749000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.749000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.040000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.295000</TableCell>
+        <TableCell  state="Medium">0.410000</TableCell>
+        <TableCell  state="Low">0.295000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveOtherRecursiveProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.040000</TableCell>
+        <TableCell  state="Medium">0.211000</TableCell>
+        <TableCell  state="Low">0.749000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="9.875" y="0.875"/>
+    <Conditions>
+      <VarRef  varName="algebraRuleGeometric" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="explicitGeometric" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.258247</TableCell>
+        <TableCell  state="Medium">0.453171</TableCell>
+        <TableCell  state="Low">0.288582</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.022566</TableCell>
+        <TableCell  state="Medium">0.190122</TableCell>
+        <TableCell  state="Low">0.787312</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000392</TableCell>
+        <TableCell  state="Medium">0.015315</TableCell>
+        <TableCell  state="Low">0.984293</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.258247</TableCell>
+        <TableCell  state="Medium">0.453171</TableCell>
+        <TableCell  state="Low">0.288582</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.022566</TableCell>
+        <TableCell  state="Medium">0.190122</TableCell>
+        <TableCell  state="Low">0.787312</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="algebraRuleGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.000393</TableCell>
+        <TableCell  state="Medium">0.015315</TableCell>
+        <TableCell  state="Low">0.984293</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="5.125" y="4.125"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="modelArithmetic" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.395000</TableCell>
+        <TableCell  state="Medium">0.396000</TableCell>
+        <TableCell  state="Low">0.209000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.070000</TableCell>
+        <TableCell  state="Medium">0.275000</TableCell>
+        <TableCell  state="Low">0.655000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="High">0.004000</TableCell>
+        <TableCell  state="Medium">0.050000</TableCell>
+        <TableCell  state="Low">0.946000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="13.25" y="7.75"/>
+    <Conditions>
+      <VarRef  varName="sequences" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="sequencesHigh" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="11.5" y="7.25"/>
+    <Conditions>
+      <VarRef  varName="solveSequenceProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveSequenceProblemsMedium" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveSequenceProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="4.875" y="5"/>
+    <Conditions>
+      <VarRef  varName="solveArithmeticProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveArithmeticProblemsMedium" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveArithmeticProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="15.375" y="7.75"/>
+    <Conditions>
+      <VarRef  varName="sequences" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="sequencesMedium" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="sequences" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+  <Distribution  type="HyperDirichlet Distribution"> 
+    <Position  x="12.375" y="4.625"/>
+    <Conditions>
+      <VarRef  varName="solveGeometricProblems" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="solveGeometricProblemsMedium" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">1.000000</TableCell>
+        <TableCell  state="No">0.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="solveGeometricProblems" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.000000</TableCell>
+        <TableCell  state="No">1.000000</TableCell>
+        <TableCell  state="Sum">1.000000</TableCell>
+        <TableCell  state="Scale">1.000000</TableCell>
+      </TableRow>
+    </ParameterTable>
+  </Distribution>
+ 
+ 
+</g:Hypergraph>

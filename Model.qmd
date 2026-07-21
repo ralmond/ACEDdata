@@ -1,0 +1,87 @@
+---
+title="ACED Cognitive Model"
+---
+
+
+ACED was designed using the evidence-centered assessment design
+(ECD) methodology.  The means that the assessment design was
+organized into a collection of models called the Conceptual
+Assessment Framework.
+
+The Proficiency Model describes the variables representing
+knowledge, skills and abilities and their relationships.  The
+[ACED Proficiency Model](PM.qmd) describes skills related to
+arithmetic, geometric and other recursive sequences, concentrating on
+the various ways they can be represented (using examples, tables,
+pictures and formulae).  Although the proficiency model was developed
+for all three branches, the evaluation only used tasks from the geometric
+sequences branch.
+
+The Task Models describe templates for the development of the tasks.
+In ACED, these templates were augmented to include task specific
+feedback, informing the student about the correct solution path.  The
+ACED Task Model were produced both by reverse engineering existing
+geometric series items, and by producing model for automatic item
+generation.  Note that ACED task were designed to be used with two
+kinds of feedback: task-specific elaborated feedback and accuracy only
+(correct or incorrect) feedback.  See [Items](items/index.qmd) for
+some example items.
+
+The Evidence Models describe the relationship between the
+Proficiency Variables and the Observable
+Outcome Variables as well as how the observable variables are
+defined from work product of the task.  In ACED all of the observables
+are binary variables (`Correct` or `Incorrect`) and hence the
+Evidence Model can be represented as a row in the
+[$Q$-Matrix](QMatrix.qmd).
+
+The Assembly Model describes what collection of tasks
+constitutes a valid form of the assessment.  Together the Assembly
+model and collection of Evidence Models determine the
+[$Q$-Matrix](QMatrix.qmd) of the assessment.  The ACED Assembly Model had
+two options for task selection: Adaptive (using the Weight of
+Evidence envelope) and Linear (using a fixed sequence).
+
+## StatShop version of the model
+
+As ACED was scored using StatShop (an ETS properietary Bayes net
+system), which requires that the ECD models be specified using XML.
+The complete original model is available: [HTML translation of the
+complete model](StatShop/AMDF/Geometric-Assembly.html).
+
+## Peanut Version
+
+StatShop has now largely be replaced with `Peanut` a series of Bayes net
+packages using Netica.  Peanut is a series of R packages for Bayes nets.  
+Its model specification consists of 5 tables:
+
+* A network manifest.
+
+* A node manifest.
+
+* An omega matrix which describes the proficiency model.
+
+* A $Q$-matrix which describes the evidence models.
+
+* A list of statistics to be reported.
+
+The complete model is available as part of the ACED package, which along with 
+Peanut and related packages is available from [R-Universe](https://ralmond.r-universe.dev).  Here is how to get it:
+
+```r
+install.packages(c("ACED","CPTtools","RNetica","Peanut","PNetica"),
+                 repos=c(RGA="https://ralmond.r-universe.dev",
+                         CRAN="https://cloud.r-project.org"))
+library(ACED)
+data(FullACED)
+```
+Tables can be viewed [in an online spreadsheet](https://docs.google.com/spreadsheets/d/1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ/).
+
+
+There is also a model subset called `MiniACED` which is available in
+the `ACED` package.  Its spreadsheets are available [here](https://docs.google.com/spreadsheets/d/1t4ZPfeNmSFXm4ejQPjdGri8_U8VkEsR9mwKwE1AM0p4/).
+
+
+----
+
+ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.

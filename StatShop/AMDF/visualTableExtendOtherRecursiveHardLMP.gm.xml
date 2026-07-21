@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<g:Hypergraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/gm
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/gm.xsd" 
+  xmlns:g = "http://pdra.ets.org/StatShop/gm" >
+  <LinkID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveEvidence/visualTableExtendOtherRecursiveHardLMP/</LinkID>
+  <TaskID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveTask/visualTableExtendOtherRecursiveHard/</TaskID>
+  <Bounds  x="0" y="0" width="11" height="8.5" />
+  <DiscreteVariable varName="visualOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3" y="4.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="extendOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="2.75" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="tableOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="2.5" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="isCorrect" nStates="2" role="Observable" isOrdered="true" externalName="isCorrect" > 
+    <Position  x="7.5993055555556" y="4"/>
+    <State isTrue="true">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <Distribution  type="Compensatory Distribution"> 
+    <Position  x="5.625" y="4"/>
+    <Conditions>
+      <VarRef  varName="visualOtherRecursive" />
+      <VarRef  varName="extendOtherRecursive" />
+      <VarRef  varName="tableOtherRecursive" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="isCorrect" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.952574</TableCell>
+        <TableCell  state="No">0.047426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.880797</TableCell>
+        <TableCell  state="No">0.119203</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.029312</TableCell>
+        <TableCell  state="No">0.970688</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="High"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.047426</TableCell>
+        <TableCell  state="No">0.952574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Medium"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.017986</TableCell>
+        <TableCell  state="No">0.982014</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.029312</TableCell>
+        <TableCell  state="No">0.970688</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="visualOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="extendOtherRecursive" state="Low"/>
+          <TableHeaderCell  varName="tableOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.006693</TableCell>
+        <TableCell  state="No">0.993307</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterSet>
+      <ParameterValue parameterName="Task Difficulty">1.00</ParameterValue>
+      <ParameterValue parameterName="Degrees-of-Freedom">2</ParameterValue>
+      <VarParameterValue varName="visualOtherRecursive" parameterName="Relative Importance">0.4055</VarParameterValue>
+      <VarParameterValue varName="extendOtherRecursive" parameterName="Relative Importance">0.0000</VarParameterValue>
+      <VarParameterValue varName="tableOtherRecursive" parameterName="Relative Importance">0.4055</VarParameterValue>
+      <CovMatrix type="DIAGONAL">
+        <ParName>Task Difficulty</ParName>
+        <VarParName varName="visualOtherRecursive">Relative Importance</VarParName>
+        <VarParName varName="extendOtherRecursive">Relative Importance</VarParName>
+        <VarParName varName="tableOtherRecursive">Relative Importance</VarParName>
+        <CovMatrixRow>0.316406</CovMatrixRow>
+        <CovMatrixRow>0.020690</CovMatrixRow>
+        <CovMatrixRow>0.041100</CovMatrixRow>
+        <CovMatrixRow>0.020690</CovMatrixRow>
+      </CovMatrix>
+    </ParameterSet>
+  </Distribution>
+ 
+ 
+</g:Hypergraph>

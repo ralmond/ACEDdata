@@ -1,0 +1,58 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:04 PM.
+
+bnet recursiveRuleOtherRecursiveEvi {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveEvidence/";
+whenchanged = 1417481524;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveTask/";
+	};
+
+param X_recursiveRuleOtherRecursive_ {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "recursiveRuleOtherRecursive";
+	whenchanged = 1417481524;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (recursiveRuleOtherRecursive);
+	parents = (X_recursiveRuleOtherRecursive_);
+	probs = 
+		// Yes          No            // recursiveRuleOtherRecursive 
+		  (0.817574,    0.182426,     // High                        
+		   0.182426,    0.817574,     // Medium                      
+		   0.5,         0.5);         // Low                         ;
+	title = "isCorrect";
+	whenchanged = 1417481524;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"recursiveRuleOtherRecursive\">0.4055</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"recursiveRuleOtherRecursive\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet Observable {Nodes = (isCorrect);};
+NodeSet recursiveRuleOtherRecursiveEvi {Nodes = (isCorrect);};
+NodeSet SM {Nodes = ();};
+};

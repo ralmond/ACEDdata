@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<amdf:AssessmentModelDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/AssessmentDescription
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/assessmentDescription.xsd" 
+  xmlns:amdf = "http://pdra.ets.org/StatShop/AssessmentDescription" >
+  
+    
+  <StudentModel name="THE__Understands__Sequences__as__Patterns" class="Discrete Bayes Net"
+    entityref="THE__Understands__Sequences__as__Patterns">
+    <StudentModelID>ecd://K12Math/Formative__Assessment/THE__Understands__Sequences__as__Patterns/</StudentModelID>
+    <ReportingVar  nodeName="commonRatio"  name="commonRatio" /> 
+    <ReportingVar  nodeName="extendGeometric"  name="extendGeometric" /> 
+    <ReportingVar  nodeName="tableGeometric"  name="tableGeometric" /> 
+    <ReportingVar  nodeName="examplesGeometric"  name="examplesGeometric" /> 
+    <ReportingVar  nodeName="modelGeometric"  name="modelGeometric" /> 
+    <ReportingVar  nodeName="visualGeometric"  name="visualGeometric" /> 
+    <ReportingVar  nodeName="explicitGeometric"  name="explicitGeometric" /> 
+    <ReportingVar  nodeName="recursiveRuleGeometric"  name="recursiveRuleGeometric" /> 
+    <ReportingVar  nodeName="verbalRuleGeometric"  name="verbalRuleGeometric" /> 
+    <ReportingVar  nodeName="distinguishTypes"  name="distinguishTypes" /> 
+    <ReportingVar  nodeName="solveGeometricProblems"  name="solveGeometricProblems" /> 
+    <ReportingVar  nodeName="solveSequenceProblems"  name="solveSequenceProblems" /> 
+  </StudentModel>
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="commonRatioEvidence"
+      entityref="commonRatioEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonRatioEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="examplesGeometricEvidence"
+      entityref="examplesGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="explicitGeometricEvidence"
+      entityref="explicitGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="extendGeometricEvidence"
+      entityref="extendGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelExtendTableGeometricEvidence"
+      entityref="modelExtendTableGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="recursiveRuleGeometricEvidence"
+      entityref="recursiveRuleGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="solveGeometricProblemsEvidence"
+      entityref="solveGeometricProblemsEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableExtendGeometricEvidence"
+      entityref="tableExtendGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableGeometricEvidence"
+      entityref="tableGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleExplicitModelGeometricEvidence"
+      entityref="verbalRuleExplicitModelGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleExtendModelGeometricEvidence"
+      entityref="verbalRuleExtendModelGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleModelGeometricEvidence"
+      entityref="verbalRuleModelGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExplicitVerbalRuleModelGeometricEvidence"
+      entityref="visualExplicitVerbalRuleModelGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExtendGeometricEvidence"
+      entityref="visualExtendGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExtendTableModelVerbalRuleGeometricEvidence"
+      entityref="visualExtendTableModelVerbalRuleGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExtendVerbalRuleModelGeometricEvidence"
+      entityref="visualExtendVerbalRuleModelGeometricEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="commonRatioEasyLMP"
+      entityref="commonRatioEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonRatioEvidence/commonRatioEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="commonRatioHardLMP"
+      entityref="commonRatioHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonRatioEvidence/commonRatioHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="commonRatioMediumLMP"
+      entityref="commonRatioMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonRatioEvidence/commonRatioMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesGeometricEasyLMP"
+      entityref="examplesGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesGeometricEvidence/examplesGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesGeometricHardLMP"
+      entityref="examplesGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesGeometricEvidence/examplesGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesGeometricMediumLMP"
+      entityref="examplesGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesGeometricEvidence/examplesGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitGeometricEasyLMP"
+      entityref="explicitGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitGeometricEvidence/explicitGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitGeometricHardLMP"
+      entityref="explicitGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitGeometricEvidence/explicitGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitGeometricMediumLMP"
+      entityref="explicitGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitGeometricEvidence/explicitGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendGeometricEasyLMP"
+      entityref="extendGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendGeometricEvidence/extendGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendGeometricHardLMP"
+      entityref="extendGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendGeometricEvidence/extendGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendGeometricMediumLMP"
+      entityref="extendGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendGeometricEvidence/extendGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendTableGeometricEasyLMP"
+      entityref="modelExtendTableGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricEvidence/modelExtendTableGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendTableGeometricHardLMP"
+      entityref="modelExtendTableGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricEvidence/modelExtendTableGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendTableGeometricMediumLMP"
+      entityref="modelExtendTableGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricEvidence/modelExtendTableGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleGeometricEasyLMP"
+      entityref="recursiveRuleGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricEvidence/recursiveRuleGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleGeometricHardLMP"
+      entityref="recursiveRuleGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricEvidence/recursiveRuleGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleGeometricMediumLMP"
+      entityref="recursiveRuleGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricEvidence/recursiveRuleGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="solveGeometricProblemsEasyLMP"
+      entityref="solveGeometricProblemsEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsEvidence/solveGeometricProblemsEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="solveGeometricProblemsHardLMP"
+      entityref="solveGeometricProblemsHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsEvidence/solveGeometricProblemsHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="solveGeometricProblemsMediumLMP"
+      entityref="solveGeometricProblemsMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsEvidence/solveGeometricProblemsMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendGeometricEasyLMP"
+      entityref="tableExtendGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendGeometricEvidence/tableExtendGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendGeometricHardLMP"
+      entityref="tableExtendGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendGeometricEvidence/tableExtendGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendGeometricMediumLMP"
+      entityref="tableExtendGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendGeometricEvidence/tableExtendGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableGeometricTask/tableGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableGeometricEasyLMP"
+      entityref="tableGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableGeometricEvidence/tableGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableGeometricTask/tableGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableGeometricHardLMP"
+      entityref="tableGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableGeometricEvidence/tableGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableGeometricTask/tableGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableGeometricMediumLMP"
+      entityref="tableGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableGeometricEvidence/tableGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExplicitModelGeometricEasyLMP"
+      entityref="verbalRuleExplicitModelGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricEvidence/verbalRuleExplicitModelGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExplicitModelGeometricHardLMP"
+      entityref="verbalRuleExplicitModelGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricEvidence/verbalRuleExplicitModelGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExplicitModelGeometricMediumLMP"
+      entityref="verbalRuleExplicitModelGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricEvidence/verbalRuleExplicitModelGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendModelGeometricEasyLMP"
+      entityref="verbalRuleExtendModelGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricEvidence/verbalRuleExtendModelGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendModelGeometricHardLMP"
+      entityref="verbalRuleExtendModelGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricEvidence/verbalRuleExtendModelGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendModelGeometricMediumLMP"
+      entityref="verbalRuleExtendModelGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricEvidence/verbalRuleExtendModelGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/verbalRuleModelGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleModelGeometricEasyLMP"
+      entityref="verbalRuleModelGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricEvidence/verbalRuleModelGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/verbalRuleModelGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleModelGeometricHardLMP"
+      entityref="verbalRuleModelGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricEvidence/verbalRuleModelGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/verbalRuleModelGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleModelGeometricMediumLMP"
+      entityref="verbalRuleModelGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricEvidence/verbalRuleModelGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitVerbalRuleModelGeometricEasyLMP"
+      entityref="visualExplicitVerbalRuleModelGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricEvidence/visualExplicitVerbalRuleModelGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitVerbalRuleModelGeometricHardLMP"
+      entityref="visualExplicitVerbalRuleModelGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricEvidence/visualExplicitVerbalRuleModelGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitVerbalRuleModelGeometricMediumLMP"
+      entityref="visualExplicitVerbalRuleModelGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricEvidence/visualExplicitVerbalRuleModelGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendGeometricEasyLMP"
+      entityref="visualExtendGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendGeometricEvidence/visualExtendGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendGeometricHardLMP"
+      entityref="visualExtendGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendGeometricEvidence/visualExtendGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendGeometricMediumLMP"
+      entityref="visualExtendGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendGeometricEvidence/visualExtendGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendTableModelVerbalRuleGeometricEasyLMP"
+      entityref="visualExtendTableModelVerbalRuleGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricEvidence/visualExtendTableModelVerbalRuleGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendTableModelVerbalRuleGeometricHardLMP"
+      entityref="visualExtendTableModelVerbalRuleGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricEvidence/visualExtendTableModelVerbalRuleGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendTableModelVerbalRuleGeometricMediumLMP"
+      entityref="visualExtendTableModelVerbalRuleGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricEvidence/visualExtendTableModelVerbalRuleGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/visualExtendVerbalRuleModelGeometricEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendVerbalRuleModelGeometricEasyLMP"
+      entityref="visualExtendVerbalRuleModelGeometricEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricEvidence/visualExtendVerbalRuleModelGeometricEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/visualExtendVerbalRuleModelGeometricHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendVerbalRuleModelGeometricHardLMP"
+      entityref="visualExtendVerbalRuleModelGeometricHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricEvidence/visualExtendVerbalRuleModelGeometricHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/visualExtendVerbalRuleModelGeometricMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendVerbalRuleModelGeometricMediumLMP"
+      entityref="visualExtendVerbalRuleModelGeometricMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricEvidence/visualExtendVerbalRuleModelGeometricMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+  <!--
+  <Statistic  name="level(BasicGeometricProblemSolvingTasks)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="commonRatio" /> 
+    <UseReportingVar  name="extendGeometric" /> 
+    <UseReportingVar  name="tableGeometric" /> 
+  </Statistic>
+  <Statistic  name="level(richGeometricProblemSolvingTasks)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesGeometric" /> 
+    <UseReportingVar  name="modelGeometric" /> 
+    <UseReportingVar  name="visualGeometric" /> 
+  </Statistic>
+  <Statistic  name="level(ruleInductionGeometric)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitGeometric" /> 
+    <UseReportingVar  name="recursiveRuleGeometric" /> 
+    <UseReportingVar  name="verbalRuleGeometric" /> 
+  </Statistic>
+  -->
+
+  <Statistic  name="P(commonRatio)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="commonRatio" /> 
+  </Statistic>
+  <Statistic  name="P(distinguishTypes)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="distinguishTypes" /> 
+  </Statistic>
+
+  <Statistic  name="P(examplesGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(explicitGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(extendGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="extendGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(modelGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="modelGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(recursiveRuleGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="recursiveRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(solveGeometricProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveGeometricProblems" /> 
+  </Statistic>
+
+  <Statistic  name="P(tableGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="tableGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(verbalRuleGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="verbalRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(pictoralGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="visualGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="P(induceRulesGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="induceRulesGeometric" /> 
+  </Statistic>
+  <Statistic  name="P(algebraRuleGeometric)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="algebraRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(commonRatio)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="commonRatio" /> 
+  </Statistic>
+  <Statistic  name="EAP(distinguishTypes)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="distinguishTypes" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(examplesGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(explicitGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(extendGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="extendGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(modelGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="modelGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(recursiveRuleGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="recursiveRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(solveGeometricProblems)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveGeometricProblems" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(tableGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="tableGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(verbalRuleGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="verbalRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(pictoralGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="visualGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="EAP(induceRulesGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="induceRulesGeometric" /> 
+  </Statistic>
+  <Statistic  name="EAP(algebraRuleGeometric)" class="Bayes Net Mean" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="algebraRuleGeometric" /> 
+  </Statistic>
+  
+  <Statistic  name="MAP(commonRatio)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="commonRatio" /> 
+  </Statistic>
+  <Statistic  name="MAP(distinguishTypes)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="distinguishTypes" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(examplesGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(explicitGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(extendGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="extendGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(modelGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="modelGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(recursiveRuleGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="recursiveRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(solveGeometricProblems)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveGeometricProblems" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(tableGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="tableGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(verbalRuleGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="verbalRuleGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(pictoralGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="visualGeometric" /> 
+  </Statistic>
+
+  <Statistic  name="MAP(induceRulesGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="induceRulesGeometric" /> 
+  </Statistic>
+  <Statistic  name="MAP(algebraRuleGeometric)" class="Bayes Net Mode" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="algebraRuleGeometric" /> 
+  </Statistic>
+
+</amdf:AssessmentModelDescription>

@@ -1,0 +1,36 @@
+---
+title: "ACED Evaluation Studies"
+---
+
+In one evaluation (see Shute, Hansen, & Almond, 2008), we examined the efficacy of ACED
+(Adaptive Content with Evidence-based Diagnosis). We used an evidence-centered design
+approach (Mislevy, Steinberg, & Almond, 2003) to create an adaptive, diagnostic
+assessment system which includes five main models: competency, evidence, task,
+presentation, and assembly (Shute, Graf, & Hansen, 2005). We also included instructional
+support in the form of elaborated feedback. The key issue we examined was whether the
+inclusion of the feedback into the system (a) impairs the quality of the assessment
+(relative to validity, reliability, and efficiency), and (b) does, in fact, enhance
+student learning. Results from a controlled evaluation testing 268 high-school students
+showed that the quality of the assessment was unimpaired by the provision of feedback.
+Moreover, students using the ACED system showed significantly greater learning of the
+content compared with a control group. These findings suggest that assessments in other
+settings (e.g., state-mandated tests) might be augmented to support student learning
+with instructional feedback without jeopardizing the primary purpose of the assessment.
+
+In another evaluation (Hansen, Shute, & Landau, 2010), we conducted
+a usability study of ACED using individuals with and without visual
+disabilities. The ACED system provided audio-tactile graphics, which were
+intended to be especially for individuals with little or no vision. Results
+of the study, which involved four individuals--two with blindness and two
+with low vision--suggested that, within limitations due to the small size
+of the study, individuals with visual disabilities found both the low
+vision and blind modes of the ACED system to be generally usable for a
+mathematics AfL system.
+
+See [Publications](Publications.qmd) for references.
+
+
+ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.
+
+
+

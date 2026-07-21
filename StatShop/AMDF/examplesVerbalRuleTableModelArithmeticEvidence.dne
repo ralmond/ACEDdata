@@ -1,0 +1,172 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:03 PM.
+
+bnet examplesVerbalRuleTableModelAr {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/examplesVerbalRuleTableModelArithmeticEvidence/";
+whenchanged = 1417481523;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/examplesVerbalRuleTableModelArithmeticTask/";
+	};
+
+param X_examplesArithmetic_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "examplesArithmetic";
+	whenchanged = 1417481523;
+	};
+
+param X_tableArithmetic_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "tableArithmetic";
+	whenchanged = 1417481523;
+	};
+
+param X_verbalRuleArithmetic_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "verbalRuleArithmetic";
+	whenchanged = 1417481523;
+	};
+
+param X_modelArithmetic_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "modelArithmetic";
+	whenchanged = 1417481523;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (tableArithmetic, examplesArithmetic, verbalRuleArithmetic, modelArithmetic);
+	parents = (X_tableArithmetic_1, X_examplesArithmetic_1, X_verbalRuleArithmetic_1, X_modelArithmetic_1);
+	probs = 
+		// Yes          No            // tableArithmetic examplesArithmetic verbalRuleArithmetic modelArithmetic 
+		  (0.989013,    0.010987,     // High            High               High                 High            
+		   0.924142,    0.075858,     // High            High               High                 Medium          
+		   0.970688,    0.029312,     // High            High               High                 Low             
+		   0.924142,    0.075858,     // High            High               Medium               High            
+		   0.622459,    0.377541,     // High            High               Medium               Medium          
+		   0.817574,    0.182426,     // High            High               Medium               Low             
+		   0.970688,    0.029312,     // High            High               Low                  High            
+		   0.817574,    0.182426,     // High            High               Low                  Medium          
+		   0.924142,    0.075858,     // High            High               Low                  Low             
+		   0.817574,    0.182426,     // High            Medium             High                 High            
+		   0.377541,    0.622459,     // High            Medium             High                 Medium          
+		   0.622459,    0.377541,     // High            Medium             High                 Low             
+		   0.377541,    0.622459,     // High            Medium             Medium               High            
+		   0.075858,    0.924142,     // High            Medium             Medium               Medium          
+		   0.182426,    0.817574,     // High            Medium             Medium               Low             
+		   0.622459,    0.377541,     // High            Medium             Low                  High            
+		   0.182426,    0.817574,     // High            Medium             Low                  Medium          
+		   0.377541,    0.622459,     // High            Medium             Low                  Low             
+		   0.952574,    0.047426,     // High            Low                High                 High            
+		   0.731059,    0.268941,     // High            Low                High                 Medium          
+		   0.880797,    0.119203,     // High            Low                High                 Low             
+		   0.731059,    0.268941,     // High            Low                Medium               High            
+		   0.268941,    0.731059,     // High            Low                Medium               Medium          
+		   0.5,         0.5,          // High            Low                Medium               Low             
+		   0.880797,    0.119203,     // High            Low                Low                  High            
+		   0.5,         0.5,          // High            Low                Low                  Medium          
+		   0.731059,    0.268941,     // High            Low                Low                  Low             
+		   0.924142,    0.075858,     // Medium          High               High                 High            
+		   0.622459,    0.377541,     // Medium          High               High                 Medium          
+		   0.817574,    0.182426,     // Medium          High               High                 Low             
+		   0.622459,    0.377541,     // Medium          High               Medium               High            
+		   0.182426,    0.817574,     // Medium          High               Medium               Medium          
+		   0.377541,    0.622459,     // Medium          High               Medium               Low             
+		   0.817574,    0.182426,     // Medium          High               Low                  High            
+		   0.377541,    0.622459,     // Medium          High               Low                  Medium          
+		   0.622459,    0.377541,     // Medium          High               Low                  Low             
+		   0.377541,    0.622459,     // Medium          Medium             High                 High            
+		   0.075858,    0.924142,     // Medium          Medium             High                 Medium          
+		   0.182426,    0.817574,     // Medium          Medium             High                 Low             
+		   0.075858,    0.924142,     // Medium          Medium             Medium               High            
+		   0.010987,    0.989013,     // Medium          Medium             Medium               Medium          
+		   0.029312,    0.970688,     // Medium          Medium             Medium               Low             
+		   0.182426,    0.817574,     // Medium          Medium             Low                  High            
+		   0.029312,    0.970688,     // Medium          Medium             Low                  Medium          
+		   0.075858,    0.924142,     // Medium          Medium             Low                  Low             
+		   0.731059,    0.268941,     // Medium          Low                High                 High            
+		   0.268941,    0.731059,     // Medium          Low                High                 Medium          
+		   0.5,         0.5,          // Medium          Low                High                 Low             
+		   0.268941,    0.731059,     // Medium          Low                Medium               High            
+		   0.047426,    0.952574,     // Medium          Low                Medium               Medium          
+		   0.119203,    0.880797,     // Medium          Low                Medium               Low             
+		   0.5,         0.5,          // Medium          Low                Low                  High            
+		   0.119203,    0.880797,     // Medium          Low                Low                  Medium          
+		   0.268941,    0.731059,     // Medium          Low                Low                  Low             
+		   0.970688,    0.029312,     // Low             High               High                 High            
+		   0.817574,    0.182426,     // Low             High               High                 Medium          
+		   0.924142,    0.075858,     // Low             High               High                 Low             
+		   0.817574,    0.182426,     // Low             High               Medium               High            
+		   0.377541,    0.622459,     // Low             High               Medium               Medium          
+		   0.622459,    0.377541,     // Low             High               Medium               Low             
+		   0.924142,    0.075858,     // Low             High               Low                  High            
+		   0.622459,    0.377541,     // Low             High               Low                  Medium          
+		   0.817574,    0.182426,     // Low             High               Low                  Low             
+		   0.622459,    0.377541,     // Low             Medium             High                 High            
+		   0.182426,    0.817574,     // Low             Medium             High                 Medium          
+		   0.377541,    0.622459,     // Low             Medium             High                 Low             
+		   0.182426,    0.817574,     // Low             Medium             Medium               High            
+		   0.029312,    0.970688,     // Low             Medium             Medium               Medium          
+		   0.075858,    0.924142,     // Low             Medium             Medium               Low             
+		   0.377541,    0.622459,     // Low             Medium             Low                  High            
+		   0.075858,    0.924142,     // Low             Medium             Low                  Medium          
+		   0.182426,    0.817574,     // Low             Medium             Low                  Low             
+		   0.880797,    0.119203,     // Low             Low                High                 High            
+		   0.5,         0.5,          // Low             Low                High                 Medium          
+		   0.731059,    0.268941,     // Low             Low                High                 Low             
+		   0.5,         0.5,          // Low             Low                Medium               High            
+		   0.119203,    0.880797,     // Low             Low                Medium               Medium          
+		   0.268941,    0.731059,     // Low             Low                Medium               Low             
+		   0.731059,    0.268941,     // Low             Low                Low                  High            
+		   0.268941,    0.731059,     // Low             Low                Low                  Medium          
+		   0.5,         0.5);         // Low             Low                Low                  Low             ;
+	title = "isCorrect";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"tableArithmetic\">0</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"examplesArithmetic\">0.4055</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"verbalRuleArithmetic\">0</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"modelArithmetic\">0</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"tableArithmetic\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"examplesArithmetic\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"verbalRuleArithmetic\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"modelArithmetic\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.0411</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.0411</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.0411</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet SM {Nodes = ();};
+NodeSet examplesVerbalRuleTableModelAr {Nodes = (isCorrect);};
+NodeSet Observable {Nodes = (isCorrect);};
+};

@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<g:Hypergraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/gm
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/gm.xsd" 
+  xmlns:g = "http://pdra.ets.org/StatShop/gm" >
+  <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticEvidence/verbalRuleExamplesTableModelArithmeticHardLMP/</LinkID>
+  <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticTask/verbalRuleExamplesTableModelArithmeticHard/</TaskID>
+  <Bounds  x="0" y="0" width="11" height="8.5" />
+  <DiscreteVariable varName="verbalRuleArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.43736111111111" y="4.125"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="modelArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.25" y="1.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="tableArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.23402777777778" y="2.625"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="examplesArithmetic" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.36263888888889" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="isCorrect" nStates="2" role="Observable" isOrdered="true" externalName="isCorrect" > 
+    <Position  x="6.75" y="3"/>
+    <State isTrue="true">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <Distribution  type="Compensatory Distribution"> 
+    <Position  x="5.375" y="3"/>
+    <Conditions>
+      <VarRef  varName="verbalRuleArithmetic" />
+      <VarRef  varName="modelArithmetic" />
+      <VarRef  varName="tableArithmetic" />
+      <VarRef  varName="examplesArithmetic" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="isCorrect" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.982014</TableCell>
+        <TableCell  state="No">0.017986</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.924142</TableCell>
+        <TableCell  state="No">0.075858</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.952574</TableCell>
+        <TableCell  state="No">0.047426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.880797</TableCell>
+        <TableCell  state="No">0.119203</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.952574</TableCell>
+        <TableCell  state="No">0.047426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.880797</TableCell>
+        <TableCell  state="No">0.119203</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.880797</TableCell>
+        <TableCell  state="No">0.119203</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="High"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.047426</TableCell>
+        <TableCell  state="No">0.952574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.924142</TableCell>
+        <TableCell  state="No">0.075858</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.029312</TableCell>
+        <TableCell  state="No">0.970688</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.029312</TableCell>
+        <TableCell  state="No">0.970688</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.047426</TableCell>
+        <TableCell  state="No">0.952574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.010987</TableCell>
+        <TableCell  state="No">0.989013</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.047426</TableCell>
+        <TableCell  state="No">0.952574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="High"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.017986</TableCell>
+        <TableCell  state="No">0.982014</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.047426</TableCell>
+        <TableCell  state="No">0.952574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.017986</TableCell>
+        <TableCell  state="No">0.982014</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.029312</TableCell>
+        <TableCell  state="No">0.970688</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.006693</TableCell>
+        <TableCell  state="No">0.993307</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="High"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.017986</TableCell>
+        <TableCell  state="No">0.982014</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.119203</TableCell>
+        <TableCell  state="No">0.880797</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.029312</TableCell>
+        <TableCell  state="No">0.970688</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Medium"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.006693</TableCell>
+        <TableCell  state="No">0.993307</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.047426</TableCell>
+        <TableCell  state="No">0.952574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.010987</TableCell>
+        <TableCell  state="No">0.989013</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleArithmetic" state="Low"/>
+          <TableHeaderCell  varName="modelArithmetic" state="Low"/>
+          <TableHeaderCell  varName="tableArithmetic" state="Low"/>
+          <TableHeaderCell  varName="examplesArithmetic" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.002473</TableCell>
+        <TableCell  state="No">0.997527</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterSet>
+      <ParameterValue parameterName="Task Difficulty">1.00</ParameterValue>
+      <ParameterValue parameterName="Degrees-of-Freedom">2</ParameterValue>
+      <VarParameterValue varName="verbalRuleArithmetic" parameterName="Relative Importance">0.4055</VarParameterValue>
+      <VarParameterValue varName="modelArithmetic" parameterName="Relative Importance">0.0000</VarParameterValue>
+      <VarParameterValue varName="tableArithmetic" parameterName="Relative Importance">0.0000</VarParameterValue>
+      <VarParameterValue varName="examplesArithmetic" parameterName="Relative Importance">0.4055</VarParameterValue>
+      <CovMatrix type="DIAGONAL">
+        <ParName>Task Difficulty</ParName>
+        <VarParName varName="verbalRuleArithmetic">Relative Importance</VarParName>
+        <VarParName varName="modelArithmetic">Relative Importance</VarParName>
+        <VarParName varName="tableArithmetic">Relative Importance</VarParName>
+        <VarParName varName="examplesArithmetic">Relative Importance</VarParName>
+        <CovMatrixRow>0.316406</CovMatrixRow>
+        <CovMatrixRow>0.020690</CovMatrixRow>
+        <CovMatrixRow>0.041100</CovMatrixRow>
+        <CovMatrixRow>0.041100</CovMatrixRow>
+        <CovMatrixRow>0.020690</CovMatrixRow>
+      </CovMatrix>
+    </ParameterSet>
+  </Distribution>
+ 
+ 
+</g:Hypergraph>

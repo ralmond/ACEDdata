@@ -1,0 +1,76 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:03 PM.
+
+bnet examplesCommonDifferenceArithm {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticEvidence/";
+whenchanged = 1417481523;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticTask/";
+	};
+
+param X_commonDifference_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "commonDifference";
+	whenchanged = 1417481523;
+	};
+
+param X_examplesArithmetic_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "examplesArithmetic";
+	whenchanged = 1417481523;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (examplesArithmetic, commonDifference);
+	parents = (X_examplesArithmetic_1, X_commonDifference_1);
+	probs = 
+		// Yes          No            // examplesArithmetic commonDifference 
+		  (0.924142,    0.075858,     // High               High             
+		   0.622459,    0.377541,     // High               Medium           
+		   0.817574,    0.182426,     // High               Low              
+		   0.377541,    0.622459,     // Medium             High             
+		   0.075858,    0.924142,     // Medium             Medium           
+		   0.182426,    0.817574,     // Medium             Low              
+		   0.731059,    0.268941,     // Low                High             
+		   0.268941,    0.731059,     // Low                Medium           
+		   0.5,         0.5);         // Low                Low              ;
+	title = "isCorrect";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"examplesArithmetic\">0.4055</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"commonDifference\">0</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"examplesArithmetic\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"commonDifference\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.0411</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet SM {Nodes = ();};
+NodeSet examplesCommonDifferenceArithm {Nodes = (isCorrect);};
+NodeSet Observable {Nodes = (isCorrect);};
+};

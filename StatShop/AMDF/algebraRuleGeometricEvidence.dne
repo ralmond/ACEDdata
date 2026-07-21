@@ -1,0 +1,58 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:03 PM.
+
+bnet algebraRuleGeometricEvidence {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/algebraRuleGeometricEvidence/";
+whenchanged = 1417481523;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/algebraRuleGeometricTask/";
+	};
+
+param X_algebraRuleGeometric_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "algebraRuleGeometric";
+	whenchanged = 1417481523;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (algebraRuleGeometric);
+	parents = (X_algebraRuleGeometric_1);
+	probs = 
+		// Yes          No            // algebraRuleGeometric 
+		  (0.817574,    0.182426,     // High                 
+		   0.182426,    0.817574,     // Medium               
+		   0.5,         0.5);         // Low                  ;
+	title = "isCorrect";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"algebraRuleGeometric\">0.4055</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"algebraRuleGeometric\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet SM {Nodes = ();};
+NodeSet algebraRuleGeometricEvidence {Nodes = (isCorrect);};
+NodeSet Observable {Nodes = (isCorrect);};
+};

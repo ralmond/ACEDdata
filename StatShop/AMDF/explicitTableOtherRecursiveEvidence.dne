@@ -1,0 +1,76 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:03 PM.
+
+bnet explicitTableOtherRecursiveEvi {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveEvidence/";
+whenchanged = 1417481523;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveTask/";
+	};
+
+param X_explicitOtherRecursive_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "explicitOtherRecursive";
+	whenchanged = 1417481523;
+	};
+
+param X_tableOtherRecursive_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "tableOtherRecursive";
+	whenchanged = 1417481523;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (tableOtherRecursive, explicitOtherRecursive);
+	parents = (X_tableOtherRecursive_1, X_explicitOtherRecursive_1);
+	probs = 
+		// Yes          No            // tableOtherRecursive explicitOtherRecursive 
+		  (0.924142,    0.075858,     // High                High                   
+		   0.377541,    0.622459,     // High                Medium                 
+		   0.731059,    0.268941,     // High                Low                    
+		   0.622459,    0.377541,     // Medium              High                   
+		   0.075858,    0.924142,     // Medium              Medium                 
+		   0.268941,    0.731059,     // Medium              Low                    
+		   0.817574,    0.182426,     // Low                 High                   
+		   0.182426,    0.817574,     // Low                 Medium                 
+		   0.5,         0.5);         // Low                 Low                    ;
+	title = "isCorrect";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"tableOtherRecursive\">0</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"explicitOtherRecursive\">0.4055</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"tableOtherRecursive\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"explicitOtherRecursive\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.0411</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet SM {Nodes = ();};
+NodeSet explicitTableOtherRecursiveEvi {Nodes = (isCorrect);};
+NodeSet Observable {Nodes = (isCorrect);};
+};

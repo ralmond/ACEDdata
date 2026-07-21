@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<g:Hypergraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/gm
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/gm.xsd" 
+  xmlns:g = "http://pdra.ets.org/StatShop/gm" >
+  <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveEvidence/verbalRuleOtherRecursiveMediumLMP/</LinkID>
+  <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveTask/verbalRuleOtherRecursiveMedium/</TaskID>
+  <Bounds  x="0" y="0" width="11" height="8.5" />
+  <DiscreteVariable varName="verbalRuleOtherRecursive" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="2.59930555555556" y="3.5"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="isCorrect" nStates="2" role="Observable" isOrdered="true" externalName="isCorrect" > 
+    <Position  x="5.48875" y="3.5"/>
+    <State isTrue="true">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <Distribution  type="Compensatory Distribution"> 
+    <Position  x="4.4630555555556" y="3.5"/>
+    <Conditions>
+      <VarRef  varName="verbalRuleOtherRecursive" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="isCorrect" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleOtherRecursive" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleOtherRecursive" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="verbalRuleOtherRecursive" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterSet>
+      <ParameterValue parameterName="Task Difficulty">0.00</ParameterValue>
+      <ParameterValue parameterName="Degrees-of-Freedom">2</ParameterValue>
+      <VarParameterValue varName="verbalRuleOtherRecursive" parameterName="Relative Importance">0.0000</VarParameterValue>
+      <CovMatrix type="DIAGONAL">
+        <ParName>Task Difficulty</ParName>
+        <VarParName varName="verbalRuleOtherRecursive">Relative Importance</VarParName>
+        <CovMatrixRow>0.316406</CovMatrixRow>
+        <CovMatrixRow>0.041100</CovMatrixRow>
+      </CovMatrix>
+    </ParameterSet>
+  </Distribution>
+ 
+ 
+</g:Hypergraph>

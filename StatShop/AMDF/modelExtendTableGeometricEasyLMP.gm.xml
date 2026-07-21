@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<g:Hypergraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/gm
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/gm.xsd" 
+  xmlns:g = "http://pdra.ets.org/StatShop/gm" >
+  <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricEvidence/modelExtendTableGeometricEasyLMP/</LinkID>
+  <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/</TaskID>
+  <Bounds  x="0" y="0" width="11" height="8.5" />
+  <DiscreteVariable varName="tableGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.47402777777778" y="3.375"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="extendGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.46513888888889" y="3.875"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="modelGeometric" nStates="3" role="SM" isOrdered="true" > 
+    <Position  x="3.5" y="4.5"/>
+    <State isTrue="false">High</State>
+    <State isTrue="false">Medium</State>
+    <State isTrue="false">Low</State>
+  </DiscreteVariable>
+  <DiscreteVariable varName="isCorrect" nStates="2" role="Observable" isOrdered="true" externalName="isCorrect" > 
+    <Position  x="6.3847222222222" y="4"/>
+    <State isTrue="true">Yes</State>
+    <State isTrue="false">No</State>
+  </DiscreteVariable>
+  <Distribution  type="Compensatory Distribution"> 
+    <Position  x="5.3590277777778" y="4"/>
+    <Conditions>
+      <VarRef  varName="tableGeometric" />
+      <VarRef  varName="extendGeometric" />
+      <VarRef  varName="modelGeometric" />
+    </Conditions>
+    <Consequences>
+      <VarRef  varName="isCorrect" />
+    </Consequences>
+    <DistributionTable>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.989013</TableCell>
+        <TableCell  state="No">0.010987</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.952574</TableCell>
+        <TableCell  state="No">0.047426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.970688</TableCell>
+        <TableCell  state="No">0.029312</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.880797</TableCell>
+        <TableCell  state="No">0.119203</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.924142</TableCell>
+        <TableCell  state="No">0.075858</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="High"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.970688</TableCell>
+        <TableCell  state="No">0.029312</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.880797</TableCell>
+        <TableCell  state="No">0.119203</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.924142</TableCell>
+        <TableCell  state="No">0.075858</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Medium"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.924142</TableCell>
+        <TableCell  state="No">0.075858</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.731059</TableCell>
+        <TableCell  state="No">0.268941</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="High"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.377541</TableCell>
+        <TableCell  state="No">0.622459</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.817574</TableCell>
+        <TableCell  state="No">0.182426</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.500000</TableCell>
+        <TableCell  state="No">0.500000</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="Medium"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.182426</TableCell>
+        <TableCell  state="No">0.817574</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="High"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.622459</TableCell>
+        <TableCell  state="No">0.377541</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="Medium"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.268941</TableCell>
+        <TableCell  state="No">0.731059</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableRowHeader>
+          <TableHeaderCell  varName="tableGeometric" state="Low"/>
+          <TableHeaderCell  varName="extendGeometric" state="Low"/>
+          <TableHeaderCell  varName="modelGeometric" state="Low"/>
+        </TableRowHeader>
+        <TableCell  state="Yes">0.075858</TableCell>
+        <TableCell  state="No">0.924142</TableCell>
+      </TableRow>
+    </DistributionTable>
+    <ParameterSet>
+      <ParameterValue parameterName="Task Difficulty">-1.00</ParameterValue>
+      <ParameterValue parameterName="Degrees-of-Freedom">2</ParameterValue>
+      <VarParameterValue varName="tableGeometric" parameterName="Relative Importance">0.0000</VarParameterValue>
+      <VarParameterValue varName="extendGeometric" parameterName="Relative Importance">0.0000</VarParameterValue>
+      <VarParameterValue varName="modelGeometric" parameterName="Relative Importance">0.4055</VarParameterValue>
+      <CovMatrix type="DIAGONAL">
+        <ParName>Task Difficulty</ParName>
+        <VarParName varName="tableGeometric">Relative Importance</VarParName>
+        <VarParName varName="extendGeometric">Relative Importance</VarParName>
+        <VarParName varName="modelGeometric">Relative Importance</VarParName>
+        <CovMatrixRow>0.316406</CovMatrixRow>
+        <CovMatrixRow>0.041100</CovMatrixRow>
+        <CovMatrixRow>0.041100</CovMatrixRow>
+        <CovMatrixRow>0.020690</CovMatrixRow>
+      </CovMatrix>
+    </ParameterSet>
+  </Distribution>
+ 
+ 
+</g:Hypergraph>

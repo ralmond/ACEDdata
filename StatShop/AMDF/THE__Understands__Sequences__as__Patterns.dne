@@ -1,0 +1,2716 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:03 PM.
+
+bnet THE__Understands__Sequences__a {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/THE__Understands__Sequences__as__Patterns/";
+whenchanged = 1417481523;
+user U1 {
+	type = "SM";
+	};
+
+node sequences {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = ();
+	probs = 
+		// High         Medium       Low          
+		  (0.2,         0.5,         0.3);
+	title = "sequences";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "sequences";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader/>\n\
+			\|  <TableCell state=\"High\">0.2</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.5</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.3</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveSequenceProblems {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (sequences);
+	probs = 
+		// High         Medium       Low           // sequences 
+		  (0.814,       0.176,       0.01,         // High      
+		   0.01,        0.176,       0.814,        // Medium    
+		   0.236,       0.528,       0.236);       // Low       ;
+	title = "solveSequenceProblems";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveSequenceProblems";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.814</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.176</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.01</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.236</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.528</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.236</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.01</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.176</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.814</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveArithmeticProblems {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // solveSequenceProblems 
+		  (1,           0,           0,            // High                  
+		   0.181,       0.675,       0.144,        // Medium                
+		   0.904,       0.095,       0.001);       // Low                   ;
+	title = "solveArithmeticProblems";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveArithmeticProblems";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">1</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.904</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.095</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.181</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.675</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.144</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node induceRulesArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (0.395,       0.396,       0.209,        // High                    
+		   0.004,       0.05,        0.946,        // Medium                  
+		   0.07,        0.275,       0.655);       // Low                     ;
+	title = "induceRulesArithmetic";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "induceRulesArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.395</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.396</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.209</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.07</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.275</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.655</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.004</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.05</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.946</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node algebraRuleArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (induceRulesArithmetic);
+	probs = 
+		// High         Medium       Low           // induceRulesArithmetic 
+		  (0.258247,    0.453171,    0.288582,     // High                  
+		   3.92e-4,     0.015315,    0.984293,     // Medium                
+		   0.022566,    0.190122,    0.787312);    // Low                   ;
+	title = "algebraRuleArithmetic";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "algebraRuleArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesArithmetic\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.258247</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.453171</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.288582</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesArithmetic\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.022566</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.190122</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.787312</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesArithmetic\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000393</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.015315</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.984293</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node explicitArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (algebraRuleArithmetic);
+	probs = 
+		// High         Medium       Low           // algebraRuleArithmetic 
+		  (0.520489,    0.375256,    0.104255,     // High                  
+		   0.003931,    0.069369,    0.9267,       // Medium                
+		   0.09624,     0.365128,    0.538632);    // Low                   ;
+	title = "explicitArithmetic";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "explicitArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleArithmetic\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.520489</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.375256</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.104255</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleArithmetic\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.09624</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.365128</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.538632</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleArithmetic\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.003931</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.069369</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.9267</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node recursiveRuleArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (algebraRuleArithmetic);
+	probs = 
+		// High         Medium       Low           // algebraRuleArithmetic 
+		  (0.926702,    0.069367,    0.003931,     // High                  
+		   0.1042579,   0.3752587,   0.5204834,    // Medium                
+		   0.538637,    0.365125,    0.096238);    // Low                   ;
+	title = "recursiveRuleArithmetic";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "recursiveRuleArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleArithmetic\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.926702</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.069367</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.003931</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleArithmetic\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.538637</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.365125</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.096238</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleArithmetic\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.104258</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.375259</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.520484</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node verbalRuleArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (induceRulesArithmetic);
+	probs = 
+		// High         Medium       Low           // induceRulesArithmetic 
+		  (0.890887,    0.108444,    6.69e-4,      // High                  
+		   6.69e-4,     0.108448,    0.890883,     // Medium                
+		   0.161538,    0.676929,    0.161533);    // Low                   ;
+	title = "verbalRuleArithmetic";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "verbalRuleArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesArithmetic\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.890887</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.108444</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.000669</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesArithmetic\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.161538</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.676929</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.161533</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesArithmetic\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000669</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.108448</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.890883</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node commonDifference {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (1,           0,           0,            // High                    
+		   0.567,       0.379,       0.054,        // Medium                  
+		   0.963,       0.036,       0.001);       // Low                     ;
+	title = "commonDifference";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "commonDifference";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">1</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.963</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.036</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.567</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.379</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.054</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node examplesArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (0.518,       0.351,       0.131,        // High                    
+		   0.009,       0.089,       0.902,        // Medium                  
+		   0.122,       0.344,       0.534);       // Low                     ;
+	title = "examplesArithmetic";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "examplesArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.518</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.131</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.122</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.344</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.534</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.009</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.089</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.902</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node extendArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (1,           0,           0,            // High                    
+		   0.567568,    0.378378,    0.054054,     // Medium                  
+		   0.963,       0.036,       0.001);       // Low                     ;
+	title = "extendArithmetic";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "extendArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">1</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.963</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.036</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.567</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.378</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.054</TableCell>\n\
+			\|  <TableCell state=\"Sum\">0.999</TableCell>\n\
+			\|  <TableCell state=\"Scale\">0.999</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node modelArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (0.395,       0.396,       0.209,        // High                    
+		   0.004,       0.05,        0.946,        // Medium                  
+		   0.07,        0.275,       0.655);       // Low                     ;
+	title = "modelArithmetic";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "modelArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.395</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.396</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.209</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.07</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.275</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.655</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.004</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.05</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.946</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveArithmeticProblemsHigh {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveArithmeticProblems);
+	functable = 
+		                    // solveArithmeticProblems 
+		  (Yes,             // High                    
+		   No,              // Medium                  
+		   No);             // Low                     ;
+	title = "solveArithmeticProblemsHigh";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveArithmeticProblemsHigh";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveArithmeticProblemsMedium {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveArithmeticProblems);
+	functable = 
+		                    // solveArithmeticProblems 
+		  (Yes,             // High                    
+		   No,              // Medium                  
+		   Yes);            // Low                     ;
+	title = "solveArithmeticProblemsMedium";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveArithmeticProblemsMedium";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node tableArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (0.713,       0.216,       0.071,        // High                    
+		   0.071,       0.216,       0.713,        // Medium                  
+		   0.326,       0.348,       0.326);       // Low                     ;
+	title = "tableArithmetic";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "tableArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.713</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.216</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.071</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.326</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.348</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.326</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.071</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.216</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.713</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node visualArithmetic {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveArithmeticProblems);
+	probs = 
+		// High         Medium       Low           // solveArithmeticProblems 
+		  (0.902,       0.089,       0.009,        // High                    
+		   0.131,       0.351,       0.518,        // Medium                  
+		   0.535,       0.343,       0.122);       // Low                     ;
+	title = "visualArithmetic";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "visualArithmetic";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.902</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.089</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.009</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.535</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.343</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.122</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveArithmeticProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.131</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.518</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveGeometricProblems {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // solveSequenceProblems 
+		  (0.52,        0.376,       0.104,        // High                  
+		   0.004,       0.069,       0.927,        // Medium                
+		   0.096,       0.365,       0.539);       // Low                   ;
+	title = "solveGeometricProblems";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveGeometricProblems";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.52</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.376</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.104</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.096</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.365</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.539</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.004</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.069</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.927</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveOtherRecursiveProblems {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveSequenceProblems);
+	probs = 
+		// High         Medium       Low           // solveSequenceProblems 
+		  (0.52,        0.376,       0.104,        // High                  
+		   0.004,       0.069,       0.927,        // Medium                
+		   0.096,       0.365,       0.539);       // Low                   ;
+	title = "solveOtherRecursiveProblems";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveOtherRecursiveProblems";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.52</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.376</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.104</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.096</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.365</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.539</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.004</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.069</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.927</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveSequenceProblemsHigh {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveSequenceProblems);
+	functable = 
+		                    // solveSequenceProblems 
+		  (Yes,             // High                  
+		   No,              // Medium                
+		   No);             // Low                   ;
+	title = "solveSequenceProblemsHigh";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveSequenceProblemsHigh";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveSequenceProblemsMedium {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveSequenceProblems);
+	functable = 
+		                    // solveSequenceProblems 
+		  (Yes,             // High                  
+		   No,              // Medium                
+		   Yes);            // Low                   ;
+	title = "solveSequenceProblemsMedium";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveSequenceProblemsMedium";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveSequenceProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node recognizeSequences {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (sequences);
+	probs = 
+		// High         Medium       Low           // sequences 
+		  (0.518,       0.351,       0.131,        // High      
+		   0.009,       0.089,       0.902,        // Medium    
+		   0.122,       0.344,       0.534);       // Low       ;
+	title = "recognizeSequences";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "recognizeSequences";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.518</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.131</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.122</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.344</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.534</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.009</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.089</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.902</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node reviewMaterial {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (sequences);
+	probs = 
+		// High         Medium       Low           // sequences 
+		  (0.987,       0.012,       0.001,        // High      
+		   0.544,       0.309,       0.147,        // Medium    
+		   0.878,       0.104,       0.018);       // Low       ;
+	title = "reviewMaterial";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "reviewMaterial";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.987</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.012</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.878</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.104</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.018</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.544</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.309</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.147</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node sequencesHigh {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (sequences);
+	functable = 
+		                    // sequences 
+		  (Yes,             // High      
+		   No,              // Medium    
+		   No);             // Low       ;
+	title = "sequencesHigh";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "sequencesHigh";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node sequencesMedium {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (sequences);
+	functable = 
+		                    // sequences 
+		  (Yes,             // High      
+		   No,              // Medium    
+		   Yes);            // Low       ;
+	title = "sequencesMedium";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "sequencesMedium";
+		isOrdered = "false";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"sequences\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node commonRatio {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (1,           0,           0,            // High                   
+		   0.567,       0.379,       0.054,        // Medium                 
+		   0.963,       0.036,       0.001);       // Low                    ;
+	title = "commonRatio";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "commonRatio";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">1</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.963</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.036</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.567</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.379</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.054</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node examplesGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (0.518,       0.351,       0.131,        // High                   
+		   0.009,       0.089,       0.902,        // Medium                 
+		   0.122,       0.344,       0.534);       // Low                    ;
+	title = "examplesGeometric";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "examplesGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.518</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.131</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.122</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.344</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.534</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.009</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.089</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.902</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node extendGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (1,           0,           0,            // High                   
+		   0.567,       0.379,       0.054,        // Medium                 
+		   0.963,       0.036,       0.001);       // Low                    ;
+	title = "extendGeometric";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "extendGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">1</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.963</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.036</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.567</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.379</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.054</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node induceRulesGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (0.395,       0.396,       0.209,        // High                   
+		   0.004,       0.05,        0.946,        // Medium                 
+		   0.07,        0.275,       0.655);       // Low                    ;
+	title = "induceRulesGeometric";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "induceRulesGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.395</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.396</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.209</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.07</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.275</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.655</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.004</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.05</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.946</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node modelGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (0.281,       0.41,        0.309,        // High                   
+		   0.001,       0.026,       0.973,        // Medium                 
+		   0.037,       0.201,       0.762);       // Low                    ;
+	title = "modelGeometric";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "modelGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.281</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.41</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.309</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.037</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.201</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.762</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.026</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.973</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveGeometricProblemsHigh {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveGeometricProblems);
+	functable = 
+		                    // solveGeometricProblems 
+		  (Yes,             // High                   
+		   No,              // Medium                 
+		   No);             // Low                    ;
+	title = "solveGeometricProblemsHigh";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveGeometricProblemsHigh";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveGeometricProblemsMedium {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveGeometricProblems);
+	functable = 
+		                    // solveGeometricProblems 
+		  (Yes,             // High                   
+		   No,              // Medium                 
+		   Yes);            // Low                    ;
+	title = "solveGeometricProblemsMedium";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveGeometricProblemsMedium";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node tableGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (0.713,       0.216,       0.071,        // High                   
+		   0.071,       0.216,       0.713,        // Medium                 
+		   0.326,       0.348,       0.326);       // Low                    ;
+	title = "tableGeometric";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "tableGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.713</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.216</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.071</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.326</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.348</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.326</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.071</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.216</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.713</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node visualGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveGeometricProblems);
+	probs = 
+		// High         Medium       Low           // solveGeometricProblems 
+		  (0.749,       0.211,       0.04,         // High                   
+		   0.04,        0.211,       0.749,        // Medium                 
+		   0.295,       0.41,        0.295);       // Low                    ;
+	title = "visualGeometric";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "visualGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.749</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.211</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.04</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.295</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.41</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.295</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveGeometricProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.04</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.211</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.749</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node examplesOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveOtherRecursiveProblems);
+	probs = 
+		// High         Medium       Low           // solveOtherRecursiveProblems 
+		  (0.518,       0.351,       0.131,        // High                        
+		   0.009,       0.089,       0.902,        // Medium                      
+		   0.122122,    0.343343,    0.534535);    // Low                         ;
+	title = "examplesOtherRecursive";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "examplesOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.518</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.131</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.122</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.343</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.534</TableCell>\n\
+			\|  <TableCell state=\"Sum\">0.999</TableCell>\n\
+			\|  <TableCell state=\"Scale\">0.999</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.009</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.089</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.902</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node extendOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveOtherRecursiveProblems);
+	probs = 
+		// High         Medium       Low           // solveOtherRecursiveProblems 
+		  (1,           0,           0,            // High                        
+		   0.567,       0.379,       0.054,        // Medium                      
+		   0.963,       0.036,       0.001);       // Low                         ;
+	title = "extendOtherRecursive";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "extendOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">1</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.963</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.036</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.567</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.379</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.054</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node induceRulesOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveOtherRecursiveProblems);
+	probs = 
+		// High         Medium       Low           // solveOtherRecursiveProblems 
+		  (0.395,       0.396,       0.209,        // High                        
+		   0.004,       0.05,        0.946,        // Medium                      
+		   0.07,        0.275,       0.655);       // Low                         ;
+	title = "induceRulesOtherRecursive";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "induceRulesOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.395</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.396</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.209</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.07</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.275</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.655</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.004</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.05</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.946</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node modelOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveOtherRecursiveProblems);
+	probs = 
+		// High         Medium       Low           // solveOtherRecursiveProblems 
+		  (0.281,       0.41,        0.309,        // High                        
+		   0.001,       0.026,       0.973,        // Medium                      
+		   0.037,       0.201,       0.762);       // Low                         ;
+	title = "modelOtherRecursive";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "modelOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.281</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.41</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.309</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.037</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.201</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.762</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.001</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.026</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.973</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveOtherRecursiveHigh {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveOtherRecursiveProblems);
+	functable = 
+		                    // solveOtherRecursiveProblems 
+		  (Yes,             // High                        
+		   No,              // Medium                      
+		   No);             // Low                         ;
+	title = "solveOtherRecursiveHigh";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveOtherRecursiveHigh";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node solveOtherRecursiveMedium {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = DETERMIN;
+	states = (Yes, No);
+	parents = (solveOtherRecursiveProblems);
+	functable = 
+		                    // solveOtherRecursiveProblems 
+		  (Yes,             // High                        
+		   No,              // Medium                      
+		   Yes);            // Low                         ;
+	title = "solveOtherRecursiveMedium";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "solveOtherRecursiveMedium";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">1</TableCell>\n\
+			\|  <TableCell state=\"No\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"Yes\">0</TableCell>\n\
+			\|  <TableCell state=\"No\">1</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node tableOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveOtherRecursiveProblems);
+	probs = 
+		// High         Medium       Low           // solveOtherRecursiveProblems 
+		  (0.7131483,   0.2154818,   0.07136992,   // High                        
+		   0.07137093,  0.2154838,   0.7131453,    // Medium                      
+		   0.325806,    0.348392,    0.325802);    // Low                         ;
+	title = "tableOtherRecursive";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "tableOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.713149</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.215482</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.07137</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.325806</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.348392</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.325802</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.071371</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.215484</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.713146</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node visualOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (solveOtherRecursiveProblems);
+	probs = 
+		// High         Medium       Low           // solveOtherRecursiveProblems 
+		  (0.749,       0.211,       0.04,         // High                        
+		   0.04,        0.211,       0.749,        // Medium                      
+		   0.295,       0.41,        0.295);       // Low                         ;
+	title = "visualOtherRecursive";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "visualOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.749</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.211</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.04</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.295</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.41</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.295</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"solveOtherRecursiveProblems\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.04</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.211</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.749</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node distinguishTypes {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (recognizeSequences);
+	probs = 
+		// High         Medium       Low           // recognizeSequences 
+		  (0.999929,    7.1e-5,      0,            // High               
+		   0,           7.1e-5,      0.999929,     // Medium             
+		   0.001132,    0.997737,    0.001131);    // Low                ;
+	title = "distinguishTypes";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "distinguishTypes";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"recognizeSequences\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.999929</TableCell>\n\
+			\|  <TableCell state=\"Medium\">7.1e-05</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"recognizeSequences\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.001132</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.997737</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001131</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"recognizeSequences\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0</TableCell>\n\
+			\|  <TableCell state=\"Medium\">7.1e-05</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.999929</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node functionTables {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (reviewMaterial);
+	probs = 
+		// High         Medium       Low           // reviewMaterial 
+		  (0.861426,    0.115268,    0.023306,     // High           
+		   0.17322,     0.311442,    0.515338,     // Medium         
+		   0.528945,    0.306443,    0.164612);    // Low            ;
+	title = "functionTables";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "functionTables";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"reviewMaterial\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.861426</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.115268</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.023306</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"reviewMaterial\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.528945</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.306443</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.164612</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"reviewMaterial\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.173221</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.311442</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.515338</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node algebraRuleGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (induceRulesGeometric);
+	probs = 
+		// High         Medium       Low           // induceRulesGeometric 
+		  (0.1589388,   0.4232366,   0.4178246,    // High                 
+		   1.04e-4,     0.006073,    0.993823,     // Medium               
+		   0.009299,    0.116351,    0.87435);     // Low                  ;
+	title = "algebraRuleGeometric";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "algebraRuleGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesGeometric\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.158939</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.423237</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.417825</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesGeometric\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.009299</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.116351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.87435</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesGeometric\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000104</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.006073</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.993823</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node verbalRuleGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (induceRulesGeometric);
+	probs = 
+		// High         Medium       Low           // induceRulesGeometric 
+		  (0.890887,    0.108444,    6.69e-4,      // High                 
+		   6.69e-4,     0.108448,    0.890883,     // Medium               
+		   0.161538,    0.676929,    0.161533);    // Low                  ;
+	title = "verbalRuleGeometric";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "verbalRuleGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesGeometric\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.890887</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.108444</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.000669</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesGeometric\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.161538</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.676929</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.161533</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesGeometric\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000669</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.108448</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.890883</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node algebraRuleOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (induceRulesOtherRecursive);
+	probs = 
+		// High         Medium       Low           // induceRulesOtherRecursive 
+		  (0.1589388,   0.4232366,   0.4178246,    // High                      
+		   1.04e-4,     0.006073,    0.993823,     // Medium                    
+		   0.009299,    0.116351,    0.87435);     // Low                       ;
+	title = "algebraRuleOtherRecursive";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "algebraRuleOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesOtherRecursive\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.158939</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.423237</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.417825</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesOtherRecursive\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.009299</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.116351</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.87435</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesOtherRecursive\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000104</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.006073</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.993823</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node verbalRuleOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (induceRulesOtherRecursive);
+	probs = 
+		// High         Medium       Low           // induceRulesOtherRecursive 
+		  (0.890887,    0.108444,    6.69e-4,      // High                      
+		   6.69e-4,     0.108448,    0.890883,     // Medium                    
+		   0.161538,    0.676929,    0.161533);    // Low                       ;
+	title = "verbalRuleOtherRecursive";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "verbalRuleOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesOtherRecursive\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.890887</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.108444</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.000669</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesOtherRecursive\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.161538</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.676929</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.161533</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"induceRulesOtherRecursive\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000669</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.108448</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.890883</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node IOs {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (functionTables);
+	probs = 
+		// High         Medium       Low           // functionTables 
+		  (0.998421,    0.001579,    0,            // High           
+		   0.068514,    0.6192,      0.312286,     // Medium         
+		   0.7680568,   0.2285672,   0.003376004); // Low            ;
+	title = "IOs";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "IOs";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"functionTables\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.998421</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.001579</TableCell>\n\
+			\|  <TableCell state=\"Low\">0</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"functionTables\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.768057</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.228567</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.003376</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"functionTables\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.068514</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.619201</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.312286</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node explicitGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (algebraRuleGeometric);
+	probs = 
+		// High         Medium       Low           // algebraRuleGeometric 
+		  (0.258247,    0.453171,    0.288582,     // High                 
+		   3.92e-4,     0.015315,    0.984293,     // Medium               
+		   0.022566,    0.190122,    0.787312);    // Low                  ;
+	title = "explicitGeometric";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "explicitGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleGeometric\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.258247</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.453171</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.288582</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleGeometric\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.022566</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.190122</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.787312</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleGeometric\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000393</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.015315</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.984293</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node recursiveRuleGeometric {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (algebraRuleGeometric);
+	probs = 
+		// High         Medium       Low           // algebraRuleGeometric 
+		  (0.964206,    0.034479,    0.001315,     // High                 
+		   0.1820478,   0.4353686,   0.3825836,    // Medium               
+		   0.672588,    0.278283,    0.049129);    // Low                  ;
+	title = "recursiveRuleGeometric";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "recursiveRuleGeometric";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleGeometric\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.964206</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.034479</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001315</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleGeometric\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.672588</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.278283</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.049129</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleGeometric\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.182048</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.435369</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.382584</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node explicitOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (algebraRuleOtherRecursive);
+	probs = 
+		// High         Medium       Low           // algebraRuleOtherRecursive 
+		  (0.258247,    0.453171,    0.288582,     // High                      
+		   3.92e-4,     0.015315,    0.984293,     // Medium                    
+		   0.022566,    0.190122,    0.787312);    // Low                       ;
+	title = "explicitOtherRecursive";
+	whenchanged = 1417481522;
+	user U1 {
+		internalName = "explicitOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleOtherRecursive\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.258247</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.453171</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.288582</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleOtherRecursive\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.022566</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.190122</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.787312</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleOtherRecursive\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.000393</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.015315</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.984293</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+
+node recursiveRuleOtherRecursive {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (High, Medium, Low);
+	parents = (algebraRuleOtherRecursive);
+	probs = 
+		// High         Medium       Low           // algebraRuleOtherRecursive 
+		  (0.964206,    0.034479,    0.001315,     // High                      
+		   0.1820478,   0.4353686,   0.3825836,    // Medium                    
+		   0.672588,    0.278283,    0.049129);    // Low                       ;
+	title = "recursiveRuleOtherRecursive";
+	whenchanged = 1417481523;
+	user U1 {
+		internalName = "recursiveRuleOtherRecursive";
+		isOrdered = "true";
+		role = "SM";
+		DistType = "HyperDirichlet Distribution";
+		ParameterTable = "<ParameterTable>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleOtherRecursive\" state=\"High\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.964206</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.034479</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.001315</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleOtherRecursive\" state=\"Medium\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.672588</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.278283</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.049129</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			\| <TableRow>\n\
+			\|  <TableRowHeader>\n\
+			\|   <TableHeaderCell varName=\"algebraRuleOtherRecursive\" state=\"Low\"/>\n\
+			\|  </TableRowHeader>\n\
+			\|  <TableCell state=\"High\">0.182048</TableCell>\n\
+			\|  <TableCell state=\"Medium\">0.435369</TableCell>\n\
+			\|  <TableCell state=\"Low\">0.382584</TableCell>\n\
+			\|  <TableCell state=\"Sum\">1</TableCell>\n\
+			\|  <TableCell state=\"Scale\">1</TableCell>\n\
+			\| </TableRow>\n\
+			</ParameterTable>";
+		};
+	};
+NodeSet SM {Nodes = (algebraRuleArithmetic, algebraRuleGeometric, algebraRuleOtherRecursive, commonDifference, commonRatio, distinguishTypes, examplesArithmetic, examplesGeometric, examplesOtherRecursive, explicitArithmetic, explicitGeometric, explicitOtherRecursive, extendArithmetic, extendGeometric, extendOtherRecursive, functionTables, induceRulesArithmetic, induceRulesGeometric, induceRulesOtherRecursive, IOs, modelArithmetic, modelGeometric, modelOtherRecursive, recognizeSequences, recursiveRuleArithmetic, recursiveRuleGeometric, recursiveRuleOtherRecursive, reviewMaterial, sequences, sequencesHigh, sequencesMedium, solveArithmeticProblems, solveArithmeticProblemsHigh, solveArithmeticProblemsMedium, solveGeometricProblems, solveGeometricProblemsHigh, solveGeometricProblemsMedium, solveOtherRecursiveHigh, solveOtherRecursiveMedium, solveOtherRecursiveProblems, solveSequenceProblems, solveSequenceProblemsHigh, solveSequenceProblemsMedium, tableArithmetic, tableGeometric, tableOtherRecursive, verbalRuleArithmetic, verbalRuleGeometric, verbalRuleOtherRecursive, visualArithmetic, visualGeometric, visualOtherRecursive);};
+NodeSet THE__Understands__Sequences__a {Nodes = (algebraRuleArithmetic, algebraRuleGeometric, algebraRuleOtherRecursive, commonDifference, commonRatio, distinguishTypes, examplesArithmetic, examplesGeometric, examplesOtherRecursive, explicitArithmetic, explicitGeometric, explicitOtherRecursive, extendArithmetic, extendGeometric, extendOtherRecursive, functionTables, induceRulesArithmetic, induceRulesGeometric, induceRulesOtherRecursive, IOs, modelArithmetic, modelGeometric, modelOtherRecursive, recognizeSequences, recursiveRuleArithmetic, recursiveRuleGeometric, recursiveRuleOtherRecursive, reviewMaterial, sequences, sequencesHigh, sequencesMedium, solveArithmeticProblems, solveArithmeticProblemsHigh, solveArithmeticProblemsMedium, solveGeometricProblems, solveGeometricProblemsHigh, solveGeometricProblemsMedium, solveOtherRecursiveHigh, solveOtherRecursiveMedium, solveOtherRecursiveProblems, solveSequenceProblems, solveSequenceProblemsHigh, solveSequenceProblemsMedium, tableArithmetic, tableGeometric, tableOtherRecursive, verbalRuleArithmetic, verbalRuleGeometric, verbalRuleOtherRecursive, visualArithmetic, visualGeometric, visualOtherRecursive);};
+};

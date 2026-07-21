@@ -1,0 +1,106 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:04 PM.
+
+bnet explicitTableVisualOtherRecurs {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveEvidence/";
+whenchanged = 1417481524;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveTask/";
+	};
+
+param X_explicitOtherRecursive_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "explicitOtherRecursive";
+	whenchanged = 1417481524;
+	};
+
+param X_tableOtherRecursive_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "tableOtherRecursive";
+	whenchanged = 1417481524;
+	};
+
+param X_visualOtherRecursive_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "visualOtherRecursive";
+	whenchanged = 1417481524;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (tableOtherRecursive, explicitOtherRecursive, visualOtherRecursive);
+	parents = (X_tableOtherRecursive_1, X_explicitOtherRecursive_1, X_visualOtherRecursive_1);
+	probs = 
+		// Yes          No            // tableOtherRecursive explicitOtherRecursive visualOtherRecursive 
+		  (0.982014,    0.017986,     // High                High                   High                 
+		   0.880797,    0.119203,     // High                High                   Medium               
+		   0.952574,    0.047426,     // High                High                   Low                  
+		   0.731059,    0.268941,     // High                Medium                 High                 
+		   0.268941,    0.731059,     // High                Medium                 Medium               
+		   0.5,         0.5,          // High                Medium                 Low                  
+		   0.924142,    0.075858,     // High                Low                    High                 
+		   0.622459,    0.377541,     // High                Low                    Medium               
+		   0.817574,    0.182426,     // High                Low                    Low                  
+		   0.731059,    0.268941,     // Medium              High                   High                 
+		   0.268941,    0.731059,     // Medium              High                   Medium               
+		   0.5,         0.5,          // Medium              High                   Low                  
+		   0.119203,    0.880797,     // Medium              Medium                 High                 
+		   0.017986,    0.982014,     // Medium              Medium                 Medium               
+		   0.047426,    0.952574,     // Medium              Medium                 Low                  
+		   0.377541,    0.622459,     // Medium              Low                    High                 
+		   0.075858,    0.924142,     // Medium              Low                    Medium               
+		   0.182426,    0.817574,     // Medium              Low                    Low                  
+		   0.924142,    0.075858,     // Low                 High                   High                 
+		   0.622459,    0.377541,     // Low                 High                   Medium               
+		   0.817574,    0.182426,     // Low                 High                   Low                  
+		   0.377541,    0.622459,     // Low                 Medium                 High                 
+		   0.075858,    0.924142,     // Low                 Medium                 Medium               
+		   0.182426,    0.817574,     // Low                 Medium                 Low                  
+		   0.731059,    0.268941,     // Low                 Low                    High                 
+		   0.268941,    0.731059,     // Low                 Low                    Medium               
+		   0.5,         0.5);         // Low                 Low                    Low                  ;
+	title = "isCorrect";
+	whenchanged = 1417481524;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"tableOtherRecursive\">0.4055</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"explicitOtherRecursive\">0.4055</VarParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"visualOtherRecursive\">0</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"tableOtherRecursive\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"explicitOtherRecursive\">Relative Importance</VarParName>\n\
+			\|  <VarParName varName=\"visualOtherRecursive\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.0411</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet SM {Nodes = ();};
+NodeSet explicitTableVisualOtherRecurs {Nodes = (isCorrect);};
+NodeSet Observable {Nodes = (isCorrect);};
+};

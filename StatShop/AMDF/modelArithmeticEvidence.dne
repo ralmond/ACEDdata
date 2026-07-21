@@ -1,0 +1,58 @@
+// ~->[DNET-1]->~
+
+// File created by AlmondR at FloridaStateU using Netica 5.04 on 12/01/2014 at 07:52:04 PM.
+
+bnet modelArithmeticEvidence {
+autoupdate = FALSE;
+title = "ecd://K12Math/Formative__Assessment/modelArithmeticEvidence/";
+whenchanged = 1417481524;
+user U1 {
+	type = "EM";
+	taskID = "ecd://K12Math/Formative__Assessment/modelArithmeticTask/";
+	};
+
+param X_modelArithmetic_1 {
+	kind = DISCONNECTED;
+	discrete = TRUE;
+	states = (High, Medium, Low);
+	title = "modelArithmetic";
+	whenchanged = 1417481524;
+	};
+
+node isCorrect {
+	kind = NATURE;
+	discrete = TRUE;
+	chance = CHANCE;
+	states = (Yes, No);
+	inputs = (modelArithmetic);
+	parents = (X_modelArithmetic_1);
+	probs = 
+		// Yes          No            // modelArithmetic 
+		  (0.817574,    0.182426,     // High            
+		   0.182426,    0.817574,     // Medium          
+		   0.5,         0.5);         // Low             ;
+	title = "isCorrect";
+	whenchanged = 1417481524;
+	user U1 {
+		internalName = "isCorrect";
+		isOrdered = "true";
+		role = "Observable";
+		DistType = "Compensatory Distribution";
+		ParameterSet = "<ParameterSet>\n\
+			\| <ParameterValue parameterName=\"Task Difficulty\">0</ParameterValue>\n\
+			\| <ParameterValue parameterName=\"Degrees-of-Freedom\">2</ParameterValue>\n\
+			\| <VarParameterValue parameterName=\"Relative Importance\" \
+			varName=\"modelArithmetic\">0.4055</VarParameterValue>\n\
+			\| <CovMatrix type=\"DIAGONAL\">\n\
+			\|  <ParName>Task Difficulty</ParName>\n\
+			\|  <VarParName varName=\"modelArithmetic\">Relative Importance</VarParName>\n\
+			\|  <CovMatrixRow>1</CovMatrixRow>\n\
+			\|  <CovMatrixRow>0.02069</CovMatrixRow>\n\
+			\| </CovMatrix>\n\
+			</ParameterSet>";
+		};
+	};
+NodeSet Observable {Nodes = (isCorrect);};
+NodeSet modelArithmeticEvidence {Nodes = (isCorrect);};
+NodeSet SM {Nodes = ();};
+};

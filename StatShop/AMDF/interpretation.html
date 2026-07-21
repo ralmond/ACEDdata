@@ -1,0 +1,311 @@
+<html> <head>
+<title>Interpreting StatShop Model Descriptions</title>
+</head>
+
+<body>
+<h1>Interpreting StatShop Model Descriptions</h1>
+
+<p>
+StatShop models are described in HTML using two types of files.  The
+<a href="#amd">Assessment Model Description</a> (suffix <code>amd.xml</code>)
+corresponds to the Portal Assembly Model.  It lists which
+Proficiency Model(s) are used, how scores are calculated, and which
+Evidence/Link Models are used to score each task.  The <a
+href="#gm">Graphical Model</a> (suffix <code>gm.xml</code>) file
+stores the graph and probabilities for an individual Student, Evidence
+or Link Model.  Generally speaking these files reside in the same
+directory, with the <code>amd</code> file pointing to the
+<code>gm</code> files it needs in the same directory.
+<p>
+<h2><a name="amd">Assessment Model Description</a></h2>
+<p>
+The Assessment Model Description report is divided into three
+sections.  The first section describes the Proficiency Model, the
+second the Evidence and Link Models and the third describes rules for
+missing data handling.
+
+<h3>Proficiency Model</h3>
+<p>
+This section lists all of the Student Models (there is usually one,
+but there could be more than one) and provides links to the XML and
+HTML descriptions of those models (<code>gm</code> files).  It also
+gives a table of the names of the available reporting variables.
+(Note:  due to a known bug in StatShop, the reporting variables are
+sometimes not declared when saving a calibrated model.  This is
+harmless and will be fixed in a future release.)
+<p>
+This section also lists all the available <i>Reporting Rules</i>,
+scores which can be calculated for a given student.  When scoring
+using this assessment description, scores with the given names will be
+calculated for each student. (Note: due to a known bug in StatShop,
+the reporting rules are not saved after calibrating a model.)
+
+<h3>Evidence/Link Model Sets</h3>
+<p>
+Next come the Evidence and Link Models, organized by task.  Depending
+on the type of Assessment Model Description, it may reference <i>Evidence
+Model</i> (general rules for scoring tasks from a given <i>Task
+Model</i>),  <i>Link Models</i> (specific rules for scoring a
+particular <i>task</i>), or <i>Link Model Priors</i> (an in between
+level between Evidence and Link Models which are
+associated with <i>Task Specifications</i>).  The Evidence and Link
+Models differ mainly in their level of specificity, they have the same
+structure and are described with the same kind of <code>gm</code>
+file.  Link Models are always derived from an Evidence Model and have
+an identical graphical structure.  They differ from their Evidence
+Model ancestor only in the value of parameters.
+<p>
+Whether an Assessment Model Description contains Link Models or
+Evidence Models depends on the use and origin of the model.  Initial
+model descriptions coming from Portal and intended as input to the
+StatShop calibrator contain generic Evidence Models.  Models output
+from the calibrator contain task specific Link Models.  
+<p>
+Each task can be scored with one or more Link Models.  Similarly, each
+task model can be associated with one or more Evidence Models.  In the
+case of multiples, all of the models are run (for example, there may
+be one model for overall score and one for subscores).  The
+description presents the Link and Evidence Models sorted by task or
+task model.
+<p>
+For each Evidence or Link Model, there is a link to the XML
+<code>gm</code> which contains the appropriate graph and parameters,
+as well as its HTML human readable version.  There is a link to the
+Student Model used by this link model and a description of the
+observables.  The table gives the external and internal name of the
+observable as well as the legal values.
+<p>
+In order to promote greater reuse of Evidence Models, Portal contains
+a facility called a <i>Mapping Rule</i> which maps the name of an
+observed outcome variable to the name of a node in a graphical model.
+Thus, the external and internal name could be different.
+The column marked <b>EID name</b> is the name of the node as output
+from the Evidence Identification process; in other words, this is the
+name that StatShop will look for when scoring for this observable.
+The column marked <b>Node</b> contains StatShop's internal name, as
+found in the <code>gm</code> file.
+
+<h3>Exception Handling Rules</h3>
+<p>
+The last part of the table gives rules for handling various kinds of
+missing data.  The table lists the type of exception, the code used in
+the calibration data and the checksum, as well as the strategies for
+handling the problem.  Types of missing data are:
+
+<dl>
+  <dt> NA
+  <dd> Outcome is judged to be not-applicable (observable corresponds
+       to a solution path not chosen by the examinee).
+  <dt> Omitted
+  <dd> Examinee saw the task, but did not provide a response to the
+       specified observable.  This happens in ICT due to a timeout
+       during the task, or the examinee choosing to go on to the next
+       task before completing the current one.
+  <dt> Not Reached
+  <dd> The task was scheduled to be presented to the examinee, but the
+       examinee never saw it.
+  <dt> Invalid
+  <dd> An unexpected value is included in the data file.
+</dl>
+
+<p>
+The strategies for handling these exceptions are:
+<dl>
+  <dt> Ignore
+  <dd> Do not score this observable.
+  <dt> Low
+  <dd> Treat this observable as the lowest possible value.
+  <dt> High
+  <dd> Treat this observable as the highest possible value (included
+       for symmetry).
+  <dt> Error
+  <dd> Signal an error and do no process data file.
+  <dt> Warning
+  <dd> Signal a warning, and then treat the value like ignore.
+</dl>
+
+
+
+<h2><a name="gm">Graphical Model</a></h2>
+
+
+<p>
+A graphical model can by described by the collection of <i>variables</i>, and
+the collection of <i>distributions</i> over those variables.  This
+forms a directed hypergraph, with the variables being the nodes in the
+graph, and the distributions being directed hyperedges (conditioning
+variables are from nodes, consequence variable is to node).  Another
+way to draw this construct (as distributions are currently restricted
+to have one output variable) is to draw an edge from each conditioning
+variable to the consequence variable.  This gives the normal simple
+graph view.
+<p>
+Graphical models are identified by an ECD ID (Student Model ID or Link
+ID depending on the type of model) which describes the Portal Project
+and CAF from which they came, as well as, for Link Models the Task
+which is associated with them.  The syntax for these IDs is meant to
+mimic a URL with the first part specifying the project, and the last
+part specifying a unique identifier for the task.  Models and
+submodels appear as directories.
+in the document
+
+<h3>Variables</h3>
+
+<p>
+The first part of the graphical model description is a table of all of
+the variables included in the model.  The <i>Name</i> column gives the
+internal name of the variable, the <i>External Name</i> gives the name
+expected from Evidence Identification (if a mapping rule has been
+defined for this variable).  The <i>Role</i> column is used in
+Evidence/Link Models and may take on one of three values:
+<dl>
+  <dt> SM
+  <dd> A variable "borrowed" from a student model.
+  <dt> Observable
+  <dd> A variable corresponding to an an observable outcome from
+       Evidence Identification.
+  <dt> EM
+  <dd> A latent variable local to the Evidence/Link model, e.g., a
+       context effect.
+</dl>
+<p>
+All variables in StatShop are treated as if they are ordered with the
+Highest possible value listed first.  (Due to a bug in StatShop, the
+ordered flag on the variable is not always correctly propagated and
+hence sometimes does not show in the table.  This does not affect
+calculations.) 
+
+<h3>Distributions</h3>
+<p>
+A distribution contains a number of "parent" variable and a single
+child variable.  This is given in a title
+<b>(<i>parent1</i>,<i>parent2</i>) -&gt; <i>child</i></b>.  This
+defines the conditional distribution for <i>child</i> given the values
+of <i>parents</i>.  In some cases, the list of parents is empty in
+which case the distribution is the unconditional distribution of the
+child.
+
+There are many types of distributions which can be divided into two
+broad super-classes:
+<dl>
+  <dt> <a href="#HD">Hyper-Dirichlet</a>
+  <dd> Distributions based on specifying the probability table
+       directly, these include the <i>Hyper-Dirichlet</i>, <i>Fixed
+       Distribution</i>, and <i>Fill-in Distribution</i>.
+  <dt> <a href="#DiBello">DiBello--Samejima</a>
+  <dd> A reduced parameter class of distributions devised by Lou
+       DiBello based on Samejima's graded response model.  These
+       include:  <i>Compensatory</i>, <i>Conjunctive</i>,
+       <i>Disjunctive</i>, <i>Inhibitor</i> and <i>Correlation</i>
+       distributions.  
+</dl>
+
+The type of the distribution defines its parameters.  These parameters
+are internally translated to a probability table.  If present in the
+XML file, the probability table is shown.  (The probably table may
+have been deleted if the XML file was modified by hand.  StatShop
+works from the parameters and recreates the probability table, thus
+the parameters always have precedence.)  Each row corresponds to a
+configuration of the parent variables and provides the probability for
+the child variable given that configuration.
+
+<h4><a name="HD">Hyper-Dirichlet Distributions</a></h4>
+
+<p>
+The natural parameterization of the Bayes net is the Conditional
+Multinomial Distribution (as in the probability table described
+above), where each row is an independent multinomial distribution.
+The natural conjugate prior is the <i>hyper-Dirichlet</i>
+distribution, in which each row is an independent Dirichlet
+distribution.  The parameter table is given in one of two formats.  In
+the first format, the cell entries for each row are the natural
+parameters in the Dirichlet model.  In the second format, two
+additional columns: <i>Sum</i> and <i>Scale</i> are included.  The
+effective Dirichlet parameter is computed by multiplying each value in
+the row by <i>Scale/Sum</i>.
+<p>
+Two other simple distribution types are lumped into this general
+category.  This first is the <i>Fixed Distribution</i> which has no
+parameters.  It is used to define logical relationships and other
+models whose parameters are not to be learned.  It has the same syntax
+as the hyper-Dirichlet distribution.  The second is the <i>Fill-in</i>
+distribution.  These distributions have no child variables and are
+added to the model to account for dependencies induced by evidence
+models.  Fill-in distributions are equivalent to uniform distributions
+(unit potentials) and have affect on the graph structure but not the
+probability distribution.
+
+<h4><a name="DiBello">DiBello--Samejima Distributions</a></h4>
+<p>
+The DiBello--Samejima models are essentially compensatory 2PL versions
+of Samejima's graded response model, with High, Medium and Low values
+of the parent variable mapped to thetas of 1,0, and -1 (or +0.67 and
+-0.67 for the two level context effect).  Complete descriptions of the
+parameterization can be found in Chapter 8 of <i>Bayes Nets in
+Educational Assessment</i> (currently being written).  Here are how
+the parameters are labeled:
+</p>
+<dl>
+  <dt> Task Difficulty
+  <dd> Average intercept parameter for all of the Samejima Curve
+  <dt> Level Difficulty Increment
+  <dd> Gap between the curves.  This parameter is indexed by the name
+       of the highest level (there is only one in models with only
+       three levels for the observable outcome variable, which covers
+       most of ICT).  Note this parameter is restricted to be positive.
+  <dt> Relative Importance
+  <dd> The log of the slope for a variable.  This parameter is indexed
+       by the name of one of the parent variables.
+  <dt> Residual Standard Error
+  <dd> Only used in correlation distributions (which are not currently
+       used, but were used in older models).  This is the size of the
+       variance (log scale) around the regression line.
+  <dt> Degrees of Freedom
+  <dd> Reserved for future use.  This is meant to describe how tightly
+       link models cluster around evidence models in ECD designs, but
+       it is not yet implemented.
+</dl>
+<p>
+The prior distribution for these parameters are normal with the given
+means and variances expressed through the covariance matrix 
+below the table giving the means.  Currently the covariance matrix is
+always diagonal, although that restriction may be lifted in the
+future.  The prior for the <i>Difficulty Increment</i> parameters is
+truncated so that the value is always positive.
+<p>
+The various types of the DiBello--Samejima family differ in how they
+combine the influence of the parent variables.  The methods are
+summarized in the table below:
+<dl>
+  <dt> Compensatory
+  <dd> The effective theta for the distribution is the sum of the
+       effective thetas (times their slope parameters) for the parent
+       variables.  The result is scaled by 1/sqrt(<i>number of
+       parents</i>) to stabilize the variance.
+  <dt> Conjunctive
+  <dd> The effective theta for the distribution is the minimum of the
+       effective thetas (times their slope parameters) for the parent
+       variables.
+  <dt> Disjunctive
+  <dd> The effective theta for the distribution is the maximum of the
+       effective thetas (times their slope parameters) for the parent
+       variables.
+  <dt> Inhibitor
+  <dd> One variable acts as a gatekeeper.  Unless that parent variable
+       equals or exceeds the threshold, the effective theta is the
+       lowest possible value of the other parent.
+  <dt> Correlation
+  <dd> This model uses cutpoints of the normal distribution to
+       translate between effective theta and probability space, rather
+       than Samejima's graded response model.  It is like a regression
+       model with the <i>Residual Standard Error</i> parameter
+       defining the spread around the regression line.
+</dl>
+
+
+<hr>
+<address>ralmond@ets.org</address>
+<!-- hhmts start -->
+Last modified: Tue Jan  4 13:25:15 2005
+<!-- hhmts end -->
+</body> </html>

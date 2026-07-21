@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<amdf:AssessmentModelDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/AssessmentDescription
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/assessmentDescription.xsd" 
+  xmlns:amdf = "http://pdra.ets.org/StatShop/AssessmentDescription" >
+  
+    
+  <StudentModel name="THE__Understands__Sequences__as__Patterns" class="Discrete Bayes Net"
+    entityref="THE__Understands__Sequences__as__Patterns">
+    <StudentModelID>ecd://K12Math/Formative__Assessment/THE__Understands__Sequences__as__Patterns/</StudentModelID>
+    <ReportingVar  nodeName="commonDifference"  name="commonDifference" /> 
+    <ReportingVar  nodeName="extendArithmetic"  name="extendArithmetic" /> 
+    <ReportingVar  nodeName="tableArithmetic"  name="tableArithmetic" /> 
+    <ReportingVar  nodeName="commonRatio"  name="commonRatio" /> 
+    <ReportingVar  nodeName="extendGeometric"  name="extendGeometric" /> 
+    <ReportingVar  nodeName="tableGeometric"  name="tableGeometric" /> 
+    <ReportingVar  nodeName="extendOtherRecursive"  name="extendOtherRecursive" /> 
+    <ReportingVar  nodeName="tableOtherRecursive"  name="tableOtherRecursive" /> 
+    <ReportingVar  nodeName="examplesArithmetic"  name="examplesArithmetic" /> 
+    <ReportingVar  nodeName="modelArithmetic"  name="modelArithmetic" /> 
+    <ReportingVar  nodeName="visualArithmetic"  name="visualArithmetic" /> 
+    <ReportingVar  nodeName="examplesGeometric"  name="examplesGeometric" /> 
+    <ReportingVar  nodeName="modelGeometric"  name="modelGeometric" /> 
+    <ReportingVar  nodeName="visualGeometric"  name="visualGeometric" /> 
+    <ReportingVar  nodeName="examplesOtherRecursive"  name="examplesOtherRecursive" /> 
+    <ReportingVar  nodeName="modelOtherRecursive"  name="modelOtherRecursive" /> 
+    <ReportingVar  nodeName="visualOtherRecursive"  name="visualOtherRecursive" /> 
+    <ReportingVar  nodeName="explicitArithmetic"  name="explicitArithmetic" /> 
+    <ReportingVar  nodeName="recursiveRuleArithmetic"  name="recursiveRuleArithmetic" /> 
+    <ReportingVar  nodeName="verbalRuleArithmetic"  name="verbalRuleArithmetic" /> 
+    <ReportingVar  nodeName="explicitGeometric"  name="explicitGeometric" /> 
+    <ReportingVar  nodeName="recursiveRuleGeometric"  name="recursiveRuleGeometric" /> 
+    <ReportingVar  nodeName="verbalRuleGeometric"  name="verbalRuleGeometric" /> 
+    <ReportingVar  nodeName="explicitOtherRecursive"  name="explicitOtherRecursive" /> 
+    <ReportingVar  nodeName="recursiveRuleOtherRecursive"  name="recursiveRuleOtherRecursive" /> 
+    <ReportingVar  nodeName="verbalRuleOtherRecursive"  name="verbalRuleOtherRecursive" /> 
+    <ReportingVar  nodeName="distinguishTypes"  name="distinguishTypes" /> 
+    <ReportingVar  nodeName="IOs"  name="IOs" /> 
+    <ReportingVar  nodeName="sequences"  name="sequences" /> 
+    <ReportingVar  nodeName="sequencesHigh"  name="sequencesHigh" /> 
+    <ReportingVar  nodeName="sequencesMedium"  name="sequencesMedium" /> 
+    <ReportingVar  nodeName="solveArithmeticProblems"  name="solveArithmeticProblems" /> 
+    <ReportingVar  nodeName="solveArithmeticProblemsHigh"  name="solveArithmeticProblemsHigh" /> 
+    <ReportingVar  nodeName="solveArithmeticProblemsMedium"  name="solveArithmeticProblemsMedium" /> 
+    <ReportingVar  nodeName="solveGeometricProblems"  name="solveGeometricProblems" /> 
+    <ReportingVar  nodeName="solveGeometricProblemsHigh"  name="solveGeometricProblemsHigh" /> 
+    <ReportingVar  nodeName="solveGeometricProblemsMedium"  name="solveGeometricProblemsMedium" /> 
+    <ReportingVar  nodeName="solveOtherRecursiveProblems"  name="solveOtherRecursiveProblems" /> 
+    <ReportingVar  nodeName="solveOtherRecursiveHigh"  name="solveOtherRecursiveHigh" /> 
+    <ReportingVar  nodeName="solveOtherRecursiveMedium"  name="solveOtherRecursiveMedium" /> 
+    <ReportingVar  nodeName="solveSequenceProblems"  name="solveSequenceProblems" /> 
+    <ReportingVar  nodeName="solveSequenceProblemsHigh"  name="solveSequenceProblemsHigh" /> 
+    <ReportingVar  nodeName="solveSequenceProblemsMedium"  name="solveSequenceProblemsMedium" /> 
+  </StudentModel>
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonDifferenceTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="commonDifferenceEvidence"
+      entityref="commonDifferenceEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonDifferenceEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="examplesCommonDifferenceArithmeticEvidence"
+      entityref="examplesCommonDifferenceArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="examplesVisualArithmeticEvidence"
+      entityref="examplesVisualArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="explicitArithmeticEvidence"
+      entityref="explicitArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="explicitRecursiveRuleArithmeticEvidence"
+      entityref="explicitRecursiveRuleArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="extendArithmeticEvidence"
+      entityref="extendArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelCommonDifferenceArithmeticEvidence"
+      entityref="modelCommonDifferenceArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelExplicitVerbalRuleArithmeticEvidence"
+      entityref="modelExplicitVerbalRuleArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelExtendArithmeticEvidence"
+      entityref="modelExtendArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelExtendTableArithmeticEvidence"
+      entityref="modelExtendTableArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelVerbalRuleArithmeticEvidence"
+      entityref="modelVerbalRuleArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="recursiveRuleArithmeticEvidence"
+      entityref="recursiveRuleArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="solveArithmeticProblemsEvidence"
+      entityref="solveArithmeticProblemsEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableExtendArithmeticEvidence"
+      entityref="tableExtendArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleExamplesTableModelArithmeticEvidence"
+      entityref="verbalRuleExamplesTableModelArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleExtendArithmeticEvidence"
+      entityref="verbalRuleExtendArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleModelArithmeticEvidence"
+      entityref="verbalRuleModelArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleTableArithmeticEvidence"
+      entityref="verbalRuleTableArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleTableVisualArithmeticEvidence"
+      entityref="verbalRuleTableVisualArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleVisualArithmeticEvidence"
+      entityref="verbalRuleVisualArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualAlgebraRuleArithmeticEvidence"
+      entityref="visualAlgebraRuleArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExplicitModelArithmeticEvidence"
+      entityref="visualExplicitModelArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExtendArithmeticEvidence"
+      entityref="visualExtendArithmeticEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonDifferenceTask/commonDifferenceEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="commonDifferenceEasyLMP"
+      entityref="commonDifferenceEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonDifferenceEvidence/commonDifferenceEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonDifferenceTask/commonDifferenceHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="commonDifferenceHardLMP"
+      entityref="commonDifferenceHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonDifferenceEvidence/commonDifferenceHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/commonDifferenceTask/commonDifferenceMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="commonDifferenceMediumLMP"
+      entityref="commonDifferenceMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/commonDifferenceEvidence/commonDifferenceMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticTask/examplesCommonDifferenceArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesCommonDifferenceArithmeticEasyLMP"
+      entityref="examplesCommonDifferenceArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticEvidence/examplesCommonDifferenceArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticTask/examplesCommonDifferenceArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesCommonDifferenceArithmeticEasyLMP"
+      entityref="examplesCommonDifferenceArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticEvidence/examplesCommonDifferenceArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticTask/examplesCommonDifferenceArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesCommonDifferenceArithmeticEasyLMP"
+      entityref="examplesCommonDifferenceArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesCommonDifferenceArithmeticEvidence/examplesCommonDifferenceArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticTask/examplesVisualArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesVisualArithmeticEasyLMP"
+      entityref="examplesVisualArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticEvidence/examplesVisualArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticTask/examplesVisualArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesVisualArithmeticHardLMP"
+      entityref="examplesVisualArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticEvidence/examplesVisualArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticTask/examplesVisualArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesVisualArithmeticMediumLMP"
+      entityref="examplesVisualArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesVisualArithmeticEvidence/examplesVisualArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitArithmeticTask/explicitArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitArithmeticEasyLMP"
+      entityref="explicitArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitArithmeticEvidence/explicitArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitArithmeticTask/explicitArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitArithmeticHardLMP"
+      entityref="explicitArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitArithmeticEvidence/explicitArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitArithmeticTask/explicitArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitArithmeticMediumLMP"
+      entityref="explicitArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitArithmeticEvidence/explicitArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticTask/explicitRecursiveRuleArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitRecursiveRuleArithmeticEasyLMP"
+      entityref="explicitRecursiveRuleArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticEvidence/explicitRecursiveRuleArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticTask/explicitRecursiveRuleArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitRecursiveRuleArithmeticHardLMP"
+      entityref="explicitRecursiveRuleArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticEvidence/explicitRecursiveRuleArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticTask/explicitRecursiveRuleArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitRecursiveRuleArithmeticMediumLMP"
+      entityref="explicitRecursiveRuleArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitRecursiveRuleArithmeticEvidence/explicitRecursiveRuleArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendArithmeticTask/extendArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendArithmeticEasyLMP"
+      entityref="extendArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendArithmeticEvidence/extendArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendArithmeticTask/extendArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendArithmeticHardLMP"
+      entityref="extendArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendArithmeticEvidence/extendArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendArithmeticTask/extendArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendArithmeticMediumLMP"
+      entityref="extendArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendArithmeticEvidence/extendArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticTask/modelCommonDifferenceArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelCommonDifferenceArithmeticEasyLMP"
+      entityref="modelCommonDifferenceArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticEvidence/modelCommonDifferenceArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticTask/modelCommonDifferenceArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelCommonDifferenceArithmeticHardLMP"
+      entityref="modelCommonDifferenceArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticEvidence/modelCommonDifferenceArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticTask/modelCommonDifferenceArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelCommonDifferenceArithmeticMediumLMP"
+      entityref="modelCommonDifferenceArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelCommonDifferenceArithmeticEvidence/modelCommonDifferenceArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticTask/modelExplicitVerbalRuleArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExplicitVerbalRuleArithmeticEasyLMP"
+      entityref="modelExplicitVerbalRuleArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticEvidence/modelExplicitVerbalRuleArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticTask/modelExplicitVerbalRuleArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExplicitVerbalRuleArithmeticHardLMP"
+      entityref="modelExplicitVerbalRuleArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticEvidence/modelExplicitVerbalRuleArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticTask/modelExplicitVerbalRuleArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExplicitVerbalRuleArithmeticMediumLMP"
+      entityref="modelExplicitVerbalRuleArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExplicitVerbalRuleArithmeticEvidence/modelExplicitVerbalRuleArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticTask/modelExtendArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendArithmeticEasyLMP"
+      entityref="modelExtendArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticEvidence/modelExtendArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticTask/modelExtendArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendArithmeticHardLMP"
+      entityref="modelExtendArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticEvidence/modelExtendArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticTask/modelExtendArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendArithmeticMediumLMP"
+      entityref="modelExtendArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendArithmeticEvidence/modelExtendArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticTask/modelExtendTableArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendTableArithmeticEasyLMP"
+      entityref="modelExtendTableArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticEvidence/modelExtendTableArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticTask/modelExtendTableArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendTableArithmeticHardLMP"
+      entityref="modelExtendTableArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticEvidence/modelExtendTableArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticTask/modelExtendTableArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelExtendTableArithmeticMediumLMP"
+      entityref="modelExtendTableArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelExtendTableArithmeticEvidence/modelExtendTableArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticTask/modelVerbalRuleArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelVerbalRuleArithmeticEasyLMP"
+      entityref="modelVerbalRuleArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticEvidence/modelVerbalRuleArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticTask/modelVerbalRuleArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelVerbalRuleArithmeticHardLMP"
+      entityref="modelVerbalRuleArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticEvidence/modelVerbalRuleArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticTask/modelVerbalRuleArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelVerbalRuleArithmeticMediumLMP"
+      entityref="modelVerbalRuleArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelVerbalRuleArithmeticEvidence/modelVerbalRuleArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticTask/recursiveRuleArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleArithmeticEasyLMP"
+      entityref="recursiveRuleArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticEvidence/recursiveRuleArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticTask/recursiveRuleArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleArithmeticHardLMP"
+      entityref="recursiveRuleArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticEvidence/recursiveRuleArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticTask/recursiveRuleArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleArithmeticMediumLMP"
+      entityref="recursiveRuleArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleArithmeticEvidence/recursiveRuleArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsTask/solveArithmeticProblemsEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="solveArithmeticProblemsEasyLMP"
+      entityref="solveArithmeticProblemsEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsEvidence/solveArithmeticProblemsEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsTask/solveArithmeticProblemsHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="solveArithmeticProblemsHardLMP"
+      entityref="solveArithmeticProblemsHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsEvidence/solveArithmeticProblemsHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsTask/solveArithmeticProblemsMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="solveArithmeticProblemsMediumLMP"
+      entityref="solveArithmeticProblemsMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/solveArithmeticProblemsEvidence/solveArithmeticProblemsMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticTask/tableExtendArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendArithmeticEasyLMP"
+      entityref="tableExtendArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticEvidence/tableExtendArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticTask/tableExtendArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendArithmeticHardLMP"
+      entityref="tableExtendArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticEvidence/tableExtendArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticTask/tableExtendArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendArithmeticMediumLMP"
+      entityref="tableExtendArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendArithmeticEvidence/tableExtendArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticTask/verbalRuleExamplesTableModelArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExamplesTableModelArithmeticEasyLMP"
+      entityref="verbalRuleExamplesTableModelArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticEvidence/verbalRuleExamplesTableModelArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticTask/verbalRuleExamplesTableModelArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExamplesTableModelArithmeticHardLMP"
+      entityref="verbalRuleExamplesTableModelArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticEvidence/verbalRuleExamplesTableModelArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticTask/verbalRuleExamplesTableModelArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExamplesTableModelArithmeticMediumLMP"
+      entityref="verbalRuleExamplesTableModelArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExamplesTableModelArithmeticEvidence/verbalRuleExamplesTableModelArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticTask/verbalRuleExtendArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendArithmeticEasyLMP"
+      entityref="verbalRuleExtendArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticEvidence/verbalRuleExtendArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticTask/verbalRuleExtendArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendArithmeticHardLMP"
+      entityref="verbalRuleExtendArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticEvidence/verbalRuleExtendArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticTask/verbalRuleExtendArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendArithmeticMediumLMP"
+      entityref="verbalRuleExtendArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendArithmeticEvidence/verbalRuleExtendArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticTask/verbalRuleModelArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleModelArithmeticEasyLMP"
+      entityref="verbalRuleModelArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticEvidence/verbalRuleModelArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticTask/verbalRuleModelArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleModelArithmeticHardLMP"
+      entityref="verbalRuleModelArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticEvidence/verbalRuleModelArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticTask/verbalRuleModelArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleModelArithmeticMediumLMP"
+      entityref="verbalRuleModelArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleModelArithmeticEvidence/verbalRuleModelArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticTask/verbalRuleTableArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableArithmeticEasyLMP"
+      entityref="verbalRuleTableArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticEvidence/verbalRuleTableArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticTask/verbalRuleTableArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableArithmeticHardLMP"
+      entityref="verbalRuleTableArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticEvidence/verbalRuleTableArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticTask/verbalRuleTableArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableArithmeticMediumLMP"
+      entityref="verbalRuleTableArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableArithmeticEvidence/verbalRuleTableArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticTask/verbalRuleTableVisualArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableVisualArithmeticEasyLMP"
+      entityref="verbalRuleTableVisualArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticEvidence/verbalRuleTableVisualArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticTask/verbalRuleTableVisualArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableVisualArithmeticHardLMP"
+      entityref="verbalRuleTableVisualArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticEvidence/verbalRuleTableVisualArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticTask/verbalRuleTableVisualArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableVisualArithmeticMediumLMP"
+      entityref="verbalRuleTableVisualArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualArithmeticEvidence/verbalRuleTableVisualArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticTask/verbalRuleVisualArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleVisualArithmeticEasyLMP"
+      entityref="verbalRuleVisualArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticEvidence/verbalRuleVisualArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticTask/verbalRuleVisualArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleVisualArithmeticHardLMP"
+      entityref="verbalRuleVisualArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticEvidence/verbalRuleVisualArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticTask/verbalRuleVisualArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleVisualArithmeticMediumLMP"
+      entityref="verbalRuleVisualArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualArithmeticEvidence/verbalRuleVisualArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticTask/visualAlgebraRuleArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualAlgebraRuleArithmeticEasyLMP"
+      entityref="visualAlgebraRuleArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticEvidence/visualAlgebraRuleArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticTask/visualAlgebraRuleArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualAlgebraRuleArithmeticHardLMP"
+      entityref="visualAlgebraRuleArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticEvidence/visualAlgebraRuleArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticTask/visualAlgebraRuleArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualAlgebraRuleArithmeticMediumLMP"
+      entityref="visualAlgebraRuleArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualAlgebraRuleArithmeticEvidence/visualAlgebraRuleArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticTask/visualExplicitModelArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitModelArithmeticEasyLMP"
+      entityref="visualExplicitModelArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticEvidence/visualExplicitModelArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticTask/visualExplicitModelArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitModelArithmeticHardLMP"
+      entityref="visualExplicitModelArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticEvidence/visualExplicitModelArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticTask/visualExplicitModelArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitModelArithmeticMediumLMP"
+      entityref="visualExplicitModelArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitModelArithmeticEvidence/visualExplicitModelArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticTask/visualExtendArithmeticEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendArithmeticEasyLMP"
+      entityref="visualExtendArithmeticEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticEvidence/visualExtendArithmeticEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticTask/visualExtendArithmeticHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendArithmeticHardLMP"
+      entityref="visualExtendArithmeticHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticEvidence/visualExtendArithmeticHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticTask/visualExtendArithmeticMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendArithmeticMediumLMP"
+      entityref="visualExtendArithmeticMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendArithmeticEvidence/visualExtendArithmeticMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+
+  <!--
+  <Statistic  name="level(BasicArithmeticProblemSolvingTasks)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="commonDifference" /> 
+    <UseReportingVar  name="extendArithmetic" /> 
+    <UseReportingVar  name="tableArithmetic" /> 
+  </Statistic>
+  <Statistic  name="level(richArithmeticProblemSolvingTasks)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesArithmetic" /> 
+    <UseReportingVar  name="modelArithmetic" /> 
+    <UseReportingVar  name="visualArithmetic" /> 
+  </Statistic>
+  <Statistic  name="level(ruleInducitonArithmetic)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitArithmetic" /> 
+    <UseReportingVar  name="recursiveRuleArithmetic" /> 
+    <UseReportingVar  name="verbalRuleArithmetic" /> 
+  </Statistic>
+  -->
+
+  <Statistic  name="margin(commonDifference)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="commonDifference" /> 
+  </Statistic>
+
+  <Statistic  name="margin(distinguishTypes)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="distinguishTypes" /> 
+  </Statistic>
+  <Statistic  name="margin(examplesArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(explicitArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(extendArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="extendArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(IOs)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="IOs" /> 
+  </Statistic>
+  <Statistic  name="margin(modelArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="modelArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(recursiveRuleArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="recursiveRuleArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(sequences)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="sequences" /> 
+  </Statistic>
+
+  <Statistic  name="margin(solveArithmeticProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveArithmeticProblems" /> 
+  </Statistic>
+
+  <Statistic  name="margin(solveGeometricProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveGeometricProblems" /> 
+  </Statistic>
+
+  <Statistic  name="margin(solveOtherRecursiveProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveOtherRecursiveProblems" /> 
+  </Statistic>
+
+  <Statistic  name="margin(solveSequenceProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveSequenceProblems" /> 
+  </Statistic>
+
+  <Statistic  name="margin(tableArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="tableArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(verbalRuleArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="verbalRuleArithmetic" /> 
+  </Statistic>
+
+  <Statistic  name="margin(pictoralArithmetic)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="visualArithmetic" /> 
+  </Statistic>
+
+  
+</amdf:AssessmentModelDescription>

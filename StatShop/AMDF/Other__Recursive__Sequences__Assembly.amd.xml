@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<amdf:AssessmentModelDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://pdra.ets.org/StatShop/AssessmentDescription
+                      http://research.ets.org/~ralmond/StatShop/StatShop-xml/assessmentDescription.xsd" 
+  xmlns:amdf = "http://pdra.ets.org/StatShop/AssessmentDescription" >
+  
+    
+  <StudentModel name="THE__Understands__Sequences__as__Patterns" class="Discrete Bayes Net"
+    entityref="THE__Understands__Sequences__as__Patterns">
+    <StudentModelID>ecd://K12Math/Formative__Assessment/THE__Understands__Sequences__as__Patterns/</StudentModelID>
+    <ReportingVar  nodeName="commonDifference"  name="commonDifference" /> 
+    <ReportingVar  nodeName="extendArithmetic"  name="extendArithmetic" /> 
+    <ReportingVar  nodeName="tableArithmetic"  name="tableArithmetic" /> 
+    <ReportingVar  nodeName="commonRatio"  name="commonRatio" /> 
+    <ReportingVar  nodeName="extendGeometric"  name="extendGeometric" /> 
+    <ReportingVar  nodeName="tableGeometric"  name="tableGeometric" /> 
+    <ReportingVar  nodeName="extendOtherRecursive"  name="extendOtherRecursive" /> 
+    <ReportingVar  nodeName="tableOtherRecursive"  name="tableOtherRecursive" /> 
+    <ReportingVar  nodeName="examplesArithmetic"  name="examplesArithmetic" /> 
+    <ReportingVar  nodeName="modelArithmetic"  name="modelArithmetic" /> 
+    <ReportingVar  nodeName="visualArithmetic"  name="visualArithmetic" /> 
+    <ReportingVar  nodeName="examplesGeometric"  name="examplesGeometric" /> 
+    <ReportingVar  nodeName="modelGeometric"  name="modelGeometric" /> 
+    <ReportingVar  nodeName="visualGeometric"  name="visualGeometric" /> 
+    <ReportingVar  nodeName="examplesOtherRecursive"  name="examplesOtherRecursive" /> 
+    <ReportingVar  nodeName="modelOtherRecursive"  name="modelOtherRecursive" /> 
+    <ReportingVar  nodeName="visualOtherRecursive"  name="visualOtherRecursive" /> 
+    <ReportingVar  nodeName="explicitArithmetic"  name="explicitArithmetic" /> 
+    <ReportingVar  nodeName="recursiveRuleArithmetic"  name="recursiveRuleArithmetic" /> 
+    <ReportingVar  nodeName="verbalRuleArithmetic"  name="verbalRuleArithmetic" /> 
+    <ReportingVar  nodeName="explicitGeometric"  name="explicitGeometric" /> 
+    <ReportingVar  nodeName="recursiveRuleGeometric"  name="recursiveRuleGeometric" /> 
+    <ReportingVar  nodeName="verbalRuleGeometric"  name="verbalRuleGeometric" /> 
+    <ReportingVar  nodeName="explicitOtherRecursive"  name="explicitOtherRecursive" /> 
+    <ReportingVar  nodeName="recursiveRuleOtherRecursive"  name="recursiveRuleOtherRecursive" /> 
+    <ReportingVar  nodeName="verbalRuleOtherRecursive"  name="verbalRuleOtherRecursive" /> 
+    <ReportingVar  nodeName="distinguishTypes"  name="distinguishTypes" /> 
+    <ReportingVar  nodeName="IOs"  name="IOs" /> 
+    <ReportingVar  nodeName="sequences"  name="sequences" /> 
+    <ReportingVar  nodeName="sequencesHigh"  name="sequencesHigh" /> 
+    <ReportingVar  nodeName="sequencesMedium"  name="sequencesMedium" /> 
+    <ReportingVar  nodeName="solveArithmeticProblems"  name="solveArithmeticProblems" /> 
+    <ReportingVar  nodeName="solveArithmeticProblemsHigh"  name="solveArithmeticProblemsHigh" /> 
+    <ReportingVar  nodeName="solveArithmeticProblemsMedium"  name="solveArithmeticProblemsMedium" /> 
+    <ReportingVar  nodeName="solveGeometricProblems"  name="solveGeometricProblems" /> 
+    <ReportingVar  nodeName="solveGeometricProblemsHigh"  name="solveGeometricProblemsHigh" /> 
+    <ReportingVar  nodeName="solveGeometricProblemsMedium"  name="solveGeometricProblemsMedium" /> 
+    <ReportingVar  nodeName="solveOtherRecursiveProblems"  name="solveOtherRecursiveProblems" /> 
+    <ReportingVar  nodeName="solveOtherRecursiveHigh"  name="solveOtherRecursiveHigh" /> 
+    <ReportingVar  nodeName="solveOtherRecursiveMedium"  name="solveOtherRecursiveMedium" /> 
+    <ReportingVar  nodeName="solveSequenceProblems"  name="solveSequenceProblems" /> 
+    <ReportingVar  nodeName="solveSequenceProblemsHigh"  name="solveSequenceProblemsHigh" /> 
+    <ReportingVar  nodeName="solveSequenceProblemsMedium"  name="solveSequenceProblemsMedium" /> 
+  </StudentModel>
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="algebraRuleOtherRecursiveEvidence"
+      entityref="algebraRuleOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="examplesOtherRecursiveEvidence"
+      entityref="examplesOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="explicitOtherRecursiveEvidence"
+      entityref="explicitOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="explicitTableOtherRecursiveEvidence"
+      entityref="explicitTableOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="explicitTableVisualOtherRecursiveEvidence"
+      entityref="explicitTableVisualOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="extendExplicitTableOtherRecursiveEvidence"
+      entityref="extendExplicitTableOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="extendOtherRecursiveEvidence"
+      entityref="extendOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="modelOtherRecursiveEvidence"
+      entityref="modelOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="recursiveRuleOtherRecursiveEvidence"
+      entityref="recursiveRuleOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableExplicitOtherRecursiveEvidence"
+      entityref="tableExplicitOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableExtendModelOtherRecursiveEvidence"
+      entityref="tableExtendModelOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableExtendOtherRecursiveEvidence"
+      entityref="tableExtendOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableModelExplicitOtherRecursiveEvidence"
+      entityref="tableModelExplicitOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableOtherRecursiveEvidence"
+      entityref="tableOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="tableVisualExtendOtherRecursiveEvidence"
+      entityref="tableVisualExtendOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleExtendOtherRecursiveEvidence"
+      entityref="verbalRuleExtendOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleExtendTableOtherRecursiveEvidence"
+      entityref="verbalRuleExtendTableOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleOtherRecursiveEvidence"
+      entityref="verbalRuleOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleTableVisualOtherRecursiveEvidence"
+      entityref="verbalRuleTableVisualOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="verbalRuleVisualTableOtherRecursiveEvidence"
+      entityref="verbalRuleVisualTableOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExplicitOtherRecursiveEvidence"
+      entityref="visualExplicitOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExtendModelOtherRecursiveEvidence"
+      entityref="visualExtendModelOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualExtendOtherRecursiveEvidence"
+      entityref="visualExtendOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualOtherRecursiveEvidence"
+      entityref="visualOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <EvidenceModelSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveTask/</TaskID>
+    <EvidenceModel class="Discrete Bayes Net" name="visualTableExtendOtherRecursiveEvidence"
+      entityref="visualTableExtendOtherRecursiveEvidence">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveEvidence/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </EvidenceModel>
+  </EvidenceModelSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveTask/algebraRuleOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="algebraRuleOtherRecursiveEasyLMP"
+      entityref="algebraRuleOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveEvidence/algebraRuleOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveTask/algebraRuleOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="algebraRuleOtherRecursiveHardLMP"
+      entityref="algebraRuleOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveEvidence/algebraRuleOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveTask/algebraRuleOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="algebraRuleOtherRecursiveMediumLMP"
+      entityref="algebraRuleOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/algebraRuleOtherRecursiveEvidence/algebraRuleOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveTask/examplesOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesOtherRecursiveEasyLMP"
+      entityref="examplesOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveEvidence/examplesOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveTask/examplesOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesOtherRecursiveHardLMP"
+      entityref="examplesOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveEvidence/examplesOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveTask/examplesOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="examplesOtherRecursiveMediumLMP"
+      entityref="examplesOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/examplesOtherRecursiveEvidence/examplesOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveTask/explicitOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitOtherRecursiveEasyLMP"
+      entityref="explicitOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveEvidence/explicitOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveTask/explicitOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitOtherRecursiveHardLMP"
+      entityref="explicitOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveEvidence/explicitOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveTask/explicitOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitOtherRecursiveMediumLMP"
+      entityref="explicitOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitOtherRecursiveEvidence/explicitOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveTask/explicitTableOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitTableOtherRecursiveEasyLMP"
+      entityref="explicitTableOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveEvidence/explicitTableOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveTask/explicitTableOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitTableOtherRecursiveHardLMP"
+      entityref="explicitTableOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveEvidence/explicitTableOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveTask/explicitTableOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitTableOtherRecursiveMediumLMP"
+      entityref="explicitTableOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableOtherRecursiveEvidence/explicitTableOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveTask/explicitTableVisualOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitTableVisualOtherRecursiveEasyLMP"
+      entityref="explicitTableVisualOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveEvidence/explicitTableVisualOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveTask/explicitTableVisualOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitTableVisualOtherRecursiveHardLMP"
+      entityref="explicitTableVisualOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveEvidence/explicitTableVisualOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveTask/explicitTableVisualOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="explicitTableVisualOtherRecursiveMediumLMP"
+      entityref="explicitTableVisualOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/explicitTableVisualOtherRecursiveEvidence/explicitTableVisualOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveTask/extendExplicitTableOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendExplicitTableOtherRecursiveEasyLMP"
+      entityref="extendExplicitTableOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveEvidence/extendExplicitTableOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveTask/extendExplicitTableOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendExplicitTableOtherRecursiveHardLMP"
+      entityref="extendExplicitTableOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveEvidence/extendExplicitTableOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveTask/extendExplicitTableOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendExplicitTableOtherRecursiveMediumLMP"
+      entityref="extendExplicitTableOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendExplicitTableOtherRecursiveEvidence/extendExplicitTableOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveTask/extendOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendOtherRecursiveEasyLMP"
+      entityref="extendOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveEvidence/extendOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveTask/extendOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendOtherRecursiveHardLMP"
+      entityref="extendOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveEvidence/extendOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveTask/extendOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="extendOtherRecursiveMediumLMP"
+      entityref="extendOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/extendOtherRecursiveEvidence/extendOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveTask/modelOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelOtherRecursiveEasyLMP"
+      entityref="modelOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveEvidence/modelOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveTask/modelOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelOtherRecursiveHardLMP"
+      entityref="modelOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveEvidence/modelOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveTask/modelOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="modelOtherRecursiveMediumLMP"
+      entityref="modelOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/modelOtherRecursiveEvidence/modelOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveTask/recursiveRuleOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleOtherRecursiveEasyLMP"
+      entityref="recursiveRuleOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveEvidence/recursiveRuleOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveTask/recursiveRuleOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleOtherRecursiveHardLMP"
+      entityref="recursiveRuleOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveEvidence/recursiveRuleOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveTask/recursiveRuleOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="recursiveRuleOtherRecursiveMediumLMP"
+      entityref="recursiveRuleOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/recursiveRuleOtherRecursiveEvidence/recursiveRuleOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveTask/tableExplicitOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExplicitOtherRecursiveEasyLMP"
+      entityref="tableExplicitOtherRecursiveEasyLMP">
+    <LinkID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveEvidence/tableExplicitOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveTask/tableExplicitOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExplicitOtherRecursiveHardLMP"
+      entityref="tableExplicitOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveEvidence/tableExplicitOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveTask/tableExplicitOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExplicitOtherRecursiveMediumLMP"
+      entityref="tableExplicitOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExplicitOtherRecursiveEvidence/tableExplicitOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveTask/tableExtendModelOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendModelOtherRecursiveEasyLMP"
+      entityref="tableExtendModelOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveEvidence/tableExtendModelOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveTask/tableExtendModelOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendModelOtherRecursiveHardLMP"
+      entityref="tableExtendModelOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveEvidence/tableExtendModelOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveTask/tableExtendModelOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendModelOtherRecursiveMediumLMP"
+      entityref="tableExtendModelOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendModelOtherRecursiveEvidence/tableExtendModelOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveTask/tableExtendOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendOtherRecursiveEasyLMP"
+      entityref="tableExtendOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveEvidence/tableExtendOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveTask/tableExtendOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendOtherRecursiveHardLMP"
+      entityref="tableExtendOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveEvidence/tableExtendOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveTask/tableExtendOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableExtendOtherRecursiveMediumLMP"
+      entityref="tableExtendOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableExtendOtherRecursiveEvidence/tableExtendOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveTask/tableModelExplicitOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableModelExplicitOtherRecursiveEasyLMP"
+      entityref="tableModelExplicitOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveEvidence/tableModelExplicitOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveTask/tableModelExplicitOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableModelExplicitOtherRecursiveHardLMP"
+      entityref="tableModelExplicitOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveEvidence/tableModelExplicitOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveTask/tableModelExplicitOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableModelExplicitOtherRecursiveMediumLMP"
+      entityref="tableModelExplicitOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableModelExplicitOtherRecursiveEvidence/tableModelExplicitOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveTask/tableOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableOtherRecursiveEasyLMP"
+      entityref="tableOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveEvidence/tableOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveTask/tableOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableOtherRecursiveHardLMP"
+      entityref="tableOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveEvidence/tableOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveTask/tableOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableOtherRecursiveMediumLMP"
+      entityref="tableOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableOtherRecursiveEvidence/tableOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveTask/tableVisualExtendOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableVisualExtendOtherRecursiveEasyLMP"
+      entityref="tableVisualExtendOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveEvidence/tableVisualExtendOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveTask/tableVisualExtendOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableVisualExtendOtherRecursiveHardLMP"
+      entityref="tableVisualExtendOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveEvidence/tableVisualExtendOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveTask/tableVisualExtendOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="tableVisualExtendOtherRecursiveMediumLMP"
+      entityref="tableVisualExtendOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/tableVisualExtendOtherRecursiveEvidence/tableVisualExtendOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveTask/verbalRuleExtendOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendOtherRecursiveEasyLMP"
+      entityref="verbalRuleExtendOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveEvidence/verbalRuleExtendOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveTask/verbalRuleExtendOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendOtherRecursiveHardLMP"
+      entityref="verbalRuleExtendOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveEvidence/verbalRuleExtendOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveTask/verbalRuleExtendOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendOtherRecursiveMediumLMP"
+      entityref="verbalRuleExtendOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendOtherRecursiveEvidence/verbalRuleExtendOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveTask/verbalRuleExtendTableOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendTableOtherRecursiveEasyLMP"
+      entityref="verbalRuleExtendTableOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveEvidence/verbalRuleExtendTableOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveTask/verbalRuleExtendTableOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendTableOtherRecursiveHardLMP"
+      entityref="verbalRuleExtendTableOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveEvidence/verbalRuleExtendTableOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveTask/verbalRuleExtendTableOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleExtendTableOtherRecursiveMediumLMP"
+      entityref="verbalRuleExtendTableOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleExtendTableOtherRecursiveEvidence/verbalRuleExtendTableOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveTask/verbalRuleOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleOtherRecursiveEasyLMP"
+      entityref="verbalRuleOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveEvidence/verbalRuleOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveTask/verbalRuleOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleOtherRecursiveHardLMP"
+      entityref="verbalRuleOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveEvidence/verbalRuleOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveTask/verbalRuleOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleOtherRecursiveMediumLMP"
+      entityref="verbalRuleOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleOtherRecursiveEvidence/verbalRuleOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveTask/verbalRuleTableVisualOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableVisualOtherRecursiveEasyLMP"
+      entityref="verbalRuleTableVisualOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveEvidence/verbalRuleTableVisualOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveTask/verbalRuleTableVisualOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableVisualOtherRecursiveHardLMP"
+      entityref="verbalRuleTableVisualOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveEvidence/verbalRuleTableVisualOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveTask/verbalRuleTableVisualOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleTableVisualOtherRecursiveMediumLMP"
+      entityref="verbalRuleTableVisualOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleTableVisualOtherRecursiveEvidence/verbalRuleTableVisualOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveTask/verbalRuleVisualTableOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleVisualTableOtherRecursiveEasyLMP"
+      entityref="verbalRuleVisualTableOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveEvidence/verbalRuleVisualTableOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveTask/verbalRuleVisualTableOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleVisualTableOtherRecursiveHardLMP"
+      entityref="verbalRuleVisualTableOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveEvidence/verbalRuleVisualTableOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveTask/verbalRuleVisualTableOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="verbalRuleVisualTableOtherRecursiveMediumLMP"
+      entityref="verbalRuleVisualTableOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/verbalRuleVisualTableOtherRecursiveEvidence/verbalRuleVisualTableOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveTask/visualExplicitOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitOtherRecursiveEasyLMP"
+      entityref="visualExplicitOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveEvidence/visualExplicitOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveTask/visualExplicitOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitOtherRecursiveHardLMP"
+      entityref="visualExplicitOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveEvidence/visualExplicitOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveTask/visualExplicitOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExplicitOtherRecursiveMediumLMP"
+      entityref="visualExplicitOtherRecursiveMediumLMP">
+    <LinkID>ecd://K12Math/Formative__Assessment/visualExplicitOtherRecursiveEvidence/visualExplicitOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveTask/visualExtendModelOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendModelOtherRecursiveEasyLMP"
+      entityref="visualExtendModelOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveEvidence/visualExtendModelOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveTask/visualExtendModelOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendModelOtherRecursiveHardLMP"
+      entityref="visualExtendModelOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveEvidence/visualExtendModelOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveTask/visualExtendModelOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendModelOtherRecursiveMediumLMP"
+      entityref="visualExtendModelOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendModelOtherRecursiveEvidence/visualExtendModelOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveTask/visualExtendOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendOtherRecursiveEasyLMP"
+      entityref="visualExtendOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveEvidence/visualExtendOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveTask/visualExtendOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendOtherRecursiveHardLMP"
+      entityref="visualExtendOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveEvidence/visualExtendOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveTask/visualExtendOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualExtendOtherRecursiveMediumLMP"
+      entityref="visualExtendOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualExtendOtherRecursiveEvidence/visualExtendOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveTask/visualOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualOtherRecursiveEasyLMP"
+      entityref="visualOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveEvidence/visualOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveTask/visualOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualOtherRecursiveHardLMP"
+      entityref="visualOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveEvidence/visualOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveTask/visualOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualOtherRecursiveMediumLMP"
+      entityref="visualOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualOtherRecursiveEvidence/visualOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveTask/visualTableExtendOtherRecursiveEasy/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualTableExtendOtherRecursiveEasyLMP"
+      entityref="visualTableExtendOtherRecursiveEasyLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveEvidence/visualTableExtendOtherRecursiveEasy/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveTask/visualTableExtendOtherRecursiveHard/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualTableExtendOtherRecursiveHardLMP"
+      entityref="visualTableExtendOtherRecursiveHardLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveEvidence/visualTableExtendOtherRecursiveHard/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+    
+  <LinkModelPriorSet>
+    <TaskID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveTask/visualTableExtendOtherRecursiveMedium/</TaskID>
+    <LinkModelPrior  class="Discrete Bayes Net" name="visualTableExtendOtherRecursiveMediumLMP"
+      entityref="visualTableExtendOtherRecursiveMediumLMP">
+      <LinkID>ecd://K12Math/Formative__Assessment/visualTableExtendOtherRecursiveEvidence/visualTableExtendOtherRecursiveMedium/</LinkID>
+      <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+      <LogicalObservable name="isCorrect" nodeName="isCorrect"> 
+        <State  isTrue="true">Yes</State> 
+        <State  isTrue="false">No</State> 
+      </LogicalObservable>
+    </LinkModelPrior>
+  </LinkModelPriorSet>
+  
+  <!--
+  <Statistic  name="level(BasicOtherRecursiveProblemSolvingTasks)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="extendOtherRecursive" /> 
+    <UseReportingVar  name="tableOtherRecursive" /> 
+  </Statistic>
+  <Statistic  name="level(richOtherRecursiveProblemSolvingTasks)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesOtherRecursive" /> 
+    <UseReportingVar  name="modelOtherRecursive" /> 
+    <UseReportingVar  name="visualOtherRecursive" /> 
+  </Statistic>
+  <Statistic  name="level(ruleInductionOtherRecursive)" class="Sum at Level" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitOtherRecursive" /> 
+    <UseReportingVar  name="recursiveRuleOtherRecursive" /> 
+    <UseReportingVar  name="verbalRuleOtherRecursive" /> 
+  </Statistic>
+  -->
+  <Statistic  name="margin(distinguishTypes)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="distinguishTypes" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(examplesOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="examplesOtherRecursive" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(explicitOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="explicitOtherRecursive" /> 
+  </Statistic>
+    
+  <Statistic  name="margin(extendOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="extendOtherRecursive" /> 
+  </Statistic>
+  <Statistic  name="margin(IOs)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="IOs" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(modelOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="modelOtherRecursive" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(recursiveRuleOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="recursiveRuleOtherRecursive" /> 
+  </Statistic>
+  <Statistic  name="margin(sequences)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="sequences" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(solveArithmeticProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveArithmeticProblems" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(solveGeometricProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveGeometricProblems" /> 
+  </Statistic>
+
+  <Statistic  name="margin(solveOtherRecursiveProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveOtherRecursiveProblems" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(solveSequenceProblems)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="solveSequenceProblems" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(tableOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="tableOtherRecursive" /> 
+  </Statistic>
+  
+  <Statistic  name="margin(verbalRuleOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="verbalRuleOtherRecursive" /> 
+  </Statistic>
+
+  <Statistic  name="margin(pictoralOtherRecursive)" class="Bayes Net Margin" reportOnUpdate="Yes"> 
+    <UseStudentModel  model="THE__Understands__Sequences__as__Patterns" /> 
+    <UseReportingVar  name="visualOtherRecursive" /> 
+  </Statistic>
+  
+</amdf:AssessmentModelDescription>

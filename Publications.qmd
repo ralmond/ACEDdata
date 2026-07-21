@@ -1,8 +1,6 @@
 ---
-title="ACED Publications"
+title: "ACED Publications"
 ---
-targets=Main.HomePage,ACED.ACED,ACED.Data,ACED.Model,ACED.People,ACED.Publications
-text=----%0a[[Main/HomePage]] [[ACED/ACED]] [[ACED/Data]] [[ACED/Model]] [[ACED/People]] [[ACED/Publications]]%0a%0a
 
 Here is a listing of some publications that describe aspects of ACED. 
 

@@ -1,0 +1,1386 @@
+<?xml version="1.0"?>
+<pd:PretestDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pdra.ets.org/StatShop/result/PretestDescription http://research.ets.org/~ralmond/StatShop/StatShop-xml/PretestDescription.xsd" xmlns:pd="http://pdra.ets.org/StatShop/result/PretestDescription">
+ <AppID>ACED_Geometric</AppID>
+ <UserIDPrefix></UserIDPrefix>
+ <DemographicVariables>
+  <DemographicVariableMeta name="Alt.ID" xsi:type="pd:StringDemographicVariableMetaType" column="1" columnID="Alt.ID"/>
+  <DemographicVariableMeta name="User name" xsi:type="pd:StringDemographicVariableMetaType" column="2" columnID="User name"/>
+  <DemographicVariableMeta name="Session" xsi:type="pd:IntegerDemographicVariableMetaType" column="3" columnID="Session"/>
+  <DemographicVariableMeta name="Configuration name" xsi:type="pd:DiscreteDemographicVariableMetaType" column="4" columnID="Configuration name">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>4</Key>
+     <Value>control</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>linear_full</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>adaptive_full</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>adaptive_acc</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+  <DemographicVariableMeta name="Administration start time" xsi:type="pd:StringDemographicVariableMetaType" column="5" columnID="Administration start time"/>
+  <DemographicVariableMeta name="Administration date" xsi:type="pd:StringDemographicVariableMetaType" column="6" columnID="Administration date"/>
+  <DemographicVariableMeta name="Sequencing method" xsi:type="pd:DiscreteDemographicVariableMetaType" column="7" columnID="Sequencing method">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Adaptive</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Linear</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+  <DemographicVariableMeta name="Feedback" xsi:type="pd:DiscreteDemographicVariableMetaType" column="8" columnID="Feedback">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Accuracy</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>full</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+  <DemographicVariableMeta name="Items available" xsi:type="pd:IntegerDemographicVariableMetaType" column="9" columnID="Items available"/>
+  <DemographicVariableMeta name="Correct items" xsi:type="pd:IntegerDemographicVariableMetaType" column="10" columnID="Correct items"/>
+  <DemographicVariableMeta name="Incorrect items" xsi:type="pd:IntegerDemographicVariableMetaType" column="11" columnID="Incorrect items"/>
+  <DemographicVariableMeta name="Remaining items" xsi:type="pd:IntegerDemographicVariableMetaType" column="12" columnID="Remaining items"/>
+  <DemographicVariableMeta name="Elapsed time" xsi:type="pd:StringDemographicVariableMetaType" column="13" columnID="Elapsed time"/>
+ </DemographicVariables>
+ <Statistics>
+  <StatisticMeta name="P(solveGeometricProblems)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="14" columnID="P.solveGeometricProblems..High"/>
+   <Level name="Medium" column="15" columnID="P.solveGeometricProblems..Medium"/>
+   <Level name="Low" column="16" columnID="P.solveGeometricProblems..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(solveGeometricProblems)" xsi:type="pd:RealStatisticMetaType" column="17" columnID="EAP.solveGeometricProblems."/>
+  <StatisticMeta name="MAP(solveGeometricProblems)" xsi:type="pd:DiscreteStatisticMetaType" column="18" columnID="MAP.solveGeometricProblems.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(algebraRuleGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="19" columnID="P.algebraRuleGeometric..High"/>
+   <Level name="Medium" column="20" columnID="P.algebraRuleGeometric..Medium"/>
+   <Level name="Low" column="21" columnID="P.algebraRuleGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(algebraRuleGeometric)" xsi:type="pd:RealStatisticMetaType" column="22" columnID="EAP.algebraRuleGeometric."/>
+  <StatisticMeta name="MAP(algebraRuleGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="23" columnID="MAP.algebraRuleGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(commonRatio)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="24" columnID="P.commonRatio..High"/>
+   <Level name="Medium" column="25" columnID="P.commonRatio..Medium"/>
+   <Level name="Low" column="26" columnID="P.commonRatio..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(commonRatio)" xsi:type="pd:RealStatisticMetaType" column="27" columnID="EAP.commonRatio."/>
+  <StatisticMeta name="MAP(commonRatio)" xsi:type="pd:DiscreteStatisticMetaType" column="28" columnID="MAP.commonRatio.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(distinguishTypes)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="29" columnID="P.distinguishTypes..High"/>
+   <Level name="Medium" column="30" columnID="P.distinguishTypes..Medium"/>
+   <Level name="Low" column="31" columnID="P.distinguishTypes..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(distinguishTypes)" xsi:type="pd:RealStatisticMetaType" column="32" columnID="EAP.distinguishTypes."/>
+  <StatisticMeta name="MAP(distinguishTypes)" xsi:type="pd:DiscreteStatisticMetaType" column="33" columnID="MAP.distinguishTypes.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(examplesGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="34" columnID="P.examplesGeometric..High"/>
+   <Level name="Medium" column="35" columnID="P.examplesGeometric..Medium"/>
+   <Level name="Low" column="36" columnID="P.examplesGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(examplesGeometric)" xsi:type="pd:RealStatisticMetaType" column="37" columnID="EAP.examplesGeometric."/>
+  <StatisticMeta name="MAP(examplesGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="38" columnID="MAP.examplesGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(explicitGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="39" columnID="P.explicitGeometric..High"/>
+   <Level name="Medium" column="40" columnID="P.explicitGeometric..Medium"/>
+   <Level name="Low" column="41" columnID="P.explicitGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(explicitGeometric)" xsi:type="pd:RealStatisticMetaType" column="42" columnID="EAP.explicitGeometric."/>
+  <StatisticMeta name="MAP(explicitGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="43" columnID="MAP.explicitGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(extendGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="44" columnID="P.extendGeometric..High"/>
+   <Level name="Medium" column="45" columnID="P.extendGeometric..Medium"/>
+   <Level name="Low" column="46" columnID="P.extendGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(extendGeometric)" xsi:type="pd:RealStatisticMetaType" column="47" columnID="EAP.extendGeometric."/>
+  <StatisticMeta name="MAP(extendGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="48" columnID="MAP.extendGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(induceRulesGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="49" columnID="P.induceRulesGeometric..High"/>
+   <Level name="Medium" column="50" columnID="P.induceRulesGeometric..Medium"/>
+   <Level name="Low" column="51" columnID="P.induceRulesGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(induceRulesGeometric)" xsi:type="pd:RealStatisticMetaType" column="52" columnID="EAP.induceRulesGeometric."/>
+  <StatisticMeta name="MAP(induceRulesGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="53" columnID="MAP.induceRulesGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(modelGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="54" columnID="P.modelGeometric..High"/>
+   <Level name="Medium" column="55" columnID="P.modelGeometric..Medium"/>
+   <Level name="Low" column="56" columnID="P.modelGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(modelGeometric)" xsi:type="pd:RealStatisticMetaType" column="57" columnID="EAP.modelGeometric."/>
+  <StatisticMeta name="MAP(modelGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="58" columnID="MAP.modelGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(recursiveRuleGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="59" columnID="P.recursiveRuleGeometric..High"/>
+   <Level name="Medium" column="60" columnID="P.recursiveRuleGeometric..Medium"/>
+   <Level name="Low" column="61" columnID="P.recursiveRuleGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(recursiveRuleGeometric)" xsi:type="pd:RealStatisticMetaType" column="62" columnID="EAP.recursiveRuleGeometric."/>
+  <StatisticMeta name="MAP(recursiveRuleGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="63" columnID="MAP.recursiveRuleGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(tableGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="64" columnID="P.tableGeometric..High"/>
+   <Level name="Medium" column="65" columnID="P.tableGeometric..Medium"/>
+   <Level name="Low" column="66" columnID="P.tableGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(tableGeometric)" xsi:type="pd:RealStatisticMetaType" column="67" columnID="EAP.tableGeometric."/>
+  <StatisticMeta name="MAP(tableGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="68" columnID="MAP.tableGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(verbalRuleGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="69" columnID="P.verbalRuleGeometric..High"/>
+   <Level name="Medium" column="70" columnID="P.verbalRuleGeometric..Medium"/>
+   <Level name="Low" column="71" columnID="P.verbalRuleGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(verbalRuleGeometric)" xsi:type="pd:RealStatisticMetaType" column="72" columnID="EAP.verbalRuleGeometric."/>
+  <StatisticMeta name="MAP(verbalRuleGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="73" columnID="MAP.verbalRuleGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(pictoralGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="74" columnID="P.pictoralGeometric..High"/>
+   <Level name="Medium" column="75" columnID="P.pictoralGeometric..Medium"/>
+   <Level name="Low" column="76" columnID="P.pictoralGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(pictoralGeometric)" xsi:type="pd:RealStatisticMetaType" column="77" columnID="EAP.pictoralGeometric."/>
+  <StatisticMeta name="MAP(pictoralGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="78" columnID="MAP.pictoralGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+ </Statistics>
+ <Tasks>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1a.1</TaskID>
+   <Observation name="isCorrect" column="79" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1b.1</TaskID>
+   <Observation name="isCorrect" column="80" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3a.1</TaskID>
+   <Observation name="isCorrect" column="81" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3b.1</TaskID>
+   <Observation name="isCorrect" column="82" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/tCommonRatio2a.1</TaskID>
+   <Observation name="isCorrect" column="83" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/tCommonRatio2b.1</TaskID>
+   <Observation name="isCorrect" column="84" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="85" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="86" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="87" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="88" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="89" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="90" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="91" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="92" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="93" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="94" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="95" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="96" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="97" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="98" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1c.1</TaskID>
+   <Observation name="isCorrect" column="99" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1d.1</TaskID>
+   <Observation name="isCorrect" column="100" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="101" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="102" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="103" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="104" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2c.1</TaskID>
+   <Observation name="isCorrect" column="105" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="106" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="107" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/tModelExtendTableGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="108" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/tModelExtendTableGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="109" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="110" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="111" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="112" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="113" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/tRecursiveRuleGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="114" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/tRecursiveRuleGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="115" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="116" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="117" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1a.1</TaskID>
+   <Observation name="isCorrect" column="118" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1b.1</TaskID>
+   <Observation name="isCorrect" column="119" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/tSolveGeometricProblems3a.1</TaskID>
+   <Observation name="isCorrect" column="120" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/tSolveGeometricProblems3b.1</TaskID>
+   <Observation name="isCorrect" column="121" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2a.1</TaskID>
+   <Observation name="isCorrect" column="122" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2b.1</TaskID>
+   <Observation name="isCorrect" column="123" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2c.1</TaskID>
+   <Observation name="isCorrect" column="124" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricEasy/tTableExtendGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="125" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricEasy/tTableExtendGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="126" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="127" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="128" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="129" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="130" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricHard/tVerbalRuleExplicitModelGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="131" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="132" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="133" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="134" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricMedium/tVerbalRuleExtendModelGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="135" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/verbalRuleModelGeometricHard/tVerbalRuleModelGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="136" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="137" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="138" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1a.1</TaskID>
+   <Observation name="isCorrect" column="139" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1b.1</TaskID>
+   <Observation name="isCorrect" column="140" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1c.1</TaskID>
+   <Observation name="isCorrect" column="141" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3a.1</TaskID>
+   <Observation name="isCorrect" column="142" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1</TaskID>
+   <Observation name="isCorrect" column="143" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="144" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2b.1</TaskID>
+   <Observation name="isCorrect" column="145" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricMedium/tVisualExtendTableModelVerbalRuleGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="146" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+  <Task>
+   <TaskID>ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/visualExtendVerbalRuleModelGeometricMedium/tVisualExtendVerbalRuleModelGeometric2a.1</TaskID>
+   <Observation name="isCorrect" column="147" columnID="isCorrect">
+    <TranslationTable>
+     <KeyValuePair>
+      <Key>2</Key>
+      <Value>Yes</Value>
+     </KeyValuePair>
+     <KeyValuePair>
+      <Key>1</Key>
+      <Value>No</Value>
+     </KeyValuePair>
+    </TranslationTable>
+   </Observation>
+  </Task>
+ </Tasks>
+</pd:PretestDescription>

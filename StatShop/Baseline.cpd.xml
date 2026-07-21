@@ -1,0 +1,24 @@
+<?xml  version="1.0" standalone="no" ?>
+
+<CalibrationData date="3/29/05 1:35 PM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pdra.ets.org/StatShop/CalibrationData http://research.ets.org/~ralmond/StatShop/StatShop-xml/CalibrationData.xsd" xmlns="http://pdra.ets.org/StatShop/CalibrationData">
+<ExamineeResult xmlns=""  uID="Zero Basso" appID="Simulation">
+<Statistic name="margin(verbalRuleGeometric)">[High:0.111,Medium:0.206,Low:0.683]</Statistic>
+<Statistic name="margin(commonRatio)">[High:0.749,Medium:0.22,Low:0.03]</Statistic>
+<Statistic name="margin(pictoralGeometric)">[High:0.236,Medium:0.263,Low:0.501]</Statistic>
+<Statistic name="margin(sequences)">[High:0.2,Medium:0.5,Low:0.3]</Statistic>
+<Statistic name="margin(modelGeometric)">[High:0.062,Medium:0.142,Low:0.797]</Statistic>
+<Statistic name="margin(solveSequenceProblems)">[High:0.284,Medium:0.352,Low:0.364]</Statistic>
+<Statistic name="margin(explicitGeometric)">[High:0.006,Medium:0.034,Low:0.96]</Statistic>
+<Statistic name="margin(solveArithmeticProblems)">[High:0.668,Medium:0.279,Low:0.053]</Statistic>
+<Statistic name="margin(recursiveRuleGeometric)">[High:0.226,Medium:0.419,Low:0.355]</Statistic>
+<Statistic name="margin(solveGeometricProblems)">[High:0.183,Medium:0.26,Low:0.557]</Statistic>
+<Statistic name="margin(distinguishTypes)">[High:0.168,Medium:0.268,Low:0.564]</Statistic>
+<Statistic name="margin(IOs)">[High:0.898,Medium:0.08,Low:0.022]</Statistic>
+<Statistic name="margin(tableGeometric)">[High:0.255,Medium:0.25,Low:0.495]</Statistic>
+<Statistic name="margin(algebraRuleGeometric)">[High:0.016,Medium:0.064,Low:0.92]</Statistic>
+<Statistic name="margin(induceRulesGeometric)">[High:0.093,Medium:0.172,Low:0.736]</Statistic>
+<Statistic name="margin(examplesGeometric)">[High:0.131,Medium:0.203,Low:0.665]</Statistic>
+<Statistic name="margin(extendGeometric)">[High:0.749,Medium:0.22,Low:0.03]</Statistic>
+<Statistic name="margin(solveOtherRecursiveProblems)">[High:0.183,Medium:0.26,Low:0.557]</Statistic>
+</ExamineeResult>
+</CalibrationData>

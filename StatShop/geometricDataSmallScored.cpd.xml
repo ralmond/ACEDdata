@@ -1,0 +1,1834 @@
+<?xml  version="1.0" standalone="no" ?>
+
+<CalibrationData date="7/11/05 2:57 PM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pdra.ets.org/StatShop/CalibrationData http://research.ets.org/~ralmond/StatShop/StatShop-xml/CalibrationData.xsd" xmlns="http://pdra.ets.org/StatShop/CalibrationData">
+<ExamineeResult xmlns=""  uID="Simulee0" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">High</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1d.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricEasy/tTableExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricMedium/tVerbalRuleExtendModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricHard/tVerbalRuleExplicitModelGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.12,Medium:0.242,Low:0.637]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.529</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.875</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.925</Statistic>
+<Statistic name="MAP(tableGeometric)">Low</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">1.391</Statistic>
+<Statistic name="EAP(modelGeometric)">1.946</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.991</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.938</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.585</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.1,Medium:0.215,Low:0.685]</Statistic>
+<Statistic name="P(IOs)">[High:0.885,Medium:0.089,Low:0.026]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.373</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.237,Medium:0.342,Low:0.421]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.545,Medium:0.381,Low:0.074]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.009,Medium:0.172,Low:0.818]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.188</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.646,Medium:0.335,Low:0.019]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.067,Medium:0.262,Low:0.671]</Statistic>
+<Statistic name="EAP(tableGeometric)">1.184</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.001,Medium:0.014,Low:0.985]</Statistic>
+<Statistic name="EAP(sequences)">1.291</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Low</Statistic>
+<Statistic name="P(sequences)">[High:0.109,Medium:0.491,Low:0.4]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.604</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.006,Medium:0.064,Low:0.93]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.141</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.19,Medium:0.433,Low:0.378]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.639,Medium:0.316,Low:0.044]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.517</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.005,Medium:0.045,Low:0.95]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.121,Medium:0.366,Low:0.513]</Statistic>
+<Statistic name="EAP(commonRatio)">0.405</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Low</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0,Medium:0.009,Low:0.991]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.004,Medium:0.055,Low:0.942]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.984</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.009,Medium:0.107,Low:0.884]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.809</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee1" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">High</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/visualExtendVerbalRuleModelGeometricMedium/tVisualExtendVerbalRuleModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/tSolveGeometricProblems3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1d.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.237,Medium:0.307,Low:0.455]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.168</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.123</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.2</Statistic>
+<Statistic name="MAP(tableGeometric)">High</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">0.619</Statistic>
+<Statistic name="EAP(modelGeometric)">1.333</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.941</Statistic>
+<Statistic name="MAP(pictoralGeometric)">High</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.151</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.063</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.304,Medium:0.329,Low:0.367]</Statistic>
+<Statistic name="P(IOs)">[High:0.916,Medium:0.067,Low:0.017]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.017</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.56,Medium:0.272,Low:0.169]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.852,Medium:0.127,Low:0.021]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.423,Medium:0.417,Low:0.16]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">0.899</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.983,Medium:0.016,Low:0]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.513,Medium:0.353,Low:0.134]</Statistic>
+<Statistic name="EAP(tableGeometric)">0.609</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.036,Medium:0.156,Low:0.808]</Statistic>
+<Statistic name="EAP(sequences)">0.817</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">High</Statistic>
+<Statistic name="P(sequences)">[High:0.334,Medium:0.516,Low:0.15]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">0.622</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.243,Medium:0.314,Low:0.443]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.101</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.339,Medium:0.422,Low:0.238]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.954,Medium:0.044,Low:0.002]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.218</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.182,Medium:0.304,Low:0.514]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.521,Medium:0.338,Low:0.14]</Statistic>
+<Statistic name="EAP(commonRatio)">0.047</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">High</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.006,Medium:0.047,Low:0.947]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.272,Medium:0.306,Low:0.422]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.772</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.285,Medium:0.307,Low:0.408]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">0.737</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee2" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Low</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricMedium/tVerbalRuleExtendModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/tCommonRatio2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.156,Medium:0.265,Low:0.579]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.402</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.554</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.706</Statistic>
+<Statistic name="MAP(tableGeometric)">Low</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">1.145</Statistic>
+<Statistic name="EAP(modelGeometric)">1.857</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.982</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.634</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.424</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.16,Medium:0.256,Low:0.584]</Statistic>
+<Statistic name="P(IOs)">[High:0.896,Medium:0.081,Low:0.023]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.196</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.091,Medium:0.234,Low:0.674]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.653,Medium:0.292,Low:0.055]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.061,Medium:0.376,Low:0.563]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.555</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.809,Medium:0.185,Low:0.006]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.027,Medium:0.162,Low:0.81]</Statistic>
+<Statistic name="EAP(tableGeometric)">1.583</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.002,Medium:0.026,Low:0.972]</Statistic>
+<Statistic name="EAP(sequences)">1.14</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Low</Statistic>
+<Statistic name="P(sequences)">[High:0.175,Medium:0.511,Low:0.314]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.783</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.047,Medium:0.2,Low:0.753]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.128</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.053,Medium:0.339,Low:0.608]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.803,Medium:0.183,Low:0.014]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.424</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.017,Medium:0.109,Low:0.874]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.233,Medium:0.389,Low:0.378]</Statistic>
+<Statistic name="EAP(commonRatio)">0.21</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Medium</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.001,Medium:0.016,Low:0.983]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.083,Medium:0.201,Low:0.717]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.969</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.081,Medium:0.283,Low:0.635]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.502</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Low</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee3" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Low</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/tRecursiveRuleGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.27,Medium:0.323,Low:0.407]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.088</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.121</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.114</Statistic>
+<Statistic name="MAP(tableGeometric)">High</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">0.416</Statistic>
+<Statistic name="EAP(modelGeometric)">1.294</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.886</Statistic>
+<Statistic name="MAP(pictoralGeometric)">High</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.033</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">0.918</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.364,Medium:0.354,Low:0.282]</Statistic>
+<Statistic name="P(IOs)">[High:0.923,Medium:0.061,Low:0.015]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.012</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.592,Medium:0.255,Low:0.154]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.922,Medium:0.069,Low:0.009]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.628,Medium:0.331,Low:0.04]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">High</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">0.774</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.988,Medium:0.012,Low:0]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.655,Medium:0.259,Low:0.086]</Statistic>
+<Statistic name="EAP(tableGeometric)">0.562</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.057,Medium:0.184,Low:0.759]</Statistic>
+<Statistic name="EAP(sequences)">0.692</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">High</Statistic>
+<Statistic name="P(sequences)">[High:0.4,Medium:0.508,Low:0.092]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">0.431</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.275,Medium:0.335,Low:0.389]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Medium</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.092</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.39,Medium:0.445,Low:0.164]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.991,Medium:0.009,Low:0]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.137</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.182,Medium:0.342,Low:0.476]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.645,Medium:0.293,Low:0.061]</Statistic>
+<Statistic name="EAP(commonRatio)">0.009</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">High</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.017,Medium:0.08,Low:0.903]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.289,Medium:0.389,Low:0.322]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.703</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.289,Medium:0.302,Low:0.409]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">0.412</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee4" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Medium</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.203,Medium:0.29,Low:0.506]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.259</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.459</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.512</Statistic>
+<Statistic name="MAP(tableGeometric)">High</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">0.835</Statistic>
+<Statistic name="EAP(modelGeometric)">1.566</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.942</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.601</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.214</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.243,Medium:0.301,Low:0.456]</Statistic>
+<Statistic name="P(IOs)">[High:0.908,Medium:0.073,Low:0.02]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.057</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.547,Medium:0.281,Low:0.172]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.775,Medium:0.192,Low:0.034]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.24,Medium:0.453,Low:0.306]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">0.958</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.943,Medium:0.056,Low:0.001]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.194,Medium:0.3,Low:0.506]</Statistic>
+<Statistic name="EAP(tableGeometric)">0.624</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.022,Medium:0.095,Low:0.883]</Statistic>
+<Statistic name="EAP(sequences)">0.949</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Medium</Statistic>
+<Statistic name="P(sequences)">[High:0.266,Medium:0.519,Low:0.215]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.312</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.121,Medium:0.246,Low:0.633]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.112</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.3,Medium:0.442,Low:0.258]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.851,Medium:0.132,Low:0.017]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.303</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.098,Medium:0.237,Low:0.665]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.396,Medium:0.372,Low:0.231]</Statistic>
+<Statistic name="EAP(commonRatio)">0.166</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">High</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.005,Medium:0.047,Low:0.948]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.078,Medium:0.243,Low:0.679]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.86</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.139,Medium:0.264,Low:0.598]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.066</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee5" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">High</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/verbalRuleModelGeometricHard/tVerbalRuleModelGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/tModelExtendTableGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/tRecursiveRuleGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricMedium/tVisualExtendTableModelVerbalRuleGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.102,Medium:0.23,Low:0.668]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.599</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.881</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.952</Statistic>
+<Statistic name="MAP(tableGeometric)">Low</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">1.521</Statistic>
+<Statistic name="EAP(modelGeometric)">1.989</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.989</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.917</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.668</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.07,Medium:0.192,Low:0.738]</Statistic>
+<Statistic name="P(IOs)">[High:0.88,Medium:0.093,Low:0.028]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.685</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.024,Medium:0.145,Low:0.832]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.486,Medium:0.429,Low:0.085]</Statistic>
+<Statistic name="MAP(extendGeometric)">Medium</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0,Medium:0.037,Low:0.963]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.318</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.406,Medium:0.504,Low:0.09]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.014,Medium:0.143,Low:0.843]</Statistic>
+<Statistic name="EAP(tableGeometric)">1.808</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0,Medium:0.009,Low:0.991]</Statistic>
+<Statistic name="EAP(sequences)">1.371</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Low</Statistic>
+<Statistic name="P(sequences)">[High:0.076,Medium:0.478,Low:0.446]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.829</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.002,Medium:0.043,Low:0.955]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.148</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.128,Medium:0.426,Low:0.446]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.595,Medium:0.375,Low:0.031]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.566</Statistic>
+<Statistic name="P(modelGeometric)">[High:0,Medium:0.011,Low:0.989]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.066,Medium:0.346,Low:0.587]</Statistic>
+<Statistic name="EAP(commonRatio)">0.436</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Low</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0,Medium:0.01,Low:0.989]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.006,Medium:0.072,Low:0.922]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.99</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.006,Medium:0.107,Low:0.887]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.963</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Low</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee6" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Medium</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricMedium/tVisualExtendTableModelVerbalRuleGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.157,Medium:0.264,Low:0.579]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.403</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.599</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.708</Statistic>
+<Statistic name="MAP(tableGeometric)">Low</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">1.142</Statistic>
+<Statistic name="EAP(modelGeometric)">1.878</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.979</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Medium</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.535</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.421</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.162,Medium:0.255,Low:0.583]</Statistic>
+<Statistic name="P(IOs)">[High:0.896,Medium:0.081,Low:0.023]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.071</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.242,Medium:0.316,Low:0.442]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.652,Medium:0.293,Low:0.055]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.081,Medium:0.349,Low:0.571]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.24</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.93,Medium:0.069,Low:0.001]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.236,Medium:0.396,Low:0.368]</Statistic>
+<Statistic name="EAP(tableGeometric)">1.2</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.006,Medium:0.043,Low:0.951]</Statistic>
+<Statistic name="EAP(sequences)">1.138</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Low</Statistic>
+<Statistic name="P(sequences)">[High:0.177,Medium:0.508,Low:0.315]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.132</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.059,Medium:0.173,Low:0.767]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.128</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.152,Medium:0.456,Low:0.392]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.74,Medium:0.229,Low:0.031]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.422</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.016,Medium:0.091,Low:0.894]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.238,Medium:0.381,Low:0.38]</Statistic>
+<Statistic name="EAP(commonRatio)">0.291</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Medium</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.001,Medium:0.019,Low:0.98]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.115,Medium:0.236,Low:0.649]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.944</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.087,Medium:0.227,Low:0.686]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.49</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee7" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Medium</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/tSolveGeometricProblems3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.118,Medium:0.241,Low:0.641]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.538</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.791</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.884</Statistic>
+<Statistic name="MAP(tableGeometric)">Low</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">1.407</Statistic>
+<Statistic name="EAP(modelGeometric)">1.913</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.99</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.808</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.595</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.097,Medium:0.212,Low:0.692]</Statistic>
+<Statistic name="P(IOs)">[High:0.885,Medium:0.089,Low:0.026]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.132</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.08,Medium:0.237,Low:0.683]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.538,Medium:0.387,Low:0.075]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.007,Medium:0.158,Low:0.835]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.032</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.87,Medium:0.127,Low:0.003]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.096,Medium:0.278,Low:0.626]</Statistic>
+<Statistic name="EAP(tableGeometric)">1.603</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.002,Medium:0.024,Low:0.974]</Statistic>
+<Statistic name="EAP(sequences)">1.301</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Low</Statistic>
+<Statistic name="P(sequences)">[High:0.105,Medium:0.49,Low:0.406]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.53</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.015,Medium:0.086,Low:0.899]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.142</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.25,Medium:0.467,Low:0.282]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.466,Medium:0.444,Low:0.089]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.523</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.01,Medium:0.067,Low:0.923]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.115,Medium:0.364,Low:0.522]</Statistic>
+<Statistic name="EAP(commonRatio)">0.623</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Low</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0,Medium:0.009,Low:0.99]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.03,Medium:0.131,Low:0.839]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.972</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.027,Medium:0.155,Low:0.818]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.828</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee8" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Low</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricHard/tVerbalRuleExplicitModelGeometric3a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/tModelExtendTableGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/tCommonRatio2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1c.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.176,Medium:0.276,Low:0.548]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.339</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.679</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.723</Statistic>
+<Statistic name="MAP(tableGeometric)">High</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">1.013</Statistic>
+<Statistic name="EAP(modelGeometric)">1.868</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.979</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.271</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.336</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.194,Medium:0.276,Low:0.53]</Statistic>
+<Statistic name="P(IOs)">[High:0.901,Medium:0.078,Low:0.022]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.168</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.371,Medium:0.337,Low:0.292]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.707,Medium:0.248,Low:0.045]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.121,Medium:0.434,Low:0.445]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.156</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.838,Medium:0.156,Low:0.006]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.023,Medium:0.165,Low:0.812]</Statistic>
+<Statistic name="EAP(tableGeometric)">0.921</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.006,Medium:0.045,Low:0.949]</Statistic>
+<Statistic name="EAP(sequences)">1.059</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Low</Statistic>
+<Statistic name="P(sequences)">[High:0.212,Medium:0.517,Low:0.271]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.788</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.05,Medium:0.177,Low:0.773]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.121</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.209,Medium:0.426,Low:0.365]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.707,Medium:0.247,Low:0.046]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.373</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.012,Medium:0.109,Low:0.88]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.299,Medium:0.388,Low:0.312]</Statistic>
+<Statistic name="EAP(commonRatio)">0.339</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Medium</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.001,Medium:0.019,Low:0.98]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.218,Medium:0.292,Low:0.49]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.943</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.061,Medium:0.199,Low:0.74]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.323</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Medium</Statistic>
+</ExamineeResult>
+<ExamineeResult xmlns=""  uID="Simulee9" appID="Simulation">
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.functionTables">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonDifference">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.commonRatio">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.induceRulesGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequences">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.reviewMaterial">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblems">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.sequencesHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.IOs">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.distinguishTypes">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.explicitArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveOtherRecursiveHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveSequenceProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.verbalRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.visualOtherRecursive">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.examplesArithmetic">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelGeometric">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleGeometric">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recognizeSequences">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.extendGeometric">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsHigh">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.algebraRuleArithmetic">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblems">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.tableArithmetic">High</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelOtherRecursive">Medium</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveGeometricProblemsHigh">No</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.recursiveRuleOtherRecursive">Low</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.solveArithmeticProblemsMedium">Yes</DemographicVariable>
+<DemographicVariable xmlns=""  name="THE__Understands__Sequences__as__Patterns.modelArithmetic">Medium</DemographicVariable>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2a.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">No</Observation>
+</TaskResult>
+<TaskResult xmlns="" >
+<TaskID xmlns="" >ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1b.1</TaskID>
+<Status xmlns="" >Valid</Status>
+<Observation xmlns="" name="isCorrect">Yes</Observation>
+</TaskResult>
+<Statistic name="MAP(verbalRuleGeometric)">Low</Statistic>
+<Statistic name="P(distinguishTypes)">[High:0.184,Medium:0.28,Low:0.536]</Statistic>
+<Statistic name="EAP(solveArithmeticProblems)">0.316</Statistic>
+<Statistic name="EAP(verbalRuleGeometric)">1.559</Statistic>
+<Statistic name="EAP(induceRulesGeometric)">1.628</Statistic>
+<Statistic name="MAP(tableGeometric)">High</Statistic>
+<Statistic name="EAP(solveSequenceProblems)">0.962</Statistic>
+<Statistic name="EAP(modelGeometric)">1.678</Statistic>
+<Statistic name="EAP(explicitGeometric)">1.958</Statistic>
+<Statistic name="MAP(pictoralGeometric)">Low</Statistic>
+<Statistic name="EAP(examplesGeometric)">1.678</Statistic>
+<Statistic name="EAP(solveOtherRecursiveProblems)">1.3</Statistic>
+<Statistic name="P(solveOtherRecursiveProblems)">[High:0.209,Medium:0.283,Low:0.509]</Statistic>
+<Statistic name="P(IOs)">[High:0.903,Medium:0.076,Low:0.021]</Statistic>
+<Statistic name="EAP(extendGeometric)">0.155</Statistic>
+<Statistic name="MAP(distinguishTypes)">Low</Statistic>
+<Statistic name="P(tableGeometric)">[High:0.405,Medium:0.312,Low:0.282]</Statistic>
+<Statistic name="P(solveArithmeticProblems)">[High:0.726,Medium:0.232,Low:0.042]</Statistic>
+<Statistic name="MAP(extendGeometric)">High</Statistic>
+<Statistic name="P(solveGeometricProblems)">[High:0.162,Medium:0.43,Low:0.408]</Statistic>
+<Statistic name="MAP(solveOtherRecursiveProblems)">Low</Statistic>
+<Statistic name="MAP(sequences)">Medium</Statistic>
+<Statistic name="EAP(recursiveRuleGeometric)">1.322</Statistic>
+<Statistic name="MAP(IOs)">High</Statistic>
+<Statistic name="P(extendGeometric)">[High:0.853,Medium:0.139,Low:0.008]</Statistic>
+<Statistic name="P(pictoralGeometric)">[High:0.094,Medium:0.264,Low:0.642]</Statistic>
+<Statistic name="EAP(tableGeometric)">0.877</Statistic>
+<Statistic name="P(algebraRuleGeometric)">[High:0.011,Medium:0.052,Low:0.937]</Statistic>
+<Statistic name="EAP(sequences)">1.027</Statistic>
+<Statistic name="MAP(solveArithmeticProblems)">High</Statistic>
+<Statistic name="MAP(commonRatio)">High</Statistic>
+<Statistic name="MAP(solveGeometricProblems)">Medium</Statistic>
+<Statistic name="P(sequences)">[High:0.228,Medium:0.517,Low:0.255]</Statistic>
+<Statistic name="EAP(pictoralGeometric)">1.549</Statistic>
+<Statistic name="P(induceRulesGeometric)">[High:0.084,Medium:0.204,Low:0.712]</Statistic>
+<Statistic name="MAP(explicitGeometric)">Low</Statistic>
+<Statistic name="MAP(modelGeometric)">Low</Statistic>
+<Statistic name="MAP(examplesGeometric)">Low</Statistic>
+<Statistic name="MAP(algebraRuleGeometric)">Low</Statistic>
+<Statistic name="EAP(IOs)">0.118</Statistic>
+<Statistic name="P(recursiveRuleGeometric)">[High:0.129,Medium:0.42,Low:0.451]</Statistic>
+<Statistic name="P(commonRatio)">[High:0.813,Medium:0.174,Low:0.013]</Statistic>
+<Statistic name="EAP(distinguishTypes)">1.352</Statistic>
+<Statistic name="P(modelGeometric)">[High:0.071,Medium:0.181,Low:0.748]</Statistic>
+<Statistic name="P(solveSequenceProblems)">[High:0.329,Medium:0.381,Low:0.29]</Statistic>
+<Statistic name="EAP(commonRatio)">0.2</Statistic>
+<Statistic name="MAP(solveSequenceProblems)">Medium</Statistic>
+<Statistic name="MAP(induceRulesGeometric)">Low</Statistic>
+<Statistic name="P(explicitGeometric)">[High:0.004,Medium:0.034,Low:0.962]</Statistic>
+<Statistic name="P(examplesGeometric)">[High:0.057,Medium:0.207,Low:0.736]</Statistic>
+<Statistic name="EAP(algebraRuleGeometric)">1.926</Statistic>
+<Statistic name="P(verbalRuleGeometric)">[High:0.108,Medium:0.225,Low:0.667]</Statistic>
+<Statistic name="EAP(solveGeometricProblems)">1.246</Statistic>
+<Statistic name="MAP(recursiveRuleGeometric)">Low</Statistic>
+</ExamineeResult>
+</CalibrationData>

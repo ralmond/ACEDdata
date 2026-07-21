@@ -1,0 +1,983 @@
+<html><head><title>Data Dictionary for ACED-Geometric</title></head><body>
+Data Dictionary for the
+file <a href="ACED-Geometric.csv">ACED-Geometric.csv</a>.  
+Also, <a href="#pre-post">Data Dictionary</a> for the
+file <a href="ACED-pre-post.csv">ACED-pre-post.csv</a>.
+<p>
+These data may be freely used for research purposes as long as the
+following conditions are met:
+<ol>
+<li>You cite one of the ACED papers listed on 
+  <a href="http://ecd.ralmond.net/ecdwiki/ACED/Publications">ACED/Publications</a>.
+<li>You acknowledge the <a href="#support">support from the National
+    Science Foundation</a>.
+<li>You send a copy of the paper
+  to <a href="mailto:vshute@fsu.edu">Val Shute</a> and 
+    <a href="mailto:almond@acm.org">Russell Almond</a>.  (We will also
+    happily list your paper on the 
+  <a href="http://ecd.ralmond.net/ecdwiki/ACED/Publications">ACED/Publications</a> page.)
+</ol>
+
+<h1>Data Dictionary for ACED-Geometric</h1>
+
+
+<h2>Demographic Variables</h2>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Name</th><th>Type</th><th>Coding</th></tr>
+  <tr>
+    <th>0</th><th>0</th><th>ID</th><th>String</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>1</th><th>1</th><th>SessionID</th><th>String</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>2</th><th>2</th><th>UserName</th><th>Discrete</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>3</th><th>3</th><th>Session_SS</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>4</th><th>4</th><th>Cond_code</th><th>Discrete</th>
+    <th>4 = control; 3 = linear_full; 2 = adaptive_full; 1 = adaptive_acc</th>
+  </tr>
+  <tr>
+    <th>5</th><th>5</th><th>Admin.start</th><th>Time</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>6</th><th>6</th><th>Admin.data</th><th>Date</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>7</th><th>7</th><th>Sequencing</th><th>Discrete</th>
+    <th>2 = Adaptive; 1 = Linear</th>
+  </tr>
+  <tr>
+    <th>8</th><th>8</th><th>Feedback</th><th>Discrete</th>
+    <th>2 = Accuracy; 1 = full</th>
+  </tr>
+  <tr>
+    <th>9</th><th>9</th><th>All_Items</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>10</th><th>10</th><th>Correct</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>11</th><th>11</th><th>Incorr</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>12</th><th>12</th><th>Remain</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>13</th><th>13</th><th>ElapseTime</th><th>Time</th>
+    <th></th>
+  </tr>
+</tbody></table><p>
+
+</p><h2>Statistics</h2>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Name</th><th>State</th><th>Type</th><th>Coding</th></tr>
+  <tr>
+    <th>14</th><th>14</th><th>P(solveGeometricProblems)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>15</th><th>15</th><th>P(solveGeometricProblems)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>16</th><th>16</th><th>P(solveGeometricProblems)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>17</th><th>17</th><th>EAP(solveGeometricProblems)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>18</th><th>18</th><th>MAP(solveGeometricProblems)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>19</th><th>19</th><th>P(algebraRuleGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>20</th><th>20</th><th>P(algebraRuleGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>21</th><th>21</th><th>P(algebraRuleGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>22</th><th>22</th><th>EAP(algebraRuleGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>23</th><th>23</th><th>MAP(algebraRuleGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>24</th><th>24</th><th>P(commonRatio)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>25</th><th>25</th><th>P(commonRatio)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>26</th><th>26</th><th>P(commonRatio)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>27</th><th>27</th><th>EAP(commonRatio)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>28</th><th>28</th><th>MAP(commonRatio)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>29</th><th>29</th><th>P(distinguishTypes)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>30</th><th>30</th><th>P(distinguishTypes)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>31</th><th>31</th><th>P(distinguishTypes)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>32</th><th>32</th><th>EAP(distinguishTypes)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>33</th><th>33</th><th>MAP(distinguishTypes)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>34</th><th>34</th><th>P(examplesGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>35</th><th>35</th><th>P(examplesGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>36</th><th>36</th><th>P(examplesGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>37</th><th>37</th><th>EAP(examplesGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>38</th><th>38</th><th>MAP(examplesGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>39</th><th>39</th><th>P(explicitGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>40</th><th>40</th><th>P(explicitGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>41</th><th>41</th><th>P(explicitGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>42</th><th>42</th><th>EAP(explicitGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>43</th><th>43</th><th>MAP(explicitGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>44</th><th>44</th><th>P(extendGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>45</th><th>45</th><th>P(extendGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>46</th><th>46</th><th>P(extendGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>47</th><th>47</th><th>EAP(extendGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>48</th><th>48</th><th>MAP(extendGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>49</th><th>49</th><th>P(induceRulesGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>50</th><th>50</th><th>P(induceRulesGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>51</th><th>51</th><th>P(induceRulesGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>52</th><th>52</th><th>EAP(induceRulesGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>53</th><th>53</th><th>MAP(induceRulesGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>54</th><th>54</th><th>P(modelGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>55</th><th>55</th><th>P(modelGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>56</th><th>56</th><th>P(modelGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>57</th><th>57</th><th>EAP(modelGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>58</th><th>58</th><th>MAP(modelGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>59</th><th>59</th><th>P(recursiveRuleGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>60</th><th>60</th><th>P(recursiveRuleGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>61</th><th>61</th><th>P(recursiveRuleGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>62</th><th>62</th><th>EAP(recursiveRuleGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>63</th><th>63</th><th>MAP(recursiveRuleGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>64</th><th>64</th><th>P(tableGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>65</th><th>65</th><th>P(tableGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>66</th><th>66</th><th>P(tableGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>67</th><th>67</th><th>EAP(tableGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>68</th><th>68</th><th>MAP(tableGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>69</th><th>69</th><th>P(verbalRuleGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>70</th><th>70</th><th>P(verbalRuleGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>71</th><th>71</th><th>P(verbalRuleGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>72</th><th>72</th><th>EAP(verbalRuleGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>73</th><th>73</th><th>MAP(verbalRuleGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+  <tr>
+    <th>74</th><th>74</th><th>P(pictoralGeometric)</th><th>High</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>75</th><th>75</th><th>P(pictoralGeometric)</th><th>Medium</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>76</th><th>76</th><th>P(pictoralGeometric)</th><th>Low</th><th>Probability</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>77</th><th>77</th><th>EAP(pictoralGeometric)</th><th></th><th>Real</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>78</th><th>78</th><th>MAP(pictoralGeometric)</th><th></th><th>Discrete</th>
+    <th>3 = High; 2 = Medium; 1 = Low</th>
+  </tr>
+</tbody></table><p>
+
+</p><h2>Tasks</h2>
+<p>TaskID: ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>79</th><th>79</th><th>tCommonRatio1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioEasy/tCommonRatio1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>80</th><th>80</th><th>tCommonRatio1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>81</th><th>81</th><th>tCommonRatio3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioHard/tCommonRatio3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>82</th><th>82</th><th>tCommonRatio3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/tCommonRatio2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>83</th><th>83</th><th>tCommonRatio2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/commonRatioTask/commonRatioMedium/tCommonRatio2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>84</th><th>84</th><th>tCommonRatio2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>85</th><th>85</th><th>tExamplesGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricEasy/tExamplesGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>86</th><th>86</th><th>tExamplesGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>87</th><th>87</th><th>tExamplesGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricHard/tExamplesGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>88</th><th>88</th><th>tExamplesGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>89</th><th>89</th><th>tExamplesGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/examplesGeometricTask/examplesGeometricMedium/tExamplesGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>90</th><th>90</th><th>tExamplesGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>91</th><th>91</th><th>tExplicitGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>92</th><th>92</th><th>tExplicitGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>93</th><th>93</th><th>tExplicitGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricHard/tExplicitGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>94</th><th>94</th><th>tExplicitGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>95</th><th>95</th><th>tExplicitGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/explicitGeometricTask/explicitGeometricMedium/tExplicitGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>96</th><th>96</th><th>tExplicitGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>97</th><th>97</th><th>tExtendGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>98</th><th>98</th><th>tExtendGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1c.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>99</th><th>99</th><th>tExtendGeometric1c.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricEasy/tExtendGeometric1d.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>100</th><th>100</th><th>tExtendGeometric1d.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>101</th><th>101</th><th>tExtendGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricHard/tExtendGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>102</th><th>102</th><th>tExtendGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>103</th><th>103</th><th>tExtendGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>104</th><th>104</th><th>tExtendGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/extendGeometricTask/extendGeometricMedium/tExtendGeometric2c.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>105</th><th>105</th><th>tExtendGeometric2c.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>106</th><th>106</th><th>tModelExtendTableGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricEasy/tModelExtendTableGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>107</th><th>107</th><th>tModelExtendTableGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/tModelExtendTableGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>108</th><th>108</th><th>tModelExtendTableGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricHard/tModelExtendTableGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>109</th><th>109</th><th>tModelExtendTableGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>110</th><th>110</th><th>tModelExtendTableGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/modelExtendTableGeometricTask/modelExtendTableGeometricMedium/tModelExtendTableGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>111</th><th>111</th><th>tModelExtendTableGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>112</th><th>112</th><th>tRecursiveRuleGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricEasy/tRecursiveRuleGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>113</th><th>113</th><th>tRecursiveRuleGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/tRecursiveRuleGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>114</th><th>114</th><th>tRecursiveRuleGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricHard/tRecursiveRuleGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>115</th><th>115</th><th>tRecursiveRuleGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>116</th><th>116</th><th>tRecursiveRuleGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/recursiveRuleGeometricTask/recursiveRuleGeometricMedium/tRecursiveRuleGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>117</th><th>117</th><th>tRecursiveRuleGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>118</th><th>118</th><th>tSolveGeometricProblems1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsEasy/tSolveGeometricProblems1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>119</th><th>119</th><th>tSolveGeometricProblems1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/tSolveGeometricProblems3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>120</th><th>120</th><th>tSolveGeometricProblems3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsHard/tSolveGeometricProblems3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>121</th><th>121</th><th>tSolveGeometricProblems3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>122</th><th>122</th><th>tSolveGeometricProblems2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>123</th><th>123</th><th>tSolveGeometricProblems2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2c.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>124</th><th>124</th><th>tSolveGeometricProblems2c.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricEasy/tTableExtendGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>125</th><th>125</th><th>tTableExtendGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricEasy/tTableExtendGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>126</th><th>126</th><th>tTableExtendGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>127</th><th>127</th><th>tTableExtendGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricHard/tTableExtendGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>128</th><th>128</th><th>tTableExtendGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>129</th><th>129</th><th>tTableExtendGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/tableExtendGeometricTask/tableExtendGeometricMedium/tTableExtendGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>130</th><th>130</th><th>tTableExtendGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricHard/tVerbalRuleExplicitModelGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>131</th><th>131</th><th>tVerbalRuleExplicitModelGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/verbalRuleExplicitModelGeometricTask/verbalRuleExplicitModelGeometricMedium/tVerbalRuleExplicitModelGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>132</th><th>132</th><th>tVerbalRuleExplicitModelGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>133</th><th>133</th><th>tVerbalRuleExtendModelGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricEasy/tVerbalRuleExtendModelGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>134</th><th>134</th><th>tVerbalRuleExtendModelGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/verbalRuleExtendModelGeometricTask/verbalRuleExtendModelGeometricMedium/tVerbalRuleExtendModelGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>135</th><th>135</th><th>tVerbalRuleExtendModelGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/verbalRuleModelGeometricTask/verbalRuleModelGeometricHard/tVerbalRuleModelGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>136</th><th>136</th><th>tVerbalRuleModelGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>137</th><th>137</th><th>tVisualExplicitVerbalRuleModelGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/visualExplicitVerbalRuleModelGeometricTask/visualExplicitVerbalRuleModelGeometricHard/tVisualExplicitVerbalRuleModelGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>138</th><th>138</th><th>tVisualExplicitVerbalRuleModelGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>139</th><th>139</th><th>tVisualExtendGeometric1a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>140</th><th>140</th><th>tVisualExtendGeometric1b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricEasy/tVisualExtendGeometric1c.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>141</th><th>141</th><th>tVisualExtendGeometric1c.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>142</th><th>142</th><th>tVisualExtendGeometric3a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricHard/tVisualExtendGeometric3b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>143</th><th>143</th><th>tVisualExtendGeometric3b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>144</th><th>144</th><th>tVisualExtendGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID: ecd://K12Math/Formative__Assessment/visualExtendGeometricTask/visualExtendGeometricMedium/tVisualExtendGeometric2b.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>145</th><th>145</th><th>tVisualExtendGeometric2b.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/visualExtendTableModelVerbalRuleGeometricTask/visualExtendTableModelVerbalRuleGeometricMedium/tVisualExtendTableModelVerbalRuleGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>146</th><th>146</th><th>tVisualExtendTableModelVerbalRuleGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><p>TaskID:
+ecd://K12Math/Formative__Assessment/visualExtendVerbalRuleModelGeometricTask/visualExtendVerbalRuleModelGeometricMedium/tVisualExtendVerbalRuleModelGeometric2a.1<br>
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Task</th><th>Name</th><th>Coding</th></tr>
+  <tr>
+    <th>147</th><th>147</th><th>tVisualExtendVerbalRuleModelGeometric2a.1</th><th>isCorrect</th>
+    <th>2 = Yes; 1 = No</th>
+  </tr>
+</tbody></table></p><p>
+</p><h2>Missing Data Codes</h2>
+<table border="1">
+<tbody><tr><th>Type</th><th>Code</th></tr>
+<tr><td>Not Reached</td><td>NA</td></tr>
+<tr><td>Omitted</td><td>NA</td></tr>
+</tbody></table>
+
+
+
+<a name="pre-post"><h1>Data Dictionary for ACED-pre-post</h1></a>
+
+
+<table border="1">
+  <tbody><tr><th>Sequence</th><th>Column</th><th>Name</th><th>Type</th><th>Coding</th></tr>
+  <tr>
+    <th>0</th><th>0</th><th>ID</th><th>String</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>1</th><th>1</th><th>Cond_code</th><th>Discrete</th>
+    <th>4 = control; 3 = linear_full; 2 = adaptive_full; 1 = adaptive_acc</th>
+  </tr>
+  <tr>
+    <th>2</th><th>2</th><th>Level_code</th><th>Discrete</th>
+    <th>6 = ELL; 5 = Part 2; 4 = Part 1; 3 = Regular; 2 = Academic; 1
+    = Honors</th>
+  </tr>
+  <tr>
+    <th>3</th><th>3</th><h>pre_scaled</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>4</th><th>4</th><th>post_scaled</th><th>Integer</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>5</th><th>5</th><th>gain_scaled</th><th>Integer</th>
+    <th></th>
+  </tr>
+</tbody></table><p>
+
+
+Note these two files must be merged using the ID field.  Students with
+Cond_code=4 (Controls) will have data in the pre-post file, but not
+the Geometric file.
+
+<hr>
+
+<a href="http://ecd.ralmond.net/ecdwiki/Main/HomePage">HomePage</a>
+<a href="http://ecd.ralmond.net/ecdwiki/ACED/ACED">ACED</a> 
+<a href="http://ecd.ralmond.net/ecdwiki/ACED/Data">Data</a>
+<a href="http://ecd.ralmond.net/ecdwiki/ACED/Model">Model</a>
+<a href="http://ecd.ralmond.net/ecdwiki/ACED/People">People</a>
+<a href="http://ecd.ralmond.net/ecdwiki/ACED/Publications">Publications</a>
+
+<p>
+<a name="support">
+ACED development and data collection was sponsored by National Science
+Foundation Grant No. 0313202. 
+</a>
+
+(Note:  This is not a Wiki page, contact Russell Almond to fix
+mistakes).
+
+</body></html>

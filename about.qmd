@@ -4,4 +4,6 @@ title: "About"
 
 This site is a data repository for data about the ACED project.
 
-It is still a bit of a work in progress.
+It is still a bit of a work in progress.  Contact [Russell Almond](mailto:russell.g.almond@gmail.com) for information/corrections.
+
+ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.

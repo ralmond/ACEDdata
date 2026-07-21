@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<pd:PretestDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pdra.ets.org/StatShop/result/PretestDescription http://research.ets.org/~ralmond/StatShop/StatShop-xml/PretestDescription.xsd" xmlns:pd="http://pdra.ets.org/StatShop/result/PretestDescription">
+ <AppID>ACED_Geometric</AppID>
+ <UserIDPrefix></UserIDPrefix>
+ <DemographicVariables>
+  <DemographicVariableMeta name="Configuration name" xsi:type="pd:DiscreteDemographicVariableMetaType" column="1" columnID="Configuration name">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>4</Key>
+     <Value>control</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>linear_full</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>adaptive_full</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>adaptive_acc</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+  <DemographicVariableMeta name="Session" xsi:type="pd:IntegerDemographicVariableMetaType" column="2" columnID="Session"/>
+  <DemographicVariableMeta name="Alt.ID" xsi:type="pd:StringDemographicVariableMetaType" column="3" columnID="Alt.ID"/>
+  <DemographicVariableMeta name="User name" xsi:type="pd:StringDemographicVariableMetaType" column="4" columnID="User name"/>
+  <DemographicVariableMeta name="Administration start time" xsi:type="pd:StringDemographicVariableMetaType" column="5" columnID="Administration start time"/>
+  <DemographicVariableMeta name="Administration date" xsi:type="pd:StringDemographicVariableMetaType" column="6" columnID="Administration date"/>
+  <DemographicVariableMeta name="Administration finish time" xsi:type="pd:StringDemographicVariableMetaType" column="7" columnID="Administration finish time"/>
+  <DemographicVariableMeta name="Sequencing method" xsi:type="pd:DiscreteDemographicVariableMetaType" column="8" columnID="Sequencing method">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Adaptive</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Linear</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+  <DemographicVariableMeta name="Revisit-item enabled?" xsi:type="pd:StringDemographicVariableMetaType" column="9" columnID="Revisit-item enabled?"/>
+  <DemographicVariableMeta name="Feedback" xsi:type="pd:DiscreteDemographicVariableMetaType" column="10" columnID="Feedback">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Accuracy</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>full</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+  <DemographicVariableMeta name="Termination type" xsi:type="pd:StringDemographicVariableMetaType" column="11" columnID="Termination type"/>
+  <DemographicVariableMeta name="Time limit" xsi:type="pd:StringDemographicVariableMetaType" column="12" columnID="Time limit"/>
+  <DemographicVariableMeta name="Item limit" xsi:type="pd:IntegerDemographicVariableMetaType" column="13" columnID="Item limit"/>
+  <DemographicVariableMeta name="Termination event" xsi:type="pd:StringDemographicVariableMetaType" column="14" columnID="Termination event"/>
+  <DemographicVariableMeta name="Adaptive item pool name" xsi:type="pd:StringDemographicVariableMetaType" column="15" columnID="Adaptive item pool name"/>
+  <DemographicVariableMeta name="Maximum items to present" xsi:type="pd:IntegerDemographicVariableMetaType" column="16" columnID="Maximum items to present"/>
+  <DemographicVariableMeta name="Items available" xsi:type="pd:IntegerDemographicVariableMetaType" column="17" columnID="Items available"/>
+  <DemographicVariableMeta name="Correct items" xsi:type="pd:IntegerDemographicVariableMetaType" column="18" columnID="Correct items"/>
+  <DemographicVariableMeta name="Incorrect items" xsi:type="pd:IntegerDemographicVariableMetaType" column="19" columnID="Incorrect items"/>
+  <DemographicVariableMeta name="Remaining items" xsi:type="pd:IntegerDemographicVariableMetaType" column="20" columnID="Remaining items"/>
+  <DemographicVariableMeta name="Timeout warning time" xsi:type="pd:StringDemographicVariableMetaType" column="21" columnID="Timeout warning time"/>
+  <DemographicVariableMeta name="Elapsed time" xsi:type="pd:StringDemographicVariableMetaType" column="22" columnID="Elapsed time"/>
+ </DemographicVariables>
+ <Statistics>
+  <StatisticMeta name="P(solveGeometricProblems)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="23" columnID="P.solveGeometricProblems..High"/>
+   <Level name="Medium" column="24" columnID="P.solveGeometricProblems..Medium"/>
+   <Level name="Low" column="25" columnID="P.solveGeometricProblems..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(solveGeometricProblems)" xsi:type="pd:RealStatisticMetaType" column="26" columnID="EAP.solveGeometricProblems."/>
+  <StatisticMeta name="MAP(solveGeometricProblems)" xsi:type="pd:DiscreteStatisticMetaType" column="27" columnID="MAP.solveGeometricProblems.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(algebraRuleGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="28" columnID="P.algebraRuleGeometric..High"/>
+   <Level name="Medium" column="29" columnID="P.algebraRuleGeometric..Medium"/>
+   <Level name="Low" column="30" columnID="P.algebraRuleGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(algebraRuleGeometric)" xsi:type="pd:RealStatisticMetaType" column="31" columnID="EAP.algebraRuleGeometric."/>
+  <StatisticMeta name="MAP(algebraRuleGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="32" columnID="MAP.algebraRuleGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(commonRatio)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="33" columnID="P.commonRatio..High"/>
+   <Level name="Medium" column="34" columnID="P.commonRatio..Medium"/>
+   <Level name="Low" column="35" columnID="P.commonRatio..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(commonRatio)" xsi:type="pd:RealStatisticMetaType" column="36" columnID="EAP.commonRatio."/>
+  <StatisticMeta name="MAP(commonRatio)" xsi:type="pd:DiscreteStatisticMetaType" column="37" columnID="MAP.commonRatio.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(distinguishTypes)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="38" columnID="P.distinguishTypes..High"/>
+   <Level name="Medium" column="39" columnID="P.distinguishTypes..Medium"/>
+   <Level name="Low" column="40" columnID="P.distinguishTypes..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(distinguishTypes)" xsi:type="pd:RealStatisticMetaType" column="41" columnID="EAP.distinguishTypes."/>
+  <StatisticMeta name="MAP(distinguishTypes)" xsi:type="pd:DiscreteStatisticMetaType" column="42" columnID="MAP.distinguishTypes.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(examplesGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="43" columnID="P.examplesGeometric..High"/>
+   <Level name="Medium" column="44" columnID="P.examplesGeometric..Medium"/>
+   <Level name="Low" column="45" columnID="P.examplesGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(examplesGeometric)" xsi:type="pd:RealStatisticMetaType" column="46" columnID="EAP.examplesGeometric."/>
+  <StatisticMeta name="MAP(examplesGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="47" columnID="MAP.examplesGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(explicitGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="48" columnID="P.explicitGeometric..High"/>
+   <Level name="Medium" column="49" columnID="P.explicitGeometric..Medium"/>
+   <Level name="Low" column="50" columnID="P.explicitGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(explicitGeometric)" xsi:type="pd:RealStatisticMetaType" column="51" columnID="EAP.explicitGeometric."/>
+  <StatisticMeta name="MAP(explicitGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="52" columnID="MAP.explicitGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(extendGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="53" columnID="P.extendGeometric..High"/>
+   <Level name="Medium" column="54" columnID="P.extendGeometric..Medium"/>
+   <Level name="Low" column="55" columnID="P.extendGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(extendGeometric)" xsi:type="pd:RealStatisticMetaType" column="56" columnID="EAP.extendGeometric."/>
+  <StatisticMeta name="MAP(extendGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="57" columnID="MAP.extendGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(induceRulesGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="58" columnID="P.induceRulesGeometric..High"/>
+   <Level name="Medium" column="59" columnID="P.induceRulesGeometric..Medium"/>
+   <Level name="Low" column="60" columnID="P.induceRulesGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(induceRulesGeometric)" xsi:type="pd:RealStatisticMetaType" column="61" columnID="EAP.induceRulesGeometric."/>
+  <StatisticMeta name="MAP(induceRulesGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="62" columnID="MAP.induceRulesGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(modelGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="63" columnID="P.modelGeometric..High"/>
+   <Level name="Medium" column="64" columnID="P.modelGeometric..Medium"/>
+   <Level name="Low" column="65" columnID="P.modelGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(modelGeometric)" xsi:type="pd:RealStatisticMetaType" column="66" columnID="EAP.modelGeometric."/>
+  <StatisticMeta name="MAP(modelGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="67" columnID="MAP.modelGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(recursiveRuleGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="68" columnID="P.recursiveRuleGeometric..High"/>
+   <Level name="Medium" column="69" columnID="P.recursiveRuleGeometric..Medium"/>
+   <Level name="Low" column="70" columnID="P.recursiveRuleGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(recursiveRuleGeometric)" xsi:type="pd:RealStatisticMetaType" column="71" columnID="EAP.recursiveRuleGeometric."/>
+  <StatisticMeta name="MAP(recursiveRuleGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="72" columnID="MAP.recursiveRuleGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(tableGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="73" columnID="P.tableGeometric..High"/>
+   <Level name="Medium" column="74" columnID="P.tableGeometric..Medium"/>
+   <Level name="Low" column="75" columnID="P.tableGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(tableGeometric)" xsi:type="pd:RealStatisticMetaType" column="76" columnID="EAP.tableGeometric."/>
+  <StatisticMeta name="MAP(tableGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="77" columnID="MAP.tableGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(verbalRuleGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="78" columnID="P.verbalRuleGeometric..High"/>
+   <Level name="Medium" column="79" columnID="P.verbalRuleGeometric..Medium"/>
+   <Level name="Low" column="80" columnID="P.verbalRuleGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(verbalRuleGeometric)" xsi:type="pd:RealStatisticMetaType" column="81" columnID="EAP.verbalRuleGeometric."/>
+  <StatisticMeta name="MAP(verbalRuleGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="82" columnID="MAP.verbalRuleGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+  <StatisticMeta name="P(pictoralGeometric)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="83" columnID="P.pictoralGeometric..High"/>
+   <Level name="Medium" column="84" columnID="P.pictoralGeometric..Medium"/>
+   <Level name="Low" column="85" columnID="P.pictoralGeometric..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(pictoralGeometric)" xsi:type="pd:RealStatisticMetaType" column="86" columnID="EAP.pictoralGeometric."/>
+  <StatisticMeta name="MAP(pictoralGeometric)" xsi:type="pd:DiscreteStatisticMetaType" column="87" columnID="MAP.pictoralGeometric.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+ </Statistics>
+ <Tasks/>
+</pd:PretestDescription>

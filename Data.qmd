@@ -1,0 +1,43 @@
+---
+title:  ACED Data
+---
+
+The data from the ACED [Evaluation](Evaluation.qmd) are freely available for secondary analysis, under the following conditions: 
+
+* You cite one of the paper listed on the [Publications](Publications.qmd) page.
+
+* You acknowledge the support of NSF Grand No. 0312302 for ACED development and data collection.
+
+* You send a copy of any paper or presentation to [Val Shute](mailto:vshute@fsu.edu) and [Russell Almond](mailto:russell.g.almond@gmail.com) (we will get you listed on the [[Publications]] page.
+
+## Experiment Summary
+
+For complete details of the ACED evaluation, see the [Evaluation](Evaluation.qmd) page.  A few high points here.
+
+* The ACED evaluation consisted of a randomized trial, where 268 students were randomized into four groups:
+
+  - Elaborated feedback, Adaptive sequence (n=71)%0a
+  - Simple (Accuracy Only) feedback, Adaptive sequence (n-75)
+  - Elaborated feedback, Linear sequence (n=67)
+  - Control:  Did not use ACED (n=55).  
+  
+Note: there are no ACED item or summary outcome data available for the control students, just pretest and posttest data.
+
+* The students were tracked into six different mathematics tracks:
+
+  - Honors (n=38)
+  - Academic (n=165)
+  - Regular (n=27)
+  - Special Education, Part 1 (students who are mainstreamed; n=30)
+  - Special Education, Part 2 (students who are sheltered; n=8)
+  - English Language Learners (ELL; n=22)
+  
+Note that the ELL teachers did not exactly follow the protocol.  They were supposed to be giving only assistance with English, but they also provided some mathematics help.
+
+## The Data
+
+
+The data are available in two CSV files, one for the [observed outcomes](data/ACED-Geometric.csv)  and one for the [pre-test and post-test data](data/ACED-pre-post.csv)  A complete [Data Dictionary](StatShop/Data-Dictionary.html) is available.
+
+See [Data Files](DataFiles.qmd) for other ways of getting the data.
+

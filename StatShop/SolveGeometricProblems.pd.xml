@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<pd:PretestDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pdra.ets.org/StatShop/result/PretestDescription http://research.ets.org/~ralmond/StatShop/StatShop-xml/PretestDescription.xsd" xmlns:pd="http://pdra.ets.org/StatShop/result/PretestDescription">
+ <AppID>ACED_Geometric</AppID>
+ <UserIDPrefix></UserIDPrefix>
+ <DemographicVariables>
+  <DemographicVariableMeta name="GeometricOnly.solveSequenceProblems" xsi:type="pd:DiscreteDemographicVariableMetaType" column="1" columnID="solveSequenceProblems">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </DemographicVariableMeta>
+ </DemographicVariables>
+ <Statistics>
+  <StatisticMeta name="P(solveGeometricProblems)" xsi:type="pd:ProbabilityStatisticMetaType">
+   <Level name="High" column="2" columnID="P.solveGeometricProblems..High"/>
+   <Level name="Medium" column="3" columnID="P.solveGeometricProblems..Medium"/>
+   <Level name="Low" column="4" columnID="P.solveGeometricProblems..Low"/>
+  </StatisticMeta>
+  <StatisticMeta name="EAP(solveGeometricProblems)" xsi:type="pd:RealStatisticMetaType" column="5" columnID="EAP.solveGeometricProblems."/>
+  <StatisticMeta name="MAP(solveGeometricProblems)" xsi:type="pd:DiscreteStatisticMetaType" column="6" columnID="MAP.solveGeometricProblems.">
+   <TranslationTable>
+    <KeyValuePair>
+     <Key>3</Key>
+     <Value>High</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>2</Key>
+     <Value>Medium</Value>
+    </KeyValuePair>
+    <KeyValuePair>
+     <Key>1</Key>
+     <Value>Low</Value>
+    </KeyValuePair>
+   </TranslationTable>
+  </StatisticMeta>
+ </Statistics>
+ <Tasks/>
+</pd:PretestDescription>

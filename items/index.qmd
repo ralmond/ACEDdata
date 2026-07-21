@@ -1,0 +1,18 @@
+---
+title: "Item Index"
+---
+
+So far we have been able to locate 41 of the items used in the ACED evaluation.  We will update this if we find more.
+
+```{r}
+#| results: asis
+
+items <- sub(".xml","",list.files(pattern="*.xml"))
+
+for (item in items) 
+  cat("*", paste0("__",item,"__: "),  
+           paste0("[XML](",item,".xml),"),
+           paste0("[HTML](",item,".html)"),
+      "\n")
+
+```

@@ -22,8 +22,7 @@ problems the student answers incorrectly.
     Casey, Steve Landau, Peggy Redman, Waverly Van Winkle, Juan-Diego
     Zapata-Rivera and Russell Almond (also now at FSU). ACED development
     and data collection was sponsored by National Science Foundation
-    Grant No. 0313202. More information about ACED is available at the
-    ECD Wiki: <http://ecd.ralmond.net/ecdwiki/ACED/ACED>.
+    Grant No. 0313202.
 
 Shute, Hansen and Almond (2008) describe a short field trial of ACED
 using the portion of ACED relating to geometric sequences. There were a
@@ -225,4 +224,4 @@ Learning*. ETS. Retrieved from
 <https://www.ets.org/research/researcher/RR-07-26.html>
 
 More detail, including the complete Bayesian network model used to score
-ACED can be found at <BayesNets.qmd>
+ACED can be found at [here](BayesNet.qmd)

@@ -1,12 +1,12 @@
 // ~->[DNET-1]->~
 
-// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 07/22/2026 at 04:58:43 PM UTC.
 
 bnet GeometricOnly {
 autoupdate = FALSE;
 title = "Geometric Competentices";
 comment = "The Geometric Evidence models";
-whenchanged = 1773323072;
+whenchanged = 1784739521;
 user U1 {
 	Truename = "GeometricOnly";
 	Hub = "GeometricOnly";
@@ -26,7 +26,7 @@ node SolveSequenceProblems {
 	numcases = 10;
 	title = "Solve Sequence Problems";
 	comment = "Combination of all sequence types Problem Skills";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "SolveSequenceProblems";
 		rules = "c(SolveSequenceProblems = \"Compensatory\")";
@@ -54,7 +54,7 @@ node SolveGeometricProblems {
 	numcases = 10;
 	title = "Solve Geometric Problems";
 	comment = "Combination of all Geometric Problem Skills";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "SolveGeometricProblems";
 		rules = "c(SolveGeometricProblems = \"Compensatory\")";
@@ -82,7 +82,7 @@ node DistinguishTypes {
 	numcases = 10;
 	title = "Distinguish Sequence Types";
 	comment = "Identify Arithmetic, Geometric and Other Recursive Sequences";
-	whenchanged = 1773323072;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "DistinguishTypes";
 		rules = "c(DistinguishTypes = \"Compensatory\")";
@@ -110,7 +110,7 @@ node CommonRatio {
 	numcases = 10;
 	title = "Common Ratio";
 	comment = "Solve problems involving finding the common ratio";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "CommonRatio";
 		rules = "c(CommonRatio = \"Compensatory\")";
@@ -138,7 +138,7 @@ node ExamplesGeometric {
 	numcases = 10;
 	title = "Examples of Geometric Sequeces";
 	comment = "Solve problems involving examples of Geometric sequences";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ExamplesGeometric";
 		rules = "c(ExamplesGeometric = \"Compensatory\")";
@@ -166,7 +166,7 @@ node ExtendGeometric {
 	numcases = 10;
 	title = "Extending Geometric Sequeces";
 	comment = "Solve problems involving extending Geometric sequences";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ExtendGeometric";
 		rules = "c(ExtendGeometric = \"Compensatory\")";
@@ -194,7 +194,7 @@ node TableGeometric {
 	numcases = 10;
 	title = "Table Geometric";
 	comment = "Solve problems involving Geometric sequences in tabular form";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "TableGeometric";
 		rules = "c(TableGeometric = \"Compensatory\")";
@@ -222,7 +222,7 @@ node ModelGeometric {
 	numcases = 10;
 	title = "Model Geometric";
 	comment = "Solve problems involving extending Geometric sequences in tabular form with models";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ModelGeometric";
 		rules = "c(ModelGeometric = \"Compensatory\")";
@@ -250,7 +250,7 @@ node VisualGeometric {
 	numcases = 10;
 	title = "Visual Geometric";
 	comment = "Solve problems involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "VisualGeometric";
 		rules = "c(VisualGeometric = \"Compensatory\")";
@@ -278,7 +278,7 @@ node InduceRulesGeometric {
 	numcases = 10;
 	title = "Induce Rules Geometric";
 	comment = "Induce rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "InduceRulesGeometric";
 		rules = "c(InduceRulesGeometric = \"Compensatory\")";
@@ -306,7 +306,7 @@ node AlgebraRulesGeometric {
 	numcases = 10;
 	title = "Algebraic Rules Geometric";
 	comment = "Induce algebraic rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "AlgebraRulesGeometric";
 		rules = "c(AlgebraRulesGeometric = \"Compensatory\")";
@@ -334,7 +334,7 @@ node VerbalRulesGeometric {
 	numcases = 10;
 	title = "Verbal Rules Geometric";
 	comment = "Verbal rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "VerbalRulesGeometric";
 		rules = "c(VerbalRulesGeometric = \"Compensatory\")";
@@ -362,7 +362,7 @@ node ExplicitGeometric {
 	numcases = 10;
 	title = "Explicit Geometric";
 	comment = "Solve problems involving explicit rules for Geometric sequences.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ExplicitGeometric";
 		rules = "c(ExplicitGeometric = \"Compensatory\")";
@@ -390,7 +390,7 @@ node RecursiveRulesGeometric {
 	numcases = 10;
 	title = "Recursive Rules Geometric";
 	comment = "Induce recursive rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "RecursiveRulesGeometric";
 		rules = "c(RecursiveRulesGeometric = \"Compensatory\")";

@@ -7,17 +7,17 @@ ACED was an NSF sponsored assessment "for" learning system that had the followin
 
 * [ACED Model](Model.qmd) was constructed using Evidence-centered assessment design methodology.
 
-* [Proficiency](Proficiency.qmd) based on expert analysis of domain (Algebraic sequences).
+* [Proficiency](PM.qmd) based on expert analysis of domain (Algebraic sequences).
 
-* [Q-Matrix](Q-Matrix.qmd) was augmented to included prior opinion about item difficulty.
+* [Q-Matrix](QMatrix.qmd) was augmented to included prior opinion about item difficulty.
 
-* [Accessibility](Access.qmd) -- Tasks were designed to be presented either on-screen or in special touch-graphics mode for persons with low visual acuity.
+* [Accessibility] -- Tasks were designed to be presented either on-screen or in special touch-graphics mode for persons with low visual acuity.
 
-* [Elaborated task-specific feedback](Feedback.qmd) was available for all items.
+* [Elaborated task-specific feedback] was available for all items.
 
 * [Bayesian network scoring engine](BayesNet.qmd)
 
-* [Weight-of-evidence](WOE.qmd) algorithm for adaptive task selection
+* [Weight-of-evidence] algorithm for adaptive task selection
 
 * [Evaluation](Evaluation.qmd) a randomized trial with 268 middle school students showed that
 

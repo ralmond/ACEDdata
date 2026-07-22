@@ -1,12 +1,12 @@
 // ~->[DNET-1]->~
 
-// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:45:02 PM UTC.
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 07/22/2026 at 04:58:44 PM UTC.
 
 bnet ACEDmotif {
 autoupdate = FALSE;
 title = "Geometric Competentices";
 comment = "The Geometric Evidence models";
-whenchanged = 1773323102;
+whenchanged = 1784739524;
 user U1 {
 	Truename = "ACEDmotif";
 	Hub = "GeometricOnly";
@@ -26,7 +26,7 @@ node SolveSequenceProblems {
 	numcases = 10;
 	title = "Solve Sequence Problems";
 	comment = "Combination of all sequence types Problem Skills";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "SolveSequenceProblems";
 		rules = "c(SolveSequenceProblems = \"Compensatory\")";
@@ -54,7 +54,7 @@ node SolveGeometricProblems {
 	numcases = 10;
 	title = "Solve Geometric Problems";
 	comment = "Combination of all Geometric Problem Skills";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "SolveGeometricProblems";
 		rules = "c(SolveGeometricProblems = \"Compensatory\")";
@@ -82,7 +82,7 @@ node DistinguishTypes {
 	numcases = 10;
 	title = "Distinguish Sequence Types";
 	comment = "Identify Arithmetic, Geometric and Other Recursive Sequences";
-	whenchanged = 1773323072;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "DistinguishTypes";
 		rules = "c(DistinguishTypes = \"Compensatory\")";
@@ -110,7 +110,7 @@ node CommonRatio {
 	numcases = 10;
 	title = "Common Ratio";
 	comment = "Solve problems involving finding the common ratio";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "CommonRatio";
 		rules = "c(CommonRatio = \"Compensatory\")";
@@ -138,7 +138,7 @@ node ExamplesGeometric {
 	numcases = 10;
 	title = "Examples of Geometric Sequeces";
 	comment = "Solve problems involving examples of Geometric sequences";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ExamplesGeometric";
 		rules = "c(ExamplesGeometric = \"Compensatory\")";
@@ -166,7 +166,7 @@ node ExtendGeometric {
 	numcases = 10;
 	title = "Extending Geometric Sequeces";
 	comment = "Solve problems involving extending Geometric sequences";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ExtendGeometric";
 		rules = "c(ExtendGeometric = \"Compensatory\")";
@@ -194,7 +194,7 @@ node TableGeometric {
 	numcases = 10;
 	title = "Table Geometric";
 	comment = "Solve problems involving Geometric sequences in tabular form";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "TableGeometric";
 		rules = "c(TableGeometric = \"Compensatory\")";
@@ -222,7 +222,7 @@ node ModelGeometric {
 	numcases = 10;
 	title = "Model Geometric";
 	comment = "Solve problems involving extending Geometric sequences in tabular form with models";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ModelGeometric";
 		rules = "c(ModelGeometric = \"Compensatory\")";
@@ -250,7 +250,7 @@ node VisualGeometric {
 	numcases = 10;
 	title = "Visual Geometric";
 	comment = "Solve problems involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "VisualGeometric";
 		rules = "c(VisualGeometric = \"Compensatory\")";
@@ -278,7 +278,7 @@ node InduceRulesGeometric {
 	numcases = 10;
 	title = "Induce Rules Geometric";
 	comment = "Induce rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "InduceRulesGeometric";
 		rules = "c(InduceRulesGeometric = \"Compensatory\")";
@@ -306,7 +306,7 @@ node tSolveGeoProblems1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tSolveGeoProblems1a";
 		link = "\"partialCredit\"";
@@ -333,7 +333,7 @@ node tSolveGeoProblems1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tSolveGeoProblems1b";
 		link = "\"partialCredit\"";
@@ -360,7 +360,7 @@ node tSolveGeoProblems2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tSolveGeoProblems2a";
 		link = "\"partialCredit\"";
@@ -387,7 +387,7 @@ node tSolveGeoProblems2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tSolveGeoProblems2b";
 		link = "\"partialCredit\"";
@@ -414,7 +414,7 @@ node tSolveGeoProblems3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tSolveGeoProblems3a";
 		link = "\"partialCredit\"";
@@ -441,7 +441,7 @@ node tSolveGeoProblems3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tSolveGeoProblems3b";
 		link = "\"partialCredit\"";
@@ -468,7 +468,7 @@ node tCommonRatio1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tCommonRatio1a";
 		link = "\"partialCredit\"";
@@ -495,7 +495,7 @@ node tCommonRatio1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tCommonRatio1b";
 		link = "\"partialCredit\"";
@@ -522,7 +522,7 @@ node tCommonRatio2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tCommonRatio2a";
 		link = "\"partialCredit\"";
@@ -549,7 +549,7 @@ node tCommonRatio2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tCommonRatio2b";
 		link = "\"partialCredit\"";
@@ -576,7 +576,7 @@ node tCommonRatio3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tCommonRatio3a";
 		link = "\"partialCredit\"";
@@ -603,7 +603,7 @@ node tCommonRatio3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tCommonRatio3b";
 		link = "\"partialCredit\"";
@@ -630,7 +630,7 @@ node tExamplesGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExamplesGeo1a";
 		link = "\"partialCredit\"";
@@ -657,7 +657,7 @@ node tExamplesGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExamplesGeo1b";
 		link = "\"partialCredit\"";
@@ -684,7 +684,7 @@ node tExamplesGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExamplesGeo2a";
 		link = "\"partialCredit\"";
@@ -711,7 +711,7 @@ node tExamplesGeo2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExamplesGeo2b";
 		link = "\"partialCredit\"";
@@ -738,7 +738,7 @@ node tExamplesGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExamplesGeo3a";
 		link = "\"partialCredit\"";
@@ -765,7 +765,7 @@ node tExamplesGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExamplesGeo3b";
 		link = "\"partialCredit\"";
@@ -792,7 +792,7 @@ node tExtGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExtGeo1a";
 		link = "\"partialCredit\"";
@@ -819,7 +819,7 @@ node tExtGeo1c {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExtGeo1c";
 		link = "\"partialCredit\"";
@@ -846,7 +846,7 @@ node tExtGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExtGeo2a";
 		link = "\"partialCredit\"";
@@ -873,7 +873,7 @@ node tExtGeo2c {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExtGeo2c";
 		link = "\"partialCredit\"";
@@ -900,7 +900,7 @@ node tExtGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExtGeo3a";
 		link = "\"partialCredit\"";
@@ -927,7 +927,7 @@ node tExtGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExtGeo3b";
 		link = "\"partialCredit\"";
@@ -978,7 +978,7 @@ node tModExtTableGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tModExtTableGeo1a";
 		link = "\"partialCredit\"";
@@ -1030,7 +1030,7 @@ node tModExtTableGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tModExtTableGeo1b";
 		link = "\"partialCredit\"";
@@ -1082,7 +1082,7 @@ node tModExtTableGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tModExtTableGeo2a";
 		link = "\"partialCredit\"";
@@ -1134,7 +1134,7 @@ node tModExtTableGeo2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tModExtTableGeo2b";
 		link = "\"partialCredit\"";
@@ -1186,7 +1186,7 @@ node tModExtTableGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tModExtTableGeo3a";
 		link = "\"partialCredit\"";
@@ -1238,7 +1238,7 @@ node tModExtTableGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tModExtTableGeo3b";
 		link = "\"partialCredit\"";
@@ -1272,7 +1272,7 @@ node tTableExtGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tTableExtGeo1a";
 		link = "\"partialCredit\"";
@@ -1305,7 +1305,7 @@ node tTableExtGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tTableExtGeo1b";
 		link = "\"partialCredit\"";
@@ -1338,7 +1338,7 @@ node tTableExtGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tTableExtGeo2a";
 		link = "\"partialCredit\"";
@@ -1371,7 +1371,7 @@ node tTableExtGeo2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tTableExtGeo2b";
 		link = "\"partialCredit\"";
@@ -1404,7 +1404,7 @@ node tTableExtGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tTableExtGeo3a";
 		link = "\"partialCredit\"";
@@ -1437,7 +1437,7 @@ node tTableExtGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tTableExtGeo3b";
 		link = "\"partialCredit\"";
@@ -1464,7 +1464,7 @@ node VerbalRulesGeometric {
 	numcases = 10;
 	title = "Verbal Rules Geometric";
 	comment = "Verbal rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "VerbalRulesGeometric";
 		rules = "c(VerbalRulesGeometric = \"Compensatory\")";
@@ -1516,7 +1516,7 @@ node tVerbRuleExtModGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVerbRuleExtModGeo1a";
 		link = "\"partialCredit\"";
@@ -1568,7 +1568,7 @@ node tVerbRuleExtModGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVerbRuleExtModGeo1b";
 		link = "\"partialCredit\"";
@@ -1620,7 +1620,7 @@ node tVerbRuleExtModGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVerbRuleExtModGeo2a";
 		link = "\"partialCredit\"";
@@ -1654,7 +1654,7 @@ node tVisExtGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtGeo1a";
 		link = "\"partialCredit\"";
@@ -1687,7 +1687,7 @@ node tVisExtGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtGeo1b";
 		link = "\"partialCredit\"";
@@ -1720,7 +1720,7 @@ node tVisExtGeo1c {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtGeo1c";
 		link = "\"partialCredit\"";
@@ -1753,7 +1753,7 @@ node tVisExtGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtGeo2a";
 		link = "\"partialCredit\"";
@@ -1786,7 +1786,7 @@ node tVisExtGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtGeo3a";
 		link = "\"partialCredit\"";
@@ -2053,7 +2053,7 @@ node tVisExtTableModVerbRul_39 {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtTableModVerbRul_39";
 		link = "\"partialCredit\"";
@@ -2106,7 +2106,7 @@ node tVisExtVerbRuleModGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323098;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExtVerbRuleModGeo2a";
 		link = "\"partialCredit\"";
@@ -2134,7 +2134,7 @@ node AlgebraRulesGeometric {
 	numcases = 10;
 	title = "Algebraic Rules Geometric";
 	comment = "Induce algebraic rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "AlgebraRulesGeometric";
 		rules = "c(AlgebraRulesGeometric = \"Compensatory\")";
@@ -2162,7 +2162,7 @@ node ExplicitGeometric {
 	numcases = 10;
 	title = "Explicit Geometric";
 	comment = "Solve problems involving explicit rules for Geometric sequences.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "ExplicitGeometric";
 		rules = "c(ExplicitGeometric = \"Compensatory\")";
@@ -2214,7 +2214,7 @@ node tVerbRuleExplModGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVerbRuleExplModGeo2a";
 		link = "\"partialCredit\"";
@@ -2266,7 +2266,7 @@ node tVerbRuleExplModGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVerbRuleExplModGeo3a";
 		link = "\"partialCredit\"";
@@ -2300,7 +2300,7 @@ node tVerbRuleModGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVerbRuleModGeo3a";
 		link = "\"partialCredit\"";
@@ -2405,7 +2405,7 @@ node tVisExplVerbRuleModGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExplVerbRuleModGeo3a";
 		link = "\"partialCredit\"";
@@ -2512,7 +2512,7 @@ node tVisExplVerbRuleModGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tVisExplVerbRuleModGeo3b";
 		link = "\"partialCredit\"";
@@ -2541,7 +2541,7 @@ node RecursiveRulesGeometric {
 	numcases = 10;
 	title = "Recursive Rules Geometric";
 	comment = "Induce recursive rules involving Geometric sequences with visual representations.";
-	whenchanged = 1773323071;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "RecursiveRulesGeometric";
 		rules = "c(RecursiveRulesGeometric = \"Compensatory\")";
@@ -2569,7 +2569,7 @@ node tExplGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExplGeo1a";
 		link = "\"partialCredit\"";
@@ -2596,7 +2596,7 @@ node tExplGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExplGeo1b";
 		link = "\"partialCredit\"";
@@ -2623,7 +2623,7 @@ node tExplGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExplGeo2a";
 		link = "\"partialCredit\"";
@@ -2650,7 +2650,7 @@ node tExplGeo2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExplGeo2b";
 		link = "\"partialCredit\"";
@@ -2677,7 +2677,7 @@ node tExplGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExplGeo3a";
 		link = "\"partialCredit\"";
@@ -2704,7 +2704,7 @@ node tExplGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323096;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tExplGeo3b";
 		link = "\"partialCredit\"";
@@ -2731,7 +2731,7 @@ node tRecursiveRuleGeo1a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tRecursiveRuleGeo1a";
 		link = "\"partialCredit\"";
@@ -2758,7 +2758,7 @@ node tRecursiveRuleGeo1b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739523;
 	user U1 {
 		Truename = "tRecursiveRuleGeo1b";
 		link = "\"partialCredit\"";
@@ -2785,7 +2785,7 @@ node tRecursiveRuleGeo2a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tRecursiveRuleGeo2a";
 		link = "\"partialCredit\"";
@@ -2812,7 +2812,7 @@ node tRecursiveRuleGeo2b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tRecursiveRuleGeo2b";
 		link = "\"partialCredit\"";
@@ -2839,7 +2839,7 @@ node tRecursiveRuleGeo3a {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tRecursiveRuleGeo3a";
 		link = "\"partialCredit\"";
@@ -2866,7 +2866,7 @@ node tRecursiveRuleGeo3b {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323097;
+	whenchanged = 1784739524;
 	user U1 {
 		Truename = "tRecursiveRuleGeo3b";
 		link = "\"partialCredit\"";

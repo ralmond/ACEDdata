@@ -1,11 +1,11 @@
 // ~->[DNET-1]->~
 
-// File created by AlmondR at FloridaStateU using Netica 6.07 on 03/12/2026 at 01:44:42 PM UTC.
+// File created by AlmondR at FloridaStateU using Netica 6.07 on 07/22/2026 at 04:58:43 PM UTC.
 
 bnet commonRatioMedium {
 autoupdate = FALSE;
 title = "common Ratio Medium";
-whenchanged = 1773323075;
+whenchanged = 1784739521;
 user U1 {
 	Truename = "commonRatioMedium";
 	Hub = "GeometricOnly";
@@ -36,7 +36,7 @@ node isCorrect {
 	numcases = 10;
 	title = "Correctly Solved?";
 	comment = "Was the task correctly solved";
-	whenchanged = 1773323075;
+	whenchanged = 1784739521;
 	user U1 {
 		Truename = "isCorrect";
 		link = "\"partialCredit\"";

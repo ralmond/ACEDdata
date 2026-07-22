@@ -42,8 +42,11 @@ website:
       - text: "Analyses"
         menu:
           - href: BuildMotif.qmd
+            text: "Build the Bayes net in Peanut"
           - href: kappaLambda.qmd
-          - href:
+            text: "Calculate Reliability"
+          - href: ShinyDataPrep.qmd
+            text: "Use with Shiny Item Analysis"
       - about.qmd
 
 format:

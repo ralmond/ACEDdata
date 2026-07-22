@@ -43,4 +43,4 @@ title: "ACED Data Repository"
 
 [Kappa and Lambda calculations](kappaLambda.qmd)
 
-* [References](References.qmd)
+* [References](Publications.qmd)

@@ -1,51 +1,52 @@
 ---
 title: "ACED Q Matrix"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-## Evidence Models 
+## Evidence Models
 
-All of the ACED tasks have a single observable outcome variable that
-is scored dichotomously (@@correct@@ or @@incorrect@@).  For this
-reason each [[ECD/Evidence Model]] corresponds to a unique row pattern
-in the [[ECD/QMatrix|Q-Matrix]].  These are replicated according to
-the number of tasks that use that evidence model for scoring (i.e.,
-the number of tasks built from the [[ECD/Task Model]] corresponding to
-the Evidence Model).
+All of the ACED tasks have a single observable outcome variable that is
+scored dichotomously (`correct` or `incorrect`). For this reason each
+evidence model corresponds to a unique row pattern in the $Q$-Matrix.
+These are replicated according to the number of tasks that use that
+evidence model for scoring (i.e., the number of tasks built from the
+task model corresponding to the evidence model).
 
-_Evidence Model Level Q-Matrix_
-| _Task/Evidence Model_ | _Solve Geometric Problems_ | _Common Ratio_ | _Example_ | _Explicit_ | _Extend_ | _Model_ | _Recursive_ | _Table_ | _Verbal_ | _Visual_ | _Design Pattern_ | _Anchor_ |
-| --------------------- | -------------------------- | -------------- | --------- | ---------- | -------- | ------- | ----------- | ------- | -------- | -------- | ---------------- | ------- |
+| *Task/Evidence Model* | *Solve Geometric Problems* | *Common Ratio* | *Example* | *Explicit* | *Extend* | *Model* | *Recursive* | *Table* | *Verbal* | *Visual* | *Design Pattern* | *Anchor* |
+|------|------|------|------|------|------|------|------|------|------|------|------|------|
 | Solve Geometric Problems | ++ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Compensatory | SGP |
-| Common Ratio | 0 | ++ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Compensatory | Common Ratio |
-| Examples Geometric | 0 | 0 | ++ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Compensatory | Examples |
-| Explicit Geometric | 0 | 0 | 0 | ++ | 0 | 0 | 0 | 0 | 0 | 0 | Compensatory | Explicit |
-| Extend Geometric | 0 | 0 | 0 | 0 | ++ | 0 | 0 | 0 | 0 | 0  | Compensatory | Extend |
-| Model Extend Table Geometric | 0 | 0 | 0 | 0 | + | ++ | 0 | + | 0 | 0 | Compensatory | Model |
-| Recursive Rule Geometric | 0	| 0 | 0 | 0 | 0 | 0 | ++ | 0 | 0 | 0 | Compensatory | Recursive |
-| Table Extend Geometric | 0 | 0 | 0 | 0 | + | 0 | 0 | ++ | 0 | 0 | Compensatory | Table |
-| Verbal Rule Explicit Model Geometric | 0 | 0 | 0 | + | 0 | + | 0 | 0 | ++ | 0 | Compensatory | Verbal |
-| Verbal Rule Extend Model Geometric | 0 | 0 | 0 | 0 | + | + | 0 | 0 | ++ | 0 | Compensatory | Verbal |
-| Verbal Rule Model Geometric | 0 | 0 | 0 | 0 | 0 | + | 0 | 0 | ++ | 0 | Compensatory | Verbal |
-| Visual Explicit Verbal Rule Model Geometric | 0 | 0 | 0 | + | 0 | + | 0 | 0 | + | ++ | Compensatory | Visual |
-| Visual Extend Geometric | 0 | 0 | 0 | 0 | + | 0 | 0 | 0 | 0 | ++ | Compensatory | Visual |
-| Visual Extend Table Model Verbal RuleGeometric | 0 | 0 | 0 | 0 | + | + | 0 | + | + | ++ |  Compensatory | Visual |
-| Visual Extend Verbal Rule Model Geometric | 0 | 0 | 0 | 0 | + | + | 0 | 0 | + | ++ |  Compensatory | Visual |
+| Common Ratio | 0 | ++ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Comp | Common Ratio |
+| Examples Geometric | 0 | 0 | ++ | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Comp | Examples |
+| Explicit Geometric | 0 | 0 | 0 | ++ | 0 | 0 | 0 | 0 | 0 | 0 | Comp | Explicit |
+| Extend Geometric | 0 | 0 | 0 | 0 | ++ | 0 | 0 | 0 | 0 | 0 | Comp | Extend |
+| Model Extend Table Geometric | 0 | 0 | 0 | 0 | \+ | ++ | 0 | \+ | 0 | 0 | Comp | Model |
+| Recursive Rule Geometric | 0 | 0 | 0 | 0 | 0 | 0 | ++ | 0 | 0 | 0 | Comp | Recursive |
+| Table Extend Geometric | 0 | 0 | 0 | 0 | \+ | 0 | 0 | ++ | 0 | 0 | Comp | Table |
+| Verbal Rule Explicit Model Geometric | 0 | 0 | 0 | \+ | 0 | \+ | 0 | 0 | ++ | 0 | Comp | Verbal |
+| Verbal Rule Extend Model Geometric | 0 | 0 | 0 | 0 | \+ | \+ | 0 | 0 | ++ | 0 | Comp | Verbal |
+| Verbal Rule Model Geometric | 0 | 0 | 0 | 0 | 0 | \+ | 0 | 0 | ++ | 0 | Comp | Verbal |
+| Visual Explicit Verbal Rule Model Geometric | 0 | 0 | 0 | \+ | 0 | \+ | 0 | 0 | \+ | ++ | Comp | Visual |
+| Visual Extend Geometric | 0 | 0 | 0 | 0 | \+ | 0 | 0 | 0 | 0 | ++ | Comp | Visual |
+| Visual Extend Table Model Verbal RuleGeometric | 0 | 0 | 0 | 0 | \+ | \+ | 0 | \+ | \+ | ++ | Comp | Visual |
+| Visual Extend Verbal Rule Model Geometric | 0 | 0 | 0 | 0 | \+ | \+ | 0 | 0 | \+ | ++ | Comp | Visual |
+
+: *Evidence Model Level Q-Matrix* {tbl-colwidths="[22,4,4,4,4,4,4,4,4,4,4,5,5]"}
 
 The + indicates that the corresponding proficiency variable (names are
 abbreviated) is relevant, the ++ indicates that the variable is the
 primary one for this task type.
 
 The names of the task and evidence models are created by removing the
-spaces from the names, making the first letter lower case, and
-appending the work 'Task' (for task models) or 'Evidence' (for
-evidence models).
+spaces from the names, making the first letter lower case, and appending
+the work 'Task' (for task models) or 'Evidence' (for evidence models).
 
-The design pattern of 'Compensatory' means that the experts thought
-the skills entered in a compensatory manner.
+The design pattern of 'Compensatory' means that the experts thought the
+skills entered in a compensatory manner.
 
-The anchor sets are constrained to have an average difficulty of 0.
-The anchor column indicates which set this evidence model type belongs
-to.
+The anchor sets are constrained to have an average difficulty of 0. The
+anchor column indicates which set this evidence model type belongs to.
 
 The ''Solve Geometric Problems'' tasks are actually tasks about
 distinguishing geometric from other types of sequences, so the
@@ -53,20 +54,19 @@ proficiency variable is not correctly names.
 
 ## Difficulty Targets and Link Model Priors
 
-The ACED team decided to build three different variants of of each
-type of task: an easy, a medium difficulty and a hard task.  To model
-this, we used a variant of the evidence model called the link
-model prior, a sub-model that differs from its evidence model parent
-by having a different prior distribution for the parameters.  In this
-case "easy" tasks were thought to have a difficulty of around -1 (on
-an IRT scale); "hard" tasks were thought to have a difficulty of
-around 1; and "medium" tasks were thought to have a difficulty of
-around 0.
+The ACED team decided to build three different variants of of each type
+of task: an easy, a medium difficulty and a hard task. To model this, we
+used a variant of the evidence model called the link model prior, a
+sub-model that differs from its evidence model parent by having a
+different prior distribution for the parameters. In this case "easy"
+tasks were thought to have a difficulty of around -1 (on an IRT scale);
+"hard" tasks were thought to have a difficulty of around 1; and "medium"
+tasks were thought to have a difficulty of around 0.
 
 Notationally, the Link Model Prior names were formed from the Evidence
-Model names by adding 'Hard', 'Medium', or 'Easy', and 'LMP'.  The
-[[ECD/Task Specifications]] (a sub-model of the task model) names were
-formed by adding just the name.  The task names ended in a number
+Model names by adding 'Hard', 'Medium', or 'Easy', and 'LMP'. The
+task specifications (a sub-model of the task model) names
+were formed by adding just the name. The task names ended in a number
 indicating the difficulty target (1=easy, 2=medium, 3=hard).
 
 ## The "Solve Geometric Problems" tasks
@@ -74,36 +74,36 @@ indicating the difficulty target (1=easy, 2=medium, 3=hard).
 In the initial design of ACED, the the team identified one class of
 problems as "Solve Geometric Problems" tasks and their Q-Matrix entry
 indicated that they tapped the "Solve Geometric Problems" proficiency
-model (the highest level one).  In later analysis, these tasks proved
-to be highly influential.  On closer scrutiny, it turns out that the
-tasks involved recognizing whether or not a sequence was geometric.
-Thus, maybe the proficiency model was really missing a "Recognize
-Sequence Type" node, which is the one this should be attached to.  The
-original model was the one used for task selection and analysis in all
-of the papers.
+model (the highest level one). In later analysis, these tasks proved to
+be highly influential. On closer scrutiny, it turns out that the tasks
+involved recognizing whether or not a sequence was geometric. Thus,
+maybe the proficiency model was really missing a "Recognize Sequence
+Type" node, which is the one this should be attached to. The original
+model was the one used for task selection and analysis in all of the
+papers.
 
 (Note that the CBAL Mathematics Team at ETS, noted the prevalence of a
 pattern in which students would try to solve proportional reasoning
-problems using addition instead of multiplication.  It may be the
+problems using addition instead of multiplication. It may be the
 sequence which typically forced the recognize sequence problems first,
-helped students later.  Thoughts?)
+helped students later. Thoughts?)
 
-##  The complete task list
+## The complete task list
 
-ACED used an extended Task ID system (designed for StatShop) that used
-a URL-like syntax to indicate the ECD models associated with a task.
-The extended IDs look like:
+ACED used an extended Task ID system (designed for StatShop) that used a
+URL-like syntax to indicate the ECD models associated with a task. The
+extended IDs look like:
 
 `ecd://`"Project"`/`"Assessment"`/`"Model"`/`"Submodel"`/`"ID"`.`"Version"
 
 In this case "Project" is always `K12Math`, "Assessment" is always
-`Formative` and "Version" is always `1`.  The "ID" part is unique,
-always starts with a 't' and ends with a number indicating difficulty.
-This shorter ID is used in a number of places.
+`Formative` and "Version" is always `1`. The "ID" part is unique, always
+starts with a 't' and ends with a number indicating difficulty. This
+shorter ID is used in a number of places.
 
 The complete list of tasks is as follows:
 
-```
+```         
 ecd://K12Math/Formative/commonRatioTask/commonRatioMedium/tCommonRatio2b.1
 ecd://K12Math/Formative/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2a.1
 ecd://K12Math/Formative/solveGeometricProblemsTask/solveGeometricProblemsMedium/tSolveGeometricProblems2b.1
@@ -169,6 +169,5 @@ ecd://K12Math/Formative/explicitGeometricTask/explicitGeometricEasy/tExplicitGeo
 ecd://K12Math/Formative/explicitGeometricTask/explicitGeometricEasy/tExplicitGeometric1b.1
 ```
 
-
-ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.
-
+ACED development and data collection was sponsored by National Science
+Foundation Grant No. 0313202.

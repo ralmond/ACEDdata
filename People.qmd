@@ -18,8 +18,3 @@ The following people contributed to ACED.
 
 
 ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.
-time=1216328638
-author:1216328638=ralmond
-csum:1216328638=First pass
-diff:1216328638:1216328638:=1,19d0%0a%3c The following people contributed to ACED.  (Listed alphabetically, except for Val).%0a%3c %0a%3c * Val Shute -- Visionary and project director.%0a%3c * Russell Almond -- Bayes net engine ([[ECD/StatShop]]), Weight of Evidence algorithm, ECD Guru, Data analysis.%0a%3c * Larry Casey -- Database design%0a%3c * Aurora Graf -- Math expert:  Proficiency Modeling, Task and Feedback Design%0a%3c * Eric Hansen -- Universal design and accessibility concerns%0a%3c * Steve Landau, [[http://www.touchgraphics.com]] -- Delivery systems (both visual and tactile)%0a%3c * Peggy Redman -- ECD Librarian and other support services%0a%3c * Jody Underwood -- Task and Feedback design%0a%3c * Waverly Van Winkle -- Testing and other important tasks%0a%3c * Juan-Diego Zapata-Rivera --%0a%3c %0a%3c (Val, please edit this page!  I've almost certainly missed something or somebody important.  %0a%3c -> --Russell)%0a%3c ----%0a%3c [[Main/HomePage]] [[ACED/ACED]] [[ACED/Data]] [[ACED/Model]] [[ACED/People]] [[ACED/Publications]]%0a%3c %0a%3c ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.%0a\ No newline at end of file%0a
-host:1216328638=144.81.31.97

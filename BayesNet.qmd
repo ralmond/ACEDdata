@@ -2,6 +2,8 @@
 title: "ACED Bayes net Models"
 ---
 
+## The Peanut data format.
+
 The `Peanut` format represents a Bayes net using a series of spreadsheets (sheets in the links).
 
 
@@ -17,12 +19,25 @@ Note that variable names are scoped within nets, so that `isCorrect` in `item1` 
 
 * **Statistics** This is a list of the statistics (of the posterior competency model) which should be included on a score report.
 
+## Full ACED
+
 [Full ACED Model](https://docs.google.com/spreadsheets/d/1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ/)
 
 This is the full ACED model.
 Note that the "Easy", "Medium" and "Hard" evidence models should be used with the 1, 2 and 3 versions of the tasks.
 
+## MiniACED
+
 [Mini ACED Model](https://docs.google.com/spreadsheets/d/1t4ZPfeNmSFXm4ejQPjdGri8_U8VkEsR9mwKwE1AM0p4/)
 
 This is a subset of the ACED model designed to be easier to use with the student version of Netica.
 
+## R Package
+
+The `ACED` package available on R-universe contains these tables as R data sets.  To access.
+
+```r
+install.packages("ACED",repos="https://ralmond.r-universe.dev")
+library(ACED)
+data(FullACED)  # Or MiniACED
+```

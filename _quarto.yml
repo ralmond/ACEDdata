@@ -9,12 +9,41 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: DataFiles.qmd
-        text: Data
-      - href: ACEDcodebook.qmd
-        text: "Code Book"
-      - href: BayesNet.qmd
-        text: "Bayes Nets"
+      - text: History
+        menu:
+          - text: "ACED Project"
+            href: ACED.qmd
+          - href: Evaluation.qmd
+            text: "Evaluation Study"
+          - href: People.qmd
+          - href: Publications.qmd
+      - text: "Cognitive Model"
+        menu:
+          - href: Model.qmd
+            text: "Cognitive Model"
+          - href: BayesNet.qmd
+            text: "Bayes net description"
+          - href: PM.qmd
+            text: "Proficiency Model"
+          - href: QMatrix.qmd
+            text: "Q-Matrix"
+      - text: "Items"
+        href: items/index.qmd
+      - text: "Data"
+        menu:
+          - href: Data.qmd
+            text: "How to get data"
+          - href: DataFiles.qmd
+            text: "Alternate Data Files"
+          - href: ACEDcodebook.qmd
+            text: "Code Book"
+          - href: ShinyDataPrep.qmd
+            text: "Data for use with Shiny Item Analysis"
+      - text: "Analyses"
+        menu:
+          - href: BuildMotif.qmd
+          - href: kappaLambda.qmd
+          - href:
       - about.qmd
 
 format:

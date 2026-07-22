@@ -11,7 +11,7 @@ source("klfuns.R")
 load("data/ACED.RData")
 ACED.skillNames
 ```
-## Calculate cross-tabs using split havles data
+## Calculate cross-tabs using split halves data
 
 ```{r}
 ctabs <- 

@@ -2,18 +2,45 @@
 title: "ACED Data Repository"
 ---
 
-* [ACED history](history.qmd)
+* ACED History
+ 
+  - [ACED history](ACED.qmd)
+  
+  - [Evaluation Study](Evaluation.qmd)
+  
+  - [People](People.qmd)
 
-* [Code Book](ACEDcodebook.qmd)
+* Model
 
-* [Data Index](DataFiles.qmd)
+  - [Cognitive Model](Model.qmd)
 
-* [Bayes Net Model](BayesNet.qmd)
+  - [Bayes net description](BayesNet.qmd)
+
+  - [Proficiency Model](PM.qmd)
+
+  - [$Q$-Matrix](QMatrix.qmd)
+
+* [Items](items/index.qmd)
+      - text: "Data"
+        menu:
+          - href: Data.qmd
+            text: "How to get data"
+ 
+
+* Data
+  
+  - [How to get Data](Data.qmd)
+
+  - [Code Book](ACEDcodebook.qmd)
+
+  - [Data Index](DataFiles.qmd)
 
 * Helpful Scripts
+
+[Building the Motif with Peanut](BuildMotif.qmd)
 
 [Data Prep for use with Shiny Item Analysis](ShinyDataPrep.qmd)
 
 [Kappa and Lambda calculations](kappaLambda.qmd)
 
-* [References](bib.qmd)
+* [References](References.qmd)

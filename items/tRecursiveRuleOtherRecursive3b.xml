@@ -1,0 +1,64 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+     Let <italics>a</italics><sub>1</sub>, <italics>a</italics><sub>2</sub>, <italics>a</italics><sub>3</sub>, 
+         <emphasis>...</emphasis>,
+	 <italics>a</italics><sub>n</sub>, <emphasis>...</emphasis> be a sequence of positive
+     numbers. The first five terms of the sequence are given below.
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence><blockquote> 
+     <Inlineimg SRC="images/RecursiveRuleOR3bStem.gif" ALTTEXT="" /> <emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  <Paragraph>
+   <Sentence>
+     Select the correct rule for finding the (<italics>n</italics>+1)th term from the <italics>n</italics>th term.
+     </Sentence>
+   </Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Image SRC="images/RecursiveRuleOR3bDistA.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3bDistB.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3bDistC.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3bDistD.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3bDistE.gif" ALTTEXT="" /></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC" >
+  <response SCORE="1" EVIDENCEVAL="1">
+      <observable>4</observable>
+      <feedback TYPE="Student">Great work! The expression you selected is correct.</feedback>
+      <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+<response SCORE="0" EVIDENCEVAL="0">
+  <observable>1</observable> 
+  <feedback TYPE="Student">Sorry, that's not right. For an = 8, the expression you selected evaluates to: 8 + 8 = 16. But the next term in the sequence 8 1/4, not 16. So this rule does not apply to the sequence given in the question. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student did not get this item right.</feedback> 
+  </response>
+<response SCORE="0" EVIDENCEVAL="0">
+  <observable>2</observable> 
+  <feedback TYPE="Student">Sorry, that's not right. Think about the following example: The first term is 8, so when n = 1, an = 8. 1 * 8 = 8. But the next term in the sequence is 8 1/4, not 8. So this rule does not apply to the sequence given in the question. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student did not get this item right.</feedback> 
+  </response>
+<response SCORE="0" EVIDENCEVAL="0">
+  <observable>3</observable> 
+  <feedback TYPE="Student">Sorry, that's not right. For an = 8, the expression you selected evaluates as: 8 + 1/4 = 8 1/4. The next term is 8 1/4, so the rule works for these particular numbers. But it does not work in general. For example, when an = 8 3/4, 8 3/4 + 1/4 = 9. But the next term in the sequence is 9 1/2, not 9, so the rule fails in this case. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student did not get this item right.</feedback> 
+  </response>
+<response SCORE="0" EVIDENCEVAL="0">
+  <observable>5</observable> 
+  <feedback TYPE="Student">Sorry, that's not right. For an =  9 1/2, the expression you selected evaluates as: 9 1/2 + 1 = 10 1/2. The next term is 10 1/2, so the rule works for these particular numbers. But it does not work in general. For example, when an = 8, 8 + 1 = 9. But the next term in the sequence is 8 1/4, not 9, so the rule fails in this case. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student did not get this item right.</feedback> 
+  </response>
+
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tRecursiveRuleOtherRecursive3b" Difficulty="3">
+	<PMNode LINK="true">RecursiveRuleOtherRecursive</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

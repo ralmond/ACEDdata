@@ -1,0 +1,93 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stimulus TYPE="text">
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>A</Emphasis></TD>
+		<TD class="underLine"><Emphasis>B</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>2</TD>
+		<TD>5</TD>
+	</TR>
+	<TR>
+		<TD>3</TD>
+		<TD>7</TD>
+	</TR>
+	<TR>
+		<TD>4</TD>
+		<TD>9</TD>
+	</TR>
+	<TR>
+		<TD>5</TD>
+		<TD>11</TD>
+	</TR>
+	<TR>
+		<TD><Emphasis>...</Emphasis></TD>
+		<TD><Emphasis>...</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>7</TD>
+		<TD><Emphasis>?</Emphasis></TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+<Stem>
+  <Paragraph><Sentence>
+  If the pattern shown in the table on the left were continued, what number 
+  would appear in the box at the bottom of column B, where A is 7?
+  </Sentence></Paragraph>
+
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>19</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>13</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>18</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>12</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>15</Sentence></Paragraph></Distractor>
+</Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right.  In problems like this, you need to find
+                                 the common difference and add it to the last given number the right
+                                 number of times.  The common difference here is 2, and the correct
+                                 answer is 15.</feedback>
+        <feedback TYPE="Teacher">Could be that the student added wrong.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Good try, but not quite.  It looks like you added the correct common 
+                                 difference (2) to the last given item only one time.  The problem asked
+                                 for the value of B when A is 7.  The correct answer is 15. </feedback>
+        <feedback TYPE="Teacher">Could have added 2 to the "last number" ignoring the hiatus.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's not right. In problems like this, you need to find
+                                 the common difference and add it to the last given number the right
+                                 number of times.  The common difference here is 2, and the correct
+                                 answer is 15. </feedback>
+        <feedback TYPE="Teacher">Seems to have added 11 to 7.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's not right.  In problems like this, you need to find
+                                 the common difference and add it to the last given number the right
+                                 number of times.  The common difference here is 2, and the correct
+                                 answer is 15.</feedback>
+        <feedback TYPE="Teacher">It's possible that the student just added 1 to 11.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>5</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableExtendArithmetic1a" Difficulty="1">
+        <PMNode LINK="true">TableArithmetic</PMNode>
+        <PMNode>ExtendArithmetic</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

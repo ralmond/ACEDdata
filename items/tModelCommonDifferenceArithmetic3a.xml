@@ -1,0 +1,53 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>During their school concerts, a middle school chorus 
+                   stands on a set of platforms. Each platform is higher than the one
+ in front of it so the audience can see all the singers in the chorus. 
+The first platform, the one closest to the audience, is 6" high. The 5th 
+                   platform, the one furthest from the audience, is 22" high. There is 
+                   a constant difference in height between each pair of platforms. </Sentence></Paragraph>
+
+        <Paragraph><Sentence>How much taller is the 4th platform than 
+                   the 3rd platform?</Sentence> 
+        </Paragraph>
+</Stem>
+<input_collection>
+	<inputfield type="inline" size="shortest">Answer:</inputfield>
+	<descriptor>inches</descriptor>
+</input_collection>
+
+<key TYPE="math">
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>4</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>18</observable>
+        <feedback TYPE="Student">Good try, but incorrect. That's the height of 
+                                 the 4th platform, but you needed to figure out how much taller it is than the 
+                                 3rd platform.  The correct answer is 4 inches. </feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>6</observable>
+        <feedback TYPE="Student">Sorry, that was incorrect. That's the height of 
+                                 the 1st platform, but you needed to figure out how much taller the 4th platform
+                                 is than the 3rd platform.  The correct answer is 4 inches. </feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect.  You needed to figure out how much taller the 4th platform
+                                 is than the 3rd platform.  The correct answer is 4 inches. </feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tModelCommonDifferenceArithmetic3a" Difficulty="3">
+        <PMNode LINK="true">ModelArithmetic</PMNode>
+        <PMNode LINK="true">CommonDifference</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

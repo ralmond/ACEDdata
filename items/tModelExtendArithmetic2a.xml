@@ -1,0 +1,55 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph>
+          <Sentence>
+          Alice has a frequent customer card with her favorite ice cream store. 
+          When she first gets her card, the owner of the ice cream store puts 3 stamps 
+          on it. After that, Alice gets 2 stamps on her card each time she buys an ice 
+          cream cone. Once she has earned at least 15 stamps, Alice can exchange her 
+          card for a Super Deluxe Chocolate Peanut Butter sundae. 
+          </Sentence> 
+        </Paragraph>
+	<Paragraph>
+          <Sentence>How many ice cream cones must Alice buy before she can earn the sundae?
+          </Sentence> 
+        </Paragraph>
+</Stem>
+<input_collection>
+	<inputfield type="inline" size="shortest">Enter your answer here:</inputfield>
+</input_collection>
+<key TYPE="math">
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>6</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>15</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. That's the total number stamps that Alice needs.
+                                 Since she started with 3 stamps, she needs fewer than 15 cones. But she also
+                                 earns 2 stamps per cone.  The correct answer is 6 cones.</feedback>
+        <feedback TYPE="Teacher">Student probably selected the total number of stamps.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>8</observable>
+        <feedback TYPE="Student">Good try, but you didn't figure in the three stamps that Alice started with. 
+                                 The correct answer is 6 cones.</feedback>
+        <feedback TYPE="Teacher">Student figured that 2*8=16, enough stamps to get the 
+                                 free sundae.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect. Starting with the original 3 stamps, Alice needs
+                                 to buy 6 cones to earn the additional 12 stamps (2 stamps per cone)
+                                 to bring her to 15.</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tModelExtendArithmetic2a" Difficulty="2">
+        <PMNode LINK="true">ModelArithmetic</PMNode>
+        <PMNode>ExtendArithmetic</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

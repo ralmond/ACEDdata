@@ -4,22 +4,22 @@ title: "ACED Publications"
 
 Here is a listing of some publications that describe aspects of ACED. 
 
-Hansen, E. G., Shute, V. J., & Landau, S. (2010). An assessment-for-learning system in mathematics for individuals with visual disabilities. _Journal of Visual Impairment and Blindness_, __104__(5), 275-286.
+[Hansen, E. G., Shute, V. J., & Landau, S. (2010).](https://myweb.fsu.edu/vshute/pdf/shute%202010_d.pdf) An assessment-for-learning system in mathematics for individuals with visual disabilities. _Journal of Visual Impairment and Blindness_, __104__(5), 275-286.
 
 [Shute, V. J., Hansen, E. G., & Almond, R. G. (2008).](papers/aied_shute_final2.pdf) You can?t fatten a hog by weighing it?Or can you? Evaluating an assessment for learning system called ACED._International Journal of Artificial Intelligence and Education_, __18__(4), 289-316.
 
-Almond, R. G., Shute, V. J., Underwood, J. S., Zapata-Rivera, D. (2008). Bayesian networks: A teacher?s view. _International Journal of Approximate Reasoning_, Elsevier Publishers. 
+[Almond, R. G., Shute, V. J., Underwood, J. S., Zapata-Rivera, D. (2009).](https://myweb.fsu.edu/vshute/pdf/shute%202009_b.pdf) Bayesian networks: A teacher?s view. _International Journal of Approximate Reasoning_, __50__, 450--460. 
 
 [Shute, V. J., Hansen, E. G., & Almond, R. G. (2007).](papers/ShuteHansenAlmond-RR-07-26.pdf) An assessment for learning system called ACED: Designing for learning effectiveness and accessibility, _ETS Research Report,_ [RR-07-26](http://www.ets.org/research/researcher/RR-07-26.html)
 (pp. 1-54), Princeton, NJ. 
 
-Shute, V. J., Hansen, E. G., & Almond, R. G. (2007). Evaluating ACED: The impact of feedback and adaptivity on learning. In R. Luckin, K. Koedinger, & J. Greer (Eds.), _Artificial intelligence in education - Building technology rich learning contexts that work_ (pp. 230--237), Amsterdam, The Netherlands: IOS Press. (ISBN 978-1-58603-764-2) 
+[Shute, V. J., Hansen, E. G., & Almond, R. G. (2007).](https://myweb.fsu.edu/vshute/pdf/Eval_ACED.pdf) Evaluating ACED: The impact of feedback and adaptivity on learning. In R. Luckin, K. Koedinger, & J. Greer (Eds.), _Artificial intelligence in education - Building technology rich learning contexts that work_ (pp. 230--237), Amsterdam, The Netherlands: IOS Press. (ISBN 978-1-58603-764-2) 
 
-Shute, V. J. & Underwood, J. S. (2006). Diagnostic assessment in mathematics problem solving. _Technology, Instruction, Cognition, & Learning_, __3__(1), 151-166.  
+[Shute, V. J. & Underwood, J. S. (2006).](https://myweb.fsu.edu/vshute/pdf/shute%202006_a.pdf) Diagnostic assessment in mathematics problem solving. _Technology, Instruction, Cognition, & Learning_, __3__(1), 151-166.  
 
 [Shute, V. J., Graf, E. A., & Hansen, E. (2006).](ShuteGrafHansen-RR-06-01.pdf) Designing adaptive, diagnostic math assessments for individuals with and without visual disabilities. _ETS Research Report, [RR-06-01](http://www.ets.org/research/researcher/RR-06-01.html) (pp. 1-46), Princeton, NJ. 
 
-Shute, V. J., Graf, E. A., & Hansen, E. (2005). Designing adaptive, diagnostic math assessments for individuals with and without visual disabilities. In L. PytlikZillig, R. Bruning, and M. Bodvarsson (Eds.). _Technology-based education: Bringing researchers and practitioners together_ (pp. 169-202). Information Age Publishing. 
+[Shute, V. J., Graf, E. A., & Hansen, E. (2005).](https://myweb.fsu.edu/vshute/pdf/shute%202005_a.pdf) Designing adaptive, diagnostic math assessments for individuals with and without visual disabilities. In L. PytlikZillig, R. Bruning, and M. Bodvarsson (Eds.). _Technology-based education: Bringing researchers and practitioners together_ (pp. 169-202). Information Age Publishing. 
 
 ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.
 

@@ -1,0 +1,62 @@
+<TestItem CLASS="ssmc" METHOD="list">
+
+<Stem>
+  <Paragraph><Sentence>
+ You have an excellent recipe for chocolate chip cookies. By the end of a week, you've shared the 
+ recipe with four of your friends. During the second week, each of your friends share the recipe 
+ with four of their friends, so that sixteen new people now know about the recipe. During the third week, 
+ each of these 16 people share the recipe with four new friends.
+
+  </Sentence></Paragraph>
+
+  <Paragraph><Sentence>
+ Assuming this pattern continues, how many new friends will get the recipe during the 4th week?
+  </Sentence></Paragraph>
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>1,024</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>64</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>256</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>32</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>16</Sentence></Paragraph></Distractor>	
+</Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right, but you are close. You correctly figured out how many new friends will get the recipe in week 5. In week 4, there will be 4<sup>4</sup> = 256 new recipes out there.</feedback>
+        <feedback TYPE="Teacher">The student probably raised the exponent
+ by one too many. Instead of calculating the number of new friends who get the recipe in week 4 (4<sup>4</sup> = 256), the student calculated the number of new friends who get the recipe in week 5: 4<sup>5</sup> = 1,024</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right, but you are close. You correctly figured out how many new friends would hear about the recipe in week 3. In week 4, there will be 4<sup>4</sup> = 256 new recipes out there.</feedback>
+        <feedback TYPE="Teacher">The student probably raised the exponent
+ by one too few. Instead of calculating the number of new friends who get the recipe in week 4 (4<sup>4</sup> = 256), the student calculated the number of new friends who get the recipe in week 3: 4<sup>3</sup> = 64</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>3</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">Student has answered correctly: 4<sup>4</sup> = 256.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's not right. By the end of week 3, 16 * 4 = 64 new friends have the recipe. So by the end of week 4, more than 64 new friends must have the recipe. In fact, by week 4, there will be 4<sup>4</sup> = 256 new recipes out there.</feedback>
+        <feedback TYPE="Teacher">The student probably multiplied 16 (the number of new friends who get the recipe in month 2) by 2.</feedback>
+    </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>5</observable>
+        <feedback TYPE="Student">Sorry, that's not right. If four additional friends got the recipe each month, 
+        your answer would be correct. But each month, each person gives the recipe to four new friends. 
+        In week 4, there will be 4<sup>4</sup> = 256 new recipes out there.</feedback>
+        <feedback TYPE="Teacher">The student multiplied 4 * 4 = 16, instead of raising 4 to the 4th power (4<sup>4</sup> = 256).</feedback>
+    </response>
+  </key>	
+<Metadata>
+    <AeL ItemNode="tVerbalRuleExtendModelGeometric1b" Difficulty="1">
+        <PMNode LINK="true">ExtendGeometric</PMNode>
+	<PMNode LINK="true">VerbalRuleGeometric</PMNode>
+	<PMNode>ModelGeometric</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

@@ -1,0 +1,63 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+     Let <italics>a</italics><sub>1</sub>, <italics>a</italics><sub>2</sub>, <italics>a</italics><sub>3</sub>, 
+         <emphasis>...</emphasis>,
+	 <italics>a</italics><sub>n</sub>, <emphasis>...</emphasis> be a sequence of positive
+     numbers. The first five terms of the sequence are given below.
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence><blockquote> 
+     <Inlineimg SRC="images/RecursiveRuleOR3aStem.gif" ALTTEXT="" /> <emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  <Paragraph>
+   <Sentence>
+     Select the correct rule for finding the (<italics>n</italics>+1)th term from the <italics>n</italics>th term.
+     </Sentence>
+   </Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Image SRC="images/RecursiveRuleOR3aDistA.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3aDistB.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3aDistC.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3aDistD.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Image SRC="images/RecursiveRuleOR3aDistE.gif" ALTTEXT="" /></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC" >
+  <response SCORE="1" EVIDENCEVAL="1">
+      <observable>1</observable>
+      <feedback TYPE="Student">Great work! The expression you selected is correct.</feedback>
+      <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+      <observable>2</observable> 
+      <feedback TYPE="Student">Sorry, that's not right. Think about the following example: The first term is 7, so when n = 1, an = 7. 1 * 7 = 7. But the next term in the sequence is 7 1/2, not 7. So this rule does not apply to the sequence given in the question. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>3</observable> 
+      <feedback TYPE="Student">Sorry, that's not right. For an = 7, the expression you selected evaluates to: 7 + 7 = 14. But the next term in the sequence 7 1/2, not 14. So this rule does not apply to the sequence given in the question. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>4</observable> 
+      <feedback TYPE="Student">Sorry, that's not right. For an = 10, the expression you selected evaluates as: 10 + 2 = 12. The next term is 12, so the rule works for these particular numbers. But it does not work in general. For example, when an = 7, 7 + 2 = 9. But the next term in the sequence is 7 1/2, not 9, so the rule fails in this case. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+<response SCORE="0" EVIDENCEVAL="0">
+      <observable>5</observable> 
+      <feedback TYPE="Student">Sorry, that's not right. For an = 7, the expression you selected evaluates as: 7 + 1/2 = 7 1/2. The next term is 7 1/2, so the rule works for these particular numbers. But it does not work in general. For example, when an = 10, 10 + 1/2 = 10 1/2. But the next term in the sequence is 12, not 10 1/2, so the rule fails in this case. It's a good approach to test your rule by checking it with several pairs of numbers from the sequence.</feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tRecursiveRuleOtherRecursive3a" Difficulty="3">
+	<PMNode LINK="true">RecursiveRuleOtherRecursive</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

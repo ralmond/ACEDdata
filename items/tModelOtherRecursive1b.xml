@@ -1,0 +1,67 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+
+<Paragraph>
+<Sentence>Dominoes are rectangular-shaped tiles. Each tile is divided by a line across the 
+      center that separates the piece into two ends. Each end may have between 0 and 6 dots (an end with 0 dots 
+       appears blank). You can arrange dominoes in a chain by matching the number of dots on the ends where they touch.</Sentence>
+</Paragraph>	
+<Paragraph>
+<Sentence>
+	Stephanie has a set of dominoes. She removes all of the dominoes that have an end with no dots (blanks) on them. 
+	She selects four dominoes from the remaining pile and arranges them end to end, as shown in the figure below.
+</Sentence>
+</Paragraph>
+<Image SRC="images/tModelOtherRecursive1b.jpg" ALTTEXT="" /> 
+<Paragraph>
+   <Sentence>
+Moving from left to right, the sequence that corresponds to the above figure is:</Sentence>
+</Paragraph>
+
+<Blockquote><Paragraph> <Sentence>1, 4, 4, 5, 5, 2, 2, 2</Sentence></Paragraph></Blockquote>
+<Paragraph>
+   <Sentence>
+Which sequence represents the same set of dominoes, moving from right to left?</Sentence>
+</Paragraph>
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>1, 4, 4, 5, 5, 2, 2, 2 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>2, 2, 2, 2, 2, 5, 5, 1 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 1, 5, 5, 2, 2, 2 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>2, 2, 2, 5, 5, 4, 4, 1 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>2, 2, 2, 5, 5, 4, 1 </Sentence></Paragraph></Distractor>
+</Distractor_list>
+<Key TYPE="SSMC" >
+<response SCORE="1" EVIDENCEVAL="1">
+<observable>4</observable>
+	<feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+</response>
+<response SCORE="0" EVIDENCEVAL="0">
+ <observable>1</observable>
+	<feedback TYPE="Student">Not quite.  That's the same sequence. 
+                                 When a problem asks you to take a sequence that you
+                                 read from left to right, and read it from right to left, it means to reverse
+                                 it.  In this case, the correct answer is 2,2,2,5,5,4,4,1.  </feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+</response>
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>5</observable>
+	<feedback TYPE="Student">Good try, but not quite.  You left out one number in the middle!
+                                 The correct answer is 2,2,2,5,5,4,4,1.  </feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+</response>
+ <response SCORE="0" EVIDENCEVAL="0">
+  <observable ANY="true"/> 
+	<feedback TYPE="Student">Sorry, that's not right. When a problem asks you to take a sequence that you
+                                 read from left to right, and read it from right to left, it means to reverse
+                                 it.  In this case, the correct answer is 2,2,2,5,5,4,4,1. </feedback>
+	<feedback TYPE="Teacher">The student got this item incorrect.</feedback> 
+  </response>
+</Key>
+<Metadata>
+<AeL ItemNode="tModelOtherRecursive1b" Difficulty="1">
+	<PMNode LINK="true">ModelOtherRecursive</PMNode>
+</AeL>
+</Metadata>
+</TestItem>

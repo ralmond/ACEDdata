@@ -1,0 +1,65 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+     Let <italics>a</italics><sub>1</sub>, <italics>a</italics><sub>2</sub>, <italics>a</italics><sub>3</sub>, <Emphasis>...</Emphasis>, 
+	<italics>a</italics><sub><italics>n</italics></sub>, <Emphasis>...</Emphasis> be a sequence of positive numbers, 
+	where <italics>a</italics><sub>1</sub>=1, and <italics>a</italics><sub><italics>n</italics>+1</sub>= <italics>a</italics><sub><italics>n</italics></sub> + 4.
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence>Which of the following represents the <italics>n</italics>th term
+    in the sequence?</Sentence></Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence> 4<italics>n</italics> - 3  </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 4<italics>n</italics> - 1 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 4<italics>n</italics>     </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 4<italics>n</italics> + 1 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 4<italics>n</italics> + 4 </Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC">
+  <response SCORE="1" EVIDENCEVAL="1">
+    <observable>1</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable> 
+        <feedback TYPE="Student">Sorry, that was incorrect. The sequence given in the problem started with 1 and had a common difference of 4. 
+That sequence is: 1, 5, 9, 13 . . . A good approach to solving these kinds of problems is to 
+generate the sequence and then test your rule against it. </feedback>
+        <feedback TYPE="Teacher">The student probably didn't generate the sequence first.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable> 
+        <feedback TYPE="Student">Sorry, that was incorrect. The sequence given in the problem started with 1 and had a common difference of 4. 
+That sequence is: 1, 5, 9, 13 . . . A good approach to solving these kinds of problems is to 
+generate the sequence and then test your rule against it. </feedback>
+        <feedback TYPE="Teacher">The student probably didn't generate the sequence first.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable> 
+        <feedback TYPE="Student">Sorry, that was incorrect. The sequence given in the problem started with 1 and had a common difference of 4. 
+That sequence is: 1, 5, 9, 13 . . . A good approach to solving these kinds of problems is to 
+generate the sequence and then test your rule against it. </feedback>
+        <feedback TYPE="Teacher">The student probably didn't generate the sequence first.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+    <observable>5</observable> 
+        <feedback TYPE="Student">Sorry, that was incorrect. The sequence given in the problem started with 1 and had a common difference of 4. 
+That sequence is: 1, 5, 9, 13 . . . A good approach to solving these kinds of problems is to 
+generate the sequence and then test your rule against it. </feedback>
+        <feedback TYPE="Teacher">Could be that the + 4 is taken from the recursive rule in the problem.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitRecursiveRuleArithmetic3a" Difficulty="3">
+	<PMNode LINK="true">ExplicitArithmetic</PMNode>
+	<PMNode>RecursiveRuleArithmetic</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

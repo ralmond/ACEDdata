@@ -1,0 +1,75 @@
+ <TestItem CLASS="ssmc" METHOD="list">
+ <Stem>
+ <Paragraph>
+   <Sentence>Katie is a biochemist. During her last trip to the Amazon 
+	rainforest, she brought back some leaves from an exotic plant.
+	The substance she extracted from the leaves has some
+	 amazing properties: one drop on a given cell causes it to 
+	 grow and divide, so that it generates an additional cell of the same size, 
+	 along with a smaller bonus cell. That is, at the first division, 
+	 there are three cells, made up of two large cells and one small cell.  
+	 At the next division, the number of large cells and small cells doubles, so there 
+	 are a total of six cells (4 large and 2 small cells) at the second division. 
+	 The same pattern continues: as a result of each division, the number of large cells doubles; 
+	 the number of small cells also doubles, so there are always half as many small cells as large cells.
+   </Sentence>
+ </Paragraph>
+ <Paragraph>
+  <Sentence>Your task is to find the expression for the number of 
+  total cells present as a result of the <italics>n</italics>th division.  </Sentence> 
+  </Paragraph>
+  </Stem>
+ <Distractor_list>
+ <Distractor><Paragraph><Sentence> 3 * 2<sup><italics>n</italics>-1</sup></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>2 * 3<sup><italics>n</italics>-1</sup></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>3<sup><italics>n</italics></sup></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>2<sup><italics>n</italics></sup></Sentence></Paragraph></Distractor>
+  </Distractor_list>
+ <key TYPE="SSMC">
+ <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>1</observable> 
+    <feedback TYPE="Student">Correct, good job!</feedback>
+    <feedback TYPE="Teacher">The student has successfully modeled a real world problem by finding an explicit formula for a geometric sequence.</feedback>
+  </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right.
+ Try plugging in some numbers into the formula you chose, starting with the first 
+ division: <italics>n</italics> = 1. 
+ Then 2 * 3<sup><italics>n</italics>-1</sup> = 2 * 3<sup>0</sup> = 2 * 1 = 2. 
+ But we know there are three cells, not two, after the first division, so your answer is not right. 
+ The geometric sequence in this case is: 3, 6, 12, 24... for each division. The correct answer is: 
+ 3 * 2<sup><italics>n</italics>-1</sup>.</feedback>
+        <feedback TYPE="Teacher">The student may have memorized the formula for a geometric sequence, and confused some of the terms.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's not right.
+Try plugging in some numbers. Suppose <italics>n</italics> = 2. 
+Then 3<sup><italics>n</italics></sup> =  3<sup><italics>2</italics></sup> = 9. 
+But we know that there are six cells, not nine, after the second division. The geometric sequence in 
+this case is: 3, 6, 12, 24... for each division. The correct answer is: 
+ 3 * 2<sup><italics>n</italics>-1</sup>.</feedback>
+        <feedback TYPE="Teacher">In finding the formula, the student may have only looked at the number of cells following the first division, and may not have verified the pattern.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's not right. But you are close. You did find the correct 
+        formula for the number of <emphasis>large cells</emphasis> as a result of the <italics>n</italics>th 
+        division. Try plugging in some numbers. Suppose <italics>n</italics> = 1. 
+        Then 2<sup><italics>n</italics></sup> =  2<sup><italics>1</italics></sup> = 2. 
+        But we know that there are three cells, not two, after the first division. 
+        The geometric sequence in this case is: 3, 6, 12, 24.... for each division. The correct answer is: 
+ 3 * 2<sup><italics>n</italics>-1</sup>.</feedback>
+        <feedback TYPE="Teacher">The student may have observed that the number of large cells and small cells both double, and may have inferred that a power of two was involved. In fact this is the correct formula for the number of large cells.</feedback>
+   </response>
+  </key>
+ <Metadata>
+ <AeL ItemNode="tVerbalRuleExplicitModelGeometric3a" Difficulty="3">
+  <PMNode LINK="true">VerbalRuleGeometric</PMNode> 
+  <PMNode LINK="true">ExplicitGeometric</PMNode> 
+	<PMNode>ModelGeometric</PMNode> 
+  
+  </AeL>
+  </Metadata>
+  </TestItem>

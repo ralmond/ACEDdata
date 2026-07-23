@@ -1,0 +1,76 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+     Let <italics>a</italics><sub>1</sub>, <italics>a</italics><sub>2</sub>, <italics>a</italics><sub>3</sub>,
+	 <emphasis> ...</emphasis>, <italics>a</italics><sub><italics>n</italics></sub>, <emphasis> ...</emphasis>
+	 be a sequence of positive numbers.  
+     The first four terms of the sequence are given below.
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence><blockquote> 0.60, 2.03, 3.46, 4.89,<emphasis> ...</emphasis>
+     </blockquote></Sentence></Paragraph>
+  <Paragraph>
+   <Sentence>
+     Select the correct rule for finding the (<italics>n</italics>+1)th term from the <italics>n</italics>th term.
+     </Sentence>
+   </Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence> <italics>a</italics><sub><italics>n</italics>+1</sub> = <italics>a</italics><sub><italics>n</italics></sub> - 1.43 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> <italics>a</italics><sub><italics>n</italics>+1</sub> = 1.43<italics>a</italics><sub><italics>n</italics></sub> + 0.60 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> <italics>a</italics><sub><italics>n</italics>+1</sub> = 1.43<italics>a</italics><sub>n</sub> </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> <italics>a</italics><sub><italics>n</italics>+1</sub> = <italics>a</italics><sub><italics>n</italics></sub> + 1.43 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> <italics>a</italics><sub><italics>n</italics>+1</sub> = <italics>a</italics><sub><italics>n</italics></sub>+ 0.60  </Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC">
+  <response SCORE="1" EVIDENCEVAL="1">
+    <observable>4</observable>
+      <feedback TYPE="Student">Right!</feedback>
+      <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+      <observable>1</observable>
+      <feedback TYPE="Student">Sorry, that was incorrect. 
+                               You needed to add 1.43 instead of subtracting 1.43 from the nth term
+                               because it's an increasing sequence. 
+                               To check your answer, apply the rule to two consecutive terms.
+                               </feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+      <observable>2</observable>
+      <feedback TYPE="Student">Sorry, that was incorrect. 
+                               You needed to add 1.43 (the common difference) 
+                               to the nth term to get the (n+1)th term. 
+                               To check your answer, apply the rule to two consecutive terms.
+                               </feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+      <observable>3</observable>
+      <feedback TYPE="Student">Sorry, that was incorrect.
+                               Instead of multiplying the nth term by 1.43, you needed to add 1.43 to it. 
+                               To check your answer, apply the rule to two consecutive terms.
+                               </feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+      <observable>5</observable>
+      <feedback TYPE="Student">Sorry, that was incorrect. 
+                               Instead of adding 0.60 to the nth term, you needed to add 1.43 to it. 
+                               To check your answer, apply the rule to two consecutive terms.
+                               </feedback>
+      <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tRecursiveRuleArithmetic3b" Difficulty="3">
+	<PMNode LINK="true">RecursiveRuleArithmetic</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

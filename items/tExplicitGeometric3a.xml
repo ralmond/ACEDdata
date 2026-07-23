@@ -1,0 +1,68 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    The first four terms of a geometric sequence are given below. 
+    Choose the algebraic expression that represents the <italics>n</italics>th term in this sequence.
+     </Sentence>
+   </Paragraph>
+<Blockquote>
+  <Image SRC="images/ExplicitGeometric3aStem.gif" ALTTEXT="" />
+</Blockquote>
+
+  </Stem>
+
+  <distractor_list>
+   <distractor> <Image SRC="images/ExplicitGeometric3aDistA.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitGeometric3aDistB.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitGeometric3aDistC.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitGeometric3aDistD.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitGeometric3aDistE.gif" ALTTEXT="" /> 
+     </distractor>
+  </distractor_list>
+
+
+<Key TYPE="SSMC">
+
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. Then the expression you selected evaluates to 1/2(3<sup>n-1</sup>) = 1/2(3<sup>1-1</sup>) = 1/2. But the first term is equal to 3, not 1/2, so this cannot be the correct expression to describe the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student may have misremembered the formula for finding the nth term of a geometric sequence. The student should be encouraged to verify expressions by substituting numbers from the problem.</feedback>
+ </response>
+
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. Then the expression you selected evaluates to 1/2<sup>n</sup> + 3 = 1/2<sup>1</sup> + 3 = 3.5. But the first term is equal to 3, not 3.5, so this cannot be the correct expression to describe the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student may have misremembered the formula for finding the nth term of a geometric sequence. The student should be encouraged to verify expressions by substituting numbers from the problem.</feedback>
+ </response>
+
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. Then the expression you selected evaluates to n/2 = 1/2. But the first term is equal to 3, not 1/2, so this cannot be the correct expression to describe the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student can probably identify the common ratio of a geometric sequence, but does not know how to represent this in an explicit formula for the nth term.</feedback>
+ </response>
+
+  <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>4</observable>
+        <feedback TYPE="Student">Right! You have identified the correct expression for the nth term.</feedback> 
+  <feedback TYPE="Teacher">The student successfully identified the correct explicit formula for an increasing geometric sequence that includes fractions in the terms.</feedback>
+ </response>
+
+  <response  SCORE="0" EVIDENCEVAL="0">
+   <observable>5</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. Consider the case where n = 1. Then the expression you selected evaluates to n/2 + 3 = 3.5. But the first term is equal to 3, not 3.5, so this cannot be the correct expression to describe the sequence.</feedback> 
+  <feedback TYPE="Teacher">The student has not identified the correct expression for the nth term of a geometric sequence, and should be encouraged to verify expressions by substituting numbers from the problem.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitGeometric3a" Difficulty="3">
+	<PMNode LINK="true">ExplicitGeometric</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

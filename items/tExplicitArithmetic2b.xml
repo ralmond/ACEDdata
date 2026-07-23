@@ -1,0 +1,56 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    The first four terms of an arithmetic sequence are given below. 
+    Choose the algebraic expression that represents the <italics>n</italics>th 
+    term in this sequence. 
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence><blockquote>3, 7, 11, 15,<emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>  4<italics>n</italics> - 1 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  3<italics>n</italics> - 4 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  4<italics>n</italics> + 1 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  4<italics>n</italics>     </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  4<italics>n</italics> + 3 </Sentence></Paragraph></Distractor>  
+</Distractor_list>
+
+<Key  TYPE="SSMC">
+  <response SCORE="1" EVIDENCEVAL="1">
+    <observable>1</observable>
+        <feedback TYPE="Student">Right! The expression you selected, 4n - 1, is correct.</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, 3n - 4, is incorrect. The sequence in the question is: 3, 7, 11, 15,... But the expression you selected describes the sequence: -1, 2, 5, 8, ...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+ <response SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, 4n + 1, is incorrect. The sequence in the question is: 3, 7, 11, 15,... But the expression you selected describes the sequence: 5, 9, 13, 17, ...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+ <response SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, 4n, is incorrect. The sequence in the question is: 3, 7, 11, 15,... But the expression you selected describes the sequence: 4, 8, 12, 16, ...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+ <response SCORE="0" EVIDENCEVAL="0">
+    <observable>5</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, 4n + 3, is incorrect. The sequence in the question is: 3, 7, 11, 15,... But the expression you selected describes the sequence: 7, 11, 15, 19, ...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitArithmetic2b" Difficulty="2">
+	<PMNode LINK="true">ExplicitArithmetic</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

@@ -1,0 +1,101 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Give the first 3 terms of an arithmetic sequence that satisfies the following:</Sentence> 
+        </Paragraph>
+        <Blockquote>
+	  <Paragraph><Sentence>1. The first term is a positive integer between 20 and 22, 
+                                  inclusive.</Sentence> 
+          </Paragraph>
+	  <Paragraph><Sentence>2. The common difference is a negative integer between -6 and -4, inclusive.</Sentence> 
+          </Paragraph>
+        </Blockquote>
+        <Paragraph><Sentence>
+          <Emphasis>Note:</Emphasis> There is more than one correct answer. Any example 
+           you choose that meets the above requirements will be scored as correct.   
+        </Sentence></Paragraph>
+</Stem>
+<input_collection>
+	<inputfield  ID="1" type="inline" size="shortest">Enter your answers here:</inputfield>
+	<inputfield  ID="2" type="inline" size="shortest">,</inputfield>
+	<inputfield  ID="3" type="inline" size="shortest"> and </inputfield>
+</input_collection>
+<key type="COMPOUND">
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">20</observable>
+		<observable ID="2" TYPE="math">14</observable>
+		<observable ID="3" TYPE="math">8</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">20</observable>
+		<observable ID="2" TYPE="math">15</observable>
+		<observable ID="3" TYPE="math">10</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">20</observable>
+		<observable ID="2" TYPE="math">16</observable>
+		<observable ID="3" TYPE="math">12</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">21</observable>
+		<observable ID="2" TYPE="math">15</observable>
+		<observable ID="3" TYPE="math">9</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">21</observable>
+		<observable ID="2" TYPE="math">16</observable>
+		<observable ID="3" TYPE="math">11</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">21</observable>
+		<observable ID="2" TYPE="math">17</observable>
+		<observable ID="3" TYPE="math">13</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">22</observable>
+		<observable ID="2" TYPE="math">16</observable>
+		<observable ID="3" TYPE="math">10</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">22</observable>
+		<observable ID="2" TYPE="math">17</observable>
+		<observable ID="3" TYPE="math">12</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">22</observable>
+		<observable ID="2" TYPE="math">18</observable>
+		<observable ID="3" TYPE="math">14</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response TYPE="FR" SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect. Your sequence should 
+          have started with a 20, 21, or 22 and then decreased by either 4, 5, or 6. 
+          For example, two correct sequences would be: 20, 16, 12 and 22, 16, 10.  
+        </feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExamplesCommonDifferenceArithmetic2a" Difficulty="2">
+        <PMNode LINK="true">ExamplesArithmetic</PMNode>
+	<PMNode>CommonDifference</PMNode>
+    </AeL>
+</Metadata>
+</TestItem>

@@ -1,0 +1,85 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stimulus TYPE="text">
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Puppy's Age</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Puppy's Weight</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>1 month</TD>
+		<TD>10 lbs</TD>
+	</TR>
+	<TR>
+		<TD>2 months</TD>
+		<TD>15 lbs</TD>
+	</TR>
+	<TR>
+		<TD>3 months</TD>
+		<TD>19 lbs</TD>
+	</TR>
+	<TR>
+		<TD>4 months</TD>
+		<TD>22 lbs</TD>
+	</TR>
+	<TR>
+		<TD>5 months</TD>
+		<TD><Emphasis>?</Emphasis></TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+<Stem>
+  <Paragraph><Sentence>
+  John records the weight of his puppy every month 
+  in a chart like the one shown to the left. If the pattern of 
+  the puppy's weight gain continues, how many pounds will 
+  the puppy weigh at 5 months?
+  </Sentence></Paragraph>
+
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>30</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>27</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>25</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>24</Sentence></Paragraph></Distractor>
+  </Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right. It seems that you tried to add a
+      common difference to 22, but these sequences are not arithmetic sequences.
+      There is a different relationship that you need to find.
+      The correct answer is 24.</feedback>
+        <feedback TYPE="Teacher">Student saw that the first difference is 5, 
+      and assumed that each weight given is always 5 more pounds than the last 
+      (would choose 27 in this case, because of adding 5 to 22).</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right. For these kinds of problems, you need to find a 
+      pattern between the numbers.
+      The correct answer is 24.</feedback>
+        <feedback TYPE="Teacher">Not sure how 30 could be chosen.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's not right.  It seems that you tried to add a
+      common difference to 22, but these sequences are not arithmetic sequences.
+      There is a different relationship that you need to find.
+      The correct answer is 24.</feedback>
+        <feedback TYPE="Teacher">Could have chosen 25 if only checked the last difference of 3.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>4</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableExtendModelOtherRecursive1a" Difficulty="1">
+        <PMNode LINK="true">TableOtherRecurisive</PMNode>
+        <PMNode>ExtendOtherRecursive</PMNode>
+        <PMNode>ModelOtherRecursive</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

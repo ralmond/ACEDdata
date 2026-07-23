@@ -1,0 +1,66 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Extend the following sequence by giving the next two terms: 
+	<Blockquote>1, 4, 9, 16, 25, <Emphasis> ... </Emphasis></Blockquote></Sentence> 
+        </Paragraph>
+</Stem>
+<input_collection>
+	<inputfield  ID="1" type="inline" size="shortest"> Enter your answers here:</inputfield>
+	<inputfield  ID="2" type="inline" size="shortest"> and </inputfield>
+</input_collection>
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">36</observable>
+		<observable ID="2" TYPE="math">49</observable>    
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">26</observable>
+		<observable ID="2" TYPE="math">27</observable>    
+        <feedback TYPE="Student">Sorry, that's not right.  For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 36 and 49.</feedback>
+        <feedback TYPE="Teacher">The student seemed to have added 1 to get the next two numbers.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">34</observable>
+		<observable ID="2" TYPE="math">43</observable>    
+        <feedback TYPE="Student">Sorry, that's not right.  For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 36 and 49.</feedback>
+        <feedback TYPE="Teacher">The student seemed to have added 9 (the difference between 16 and 25)
+                                 to get the next two numbers.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">28</observable>
+		<observable ID="2" TYPE="math">31</observable>    
+        <feedback TYPE="Student">Sorry, that's not right.  For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 36 and 49.</feedback>
+        <feedback TYPE="Teacher">The student seemed to have added 3 (the difference between 1 and 4)
+                                 to get the next two numbers.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that's not right.  For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 36 and 49.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExtendOtherRecursive1a" Difficulty="1">
+        <PMNode LINK="true">ExtendOtherRecursive</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

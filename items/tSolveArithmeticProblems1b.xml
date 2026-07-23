@@ -1,0 +1,31 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+<Paragraph>
+<Sentence>Which of the following is not an arithmetic sequence?</Sentence>
+</Paragraph>	
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>1, 3, 5, 7, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>4, 9, 14, 19, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>3, 6, 12, 24, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>10, 20, 30, 40, <emphasis>...</emphasis></Sentence></Paragraph></Distractor>
+</Distractor_list>
+<Key TYPE="SSMC" >
+<response SCORE="1" EVIDENCEVAL="1">
+<observable>3</observable>
+	<feedback TYPE="Student">Right! You found what is called a geometric sequence.</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+</response>
+ <response SCORE="0" EVIDENCEVAL="0">
+  <observable ANY="true"/> 
+	<feedback TYPE="Student">Sorry, that's not right. Notice the common difference between each pair of numbers
+ in the sequence you selected. That means that it IS an arithmetic sequence. </feedback>
+	<feedback TYPE="Teacher">Not sure what the problem is.</feedback> 
+  </response>
+</Key>
+<Metadata>
+<AeL ItemNode="tSolveArithmetic1b" Difficulty="1">
+	<PMNode LINK="true">Arithmetic</PMNode>
+</AeL>
+</Metadata>
+</TestItem>

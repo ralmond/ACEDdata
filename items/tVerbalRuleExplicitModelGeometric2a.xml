@@ -1,0 +1,62 @@
+ <TestItem CLASS="ssmc" METHOD="list">
+ <Stem>
+ <Paragraph>
+  <Sentence>Katie is a biochemist. During her last trip to the Amazon 
+	rainforest, she brought back some leaves from a plant.
+	The substance she extracted from the leaves has some
+	 amazing properties. One drop of the substance on a given cell causes it to grow and divide, 
+	 so that it generates an additional cell of the same size, along with a smaller bonus cell.
+	 Immediately after the first division, there are three cells (2 large and 1 small). 
+	 During the next division, the number of large and small cells doubles again, for a total
+	 of 6 cells (4 large ones and 2 small ones). The same pattern continues for each new division.
+  </Sentence>
+  </Paragraph>
+ <Paragraph>
+  <Sentence>Your task is to find the total number of cells present
+ as a result of the third division. </Sentence> 
+  </Paragraph>
+  </Stem>
+ <Distractor_list>
+ <Distractor><Paragraph><Sentence>3</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>6</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>12</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>24</Sentence></Paragraph></Distractor>
+  </Distractor_list>
+ <key TYPE="SSMC">
+ <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>3</observable> 
+    <feedback TYPE="Student">Correct, good job!</feedback>
+    <feedback TYPE="Teacher">The student sucessfully modeled a real world problem using a simple geometric sequence.</feedback>
+  </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right. You found the number of cells present as a 
+        result of the first division (3). At the second division, there would be 6 cells, and at the third
+        division, there would be a total of 12 cells, which is the correct answer.  </feedback>
+        <feedback TYPE="Teacher">Looks like the student computed the number of cells present as a result of the first division.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right. You found the number of cells present as a 
+        result of the second division. Double that number to get 12, the number of cells present after
+         the third division.</feedback>
+        <feedback TYPE="Teacher">Looks like the student computed the number of cells present as a result of the second division.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's not right. You found the number of cells present as a 
+        result of the fourth division. At the first division there are 3 cells, at the second 
+        division, there are 6 cells, and at the third
+        division, there are a total of 12 cells, which is the correct answer. </feedback>
+        <feedback TYPE="Teacher">Looks like the student computed the number of cells present as a result of the fourth division.</feedback>
+   </response>
+  </key>
+ <Metadata>
+ <AeL ItemNode="tVerbalRuleExplicitModelGeometric2a" Difficulty="2">
+  <PMNode LINK="true">VerbalRuleGeometric</PMNode> 
+  <PMNode LINK="true">ExplicitGeometric</PMNode> 
+	<PMNode>ModelGeometric</PMNode> 
+  
+  </AeL>
+  </Metadata>
+  </TestItem>

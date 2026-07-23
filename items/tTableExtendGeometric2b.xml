@@ -1,0 +1,94 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stimulus TYPE="text">
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Term Number</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Term Value</Emphasis></TD>
+	</TR>
+	<TR>
+
+		<TD>1</TD>
+		<TD><Inlineimg SRC="images/OneFifth.gif" ALTTEXT="" /></TD>
+	</TR>
+	<TR>
+		<TD>2</TD>
+		<TD><Inlineimg SRC="images/OneFifteenth.gif" ALTTEXT="" /></TD>
+		
+	</TR>
+	<TR>	<TD>3</TD>
+		<TD><Emphasis>A</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>4</TD>
+		<TD><Emphasis>B</Emphasis></TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+
+<Stem>
+  <Paragraph><Sentence>
+  The numbers in the table represent terms in a geometric sequence. Complete the table by filling in the values for A and B.
+
+
+    </Sentence></Paragraph>
+	
+</Stem>
+
+<input_collection>
+  <inputfield ID="1" type="limited" size="shortest">Enter the value for <Emphasis>A:</Emphasis></inputfield>
+  <inputfield ID="2" type="limited" size="shortest">Enter the value for <Emphasis>B:</Emphasis></inputfield>
+</input_collection>
+
+<key TYPE="Compound">
+
+<response SCORE="1" EVIDENCEVAL="1">
+      	<observable ID="1" TYPE="Math">1/45</observable>
+        <observable ID="2" TYPE="Math">1/135</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student correctly generated the next two terms in a geometric sequence with fraction terms, when the sequence was presented in tabular format.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">5</observable>
+        <observable ID="2" TYPE="Math">6</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have misread the question.</feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence, when the sequence was presented in tabular format. It is possible the student confused term number with term value.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">-1/15</observable>
+        <observable ID="2" TYPE="Math">-1/5</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. The first two terms in the sequence are from a geometric sequence, not from an arithmetic sequence. </feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence with fraction terms, when the sequence was presented in tabular format. It is possible the student confused the definition for a geometric sequence with the definition for an arithmetic sequence.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">1/75</observable>
+        <observable ID="2" TYPE="Math">1/1125</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have been multiplying adjacent terms, instead of multiplying each term by the common ratio, 1/3.</feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence with fraction terms, when the sequence was presented in tabular format. The student may have multiplied adjacent terms.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math">4/15</observable>
+        <observable ID="2" TYPE="Math">1/3</observable>
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have been adding adjacent terms, instead of multiplying each term by the common ratio, 1/3.</feedback>
+        <feedback TYPE="Teacher">The student did not correctly generate the next two terms in a geometric sequence with fraction terms, when the sequence was presented in tabular format. The student may have added adjacent terms.</feedback>
+    </response>
+
+
+     <response SCORE="0" EVIDENCEVAL="0">
+        <feedback TYPE="Student">Sorry, that was incorrect.</feedback>
+        <feedback TYPE="Teacher">Sorry, that was incorrect.  In the table, we are given the first two terms of the sequence, 1/5 and 1/15.  This information alone is not enough to fill out the table, but we are also told that the terms are from a geometric sequence.  This means that the common ratio must be equal to the second term divided by the first term.  1/15 divided by 1/5 is equal to 1/15 times 5, which is 5/15 or 1/3.  So the common ratio of this sequence is 1/3.  To get the third term, multiply the second term by the common ratio.  This is 1/15 times 1/3, or 1/45.  To get the fourth term, multiply the third term by the common ratio.  This is 1/45 times 1/3, or 1/135.  The empty cells in the table should be replaced with the values for the third and fourth terms, so A should be replaced with 1/45 and B should be replaced with 1/135.</feedback>
+        <observable ANY="true"/>
+    </response>
+
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableExtendGeometric2b" Difficulty="2">
+        <PMNode LINK="true">TableGeometric</PMNode>
+        <PMNode>ExtendGeometric</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

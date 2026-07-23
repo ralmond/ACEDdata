@@ -1,0 +1,78 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+
+<Paragraph>
+<Sentence>Dominoes are rectangular-shaped tiles. Each tile is divided by a line across the 
+      center that separates the piece into two ends. Each end may have between 0 and 6 dots (an end with 0 dots 
+      appears blank). You can arrange dominoes in a chain by matching the number of dots on the ends where they touch.</Sentence>
+</Paragraph>	
+<Paragraph>
+<Sentence>
+	Anthony has a set of dominoes. He removes all of the dominoes that have an end with no dots (blanks) on them. 
+	He selects four dominoes from the remaining pile and arranges them end to end, as shown in the figure below.
+</Sentence>
+</Paragraph>
+<Image SRC="images/tModelOtherRecursive3b.jpg" ALTTEXT="" /> 
+<Paragraph>
+   <Sentence>
+Moving from left to right, the sequence that corresponds to the above figure is:</Sentence>
+</Paragraph>
+
+<Blockquote><Paragraph> <Sentence>4, 2, 2, 1, 1, 6, 6, 6</Sentence></Paragraph></Blockquote>
+<Paragraph>
+   <Sentence>
+Which of the following sequences might represent a different set of 5 dominoes, arranged end to end?</Sentence>	
+</Paragraph>
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>2, 4, 4, 1, 1, 3, 3, 5 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>1, 6, 6, 3, 3, 4, 4, 6, 1, 2 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 3, 3, 3, 6, 6, 6, 6, 5, 5, 5 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 3, 5, 5, 6, 4, 2, 2, 1, 1, 6 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>6, 3, 3, 5, 5, 6, 6, 6 </Sentence></Paragraph></Distractor>
+</Distractor_list>
+<Key TYPE="SSMC" >
+<response SCORE="1" EVIDENCEVAL="1">
+<observable>3</observable>
+	<feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+</response>
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>1</observable>
+	<feedback TYPE="Student">Sorry, that's not right. Only 4 dominoes 
+        were represented instead of 5. The correct answer 
+        is: 3,3,3,6,6,6,6,5,5,5. 
+        </feedback>
+        <feedback TYPE="Teacher">The student listed 4 correct dominoes, not 5.</feedback>
+</response>
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>2</observable>
+	<feedback TYPE="Student">Sorry, that's not right. The last domino in your
+        choice does fit the domino matching rule. The correct answer 
+        is: 3,3,3,6,6,6,6,5,5,5.
+        </feedback>
+        <feedback TYPE="Teacher">The student listed a domino that fit the matching rule.</feedback>
+</response>
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>4</observable>
+	<feedback TYPE="Student">Sorry, that's not right. The third domino in your
+        choice does fit the domino matching rule. The correct answer 
+        is: 3,3,3,6,6,6,6,5,5,5.
+        </feedback>
+        <feedback TYPE="Teacher">The student listed a domino that fit the matching rule.</feedback>
+</response>
+<response SCORE="0" EVIDENCEVAL="0">
+<observable>5</observable>
+	<feedback TYPE="Student">Sorry, that's not right. Your answer contained
+        four dominoes, not five. The correct answer 
+        is: 3,3,3,6,6,6,6,5,5,5.
+        </feedback>
+        <feedback TYPE="Teacher">The student listed 4 correct dominoes, not 5.</feedback>
+</response>
+</Key>
+<Metadata>
+<AeL ItemNode="tModelOtherRecursive3b" Difficulty="3">
+	<PMNode LINK="true">ModelOtherRecursive</PMNode>
+</AeL>
+</Metadata>
+</TestItem>

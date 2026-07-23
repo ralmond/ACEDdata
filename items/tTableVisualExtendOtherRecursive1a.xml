@@ -1,0 +1,94 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+   <Paragraph><Sentence>
+	Enter the volume when the edge length of a cube is 4 (A in the table):
+   </Sentence></Paragraph> 
+  </Stem>
+<Stimulus TYPE="text">
+<Image SRC="images/Cubes2.gif" ALTTEXT="" /> 
+<Paragraph><Sentence>
+	The volume of the three cubes above is shown in the table below. 
+ 
+     </Sentence>
+   </Paragraph>
+<TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Edge Length</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Volume</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>1</TD>
+		<TD>1</TD>
+	</TR>
+
+	<TR>
+		<TD>2</TD>
+		<TD>8</TD>		
+	</TR>
+
+	<TR>
+		<TD>3</TD>
+		<TD>27</TD>		
+	</TR>
+
+	<TR>		
+		<TD><Emphasis>4</Emphasis></TD>
+		<TD><Emphasis>A</Emphasis></TD>		
+	</TR>
+
+  </TABLE>
+</Stimulus>
+
+<input_collection>
+  <inputfield ID="1" type="limited" size="shortest">Enter the value for <Emphasis>A:</Emphasis></inputfield>  
+</input_collection>
+
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+        <observable ID="1" TYPE="Math">64</observable>        
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">Student answered correctly.</feedback>
+    </response>
+
+<response SCORE="0" EVIDENCEVAL="0">        
+        <observable ID="1" TYPE="Math">16</observable>        
+        <feedback TYPE="Student">Sorry, that's not right. It looks like you squared the edge length, but you needed 
+                                 to cube it (4 * 4 * 4 = 64). In problems like these, it helps to check 
+                                 the rule you've come up with against all the pairs of numbers.</feedback>
+        <feedback TYPE="Teacher">Looks like the student did 4 * 4, and forgot the last multiplication.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">        
+        <observable ID="1" TYPE="Math">36</observable>        
+        <feedback TYPE="Student">Sorry, that's not right. It looks like you multiplied the edge length by 9, but you needed 
+                                 to cube it (4 * 4 * 4 = 64).  In problems like these, it helps to check 
+                                 the rule you've come up with against all the pairs of numbers. </feedback>
+        <feedback TYPE="Teacher">Looks like the student looked at the relationship between edge length=3 and 
+                                 volume=27, but didn't check it against the other numbers.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">        
+        <observable ID="1" TYPE="Math">32</observable>        
+        <feedback TYPE="Student">Sorry, that's not right. It looks like you multiplied 4 * 8, but you needed 
+                                 to cube the side (4 * 4 * 4 = 64).  In problems like these, it helps to check 
+                                 the rule you've come up with against all the pairs of numbers. </feedback>
+        <feedback TYPE="Teacher">Looks like the student looked at the relationship between edge length=3 and 
+                                 volume=27, but didn't check it against the other numbers.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+        <observable ID="1" TYPE="Math" ANY="true" />
+        <feedback TYPE="Student">Sorry, that's not right. To solve problems like this, you need to find the edge length
+                                 and then cube it. For this problem, the edge length is 4, so 4 * 4 * 4 = 64 (the volume). 
+                                 In problems like these, it helps to check 
+                                 the rule you've come up with against all the pairs of numbers. </feedback>
+        <feedback TYPE="Teacher">Student answered incorrectly.</feedback>
+    </response>
+</key>	
+
+<Metadata>
+   <AeL ItemNode="tTableVisualExtendOtherRecursive1a" Difficulty="1">
+	<PMNode LINK="true">ExtendOtherRecursive</PMNode>
+	<PMNode LINK="true">TableOtherRecursive</PMNode>
+	<PMNode>VisualOtherRecursive</PMNode>	
+   </AeL>
+</Metadata>
+
+</TestItem>

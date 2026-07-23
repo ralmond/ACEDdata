@@ -1,0 +1,58 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph><Sentence>
+  International time is based on the time in Greenwich, England, which is in time zone 0.  
+  There are twelve time zones to the west and twelve times zones to the east of time zone 
+  0.  As one moves to the east of time zone 0, 1 hour is added for each time zone.  As 
+  one moves to the west of time zone 0, 1 hour is subtracted for each time zone.  New 
+  York is 5 times zones to the west of Greenwich, and Finland is 2 time zones to the 
+  east of Greenwich.  
+  </Sentence></Paragraph>
+  <Paragraph><Sentence>
+  When it is 9 A.M. on Tuesday in Finland, what time is it in New York?
+  </Sentence></Paragraph>
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>4 A.M. on Monday</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>7 A.M. on Tuesday</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>2 A.M. on Tuesday</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>4 P.M. on Tuesday </Sentence></Paragraph></Distractor>
+</Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right. You didn't count the 
+                                 extra time zones to get to Greenwich. 
+                                 The correct answer is 2 A.M. on Tuesday.</feedback>
+        <feedback TYPE="Teacher">The student probably computed 8 time zones to the east 
+                                 of Finland and forgot about the 2 time zones to Greenwich.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right. You got the time in Greenwich, but 
+                                 now you have to find the time in New York! 
+                                 The correct answer is 2 A.M. on Tuesday. </feedback>
+        <feedback TYPE="Teacher">The student computed Greenwich time.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>3</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">Student has answered correctly.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's not right. You needed to subtract instead of add, because
+                                 the time in New York is always earlier than Finland. 
+                                 The correct answer is 2 A.M. on Tuesday.</feedback>
+        <feedback TYPE="Teacher">The student added 7 to Finland's time, instead 
+                                 of going 7 hours earlier.</feedback>
+    </response>
+  </key>	
+<Metadata>
+    <AeL ItemNode="tModelVerbalRuleArithmetic2a" Difficulty="2">
+        <PMNode LINK="true">ModelArithmetic</PMNode>
+        <PMNode>VerbalRuleArithmetic</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

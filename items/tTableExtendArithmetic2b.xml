@@ -1,0 +1,63 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stimulus TYPE="text">
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Term Number</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Term Value</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>1</TD>
+		<TD>9.00</TD>
+	</TR>
+	<TR>
+		<TD>2</TD>
+		<TD>10.48</TD>
+	</TR>
+	<TR>
+		<TD>3</TD>
+		<TD><Emphasis>A</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>4</TD>
+		<TD><Emphasis>B</Emphasis></TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+
+<Stem>
+  <Paragraph><Sentence>
+  The numbers in the table represent terms in an arithmetic sequence.
+  Complete the table by filling in the values for A and B.
+    </Sentence></Paragraph>
+	
+</Stem>
+
+<input_collection>
+  <inputfield ID="1" type="limited" size="shortest">Enter the value for <Emphasis>A:</Emphasis></inputfield>
+  <inputfield ID="2" type="limited" size="shortest">Enter the value for <Emphasis>B:</Emphasis></inputfield>
+</input_collection>
+
+<key TYPE="Compound">
+    <response  SCORE="1" EVIDENCEVAL="1">
+	    <observable ID="1" TYPE="math">11.96</observable>
+		<observable ID="2" TYPE="math">13.44</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that was incorrect. In problems like this, you need to find
+                                 the common difference and add it to the last given number the right
+                                 number of times.  The common difference here is 1.48, and the correct value
+                                 for A is 11.96 and for B is 13.44.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableExtendArithmetic2b" Difficulty="2">
+        <PMNode LINK="true">TableArithmetic</PMNode>
+        <PMNode>ExtendArithmetic</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

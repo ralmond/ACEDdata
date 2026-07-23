@@ -1,0 +1,61 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+   <Paragraph><Sentence><blockquote>1, 3, 7, 15, 31,<emphasis> . . .</emphasis>
+   </blockquote></Sentence></Paragraph>  
+   <Paragraph>
+   <Sentence>
+   Find the next two terms in the sequence shown above.
+   </Sentence>
+   </Paragraph>
+</Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence> 33, 35 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 41, 53 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 63, 127 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 83, 147  </Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC">
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable> 
+        <feedback TYPE="Student">Sorry, that's not right. For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.  
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 63 and 127.</feedback>
+        <feedback TYPE="Teacher">Student thinks there's a common difference of 2.</feedback>
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable> 
+        <feedback TYPE="Student">Sorry, that's not right. For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.  
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 63 and 127.</feedback>
+        <feedback TYPE="Teacher">Student checked first two pairs and thinks there's an even 
+      progression (2, 4, 6, ... instead of 2, 4, 8, ...).</feedback>
+   </response>
+  <response SCORE="1" EVIDENCEVAL="1">
+    <observable>3</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct. </feedback> 
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable> 
+        <feedback TYPE="Student">Sorry, that's not right. For problems like these, you need to find the
+                                 pattern based on the differences between all the pairs of numbers.  
+                                 The pattern may not be a single
+                                 common difference, as with arithmetic sequences. 
+                                 The correct numbers are 63 and 127.</feedback>
+        <feedback TYPE="Teacher">Not sure what the problem is.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExtendOtherRecursive2a" Difficulty="2">
+	<PMNode LINK="true">ExtendOtherRecursive</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

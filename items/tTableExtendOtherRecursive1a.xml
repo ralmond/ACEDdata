@@ -1,0 +1,74 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stimulus TYPE="text">
+  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Step</Emphasis></TD>
+		<TD>1</TD>
+		<TD>2</TD>
+		<TD>3</TD>
+		<TD>4</TD>
+		<TD>5</TD>
+	</TR>
+	<TR>
+		<TD class="underLine"><Emphasis>Y</Emphasis></TD>
+		<TD>1</TD>
+		<TD>5</TD>
+		<TD>11</TD>
+		<TD>19</TD>
+		<TD><Emphasis>A</Emphasis></TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+
+<Stem>
+  <Paragraph><Sentence>
+  Extend the sequence to the fifth step, giving the value for A.
+
+
+    </Sentence></Paragraph>
+	
+</Stem>
+
+<input_collection>
+  <inputfield ID="1" type="limited" size="shortest">Enter the value for <Emphasis>A:</Emphasis></inputfield>
+</input_collection>
+
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+        <observable ID="1" TYPE="Math">29</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+	<observable ID="1" TYPE="Math">21</observable>
+        <feedback TYPE="Student">Sorry, that's not right. The terms in the sequence
+        are 1, 5, 11, 19, and 29 (the correct answer). Check out the pattern of 
+        differences between all pairs of numbers.  
+        </feedback>
+        <feedback TYPE="Teacher">Student seems to have generated the next odd number.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+	<observable ID="1" TYPE="Math">23</observable>
+        <feedback TYPE="Student">Sorry, that's not right. 
+        The terms in the sequence
+        are 1, 5, 11, 19, and 29 (the correct answer). Check out the pattern of 
+        differences between all pairs of numbers.</feedback>
+        <feedback TYPE="Teacher">Student seems to have checked only the difference between the first two numbers.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+	<observable ID="1" TYPE="Math">27</observable>
+        <feedback TYPE="Student">Sorry, that's not right. 
+        The terms in the sequence
+        are 1, 5, 11, 19, and 29 (the correct answer). Check out the pattern of 
+        differences between all pairs of numbers.</feedback>
+        <feedback TYPE="Teacher">Student seems to have checked only the difference between the last two numbers.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableExtendOtherRecursive1a" Difficulty="1">
+        <PMNode LINK="true">ExtendOtherRecursive</PMNode>
+        <PMNode LINK="true">TableOtherRecursive</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

@@ -1,0 +1,122 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stimulus TYPE="text">
+<Paragraph>
+  <Sentence>The cost to rent a motorbike is given by the following formula:
+  </Sentence>
+</Paragraph>
+<Paragraph><Sentence>Cost = ($3 x number of hours) + $2
+  </Sentence>
+</Paragraph>
+	  <TABLE>
+	<TR>
+		<TD class="underLine"><Emphasis>Time in Hours</Emphasis></TD>
+		<TD class="underLine"><Emphasis>Cost in Dollars</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD>1</TD>
+		<TD>5</TD>
+	</TR>
+	<TR>
+		<TD>4</TD>
+		<TD><Emphasis>A</Emphasis></TD>
+	</TR>
+	<TR>
+		<TD><Emphasis>B</Emphasis></TD>
+		<TD>17</TD>
+	</TR>
+  </TABLE>
+</Stimulus>
+<Stem>
+  <Paragraph><Sentence>
+  Fill in the values below for <Emphasis>A</Emphasis> and <Emphasis>B</Emphasis> from the table.
+    </Sentence></Paragraph>
+	
+</Stem>
+
+<input_collection>
+  <inputfield ID="1" type="limited" size="shortest">Enter the value for <Emphasis>A:</Emphasis> $</inputfield>
+  <inputfield ID="2" type="inline" size="shortest">Enter the value for <Emphasis>B:</Emphasis></inputfield>
+     <descriptor>hours</descriptor>
+
+</input_collection>
+
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">14</observable>
+		<observable ID="2" TYPE="math">5</observable>    
+        <feedback TYPE="Student">Your answers, $14 and 5 hours, are correct. Good job!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">5</observable>
+		<observable ID="2" TYPE="math">14</observable>    
+        <feedback TYPE="Student">Sorry, that's not right. 
+                                 You entered the correct values, but in reverse order. 
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">The student may not have read the question carefully.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">14</observable>
+		<observable ID="2" TYPE="math">53</observable>    
+        <feedback TYPE="Student">Sorry, that's incorrect. You calculated the value for A correctly. 
+                                 But B is not calculated using the same formula. 
+                                 In order to calculate the value for B, you should first subtract, 
+                                 and then divide. 
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">Looks like the student applied the same formula to calculate both A and B. The student may not understand to apply inverse operations in reverse order for B.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">14</observable>
+		<observable ID="2" TYPE="math"></observable>    
+        <feedback TYPE="Student">Sorry, that's not right.  You need to fill in both empty cells 
+                                 in the table. 
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">Student didn't fill in both cells.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math"></observable>
+		<observable ID="2" TYPE="math">5</observable>    
+        <feedback TYPE="Student">Sorry, that's not right.  You need to fill in both empty cells 
+                                 in the table.
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">Student didn't fill in both cells.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">18</observable>
+		<observable ID="2" TYPE="math">3.67</observable>    
+        <feedback TYPE="Student">Sorry, that's incorrect. You may have misapplied the order of operations. 
+                                 To calculate A, first multiply, and then add. To calculate B, first 
+                                 subtract, and then divide. Remember that in calculating A, you should 
+                                 do the operation in parentheses first.
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">The student does not understand the use of parentheses, 
+                                 and may also be confused about the order of operations.</feedback>
+    </response>
+<response SCORE="0" EVIDENCEVAL="0">
+		<observable ID="1" TYPE="math">14</observable>
+		<observable ID="2" TYPE="math">3.67</observable>    
+        <feedback TYPE="Student">Sorry, that's incorrect. Your answer for A is correct, but you may have 
+                                 misapplied the order of operations when you found B. To find B, you 
+                                 should subtract before you divide.
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">The student divided before subtracting when calculating the value for B.</feedback>
+    </response>
+    <response SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that's incorrect. Here's how to calculate the value for A: 4 hours 
+                                 multiplied by $3 per hour is $12. $12 plus $2 equals $14. To get B, 
+                                 apply inverse operations in reverse: first subtract $2, and then divide 
+                                 by $3 per hour.
+                                 The correct answers are $14 and 5 hours.</feedback>
+        <feedback TYPE="Teacher">Not sure what the problem is.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tTableModelExplicitOtherRecursive3a" Difficulty="3">
+        <PMNode>ExplicitOtherRecursive</PMNode>
+	<PMNode LINK="true">TableOtherRecursive</PMNode>
+	<PMNode LINK="true">ModelOtherRecursive</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

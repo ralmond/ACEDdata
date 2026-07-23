@@ -66,7 +66,7 @@
   </xsl:template>
 
   <xsl:template match="Inlineimg|Image">
-    <img src="{@SRC}"/>
+    <img src="{@SRC}" />
   </xsl:template>
 
   <xsl:template match="response">

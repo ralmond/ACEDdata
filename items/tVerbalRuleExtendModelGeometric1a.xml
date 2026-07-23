@@ -1,0 +1,68 @@
+<TestItem CLASS="ssmc" METHOD="list">
+
+<Stem>
+  <Paragraph><Sentence>
+Maddie has come up with an idea for a community project. During month 1 of the project, she performs 
+three helpful tasks, one task for each of three people. She tutors her brother in math, rakes leaves 
+for her neighbor, and replaces the chain on her friend's bicycle. In turn, she asks each person she 
+helps to help out three new people during month 2. By the end of month 2, nine new tasks are accomplished, 
+and nine people are each ready to help three new people during month 3. The plan is for the project 
+to continue in this fashion.
+</Sentence></Paragraph>
+  <Paragraph><Sentence>
+  If everyone participates as planned, how many new tasks would be accomplished in month 5?
+  </Sentence></Paragraph>
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>729</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>81</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>243</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>15</Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>45</Sentence></Paragraph></Distractor>	
+</Distractor_list>
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right, but you are close. You correctly figured out 
+        how many new tasks would be accomplished in month 6. In month 5, there will be 243 new tasks 
+        accomplished (3<sup>5</sup> = 243).</feedback>
+        <feedback TYPE="Teacher">The student probably raised the exponent
+ by one too many. Instead of calculating the number of new tasks accomplished in month 5 (3<sup>5</sup> = 243), the student calculated the number of new tasks accomplished in month 6: 3<sup>6</sup> = 729</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not right, but you are close. You correctly figured out 
+        how many new tasks would be accomplished in month 4. In month 5, there will be 243 new tasks 
+        accomplished (3<sup>5</sup> = 243).</feedback>
+        <feedback TYPE="Teacher">The student probably raised the exponent
+ by one too few. Instead of calculating the number of new tasks accomplished in month 5 (3<sup>5</sup> = 243), the student calculated the number of new tasks accomplished in month 4: 3<sup>4</sup> = 81</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>3</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">Student has answered correctly: 3<sup>5</sup> = 243.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>4</observable>
+        <feedback TYPE="Student">Sorry, that's not right. If three additional tasks were completed each month, 
+        your answer would be correct. But each month, each new participant performs three new tasks. 
+        In month 5, there will be 243 new tasks accomplished (3<sup>5</sup> = 243).</feedback>
+        <feedback TYPE="Teacher">The student multiplied 3 * 5 = 15, instead of rasing 3 to the 5th power (3<sup>5</sup> = 243).</feedback>
+    </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>5</observable>
+        <feedback TYPE="Student">Sorry, that's not right. By the end of the third month, 9 * 3 = 27 new tasks 
+        are completed. By the end of the fourth month, 27 * 3 = 81 new tasks are completed. In month 5, 
+        there will be 243 new tasks accomplished which is 3<sup>5</sup> = 243.</feedback>
+        <feedback TYPE="Teacher">The student probably multiplied 9 (the number of new tasks completed in month 2) by 5 (number of months).</feedback>
+    </response>
+  </key>	
+<Metadata>
+    <AeL ItemNode="tVerbalRuleExtendModelGeometric1a" Difficulty="1">
+        <PMNode LINK="true">ExtendGeometric</PMNode>
+	<PMNode LINK="true">VerbalRuleGeometric</PMNode>
+	<PMNode>ModelGeometric</PMNode>
+    </AeL>
+</Metadata>
+ 
+</TestItem>

@@ -39,10 +39,10 @@
 
 </Stem>
 <Distractor_list>
-  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistA.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistB.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistC.gif" ALTTEXT="" /></Distractor>
-  <Distractor><Inlineimg SRC="../ael/items/images/ModelExtendTableGeo3aDistD.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/ModelExtendTableGeo3aDistA.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/ModelExtendTableGeo3aDistB.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/ModelExtendTableGeo3aDistC.gif" ALTTEXT="" /></Distractor>
+  <Distractor><Inlineimg SRC="images/ModelExtendTableGeo3aDistD.gif" ALTTEXT="" /></Distractor>
 </Distractor_list>
 <key TYPE="SSMC">
     <response  SCORE="1" EVIDENCEVAL="1">

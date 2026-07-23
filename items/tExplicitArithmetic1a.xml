@@ -1,0 +1,56 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    The first four terms of an arithmetic sequence are given below. 
+    Choose the algebraic expression that represents the <italics>n</italics>th 
+    term in this sequence. 
+     </Sentence>
+   </Paragraph>
+   <Paragraph><Sentence><blockquote>2, 4, 6, 8,<emphasis> . . .</emphasis>
+     </blockquote></Sentence></Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence>  <italics>n</italics> - 2 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 2<italics>n</italics>     </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 2<italics>n</italics> - 2 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence>  <italics>n</italics> + 2 </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> 2<italics>n</italics> + 2 </Sentence></Paragraph></Distractor>
+  </Distractor_list>
+
+<Key TYPE="SSMC">
+  <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>2</observable>
+        <feedback TYPE="Student">Right! The expression you selected, 2n, is correct.</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, n - 2, is incorrect. The sequence in the question is: 2, 4, 6, 8,... But the expression you selected describes the sequence: -1, 0, 1, 2,...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, 2n - 2, is incorrect. The sequence in the question is: 2, 4, 6, 8,... But the expression you selected describes the sequence: 0, 2, 4, 6,...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, n + 2, is incorrect. You have found the correct recursive formula, but this is not the same as finding an expression for the nth term. The sequence in the question is: 2, 4, 6, 8,... and the expression you selected describes the sequence: 3, 4, 5, 6,...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+<response  SCORE="0" EVIDENCEVAL="0">
+    <observable>5</observable> 
+        <feedback TYPE="Student">Sorry, the expression you selected, 2n + 2, is incorrect. The sequence in the question is: 2, 4, 6, 8,... But the expression you selected describes the sequence: 4, 6, 8, 10,...</feedback>
+        <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitArithmetic1a" Difficulty="1">
+	<PMNode LINK="true">ExplicitArithmetic</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

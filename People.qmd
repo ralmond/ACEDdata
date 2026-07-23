@@ -1,5 +1,5 @@
 ---
-title:  "ACED Personnel"
+title:  ACED Personnel
 ---
 The following people contributed to ACED.  
 
@@ -13,8 +13,6 @@ The following people contributed to ACED.
 * Jody Underwood -- Task and Feedback design
 * Waverly Van Winkle -- Testing and other important tasks
 * Juan-Diego Zapata-Rivera -- Assistance with Bayes nets.
-
-(Val, please edit this page!  I've almost certainly missed something or somebody important.)
 
 
 ACED development and data collection was sponsored by National Science Foundation Grant  No. 0313202.

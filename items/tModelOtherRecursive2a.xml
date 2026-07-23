@@ -1,0 +1,53 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    Ian is stringing beads on a cord. Starting with the first 
+    bead, he repeats the following pattern:
+     </Sentence>
+</Paragraph>
+<Image SRC="images/ian_beads.jpg" ALTTEXT="" /> 
+ <Blockquote><Paragraph> <Sentence> 4 brown beads </Sentence></Paragraph></Blockquote>
+ <Blockquote><Paragraph> <Sentence> 4 yellow beads </Sentence></Paragraph></Blockquote>
+ <Blockquote><Paragraph> <Sentence> 4 black beads </Sentence></Paragraph></Blockquote>
+<Paragraph>
+   <Sentence>
+   Ian puts 29 beads on the cord. What is the color of the final bead he puts on?
+   </Sentence>
+</Paragraph>
+
+</Stem>
+<Distractor_list>
+  <Distractor><Paragraph><Sentence> brown  </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> yellow </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence> black </Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<key TYPE="SSMC">
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not right. For problems like these, try using the picture
+                                 to help you figure out what color would appear 29th on a cord.
+                                 The correct answer here is yellow.</feedback>
+        <feedback TYPE="Teacher">Student answered incorrectly.</feedback>
+    </response>
+    <response  SCORE="1" EVIDENCEVAL="1">
+        <observable>2</observable>
+        <feedback TYPE="Student">Correct, good job!</feedback>
+        <feedback TYPE="Teacher">Student answered correctly.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable>3</observable>
+        <feedback TYPE="Student">Sorry, that's not right. For problems like these, try using the picture
+                                 to help you figure out what color would appear 29th on a cord.
+                                 The correct answer here is yellow.</feedback>
+        <feedback TYPE="Teacher">Student answered incorrectly.</feedback>
+    </response>
+</key>	
+<Metadata>
+   <AeL ItemNode="tModelOtherRecursive2a" Difficulty="2">
+	<PMNode LINK="true">ModelOtherRecursive</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

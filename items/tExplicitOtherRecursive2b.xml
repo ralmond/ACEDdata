@@ -1,0 +1,80 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>
+    The first four terms of a sequence are given below. 
+    Choose the algebraic expression that represents the <italic>n</italic>th term in this sequence.
+     </Sentence>
+   </Paragraph>
+<Blockquote>
+<Inlineimg SRC="images/ExplicitOtherRecursive2bStem.gif" ALTTEXT="" />
+ <emphasis>. . .</emphasis>
+ 
+</Blockquote>
+
+  </Stem>
+
+  <distractor_list>
+   <distractor> <Image SRC="images/ExplicitOtherRecursive2bDistA.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitOtherRecursive2bDistB.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitOtherRecursive2bDistC.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitOtherRecursive2bDistD.gif" ALTTEXT="" /> 
+     </distractor>
+   <distractor> <Image SRC="images/ExplicitOtherRecursive2bDistE.gif" ALTTEXT="" /> 
+     </distractor>
+  </distractor_list>
+
+
+<Key TYPE="SSMC">
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable>
+        <feedback TYPE="Student">Sorry, that's not the correct answer.  It looks like you may have confused
+                                 some of the numbers in the denominator.  For problems
+                                 like these, it helps to try to apply the expression to all the terms in
+                                 the sequence.  The correct answer is 1/(2n+6). </feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable>
+        <feedback TYPE="Student">Sorry, that's not the correct answer.  It looks like you chose an expression
+                                 that might work for arithmetic sequences, but that wasn't the right thing 
+                                 to do. For problems
+                                 like these, it helps to try to apply the expression to all the terms in
+                                 the sequence.  The correct answer is 1/(2n+6). </feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>3</observable>
+        <feedback TYPE="Student">Good try, but not quite right.
+                                 The main problem with that choice is that it won't generate
+                                 fractions. For problems
+                                 like these, it helps to try to apply the expression to all the terms in
+                                 the sequence.  The correct answer is 1/(2n+6). </feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>4</observable>
+        <feedback TYPE="Student">Right!</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>5</observable>
+        <feedback TYPE="Student">Sorry, that's not the correct answer.  
+                                 It looks like you may have confused
+                                 some of the numbers in the denominator. For problems
+                                 like these, it helps to try to apply the expression to all the terms in
+                                 the sequence.  The correct answer is 1/(2n+6).  </feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tExplicitOtherRecursive2b" Difficulty="2">
+	<PMNode LINK="true">ExplicitOtherRecursive</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

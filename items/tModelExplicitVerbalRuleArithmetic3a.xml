@@ -1,0 +1,73 @@
+<TestItem CLASS="ssmc" METHOD="list">
+<Stem>
+  <Paragraph>
+   <Sentence>The rates that Zack charges for baby-sitting are as follows:</Sentence></Paragraph>
+<Blockquote>
+  <Paragraph>
+   <Sentence>-- $2.50 per hour for the first child and</Sentence></Paragraph>
+  <Paragraph>
+   <Sentence>-- an extra 75 cents per hour for each additional child.</Sentence></Paragraph>
+</Blockquote>
+<Paragraph>
+   <Sentence>Choose the expression that represents the number of dollars that Zack will collect per hour
+             for babysitting <italics>n</italics> children. 
+     </Sentence>
+   </Paragraph>
+  </Stem>
+
+<Distractor_list>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="images/ModelExplicitVerbalRuleArith3aDistA.gif" ALTTEXT="" /> </Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="images/ModelExplicitVerbalRuleArith3aDistB.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="images/ModelExplicitVerbalRuleArith3aDistC.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="images/ModelExplicitVerbalRuleArith3aDistD.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+  <Distractor><Paragraph><Sentence><Inlineimg SRC="images/ModelExplicitVerbalRuleArith3aDistE.gif" ALTTEXT="" /></Sentence></Paragraph></Distractor>
+</Distractor_list>
+
+<Key TYPE="SSMC">
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>1</observable>
+    <feedback TYPE="Student">You're on the right track, but it's not quite there. You added a flat 75 cents, 
+                             but there's a 75 cent charge for each additional child.  
+                             The correct expression is 2.50 + .75(n-1)</feedback> 
+    <feedback TYPE="Teacher">Student added in the 75 cents only for a second child.</feedback> 
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>2</observable>
+    <feedback TYPE="Student">Close, but not quite there. You added 75 cents for all the children, but 
+                             the charge is just for additional children.
+                             The correct expression is 2.50 + .75(n-1)</feedback> 
+    <feedback TYPE="Teacher">Student added in the additional charge for the first child, 
+                             but did everything else right.</feedback> 
+   </response>
+  <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>3</observable>
+    <feedback TYPE="Student">Correct!</feedback> 
+    <feedback TYPE="Teacher">Student got it right.</feedback> 
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>4</observable>
+    <feedback TYPE="Student">You're on the right track, but it's not quite there. 
+                             You forgot the base amount (2.50), and the 75 cents won't apply to all n-1 
+                             children the way you have it written.  Parentheses are important here.
+                             The correct expression is 2.50 + .75(n-1)</feedback> 
+    <feedback TYPE="Teacher">Student did not use the base amount and needs parentheses around the n-1.</feedback> 
+   </response>
+  <response  SCORE="0" EVIDENCEVAL="0">
+    <observable>5</observable>
+    <feedback TYPE="Student">You're on the right track, but it's not quite there. 
+                             The 75 cents won't apply to all n-1 
+                             children, the way you have it written.  Parentheses are important here.
+                             The correct expression is 2.50 + .75(n-1)</feedback> 
+    <feedback TYPE="Teacher">Parentheses need to go around the n-1.</feedback> 
+   </response>
+</Key>
+
+<Metadata>
+   <AeL ItemNode="tModelExplicitVerbalRuleArithmetic3a" Difficulty="3">
+	<PMNode LINK="true">ModelArithmetic</PMNode>
+	<PMNode LINK="true">ExplicitArithmetic</PMNode>
+	<PMNode>VerbalRuleArithmetic</PMNode>
+   </AeL>
+</Metadata>
+
+</TestItem>

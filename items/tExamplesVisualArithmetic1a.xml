@@ -1,0 +1,47 @@
+ <TestItem CLASS="ssmc" METHOD="list">
+ <Stem>
+ <Paragraph>
+  <Sentence>These shapes are arranged in a pattern:</Sentence> 
+ <Sentence>
+  <Image src="images/SymbolPatternStem.jpg" /> 
+  </Sentence>
+  </Paragraph>
+ <Paragraph>
+  <Sentence>Which set of shapes is arranged in the same pattern?</Sentence> 
+  </Paragraph>
+  </Stem>
+ <Distractor_list>
+ <Distractor>
+  <Image SRC="images/SymbolPatternA.jpg" /> 
+  </Distractor>
+ <Distractor>
+  <Image SRC="images/SymbolPatternB.jpg" /> 
+  </Distractor>
+ <Distractor>
+  <Image SRC="images/SymbolPatternC.jpg" /> 
+  </Distractor>
+ <Distractor>
+  <Image SRC="images/SymbolPatternD.jpg" /> 
+  </Distractor>
+  </Distractor_list>
+ <key TYPE="SSMC">
+ <response  SCORE="1" EVIDENCEVAL="1">
+    <observable>3</observable> 
+    <feedback TYPE="Student">Right!</feedback>
+    <feedback TYPE="Teacher">The student got this item correct.</feedback>
+  </response>
+ <response  SCORE="0" EVIDENCEVAL="0">
+    <observable ANY="true" /> 
+    <feedback TYPE="Student">Sorry, your answer is not correct. The pattern you should
+     have selected was: 1 bar, 1 square, 2 bars, 2 squares, 3 bars, 3 squares, and so on.  
+    </feedback>
+    <feedback TYPE="Teacher">The student did not get this item right.</feedback>
+  </response>
+  </key>
+ <Metadata>
+ <AeL ItemNode="tExamplesVisualArithmetic1a" Difficulty="1">
+  <PMNode>VisualArithmetic</PMNode> 
+  <PMNode LINK="true">ExamplesArithmetic</PMNode> 
+  </AeL>
+  </Metadata>
+  </TestItem>

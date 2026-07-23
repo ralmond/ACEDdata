@@ -1,0 +1,32 @@
+<TestItem CLASS="FR" METHOD="keyinput">
+<Stem>
+	<Paragraph><Sentence>Extend the following sequence by giving the next 
+        two terms: 
+          <Inlineimg SRC="images/ExtendArithmetic3cStem.gif" ALTTEXT="" />
+          <Emphasis>. . .</Emphasis> </Sentence> 
+        </Paragraph>
+</Stem>
+<input_collection>
+	<inputfield   ID="1" type="inline" size="shortest">Enter your answers here: </inputfield>
+	<inputfield   ID="2" type="inline" size="shortest"> and </inputfield>
+</input_collection>
+<key TYPE="Compound">
+    <response SCORE="1" EVIDENCEVAL="1">
+		<observable ID="1" TYPE="math">13/2</observable>
+		<observable ID="2" TYPE="math">91/12</observable>    
+        <feedback TYPE="Student">Right! You correctly generated the next two terms in the arithmetic sequence.</feedback>
+        <feedback TYPE="Teacher">The student got this item correct.</feedback>
+    </response>
+    <response  SCORE="0" EVIDENCEVAL="0">
+        <observable ANY="true"/>
+        <feedback TYPE="Student">Sorry, that's incorrect. The sequence given in the problem, 13/12, 13/6, 13/4, 13/3, 65/12,... is an arithmetic sequence. In this case, there is a common difference of 13/12 between terms. To get any term, add 13/12 to the previous term.</feedback>
+        <feedback TYPE="Teacher">The student got this item incorrect.</feedback>
+    </response>
+</key>	
+<Metadata>
+    <AeL ItemNode="tExtendArithmetic3c" Difficulty="3">
+        <PMNode LINK="true">ExtendArithmetic</PMNode>
+    </AeL>
+</Metadata>
+
+</TestItem>

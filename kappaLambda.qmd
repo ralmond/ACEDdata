@@ -16,8 +16,11 @@ ACED.skillNames
 ```{r}
 ctabs <- 
   lapply(ACED.skillNames$short,function (skill) {
-    table(ACED.splitHalves$A[[paste0("MAP.",skill)]],
-          ACED.splitHalves$B[[paste0("MAP.",skill)]])
+    A <- ordered(ACED.splitHalves$A[[paste0("MAP.",skill)]],
+                 c("H","M","L"))
+    B <- ordered(ACED.splitHalves$B[[paste0("MAP.",skill)]],
+                 c("H","M","L"))
+    table(A,B)
   })
 ```
 

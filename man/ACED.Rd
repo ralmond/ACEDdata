@@ -167,7 +167,7 @@
   letters indicating variants).  The \code{Anchor} column is used to identify subscales for scale identification.
 
   \code{ACED.splithalves} is a list of two datasets labeled \dQuote{A} and \dQuote{B}.  Both
-  have the same structure as \code{ACED.scores} (less the datas giving study condition).  These were created
+  have the same structure as \code{ACED.scores} (less the data giving study condition).  These were created
   by splitting the 62 items into 2 subforms with 31 items each.  For the most part, each item was paired with
   an variant which differed only by the last letter.  The scores are the results of Bayes net scoring with
   half of the items.

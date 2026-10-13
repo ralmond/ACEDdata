@@ -143,3 +143,31 @@ install.packages("ACED",repos="https://ralmond.r-universe.dev")
 library(ACED)
 data(ACED)
 ```
+
+## Building the R package
+
+```{r}
+ACED.scores <- read.csv("data/bnscores.csv")
+ACED.items <- read.csv("data/allItems.csv")
+ACED.prePost <- read.csv("data/prepost.csv")
+ACED.skillNames <- read.csv("data/skillNames.csv")
+ACED.taskNames <- read.csv("data/taskNames.csv")
+ACED.splitHalves <- list()
+ACED.splitHalves$A <- read.csv("data/formA.csv")
+ACED.splitHalves$B <- read.csv("data/formB.csv")
+ACED.pretest <- list()
+ACED.pretest$Araw <- read.csv("data/PretestAraw.csv")
+ACED.pretest$Ascored <- read.csv("data/PretestAScored.csv")
+ACED.pretest$Braw <- read.csv("data/PretestBraw.csv")
+ACED.pretest$Bscored <- read.csv("data/PretestBScored.csv")
+ACED.posttest <- list()
+ACED.posttest$Araw <- read.csv("data/PosttestAraw.csv")
+ACED.posttest$Ascored <- read.csv("data/PosttestAScored.csv")
+ACED.posttest$Braw <- read.csv("data/PosttestBraw.csv")
+ACED.posttest$Bscored <- read.csv("data/PosttestBScored.csv")
+ACED.Qmatrix <- read.csv("data/Qmatrix.csv")
+ACED.QEM <- read.csv("data/QEM.csv")
+save(ACED.scores,ACED.items,ACED.prePost,ACED.skillNames,
+     ACED.taskNames,ACED.splitHalves,ACED.pretest,ACED.posttest,
+     ACED.Qmatrix,ACED.QEM,file="data/ACED.RData")
+```

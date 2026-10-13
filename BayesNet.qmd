@@ -19,6 +19,8 @@ Note that variable names are scoped within nets, so that `isCorrect` in `item1` 
 
 * **Statistics** This is a list of the statistics (of the posterior competency model) which should be included on a score report.
 
+* **Task2EM**  This is a list matching tasks to their corresponding evidence model.
+
 ## Full ACED
 
 [Full ACED Model](https://docs.google.com/spreadsheets/d/1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ/)
@@ -40,4 +42,44 @@ The `ACED` package available on R-universe contains these tables as R data sets.
 install.packages("ACED",repos="https://ralmond.r-universe.dev")
 library(ACED)
 data(FullACED)  # Or MiniACED
+```
+
+## Build Data for R package
+
+```{r}
+#| echo: true
+#| include: false
+#| context: setup
+library(googlesheets4)
+googlesheets4::gs4_deauth()
+
+```
+
+And download the sheets for FullACED.
+
+```{r FullDownloads}
+sheetID <- "1oX4ndaEij_dWsap6YR_ZrQYWYUPD6urOsn4vzjBpZIQ"
+FullACED.netman <- read_sheet(sheetID,"Nets")
+FullACED.nodeman <- read_sheet(sheetID,"Nodes")
+FullACED.omega <- read_sheet(sheetID,"Omega")
+FullACED.QQ <- read_sheet(sheetID,"Q")
+FullACED.stats <- read_sheet(sheetID,"Statistics")
+FullACED.task2em <- read_sheet(sheetID,"Task2EM")
+save(FullACED.netman,FullACED.nodeman,FullACED.omega,
+     FullACED.QQ,FullACED.stats,FullACED.task2em,
+     file="data/FullACED.RData")
+```
+And download the sheets for MiniACED.
+
+```{r MiniDownloads}
+sheetID <- "1t4ZPfeNmSFXm4ejQPjdGri8_U8VkEsR9mwKwE1AM0p4"
+MiniACED.netman <- read_sheet(sheetID,"Nets")
+MiniACED.nodeman <- read_sheet(sheetID,"Nodes")
+MiniACED.omega <- read_sheet(sheetID,"Omega")
+MiniACED.QQ <- read_sheet(sheetID,"Q")
+MiniACED.stats <- read_sheet(sheetID,"Statistics")
+MiniACED.task2em <- read_sheet(sheetID,"Task2EM")
+save(MiniACED.netman,MiniACED.nodeman,MiniACED.omega,
+     MiniACED.QQ,MiniACED.stats,MiniACED.task2em,
+     file="data/MiniACED.RData")
 ```

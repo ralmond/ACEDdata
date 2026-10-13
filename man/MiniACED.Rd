@@ -5,6 +5,7 @@
 \alias{MiniACED.omega}
 \alias{MiniACED.QQ}
 \alias{MiniACED.stats}
+\alias{MiniACED.task2em}
 \docType{data}
 \title{A Subset of the ACED Model using Expert Parmeters}
 \description{
@@ -21,11 +22,12 @@
     \item{MiniACED.QQ}{The Q-matrix describing the evidence
       models.}
     \item{MiniACED.stats}{A list of statistics to be reported.}
+    \item{MiniACED.task2em}{A mapping of tasks to evidence models.}
   }
 }
 \usage{data("MiniACED")}
 \format{
-  \code{MiniACED.netman} is  data frame with 36 rows (models) on the following 5 variables.
+  \code{MiniACED.netman} is  data frame with 16 rows (models) on the following 5 variables.
   \describe{
     \item{\code{Name}}{A character scalar, name of the network.}
     \item{\code{Title}}{A character scalar, longer name of the network}
@@ -36,7 +38,7 @@
     \item{\code{Description}}{A character scalar, a description of the network.}
   }
 
-  \code{MiniACED.nodeman} is  data frame with 112 rows (multiple
+  \code{MiniACED.nodeman} is  data frame with 48 rows (multiple
   rows per node) with the following fields:
   \describe{
     \item{\code{Model}}{A character scalar, name of the network.}
@@ -56,7 +58,7 @@
     \item{\code{LowerBound},\code{UpperBound}}{Not used.}
   }
 
-  \code{MiniACED.omega} is a data frame with 14 rows corresponding
+  \code{MiniACED.omega} is a data frame with 6 rows corresponding
   to the competency variables and 34 columns with the following fields:
   \describe{
     \item{\code{Node}}{Name of the node.  Note, these are the possible
@@ -77,8 +79,8 @@
       to bias the learning algorithm towards the priors.}
   }
 
-  \code{MiniACED.QQ} is a data frame with 35 rows corresponding to
-  observable variables and 52 columns with the following fields:
+  \code{MiniACED.QQ} is a data frame with 15 rows corresponding to
+  evidence models and 52 columns with the following fields:
   \describe{
     \item{\code{Model}}{Name of the model.}
     \item{\code{Node}}{Name of the node.}
@@ -105,6 +107,13 @@
       will be applied.}
   }
 
+  \code{MiniACED.task2em} is a data frame with 30 rows and 2 columns:
+  \describe{
+    \item{\code{Task}}{The name of the task.}
+    \item{\code{EM}}{The name of the corresponding evidence model.}
+  }
+
+
 }
 \details{
 
@@ -122,6 +131,8 @@
   \code{MiniACED.stats} describes the statistics which are to be
   reported.
 
+  \code{MiniACED.task2em} is for mapping tasks to evidence models.
+
 }
 \source{
 
@@ -134,6 +145,9 @@
 
 }
 \references{
+
+  A online description of the ACED study is available at
+  \url{https://ecd.ralmond.net/ACED/}.
 
   An online spreadsheet with these data frames is at:
 

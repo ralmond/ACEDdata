@@ -22,19 +22,19 @@
 \usage{data("ACED")}
 \format{
   ACED contains 3 primary \code{data.frame} objects and some supplementary data.
-  
-  All of the data tables have two variables which can serve as keys.  \code{SubjID} and \code{AltID}.  
-  Either can be used as a primary key in joins.  Note that the first two digits of the \code{AltID} 
-  gives the session (i.e., class) that the student was in.  Note also that students in 
-  the control group have only pretest and posttest data; hence they do not appear in 
+
+  All of the data tables have two variables which can serve as keys.  \code{SubjID} and \code{AltID}.
+  Either can be used as a primary key in joins.  Note that the first two digits of the \code{AltID}
+  gives the session (i.e., class) that the student was in.  Note also that students in
+  the control group have only pretest and posttest data; hence they do not appear in
   \code{ACED.items}, \code{ACED.scores} or \code{ACED.splitHalves}.
 
   \code{ACED.scores} is data frame with 230 observations on 74
   variables.  These are mostly high-level scores from the Bayesian
-  network.  
+  network.
   \describe{
     \item{\code{Cond_code}}{a factor giving the experimental
-      condition for this student, the levels are 
+      condition for this student, the levels are
       \dQuote{adaptive_acc}, \dQuote{adaptive_full}, \dQuote{linear_full}, and
       \dQuote{control}.  Note that there are no control students in this data set.}
     \item{\code{Sequencing}}{a factor describing whether the sequence of items
@@ -63,7 +63,7 @@
       \emph{node} is in the low state}
     \item{\code{EAP}\emph{node}}{the expected a posteriori value of \emph{node}
       assuming an equal interval scale, where \code{L=0}, \code{M=1} and
-      \code{H=2}} 
+      \code{H=2}}
     \item{\code{MAP}\emph{node}}{a factor vector giving maximum a
       posteriori value of \emph{node}, i.e.,
       \code{which.max(p}\emph{node}\code{H, p}\emph{node}\code{M, p}\emph{node}\code{L)}.}
@@ -71,19 +71,19 @@
 
   \code{ACED.skillNames} a list with two components, \code{long} and \code{short} giving
   the long (spelled out in CamelCase) and short names for the skills is a character vector giving the abbreviations
-  used for the node/skill/attributes names.  
+  used for the node/skill/attributes names.
 
 
   \code{ACED.items} is data frame with 230 observations on 73
-  variables.  These are mostly item-level scores from the field trial. 
+  variables.  These are mostly item-level scores from the field trial.
   The first two columns are \code{SubjID} and \code{AltID}.  The remaining columns
-  correspond to ACED internal tasks, and are coded 1 for correct, 0 for incorrect, and 
+  correspond to ACED internal tasks, and are coded 1 for correct, 0 for incorrect, and
   \code{NA} for not reached.
 
   \code{ACED.taskNames} is essentially the row names from \code{ACED.items}.
-  The naming scheme for the tasks reflect the skills measured by the task.  
-  The response variable names 
-  all start with \code{t} (for task) followed by the name of one or more 
+  The naming scheme for the tasks reflect the skills measured by the task.
+  The response variable names
+  all start with \code{t} (for task) followed by the name of one or more
   skills tapped by the task (if there is more than one, then the first one is
   \dQuote{primary}.)  This is followed by a numeric code, 1, 2 or 3,
   giving the difficulty (easy, medium or hard) and a letter (a, b or
@@ -91,16 +91,16 @@
 
   \code{ACED.prePost} is data frame with 290 observations on 32
   variables giving the results of the pretest and posttest.
-  
+
   \describe{
     \item{\code{SubjID}}{ID assigned by study team, \dQuote{S} followed by 3 digits.  Primary key.}
-    \item{\code{AltID}}{ID assigned by the ACED software vendor.  Pattern is \dQuote{sXX-YY}, 
+    \item{\code{AltID}}{ID assigned by the ACED software vendor.  Pattern is \dQuote{sXX-YY},
       where \emph{XX} is the session and \emph{YY} is a student with the session.}
     \item{\code{Classroom}}{A factor correpsonding to the student's class.}
     \item{\code{Gender}}{A factor giving the student's gender (I'm not sure if this is
       self-report or administrative records.)}
-    \item{\code{Race}}{A factor giving the student's self-reported race.  The codebook  
-      is lost.}  
+    \item{\code{Race}}{A factor giving the student's self-reported race.  The codebook
+      is lost.}
    \item{\code{ Level_Code }}{a factor variable describing the academic
      track of the student with levels \code{Honors}, \code{Academic},
      \code{Regular}, \code{Part 1}, \code{Part 2} and \code{ELL}.  The
@@ -121,7 +121,7 @@
   \item{\code{ PostACorr }}{number of correct items on Form A for students who
     took Form A as a posttest }
   \item{\code{ PreScore }}{ a numeric vector with either the non-missing
-    value from \code{PreACorr} and \code{PreBCorr} } 
+    value from \code{PreACorr} and \code{PreBCorr} }
   \item{\code{ PostScore }}{a numeric vector with either the non-missing
     value from \code{PostACorr} and \code{PostBCorr}  }
   \item{\code{ Gain }}{ \code{PostScore - PreScore} }
@@ -149,30 +149,30 @@
   \item{\code{ Flagged }}{ a logical variable (codebook lost) }
   \item{\code{Cond}}{a factor describing the experimental condition
     with levels \code{Adaptive/Accuracy}, \code{Adaptive/Extended},
-    \code{Linear/Extended} and \code{Control}.  Note that controls are included in this data set.} 
+    \code{Linear/Extended} and \code{Control}.  Note that controls are included in this data set.}
   \item{\code{Sequencing}}{a factor describing whether the sequence of items
     was  \code{Linear} or \code{Adaptive}}
   \item{\code{Feedback}}{a factor describing whether the feedback for
     incorrect items was \code{Extended} or \code{AccuracyOnly}}
-  }  
-  
+  }
+
   \code{ACED.Qmatrix} is a logical matrix whose rows correspond to skills (long names)
-  and whose columns correspond to tasks which is true if the skill is required for solving 
+  and whose columns correspond to tasks which is true if the skill is required for solving
   the task (according to the expert).
-  
-  \code{ACED.QEM} is a reduced Q-matrix containing the 15 \emph{evidence models} 
-  (unique rows in the $Q$-matrix).  The entries are character values with "0" indicating skill not needed, "+"   
+
+  \code{ACED.QEM} is a reduced Q-matrix containing the 15 \emph{evidence models}
+  (unique rows in the $Q$-matrix).  The entries are character values with "0" indicating skill not needed, "+"
   indicating skill is needed and "++" indicating skill is primary.  The \code{Tasks} column lists
   the tasks corresponding to this evidence model (1, 2 and 3 again represent difficulty level, and the
   letters indicating variants).  The \code{Anchor} column is used to identify subscales for scale identification.
-  
-  \code{ACED.splithalves} is a list of two datasets labeled \dQuote{A} and \dQuote{B}.  Both 
+
+  \code{ACED.splithalves} is a list of two datasets labeled \dQuote{A} and \dQuote{B}.  Both
   have the same structure as \code{ACED.scores} (less the datas giving study condition).  These were created
   by splitting the 62 items into 2 subforms with 31 items each.  For the most part, each item was paired with
   an variant which differed only by the last letter.  The scores are the results of Bayes net scoring with
   half of the items.
-  
-  \code{ACED.pretest} and \code{ACED.posttest} are raw data from the external pretest and posttest given 
+
+  \code{ACED.pretest} and \code{ACED.posttest} are raw data from the external pretest and posttest given
   before and after the study.  Each is a list with four components:
   \describe{
     \item{\code{Araw}}{Unscored responses for students who took that form as pre(post)test.  The first
@@ -181,11 +181,11 @@
     \item{\code{Braw}}{Unscored responses for students who took that form as pre(post)test.  The first
       row is the key.}
     \item{\code{Bscored}}{The scored responses for the \code{Araw} students; correct is 1, incorrect is 0.}
-  } 
-  Because of the counterbalancing each student should appear in either Form A or Form B in the pretest 
-  and in the other group in the posttest.  Note that the A and B forms here have no relationship with the A and B   
+  }
+  Because of the counterbalancing each student should appear in either Form A or Form B in the pretest
+  and in the other group in the posttest.  Note that the A and B forms here have no relationship with the A and B
   forms in \code{ACED.splithalves}.
-  
+
 }
 \details{
 
@@ -194,7 +194,7 @@
   had two novel features which could be turned on and off, elaborated
   feedback (turned off, it provided accuracy only feedback) and adaptive
   sequencing of items (turned off, it scheduled items in a fixed linear
-  sequence).  
+  sequence).
 
   It was originally built to cover all algebraic sequences (arithmetic,
   geometric and other recursive), but only the branch of the system
@@ -233,24 +233,24 @@
   Learner (\code{ACED.prePost$Level_code=="ELL"}) students.  Their
   teachers were allowed to translated words for the students, but in
   many cases actually wound up giving instruction as part of the
-  translation.  
-  
+  translation.
+
 }
 \source{
 
   Shute, V. J., Hansen, E. G., & Almond, R. G. (2008). You can't fatten
   a hog by weighing it---Or can you? Evaluating an assessment for learning
   system called ACED. \emph{International Journal of Artificial
-  Intelligence and Education}, \bold{18}(4), 289-316. 
+  Intelligence and Education}, \bold{18}(4), 289-316.
 
   Thanks to Val Shute for permission to use the data.
-  
+
   ACED development and data collection was sponsored by National Science
-  Foundation Grant No. 0313202.  
+  Foundation Grant No. 0313202.
 }
 \references{
   A more detailed description, including a Q-matrix can be found at the
-  ECD Wiki:  \url{http://ecd.ralmond.net/ecdwiki/ACED/ACED}.
+  \url{http://ecd.ralmond.net/ACED}.
 }
 \seealso{
   \code{\link{FullACED}} for the full Bayes net model.

@@ -5,6 +5,7 @@
 \alias{FullACED.omega}
 \alias{FullACED.QQ}
 \alias{FullACED.stats}
+\alias{FullACED.task2em}
 \docType{data}
 \title{The Full ACED Model using Expert Parmeters}
 \description{
@@ -19,6 +20,7 @@
     \item{FullACED.QQ}{The Q-matrix describing the evidence
       models.}
     \item{FullACED.stats}{A list of statistics to be reported.}
+    \item{FullACED.task2em}{A list of tasks and corresponding evidence models.}
   }
 }
 \usage{data("FullACED")}
@@ -103,6 +105,11 @@
       will be applied.}
   }
 
+  \code{FullACED.task2em} is a data frame with 63 rows and 2 columns:
+  \describe{
+    \item{\code{Task}}{The name of the task.}
+    \item{\code{EM}}{The name of the corresponding evidence model.}
+  }
 }
 \details{
 
@@ -120,6 +127,8 @@
   \code{FullACED.stats} describes the statistics which are to be
   reported.
 
+  \code{FullACED.task2em} is for mapping tasks to evidence models.
+
 }
 \source{
 
@@ -132,6 +141,9 @@
 
 }
 \references{
+
+  A online description of the ACED study is available at
+  \url{https://ecd.ralmond.net/ACED/}.
 
   An online spreadsheet with these data frames is at:
 

@@ -192,6 +192,7 @@ score_time
 ## Parameter Learning Tests
 
 ```{r}
+#| eval: false
 if (exists("ACEDmotif") && 
     !is.null(WarehouseFetch(Nethouse,"ACEDmotif"))) {
   WarehouseFree(Nethouse,"ACEDmotif")
@@ -208,6 +209,7 @@ fit.time
 ## Write out results
 
 ```{r}
+#| eval: false
 profnodes <- RNetica::NetworkNodesInSet(ACEDmotif,"Proficiencies")
 obsnodes <- RNetica::NetworkNodesInSet(ACEDmotif,"Evidence")
 outOmega <- Pnet2Omega(ACEDmotif,profnodes)
